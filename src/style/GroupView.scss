@@ -1,0 +1,143 @@
+.GroupView {
+  width: 100%;
+  height: 100%;
+
+  .fg1 {
+    flex-grow: 1;
+  }
+
+  .gray {
+    color: #777;
+  }
+
+
+  .edit-icon {
+    background-image: url('img/edit.svg');
+  }
+
+  .btn {
+    padding: 7px 16px 8px;
+    margin: 0;
+    font-size: 12.5px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    vertical-align: top;
+    line-height: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    background-color: #5e81a8;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  &__header {
+    background: #f2f4f7;
+    border-radius: 2px 2px 0 0;
+    padding: 10px 15px;
+    border-bottom: 2px solid #e7e8ec;
+    display: flex;
+    align-items: center;
+
+    .image-wrapper {
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-right: 10px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .text {
+      font-weight: 800;
+    }
+
+    .edit-icon {
+      width: 18px;
+      height: 18px;
+      margin: 0 5px;
+    }
+
+    .btn {
+      margin-left: 5px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__center {
+    width: 400px;
+  }
+
+  &__photo-wrapper {
+    height: 378px;
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img {
+      height: 100%;
+    }
+  }
+
+  &__about-box {
+    height: 50px;
+    padding: 10px 0;
+
+    .name {
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .about {
+      color: #777;
+    }
+  }
+
+  &__like-box {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .icon {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .skip {
+    width: 60px;
+    height: 60px;
+    background-image: url('img/right-arrow.svg');
+
+  }
+  .like {
+    width: 60px;
+    height: 60px;
+    background-image: url('img/like.svg');
+
+  }
+  .page {
+    width: 60px;
+    height: 60px;
+    background-image: url('img/user.svg');
+  }
+}

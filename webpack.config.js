@@ -3,8 +3,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-var APP_DIR = path.resolve(__dirname, 'src/client/app');
+var BUILD_DIR = path.resolve(__dirname, 'static');
+var APP_DIR = path.resolve(__dirname, 'src/');
 
 const sassLoaders = [
     'css-loader',
@@ -13,22 +13,34 @@ const sassLoaders = [
 ];
 
 var config = {
-    entry: APP_DIR + '/index.jsx',
+    entry: [
+        'babel-polyfill',
+        './src/index'
+    ],
     output: {
         path: BUILD_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: './static/'
     },
     module : {
-        loaders : [
+        loaders: [ //добавили babel-loader
             {
-                test : /\.jsx?/,
-                include : APP_DIR,
-                loader : 'babel'
+                loaders: ['babel-loader'],
+                include: [
+                    path.resolve(__dirname, "src")
+                ],
+                test: /\.js$/,
+                plugins: ['transform-runtime']
             },
             {
                 test: /\.scss$/,
-                loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ]
-            }
+                loaders: ["style", "css", "sass"]
+            },
+            {
+                test: /\.css$/,
+                loaders: ["style", "css"]
+            },
+            { test: /\.(png|jpg|svg)$/, loader: 'file-loader' }
         ]
     },
     plugins: [

@@ -5,11 +5,12 @@ var classNames = require('classnames');
 import { UserView } from './UserView'
 import { startLoadUser } from '../actions/GroupViewActions'
 import '../style/Stat.scss'
+import {share} from '../tools/share';
 
 export class Stat extends Component {
 
     wallPost() {
-
+        share();
     }
 
     goToGroup() {

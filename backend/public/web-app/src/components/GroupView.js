@@ -15,7 +15,7 @@ import {
 } from '../actions/GroupViewActions'
 import '../style/GroupView.scss'
 import { SyncLikesWrapper } from './SyncLikesWrapper'
-
+import {share} from '../tools/share';
 export class GroupView extends Component {
 
     componentDidMount() {
@@ -36,7 +36,7 @@ export class GroupView extends Component {
     }
 
     makeWallPost() {
-
+        share();
     }
 
     getNotFound() {

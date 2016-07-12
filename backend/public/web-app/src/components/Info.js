@@ -3,10 +3,12 @@ import {connect} from 'react-redux'
 import {browserHistory, Link} from 'react-router'
 import '../style/Stat.scss'
 
+import {share} from '../tools/share';
+
 export class Info extends Component {
 
     wallPost() {
-
+        share();
     }
 
     goToGroup() {

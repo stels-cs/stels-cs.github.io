@@ -5,11 +5,12 @@ import { startLoadUser } from '../actions/GroupViewActions'
 var classNames = require('classnames');
 import { UserView } from './UserView'
 import '../style/Stat.scss'
+import {share} from '../tools/share';
 
 export class Welcome extends Component {
 
     wallPost() {
-
+        share();
     }
 
     goToGroup() {

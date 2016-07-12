@@ -39995,6 +39995,8 @@
 	
 	var _SyncLikesWrapper = __webpack_require__(/*! ./SyncLikesWrapper */ 602);
 	
+	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40036,7 +40038,9 @@
 	        }
 	    }, {
 	        key: 'makeWallPost',
-	        value: function makeWallPost() {}
+	        value: function makeWallPost() {
+	            (0, _share.share)();
+	        }
 	    }, {
 	        key: 'getNotFound',
 	        value: function getNotFound() {
@@ -41214,6 +41218,8 @@
 	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
+	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41235,7 +41241,9 @@
 	
 	    _createClass(Stat, [{
 	        key: 'wallPost',
-	        value: function wallPost() {}
+	        value: function wallPost() {
+	            (0, _share.share)();
+	        }
 	    }, {
 	        key: 'goToGroup',
 	        value: function goToGroup() {
@@ -41521,6 +41529,8 @@
 	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
+	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41540,7 +41550,9 @@
 	
 	    _createClass(Info, [{
 	        key: 'wallPost',
-	        value: function wallPost() {}
+	        value: function wallPost() {
+	            (0, _share.share)();
+	        }
 	    }, {
 	        key: 'goToGroup',
 	        value: function goToGroup() {
@@ -42045,6 +42057,8 @@
 	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
+	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42066,7 +42080,9 @@
 	
 	    _createClass(Welcome, [{
 	        key: 'wallPost',
-	        value: function wallPost() {}
+	        value: function wallPost() {
+	            (0, _share.share)();
+	        }
 	    }, {
 	        key: 'goToGroup',
 	        value: function goToGroup() {
@@ -42255,6 +42271,28 @@
 	}
 	
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser })(Welcome);
+
+/***/ },
+/* 620 */
+/*!****************************!*\
+  !*** ./src/tools/share.js ***!
+  \****************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.share = share;
+	function share() {
+	    var url = 'https://vk.com/share.php?';
+	    url += 'url=https://vk.com/app5533090';
+	    url += '&title=Pinder';
+	    url += '&description=Новый способ знакомства в сообществах ВКонтакте';
+	    var win = window.open(url, '_blank');
+	    win.focus();
+	}
 
 /***/ }
 /******/ ]);

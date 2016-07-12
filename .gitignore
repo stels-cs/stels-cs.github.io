@@ -1,1 +1,23 @@
-node_modules
+### Laravel template
+vendor/
+node_modules/
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+bootstrap/cache/
+storage/
+.env.*.php
+.env.php
+.env
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+
+# Created by .ignore support plugin (hsz.mobi)
+
+.vagrant
+
+.idea

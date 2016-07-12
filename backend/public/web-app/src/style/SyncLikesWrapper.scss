@@ -1,0 +1,59 @@
+.SyncLikesWrapper {
+
+  .wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .window {
+    border-radius: 2px;
+    border-color: #f2f4f7;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f4f7;
+    border-radius: 2px 2px 0 0;
+    padding: 15px;
+    border-bottom: 2px solid #e7e8ec;
+  }
+
+  .window-wrapper {
+    padding: 15px;
+    background: #FFF;
+    overflow: auto;
+    max-height: 186px;
+  }
+
+
+  .UserView {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .close-icon {
+    background-image: url('img/close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

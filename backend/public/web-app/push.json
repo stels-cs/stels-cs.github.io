@@ -1,0 +1,16 @@
+[
+  {
+    "title":"Test Push",
+    "image":"http://stels-cs.github.io/logo.jpg",
+    "url":"https://ya.ru",
+    "body":"Тестовый пуш",
+    "active":false
+  },
+  {
+    "image":"https://st.lmcdn.ru/static/d/ru/15.12.28/i/favicon.ico",
+    "title":"Картинка",
+    "url":"https://ya.ru",
+    "body":"Тестовый пуш c картинкой",
+    "active":true
+  }
+]

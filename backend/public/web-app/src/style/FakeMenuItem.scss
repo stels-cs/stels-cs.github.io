@@ -1,0 +1,11 @@
+.FakeMenuItem {
+  display: inline-block;
+  background: #CCC;
+  height: 12px;
+  width: 70px;
+
+  &__w40 {width: 60px;}
+  &__w20 {width: 40px;}
+  &__w10 {width: 20px;}
+  &__w60 {width: 100px;}
+}

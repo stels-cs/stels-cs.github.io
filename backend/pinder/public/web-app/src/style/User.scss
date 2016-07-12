@@ -1,0 +1,22 @@
+.User {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px 5px;
+  height: 20px;
+  background: #507299;
+  justify-content: space-between;
+  color: #FFF;
+  .logo {
+    font-weight: 800;
+  }
+  .ss {
+    margin: 0 5px;
+  }
+  .sl {
+    margin-right: 5px;
+  }
+  .hidden {
+    display: none;
+  }
+}

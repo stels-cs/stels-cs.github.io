@@ -9049,11 +9049,11 @@
 	
 	var _configureStore2 = _interopRequireDefault(_configureStore);
 	
-	var _reactRouterRedux = __webpack_require__(/*! react-router-redux */ 575);
+	var _reactRouterRedux = __webpack_require__(/*! react-router-redux */ 574);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
-	var _Root = __webpack_require__(/*! ./containers/Root */ 581);
+	var _Root = __webpack_require__(/*! ./containers/Root */ 580);
 	
 	var _Root2 = _interopRequireDefault(_Root);
 	
@@ -32127,6 +32127,11 @@
 	                'stat ss': true,
 	                'hidden': !sLoaded
 	            });
+	            if (matched > 0) {
+	                matched = '(' + matched + ')';
+	            } else {
+	                matched = '';
+	            }
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'User' },
@@ -32136,9 +32141,8 @@
 	                    _react2.default.createElement(
 	                        'span',
 	                        { className: statClass },
-	                        'Моя статистика(',
-	                        matched,
-	                        ')'
+	                        'Мои пары ',
+	                        matched
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -38471,7 +38475,7 @@
 	
 	var _reducers2 = _interopRequireDefault(_reducers);
 	
-	var _reduxThunk = __webpack_require__(/*! redux-thunk */ 580);
+	var _reduxThunk = __webpack_require__(/*! redux-thunk */ 579);
 	
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 	
@@ -38529,7 +38533,7 @@
 	
 	var _redux = __webpack_require__(/*! redux */ 468);
 	
-	var _reactRouterRedux = __webpack_require__(/*! react-router-redux */ 575);
+	var _reactRouterRedux = __webpack_require__(/*! react-router-redux */ 574);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -39009,8 +39013,7 @@
 	}
 
 /***/ },
-/* 574 */,
-/* 575 */
+/* 574 */
 /*!*******************************************!*\
   !*** ./~/react-router-redux/lib/index.js ***!
   \*******************************************/
@@ -39023,7 +39026,7 @@
 	});
 	exports.routerMiddleware = exports.routerActions = exports.goForward = exports.goBack = exports.go = exports.replace = exports.push = exports.CALL_HISTORY_METHOD = exports.routerReducer = exports.LOCATION_CHANGE = exports.syncHistoryWithStore = undefined;
 	
-	var _reducer = __webpack_require__(/*! ./reducer */ 576);
+	var _reducer = __webpack_require__(/*! ./reducer */ 575);
 	
 	Object.defineProperty(exports, 'LOCATION_CHANGE', {
 	  enumerable: true,
@@ -39038,7 +39041,7 @@
 	  }
 	});
 	
-	var _actions = __webpack_require__(/*! ./actions */ 577);
+	var _actions = __webpack_require__(/*! ./actions */ 576);
 	
 	Object.defineProperty(exports, 'CALL_HISTORY_METHOD', {
 	  enumerable: true,
@@ -39083,11 +39086,11 @@
 	  }
 	});
 	
-	var _sync = __webpack_require__(/*! ./sync */ 578);
+	var _sync = __webpack_require__(/*! ./sync */ 577);
 	
 	var _sync2 = _interopRequireDefault(_sync);
 	
-	var _middleware = __webpack_require__(/*! ./middleware */ 579);
+	var _middleware = __webpack_require__(/*! ./middleware */ 578);
 	
 	var _middleware2 = _interopRequireDefault(_middleware);
 	
@@ -39097,7 +39100,7 @@
 	exports.routerMiddleware = _middleware2['default'];
 
 /***/ },
-/* 576 */
+/* 575 */
 /*!*********************************************!*\
   !*** ./~/react-router-redux/lib/reducer.js ***!
   \*********************************************/
@@ -39144,7 +39147,7 @@
 	}
 
 /***/ },
-/* 577 */
+/* 576 */
 /*!*********************************************!*\
   !*** ./~/react-router-redux/lib/actions.js ***!
   \*********************************************/
@@ -39189,7 +39192,7 @@
 	var routerActions = exports.routerActions = { push: push, replace: replace, go: go, goBack: goBack, goForward: goForward };
 
 /***/ },
-/* 578 */
+/* 577 */
 /*!******************************************!*\
   !*** ./~/react-router-redux/lib/sync.js ***!
   \******************************************/
@@ -39205,7 +39208,7 @@
 	
 	exports['default'] = syncHistoryWithStore;
 	
-	var _reducer = __webpack_require__(/*! ./reducer */ 576);
+	var _reducer = __webpack_require__(/*! ./reducer */ 575);
 	
 	var defaultSelectLocationState = function defaultSelectLocationState(state) {
 	  return state.routing;
@@ -39346,7 +39349,7 @@
 	}
 
 /***/ },
-/* 579 */
+/* 578 */
 /*!************************************************!*\
   !*** ./~/react-router-redux/lib/middleware.js ***!
   \************************************************/
@@ -39359,7 +39362,7 @@
 	});
 	exports['default'] = routerMiddleware;
 	
-	var _actions = __webpack_require__(/*! ./actions */ 577);
+	var _actions = __webpack_require__(/*! ./actions */ 576);
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 	
@@ -39387,7 +39390,7 @@
 	}
 
 /***/ },
-/* 580 */
+/* 579 */
 /*!************************************!*\
   !*** ./~/redux-thunk/lib/index.js ***!
   \************************************/
@@ -39418,7 +39421,7 @@
 	exports['default'] = thunk;
 
 /***/ },
-/* 581 */
+/* 580 */
 /*!********************************!*\
   !*** ./src/containers/Root.js ***!
   \********************************/
@@ -39438,7 +39441,7 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
-	var _routes = __webpack_require__(/*! ../routes */ 582);
+	var _routes = __webpack_require__(/*! ../routes */ 581);
 	
 	var _routes2 = _interopRequireDefault(_routes);
 	
@@ -39488,7 +39491,7 @@
 	};
 
 /***/ },
-/* 582 */
+/* 581 */
 /*!***********************!*\
   !*** ./src/routes.js ***!
   \***********************/
@@ -39510,11 +39513,11 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _GroupList = __webpack_require__(/*! ./components/GroupList */ 583);
+	var _GroupList = __webpack_require__(/*! ./components/GroupList */ 582);
 	
 	var _GroupList2 = _interopRequireDefault(_GroupList);
 	
-	var _GroupView = __webpack_require__(/*! ./components/GroupView */ 592);
+	var _GroupView = __webpack_require__(/*! ./components/GroupView */ 591);
 	
 	var _GroupView2 = _interopRequireDefault(_GroupView);
 	
@@ -39522,15 +39525,15 @@
 	
 	var _Stat2 = _interopRequireDefault(_Stat);
 	
-	var _Welcome = __webpack_require__(/*! ./components/Welcome */ 619);
+	var _Welcome = __webpack_require__(/*! ./components/Welcome */ 612);
 	
 	var _Welcome2 = _interopRequireDefault(_Welcome);
 	
-	var _Info = __webpack_require__(/*! ./components/Info */ 612);
+	var _Info = __webpack_require__(/*! ./components/Info */ 613);
 	
 	var _Info2 = _interopRequireDefault(_Info);
 	
-	var _FilterSettings = __webpack_require__(/*! ./components/FilterSettings */ 613);
+	var _FilterSettings = __webpack_require__(/*! ./components/FilterSettings */ 614);
 	
 	var _FilterSettings2 = _interopRequireDefault(_FilterSettings);
 	
@@ -39553,7 +39556,7 @@
 	);
 
 /***/ },
-/* 583 */
+/* 582 */
 /*!*************************************!*\
   !*** ./src/components/GroupList.js ***!
   \*************************************/
@@ -39572,15 +39575,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _GroupItem = __webpack_require__(/*! ./GroupItem */ 584);
+	var _GroupItem = __webpack_require__(/*! ./GroupItem */ 583);
 	
 	var _GroupItem2 = _interopRequireDefault(_GroupItem);
 	
-	__webpack_require__(/*! ../style/GroupList.scss */ 590);
+	__webpack_require__(/*! ../style/GroupList.scss */ 589);
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
-	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 585);
+	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 584);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -39666,7 +39669,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, { loadGroups: _GroupListActions.loadGroups, chooseGroup: _GroupListActions.chooseGroup })(GroupList);
 
 /***/ },
-/* 584 */
+/* 583 */
 /*!*************************************!*\
   !*** ./src/components/GroupItem.js ***!
   \*************************************/
@@ -39686,13 +39689,13 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
-	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 585);
+	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 584);
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
-	__webpack_require__(/*! ../style/FakeMenuItem.scss */ 586);
+	__webpack_require__(/*! ../style/FakeMenuItem.scss */ 585);
 	
-	__webpack_require__(/*! ../style/GroupItem.scss */ 588);
+	__webpack_require__(/*! ../style/GroupItem.scss */ 587);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -39798,7 +39801,7 @@
 	})(GroupItem);
 
 /***/ },
-/* 585 */
+/* 584 */
 /*!*****************************************!*\
   !*** ./src/actions/GroupListActions.js ***!
   \*****************************************/
@@ -39828,7 +39831,7 @@
 	}
 
 /***/ },
-/* 586 */
+/* 585 */
 /*!*************************************!*\
   !*** ./src/style/FakeMenuItem.scss ***!
   \*************************************/
@@ -39837,7 +39840,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./FakeMenuItem.scss */ 587);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./FakeMenuItem.scss */ 586);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -39857,7 +39860,7 @@
 	}
 
 /***/ },
-/* 587 */
+/* 586 */
 /*!********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/FakeMenuItem.scss ***!
   \********************************************************************/
@@ -39874,7 +39877,7 @@
 
 
 /***/ },
-/* 588 */
+/* 587 */
 /*!**********************************!*\
   !*** ./src/style/GroupItem.scss ***!
   \**********************************/
@@ -39883,7 +39886,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupItem.scss */ 589);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupItem.scss */ 588);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -39903,7 +39906,7 @@
 	}
 
 /***/ },
-/* 589 */
+/* 588 */
 /*!*****************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/GroupItem.scss ***!
   \*****************************************************************/
@@ -39920,7 +39923,7 @@
 
 
 /***/ },
-/* 590 */
+/* 589 */
 /*!**********************************!*\
   !*** ./src/style/GroupList.scss ***!
   \**********************************/
@@ -39929,7 +39932,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupList.scss */ 591);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupList.scss */ 590);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -39949,7 +39952,7 @@
 	}
 
 /***/ },
-/* 591 */
+/* 590 */
 /*!*****************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/GroupList.scss ***!
   \*****************************************************************/
@@ -39966,7 +39969,7 @@
 
 
 /***/ },
-/* 592 */
+/* 591 */
 /*!*************************************!*\
   !*** ./src/components/GroupView.js ***!
   \*************************************/
@@ -39989,13 +39992,13 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
-	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 593);
+	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 592);
 	
-	__webpack_require__(/*! ../style/GroupView.scss */ 594);
+	__webpack_require__(/*! ../style/GroupView.scss */ 593);
 	
-	var _SyncLikesWrapper = __webpack_require__(/*! ./SyncLikesWrapper */ 602);
+	var _SyncLikesWrapper = __webpack_require__(/*! ./SyncLikesWrapper */ 601);
 	
-	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	var _share = __webpack_require__(/*! ../tools/share */ 608);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -40099,6 +40102,7 @@
 	                        { onClick: this.makeWallPost.bind(this), className: 'btn' },
 	                        'Рассказать друзьям'
 	                    ),
+	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement('br', null),
 	                    _react2.default.createElement(
 	                        'span',
@@ -40339,7 +40343,7 @@
 	                                _react2.default.createElement('div', { onClick: this.skip.bind(this, user), title: 'Пропустить', className: 'skip icon' }),
 	                                _react2.default.createElement('div', { onClick: this.show.bind(this, user), title: 'Открыть профиль',
 	                                    className: 'page icon' }),
-	                                _react2.default.createElement('div', { onClick: this.like.bind(this, user), title: 'Лайк', className: 'like icon' })
+	                                _react2.default.createElement('div', { onClick: this.like.bind(this, user), title: 'Нравится', className: 'like icon' })
 	                            )
 	                        );
 	                    } else {
@@ -40474,7 +40478,7 @@
 	})(GroupView);
 
 /***/ },
-/* 593 */
+/* 592 */
 /*!*****************************************!*\
   !*** ./src/actions/GroupViewActions.js ***!
   \*****************************************/
@@ -40723,7 +40727,7 @@
 	}
 
 /***/ },
-/* 594 */
+/* 593 */
 /*!**********************************!*\
   !*** ./src/style/GroupView.scss ***!
   \**********************************/
@@ -40732,7 +40736,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupView.scss */ 595);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./GroupView.scss */ 594);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -40752,7 +40756,7 @@
 	}
 
 /***/ },
-/* 595 */
+/* 594 */
 /*!*****************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/GroupView.scss ***!
   \*****************************************************************/
@@ -40763,13 +40767,13 @@
 	
 	
 	// module
-	exports.push([module.id, ".GroupView {\n  width: 100%;\n  height: 100%; }\n  .GroupView .fg1 {\n    flex-grow: 1; }\n  .GroupView .gray {\n    color: #777; }\n  .GroupView .edit-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/edit.svg */ 596) + "); }\n  .GroupView .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .GroupView__header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center; }\n    .GroupView__header .image-wrapper {\n      width: 50px;\n      height: 50px;\n      overflow: hidden;\n      border-radius: 50%;\n      margin-right: 10px; }\n      .GroupView__header .image-wrapper img {\n        max-width: 100%; }\n    .GroupView__header .text {\n      font-weight: 800; }\n    .GroupView__header .edit-icon {\n      width: 18px;\n      height: 18px;\n      margin: 0 5px; }\n    .GroupView__header .btn {\n      margin-left: 5px; }\n  .GroupView__wrapper {\n    display: flex;\n    justify-content: center; }\n  .GroupView__center {\n    width: 400px; }\n  .GroupView__photo-wrapper {\n    height: 378px;\n    width: 400px;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n    background-repeat: no-repeat; }\n    .GroupView__photo-wrapper img {\n      height: 100%; }\n    .GroupView__photo-wrapper.loading {\n      background-image: url(" + __webpack_require__(/*! ./img/wait.svg */ 597) + ");\n      background-position: center center;\n      background-size: 100px auto; }\n    .GroupView__photo-wrapper.error {\n      background-image: url(" + __webpack_require__(/*! ./img/cancel.svg */ 598) + ");\n      background-position: center center;\n      background-size: 100px auto; }\n  .GroupView__about-box {\n    height: 50px;\n    padding: 10px 0; }\n    .GroupView__about-box .name {\n      font-size: 18px;\n      font-weight: 800; }\n    .GroupView__about-box .about {\n      color: #777; }\n  .GroupView__like-box {\n    height: 100px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center; }\n    .GroupView__like-box.lock {\n      opacity: 0.5; }\n  .GroupView .icon {\n    cursor: pointer;\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n    .GroupView .icon:hover {\n      opacity: 0.8; }\n  .GroupView .skip {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 599) + "); }\n  .GroupView .like {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 600) + "); }\n  .GroupView .page {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/user.svg */ 601) + "); }\n  .GroupView__in-search {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView__end {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView__404 {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView .icon-wait {\n    margin-bottom: 10px;\n    background-image: url(" + __webpack_require__(/*! ./img/wait.svg */ 597) + ");\n    width: 100px;\n    height: 100px;\n    display: inline-block; }\n  .GroupView .text-center {\n    text-align: center; }\n  .GroupView .hidden {\n    display: none; }\n", ""]);
+	exports.push([module.id, ".GroupView {\n  width: 100%;\n  height: 100%; }\n  .GroupView .fg1 {\n    flex-grow: 1; }\n  .GroupView .gray {\n    color: #777; }\n  .GroupView .edit-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/edit.svg */ 595) + "); }\n  .GroupView .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .GroupView__header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center; }\n    .GroupView__header .image-wrapper {\n      width: 50px;\n      height: 50px;\n      overflow: hidden;\n      border-radius: 50%;\n      margin-right: 10px; }\n      .GroupView__header .image-wrapper img {\n        max-width: 100%; }\n    .GroupView__header .text {\n      font-weight: 800; }\n    .GroupView__header .edit-icon {\n      width: 18px;\n      height: 18px;\n      margin: 0 5px; }\n    .GroupView__header .btn {\n      margin-left: 5px; }\n  .GroupView__wrapper {\n    display: flex;\n    justify-content: center; }\n  .GroupView__center {\n    width: 400px; }\n  .GroupView__photo-wrapper {\n    height: 378px;\n    width: 400px;\n    overflow: hidden;\n    display: flex;\n    justify-content: center;\n    background-repeat: no-repeat; }\n    .GroupView__photo-wrapper img {\n      height: 100%; }\n    .GroupView__photo-wrapper.loading {\n      background-image: url(" + __webpack_require__(/*! ./img/wait.svg */ 596) + ");\n      background-position: center center;\n      background-size: 100px auto; }\n    .GroupView__photo-wrapper.error {\n      background-image: url(" + __webpack_require__(/*! ./img/cancel.svg */ 597) + ");\n      background-position: center center;\n      background-size: 100px auto; }\n  .GroupView__about-box {\n    height: 50px;\n    padding: 10px 0; }\n    .GroupView__about-box .name {\n      font-size: 18px;\n      font-weight: 800; }\n    .GroupView__about-box .about {\n      color: #777; }\n  .GroupView__like-box {\n    height: 100px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center; }\n    .GroupView__like-box.lock {\n      opacity: 0.5; }\n  .GroupView .icon {\n    cursor: pointer;\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n    .GroupView .icon:hover {\n      opacity: 0.8; }\n  .GroupView .skip {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 598) + "); }\n  .GroupView .like {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 599) + "); }\n  .GroupView .page {\n    width: 60px;\n    height: 60px;\n    background-image: url(" + __webpack_require__(/*! ./img/user.svg */ 600) + "); }\n  .GroupView__in-search {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView__end {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView__404 {\n    height: 528px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n  .GroupView .icon-wait {\n    margin-bottom: 10px;\n    background-image: url(" + __webpack_require__(/*! ./img/wait.svg */ 596) + ");\n    width: 100px;\n    height: 100px;\n    display: inline-block; }\n  .GroupView .text-center {\n    text-align: center; }\n  .GroupView .hidden {\n    display: none; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 596 */
+/* 595 */
 /*!********************************!*\
   !*** ./src/style/img/edit.svg ***!
   \********************************/
@@ -40778,7 +40782,7 @@
 	module.exports = __webpack_require__.p + "b66041ffb20c595bffbcc329ccf47e1a.svg";
 
 /***/ },
-/* 597 */
+/* 596 */
 /*!********************************!*\
   !*** ./src/style/img/wait.svg ***!
   \********************************/
@@ -40787,7 +40791,7 @@
 	module.exports = __webpack_require__.p + "3871088f8f1c4ee95c2cf9f20888e69a.svg";
 
 /***/ },
-/* 598 */
+/* 597 */
 /*!**********************************!*\
   !*** ./src/style/img/cancel.svg ***!
   \**********************************/
@@ -40796,7 +40800,7 @@
 	module.exports = __webpack_require__.p + "48eca05c0fc52c8a352703783e99e321.svg";
 
 /***/ },
-/* 599 */
+/* 598 */
 /*!***************************************!*\
   !*** ./src/style/img/right-arrow.svg ***!
   \***************************************/
@@ -40805,7 +40809,7 @@
 	module.exports = __webpack_require__.p + "bbac25c57f69b4a31b37cbc231d5b0dc.svg";
 
 /***/ },
-/* 600 */
+/* 599 */
 /*!********************************!*\
   !*** ./src/style/img/like.svg ***!
   \********************************/
@@ -40814,7 +40818,7 @@
 	module.exports = __webpack_require__.p + "d654ce194e0660d047d6913124f8d562.svg";
 
 /***/ },
-/* 601 */
+/* 600 */
 /*!********************************!*\
   !*** ./src/style/img/user.svg ***!
   \********************************/
@@ -40823,7 +40827,7 @@
 	module.exports = __webpack_require__.p + "0ae7aad21526628af4205e0e52718fac.svg";
 
 /***/ },
-/* 602 */
+/* 601 */
 /*!********************************************!*\
   !*** ./src/components/SyncLikesWrapper.js ***!
   \********************************************/
@@ -40846,9 +40850,9 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
-	var _UserView = __webpack_require__(/*! ./UserView */ 603);
+	var _UserView = __webpack_require__(/*! ./UserView */ 602);
 	
-	__webpack_require__(/*! ../style/SyncLikesWrapper.scss */ 606);
+	__webpack_require__(/*! ../style/SyncLikesWrapper.scss */ 605);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -40990,7 +40994,7 @@
 	};
 
 /***/ },
-/* 603 */
+/* 602 */
 /*!************************************!*\
   !*** ./src/components/UserView.js ***!
   \************************************/
@@ -41011,7 +41015,7 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
-	__webpack_require__(/*! ../style/UserView.scss */ 604);
+	__webpack_require__(/*! ../style/UserView.scss */ 603);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41088,7 +41092,7 @@
 	UserView.propTypes = {};
 
 /***/ },
-/* 604 */
+/* 603 */
 /*!*********************************!*\
   !*** ./src/style/UserView.scss ***!
   \*********************************/
@@ -41097,7 +41101,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./UserView.scss */ 605);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./UserView.scss */ 604);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -41117,7 +41121,7 @@
 	}
 
 /***/ },
-/* 605 */
+/* 604 */
 /*!****************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/UserView.scss ***!
   \****************************************************************/
@@ -41134,7 +41138,7 @@
 
 
 /***/ },
-/* 606 */
+/* 605 */
 /*!*****************************************!*\
   !*** ./src/style/SyncLikesWrapper.scss ***!
   \*****************************************/
@@ -41143,7 +41147,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./SyncLikesWrapper.scss */ 607);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./SyncLikesWrapper.scss */ 606);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -41163,7 +41167,7 @@
 	}
 
 /***/ },
-/* 607 */
+/* 606 */
 /*!************************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/SyncLikesWrapper.scss ***!
   \************************************************************************/
@@ -41174,19 +41178,41 @@
 	
 	
 	// module
-	exports.push([module.id, ".SyncLikesWrapper .wrapper {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  display: flex;\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  background: rgba(0, 0, 0, 0.5); }\n\n.SyncLikesWrapper .window {\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n\n.SyncLikesWrapper .header {\n  display: flex;\n  justify-content: space-between;\n  background: #f2f4f7;\n  border-radius: 2px 2px 0 0;\n  padding: 15px;\n  border-bottom: 2px solid #e7e8ec; }\n\n.SyncLikesWrapper .window-wrapper {\n  padding: 15px;\n  background: #FFF;\n  overflow: auto;\n  max-height: 186px; }\n\n.SyncLikesWrapper .UserView {\n  margin-bottom: 5px; }\n  .SyncLikesWrapper .UserView:last-child {\n    margin-bottom: 0; }\n\n.SyncLikesWrapper .close-icon {\n  background-image: url(" + __webpack_require__(/*! ./img/close.svg */ 608) + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  cursor: pointer; }\n  .SyncLikesWrapper .close-icon:hover {\n    opacity: 0.5; }\n", ""]);
+	exports.push([module.id, ".SyncLikesWrapper .wrapper {\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  display: flex;\n  position: absolute;\n  align-items: center;\n  justify-content: center;\n  background: rgba(0, 0, 0, 0.5); }\n\n.SyncLikesWrapper .window {\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n\n.SyncLikesWrapper .header {\n  display: flex;\n  justify-content: space-between;\n  background: #f2f4f7;\n  border-radius: 2px 2px 0 0;\n  padding: 15px;\n  border-bottom: 2px solid #e7e8ec; }\n\n.SyncLikesWrapper .window-wrapper {\n  padding: 15px;\n  background: #FFF;\n  overflow: auto;\n  max-height: 186px; }\n\n.SyncLikesWrapper .UserView {\n  margin-bottom: 5px; }\n  .SyncLikesWrapper .UserView:last-child {\n    margin-bottom: 0; }\n\n.SyncLikesWrapper .close-icon {\n  background-image: url(" + __webpack_require__(/*! ./img/close.svg */ 607) + ");\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: contain;\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  cursor: pointer; }\n  .SyncLikesWrapper .close-icon:hover {\n    opacity: 0.5; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 608 */
+/* 607 */
 /*!*********************************!*\
   !*** ./src/style/img/close.svg ***!
   \*********************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "70ee904bd8222b188c3cd7f3585317a7.svg";
+
+/***/ },
+/* 608 */
+/*!****************************!*\
+  !*** ./src/tools/share.js ***!
+  \****************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.share = share;
+	function share() {
+	    var url = 'https://vk.com/share.php?';
+	    url += 'url=https://vk.com/app5533090';
+	    url += '&title=Pinder';
+	    url += '&description=Новый способ знакомства в сообществах ВКонтакте';
+	    var win = window.open(url, '_blank');
+	    win.focus();
+	}
 
 /***/ },
 /* 609 */
@@ -41212,13 +41238,13 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
-	var _UserView = __webpack_require__(/*! ./UserView */ 603);
+	var _UserView = __webpack_require__(/*! ./UserView */ 602);
 	
-	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 593);
+	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 592);
 	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
-	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	var _share = __webpack_require__(/*! ../tools/share */ 608);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41335,7 +41361,7 @@
 	            var userRepo = this.props.userRepo;
 	
 	            var selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
-	            var selectedMeEnds = this.getNumEnding(selectedMe, ['человек', 'человека', 'человек']);
+	            var selectedMeEnds = this.getNumEnding(selectedMe, ['человеку', 'пользователям', 'пользователям']);
 	            var matchedShow = classNames({
 	                'hidden': matched == 0 || !uLoaded || !sLoaded
 	            });
@@ -41384,7 +41410,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'stat' },
-	                        'Вы лайкнули ',
+	                        'Вам понравилось ',
 	                        selected,
 	                        ' ',
 	                        selectedEnds
@@ -41392,7 +41418,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'stat' },
-	                        'Вас лайкнули ',
+	                        'Вы понравились ',
 	                        selectedMe,
 	                        ' ',
 	                        selectedMeEnds
@@ -41498,13 +41524,258 @@
 	
 	
 	// module
-	exports.push([module.id, ".Stat {\n  width: 400px;\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n  .Stat .header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n  .Stat .wrapper {\n    padding: 10px 15px; }\n  .Stat .stat {\n    margin-bottom: 5px; }\n  .Stat .hidden {\n    display: none; }\n  .Stat .help {\n    text-align: center;\n    padding: 10px; }\n  .Stat .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .Stat a {\n    color: #507299; }\n  .Stat .ParList {\n    max-height: 420px;\n    overflow: auto; }\n    .Stat .ParList .UserView {\n      margin-bottom: 5px; }\n      .Stat .ParList .UserView:last-child {\n        margin-bottom: 0; }\n  .Stat .text-center {\n    text-align: center; }\n  .Stat .heart-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 600) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -7px; }\n  .Stat .skip-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 599) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -6px; }\n  .Stat .icon {\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n", ""]);
+	exports.push([module.id, ".Stat {\n  width: 400px;\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n  .Stat .header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n  .Stat .wrapper {\n    padding: 10px 15px; }\n  .Stat .stat {\n    margin-bottom: 5px; }\n  .Stat .hidden {\n    display: none; }\n  .Stat .help {\n    text-align: center;\n    padding: 10px; }\n  .Stat .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .Stat a {\n    color: #507299; }\n  .Stat .ParList {\n    max-height: 420px;\n    overflow: auto; }\n    .Stat .ParList .UserView {\n      margin-bottom: 5px; }\n      .Stat .ParList .UserView:last-child {\n        margin-bottom: 0; }\n  .Stat .text-center {\n    text-align: center; }\n  .Stat .heart-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 599) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -7px; }\n  .Stat .skip-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 598) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -6px; }\n  .Stat .icon {\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
 /* 612 */
+/*!***********************************!*\
+  !*** ./src/components/Welcome.js ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.Welcome = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 300);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 492);
+	
+	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 592);
+	
+	var _UserView = __webpack_require__(/*! ./UserView */ 602);
+	
+	__webpack_require__(/*! ../style/Stat.scss */ 610);
+	
+	var _share = __webpack_require__(/*! ../tools/share */ 608);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var classNames = __webpack_require__(/*! classnames */ 556);
+	
+	var Welcome = exports.Welcome = function (_Component) {
+	    _inherits(Welcome, _Component);
+	
+	    function Welcome() {
+	        _classCallCheck(this, Welcome);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Welcome).apply(this, arguments));
+	    }
+	
+	    _createClass(Welcome, [{
+	        key: 'wallPost',
+	        value: function wallPost() {
+	            (0, _share.share)();
+	        }
+	    }, {
+	        key: 'goToGroup',
+	        value: function goToGroup() {
+	            _reactRouter.browserHistory.push('/group-list');
+	        }
+	    }, {
+	        key: 'buildPars',
+	        value: function buildPars(photo, matchedUsers) {
+	            return [];
+	        }
+	    }, {
+	        key: 'getNumEnding',
+	        value: function getNumEnding(iNumber, aEndings) {
+	            var sEnding, i;
+	            iNumber = iNumber % 100;
+	            if (iNumber >= 11 && iNumber <= 19) {
+	                sEnding = aEndings[2];
+	            } else {
+	                i = iNumber % 10;
+	                switch (i) {
+	                    case 1:
+	                        sEnding = aEndings[0];
+	                        break;
+	                    case 2:
+	                    case 3:
+	                    case 4:
+	                        sEnding = aEndings[1];
+	                        break;
+	                    default:
+	                        sEnding = aEndings[2];
+	                }
+	            }
+	            return sEnding;
+	        }
+	    }, {
+	        key: 'getUserView',
+	        value: function getUserView(user, key) {
+	            return _react2.default.createElement(_UserView.UserView, { user: user, key: key });
+	        }
+	    }, {
+	        key: 'getFakeView',
+	        value: function getFakeView(key) {
+	            return _react2.default.createElement(_UserView.UserView, { user: false, key: key });
+	        }
+	    }, {
+	        key: 'preloadUsers',
+	        value: function preloadUsers() {
+	            var _props = this.props;
+	            var stat = _props.stat;
+	            var userRepo = _props.userRepo;
+	            var matchedUsers = stat.matchedUsers;
+	
+	            if (matchedUsers.length) {
+	                for (var i = 0; i < matchedUsers.length; i++) {
+	                    var userId = matchedUsers[i];
+	                    if (userRepo.users[userId]) {} else {
+	                        if (typeof userRepo.users[userId] == 'undefined') {
+	                            this.props.startLoadUser(userId);
+	                        }
+	                    }
+	                }
+	            }
+	        }
+	    }, {
+	        key: 'componentWillReceiveProps',
+	        value: function componentWillReceiveProps() {
+	            this.preloadUsers();
+	        }
+	    }, {
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            this.preloadUsers();
+	        }
+	    }, {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.preloadUsers();
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	
+	            var uLoaded = this.props.user.loaded;
+	            var sLoaded = this.props.stat.loaded;
+	            var _props$stat = this.props.stat;
+	            var selected = _props$stat.selected;
+	            var matched = _props$stat.matched;
+	            var selectedMe = _props$stat.selectedMe;
+	            var matchedUsers = _props$stat.matchedUsers;
+	            var userRepo = this.props.userRepo;
+	
+	            var selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
+	            var selectedMeEnds = this.getNumEnding(selectedMe, ['человек', 'человека', 'человек']);
+	            var matchedShow = classNames({
+	                'hidden': matched == 0 || !uLoaded || !sLoaded
+	            });
+	            var matchedStatShow = classNames({
+	                'hidden': matched == 0 || !uLoaded || !sLoaded
+	            });
+	            var helpShow = classNames({
+	                'help': true,
+	                'hidden': matched > 0 || !uLoaded || !sLoaded
+	            });
+	            var loaderClass = classNames({
+	                'ui inverted dimmer': true,
+	                'active': !uLoaded || !sLoaded
+	            });
+	
+	            var userList = [];
+	            for (var i = 0; i < matchedUsers.length; i++) {
+	                var userId = matchedUsers[i];
+	                if (userRepo.users[userId]) {
+	                    userList.push(this.getUserView(userRepo.users[userId], i));
+	                } else {
+	                    userList.push(this.getFakeView(i));
+	                }
+	            }
+	
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'Stat' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'header' },
+	                    _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        'Pinder'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'wrapper' },
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Pinder - это классный способ знакомиться с интересными людьми в сообществах ВКонтакте. Нажмите ',
+	                        _react2.default.createElement('span', {
+	                            className: 'heart-icon icon' }),
+	                        ', что поставить пользователю "нравится", или ',
+	                        _react2.default.createElement('span', {
+	                            className: 'skip-icon icon' }),
+	                        ' его, чтобы проигнорировать. Если вы тоже кому-то понравитесь, то считайте, что вы пара!'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'text-center' },
+	                        _react2.default.createElement(
+	                            'button',
+	                            { onClick: this.goToGroup.bind(this), className: 'btn' },
+	                            'Начать'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { style: { marginTop: '10px' }, className: matchedShow },
+	                        'У вас уже есть пары!',
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'ParList', style: { maxHeight: '400px', marginTop: '10px' } },
+	                            userList
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+	
+	    return Welcome;
+	}(_react.Component);
+	
+	Welcome.propTypes = {
+	    user: _react.PropTypes.object.isRequired,
+	    stat: _react.PropTypes.object.isRequired,
+	    userRepo: _react.PropTypes.object.isRequired,
+	    startLoadUser: _react.PropTypes.func.isRequired
+	};
+	
+	function mapStateToProps(state) {
+	    return {
+	        user: state.user,
+	        stat: state.stat,
+	        userRepo: state.userRepo
+	    };
+	}
+	
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser })(Welcome);
+
+/***/ },
+/* 613 */
 /*!********************************!*\
   !*** ./src/components/Info.js ***!
   \********************************/
@@ -41529,7 +41800,7 @@
 	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
-	var _share = __webpack_require__(/*! ../tools/share */ 620);
+	var _share = __webpack_require__(/*! ../tools/share */ 608);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41637,7 +41908,7 @@
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, {})(Info);
 
 /***/ },
-/* 613 */
+/* 614 */
 /*!******************************************!*\
   !*** ./src/components/FilterSettings.js ***!
   \******************************************/
@@ -41658,11 +41929,11 @@
 	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
-	var _FilterActions = __webpack_require__(/*! ../actions/FilterActions */ 614);
+	var _FilterActions = __webpack_require__(/*! ../actions/FilterActions */ 615);
 	
-	__webpack_require__(/*! ../style/FilterSettings.scss */ 615);
+	__webpack_require__(/*! ../style/FilterSettings.scss */ 616);
 	
-	__webpack_require__(/*! react-select/dist/react-select.css */ 617);
+	__webpack_require__(/*! react-select/dist/react-select.css */ 618);
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 492);
 	
@@ -41911,7 +42182,7 @@
 	})(FilterSettings);
 
 /***/ },
-/* 614 */
+/* 615 */
 /*!**************************************!*\
   !*** ./src/actions/FilterActions.js ***!
   \**************************************/
@@ -41936,7 +42207,7 @@
 	}
 
 /***/ },
-/* 615 */
+/* 616 */
 /*!***************************************!*\
   !*** ./src/style/FilterSettings.scss ***!
   \***************************************/
@@ -41945,7 +42216,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./FilterSettings.scss */ 616);
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./FilterSettings.scss */ 617);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 555)(content, {});
@@ -41965,7 +42236,7 @@
 	}
 
 /***/ },
-/* 616 */
+/* 617 */
 /*!**********************************************************************!*\
   !*** ./~/css-loader!./~/sass-loader!./src/style/FilterSettings.scss ***!
   \**********************************************************************/
@@ -41982,7 +42253,7 @@
 
 
 /***/ },
-/* 617 */
+/* 618 */
 /*!**********************************************!*\
   !*** ./~/react-select/dist/react-select.css ***!
   \**********************************************/
@@ -41991,7 +42262,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(/*! !./../../css-loader!./react-select.css */ 618);
+	var content = __webpack_require__(/*! !./../../css-loader!./react-select.css */ 619);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(/*! ./../../style-loader/addStyles.js */ 555)(content, {});
@@ -42011,7 +42282,7 @@
 	}
 
 /***/ },
-/* 618 */
+/* 619 */
 /*!*************************************************************!*\
   !*** ./~/css-loader!./~/react-select/dist/react-select.css ***!
   \*************************************************************/
@@ -42026,273 +42297,6 @@
 	
 	// exports
 
-
-/***/ },
-/* 619 */
-/*!***********************************!*\
-  !*** ./src/components/Welcome.js ***!
-  \***********************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.Welcome = undefined;
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 300);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
-	
-	var _reactRouter = __webpack_require__(/*! react-router */ 492);
-	
-	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 593);
-	
-	var _UserView = __webpack_require__(/*! ./UserView */ 603);
-	
-	__webpack_require__(/*! ../style/Stat.scss */ 610);
-	
-	var _share = __webpack_require__(/*! ../tools/share */ 620);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var classNames = __webpack_require__(/*! classnames */ 556);
-	
-	var Welcome = exports.Welcome = function (_Component) {
-	    _inherits(Welcome, _Component);
-	
-	    function Welcome() {
-	        _classCallCheck(this, Welcome);
-	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Welcome).apply(this, arguments));
-	    }
-	
-	    _createClass(Welcome, [{
-	        key: 'wallPost',
-	        value: function wallPost() {
-	            (0, _share.share)();
-	        }
-	    }, {
-	        key: 'goToGroup',
-	        value: function goToGroup() {
-	            _reactRouter.browserHistory.push('/group-list');
-	        }
-	    }, {
-	        key: 'buildPars',
-	        value: function buildPars(photo, matchedUsers) {
-	            return [];
-	        }
-	    }, {
-	        key: 'getNumEnding',
-	        value: function getNumEnding(iNumber, aEndings) {
-	            var sEnding, i;
-	            iNumber = iNumber % 100;
-	            if (iNumber >= 11 && iNumber <= 19) {
-	                sEnding = aEndings[2];
-	            } else {
-	                i = iNumber % 10;
-	                switch (i) {
-	                    case 1:
-	                        sEnding = aEndings[0];
-	                        break;
-	                    case 2:
-	                    case 3:
-	                    case 4:
-	                        sEnding = aEndings[1];
-	                        break;
-	                    default:
-	                        sEnding = aEndings[2];
-	                }
-	            }
-	            return sEnding;
-	        }
-	    }, {
-	        key: 'getUserView',
-	        value: function getUserView(user, key) {
-	            return _react2.default.createElement(_UserView.UserView, { user: user, key: key });
-	        }
-	    }, {
-	        key: 'getFakeView',
-	        value: function getFakeView(key) {
-	            return _react2.default.createElement(_UserView.UserView, { user: false, key: key });
-	        }
-	    }, {
-	        key: 'preloadUsers',
-	        value: function preloadUsers() {
-	            var _props = this.props;
-	            var stat = _props.stat;
-	            var userRepo = _props.userRepo;
-	            var matchedUsers = stat.matchedUsers;
-	
-	            if (matchedUsers.length) {
-	                for (var i = 0; i < matchedUsers.length; i++) {
-	                    var userId = matchedUsers[i];
-	                    if (userRepo.users[userId]) {} else {
-	                        if (typeof userRepo.users[userId] == 'undefined') {
-	                            this.props.startLoadUser(userId);
-	                        }
-	                    }
-	                }
-	            }
-	        }
-	    }, {
-	        key: 'componentWillReceiveProps',
-	        value: function componentWillReceiveProps() {
-	            this.preloadUsers();
-	        }
-	    }, {
-	        key: 'componentDidUpdate',
-	        value: function componentDidUpdate() {
-	            this.preloadUsers();
-	        }
-	    }, {
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            this.preloadUsers();
-	        }
-	    }, {
-	        key: 'render',
-	        value: function render() {
-	
-	            var uLoaded = this.props.user.loaded;
-	            var sLoaded = this.props.stat.loaded;
-	            var _props$stat = this.props.stat;
-	            var selected = _props$stat.selected;
-	            var matched = _props$stat.matched;
-	            var selectedMe = _props$stat.selectedMe;
-	            var matchedUsers = _props$stat.matchedUsers;
-	            var userRepo = this.props.userRepo;
-	
-	            var selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
-	            var selectedMeEnds = this.getNumEnding(selectedMe, ['человек', 'человека', 'человек']);
-	            var matchedShow = classNames({
-	                'hidden': matched == 0 || !uLoaded || !sLoaded
-	            });
-	            var matchedStatShow = classNames({
-	                'hidden': matched == 0 || !uLoaded || !sLoaded
-	            });
-	            var helpShow = classNames({
-	                'help': true,
-	                'hidden': matched > 0 || !uLoaded || !sLoaded
-	            });
-	            var loaderClass = classNames({
-	                'ui inverted dimmer': true,
-	                'active': !uLoaded || !sLoaded
-	            });
-	
-	            var userList = [];
-	            for (var i = 0; i < matchedUsers.length; i++) {
-	                var userId = matchedUsers[i];
-	                if (userRepo.users[userId]) {
-	                    userList.push(this.getUserView(userRepo.users[userId], i));
-	                } else {
-	                    userList.push(this.getFakeView(i));
-	                }
-	            }
-	
-	            return _react2.default.createElement(
-	                'div',
-	                { className: 'Stat' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'header' },
-	                    _react2.default.createElement(
-	                        'span',
-	                        null,
-	                        'Pinder'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'wrapper' },
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        'Pinder - это классный способ знакомиться с интересными людьми в сообществах ВКонтакте. Нажмите ',
-	                        _react2.default.createElement('span', {
-	                            className: 'heart-icon icon' }),
-	                        ', что поставить пользователю "нравится", или ',
-	                        _react2.default.createElement('span', {
-	                            className: 'skip-icon icon' }),
-	                        ' его, чтобы проигнорировать. Если вы тоже кому-то понравитесь, то считайте, что вы пара!'
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'text-center' },
-	                        _react2.default.createElement(
-	                            'button',
-	                            { onClick: this.goToGroup.bind(this), className: 'btn' },
-	                            'Начать'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { style: { marginTop: '10px' }, className: matchedShow },
-	                        'У вас уже есть пары!',
-	                        _react2.default.createElement('br', null),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'ParList', style: { maxHeight: '400px', marginTop: '10px' } },
-	                            userList
-	                        )
-	                    )
-	                )
-	            );
-	        }
-	    }]);
-	
-	    return Welcome;
-	}(_react.Component);
-	
-	Welcome.propTypes = {
-	    user: _react.PropTypes.object.isRequired,
-	    stat: _react.PropTypes.object.isRequired,
-	    userRepo: _react.PropTypes.object.isRequired,
-	    startLoadUser: _react.PropTypes.func.isRequired
-	};
-	
-	function mapStateToProps(state) {
-	    return {
-	        user: state.user,
-	        stat: state.stat,
-	        userRepo: state.userRepo
-	    };
-	}
-	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser })(Welcome);
-
-/***/ },
-/* 620 */
-/*!****************************!*\
-  !*** ./src/tools/share.js ***!
-  \****************************/
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.share = share;
-	function share() {
-	    var url = 'https://vk.com/share.php?';
-	    url += 'url=https://vk.com/app5533090';
-	    url += '&title=Pinder';
-	    url += '&description=Новый способ знакомства в сообществах ВКонтакте';
-	    var win = window.open(url, '_blank');
-	    win.focus();
-	}
 
 /***/ }
 /******/ ]);

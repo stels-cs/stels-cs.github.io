@@ -62,6 +62,7 @@ export class GroupView extends Component {
                 <br />
                 <button onClick={(this.makeWallPost.bind(this))} className="btn">Рассказать друзьям</button>
                 <br />
+                <br />
                 <span className="gray">Рассказывая друзьям об этом приложении,<br />вы увеличиваете свои шансы найти пару.</span>
             </div>
         </div>)
@@ -255,7 +256,7 @@ export class GroupView extends Component {
                             <div onClick={this.skip.bind(this, user)} title="Пропустить" className="skip icon"></div>
                             <div onClick={this.show.bind(this, user)} title="Открыть профиль"
                                  className="page icon"></div>
-                            <div onClick={this.like.bind(this, user)} title="Лайк" className="like icon"></div>
+                            <div onClick={this.like.bind(this, user)} title="Нравится" className="like icon"></div>
                         </div>
                     </div>)
                 } else {

@@ -14,15 +14,20 @@ export class User extends Component {
     }
 
     render() {
-        const { matched} = this.props.stat;
+        let { matched } = this.props.stat;
         let sLoaded = this.props.stat.loaded;
         let statClass = classNames({
             'stat ss': true,
             'hidden': !sLoaded
         });
+        if (matched > 0) {
+            matched = '(' + matched + ')';
+        } else {
+            matched = '';
+        }
         return <div className="User">
             <div onClick={this.goToStat.bind(this)} >
-                <span className={statClass}>Моя статистика({matched})</span>
+                <span className={statClass}>Мои пары {matched}</span>
             </div>
             <div>
                 <span onClick={ this.goToInfo.bind(this) }>Поддержка</span>

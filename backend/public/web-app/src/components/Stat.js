@@ -88,7 +88,7 @@ export class Stat extends Component {
         const {selected, matched, selectedMe, matchedUsers} = this.props.stat;
         const { userRepo } = this.props;
         const selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
-        const selectedMeEnds = this.getNumEnding(selectedMe, ['человек', 'человека', 'человек']);
+        const selectedMeEnds = this.getNumEnding(selectedMe, ['человеку', 'пользователям', 'пользователям']);
         let matchedShow = classNames({
             'hidden': ((matched == 0) || !uLoaded || !sLoaded )
         });
@@ -120,8 +120,8 @@ export class Stat extends Component {
                 <button onClick={this.goToGroup.bind(this)} className="btn">Назад</button>
             </div>
             <div className="wrapper">
-                <div className="stat">Вы лайкнули {selected} {selectedEnds}</div>
-                <div className="stat">Вас лайкнули {selectedMe} {selectedMeEnds}</div>
+                <div className="stat">Вам понравилось {selected} {selectedEnds}</div>
+                <div className="stat">Вы понравились {selectedMe} {selectedMeEnds}</div>
                 <div className={matchedStatShow}>Пары {matched}</div>
                 <div className={matchedShow}>
                     <br />

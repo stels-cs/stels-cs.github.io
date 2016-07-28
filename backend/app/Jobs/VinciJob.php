@@ -153,12 +153,15 @@ class VinciJob extends Job implements ShouldQueue
             $w = $image->width();
             $h = $image->height();
 
+            $tmpFile = public_path('upload/'.$userId.'_'.uniqid());
             if ($h > $w) {
                 $image = $image->crop( $w, $w, 0, round(($h-$w)/2) );
-                $file_contents = $image->response('jpg', 90);
+                $image->save($tmpFile,90);
+                $file_contents = file_get_contents($tmpFile);
             } else if ($w > $h) {
                 $image = $image->crop( $h, $h, round(($w-$h)/2), 0 );
-                $file_contents = $image->response('jpg', 90);
+                $image->save($tmpFile,90);
+                $file_contents = file_get_contents($tmpFile);
             }
             
 

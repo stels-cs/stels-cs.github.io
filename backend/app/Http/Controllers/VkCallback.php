@@ -96,7 +96,7 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448365_b5bc5d7ce6bc5117e5'
+                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
                             ];
                             $this->api('messages.send', $params);
                             return;
@@ -107,7 +107,7 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
+                                'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
                             ];
                             $this->api('messages.send', $params);
                             return;

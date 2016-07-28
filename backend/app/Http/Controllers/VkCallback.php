@@ -18,11 +18,11 @@ class VkCallback extends Controller
         $message = $r->all();
 
         $type = $message['type'];
-        $object = $message['object'];
 
         if ($type == 'confirmation') {
             return $this->confirmWebHook();
         } else if( $type == 'message_new' ) {
+            $object = $message['object'];
             $this->process($object);
         }
         echo "ok";

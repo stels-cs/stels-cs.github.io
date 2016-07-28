@@ -7,6 +7,7 @@ use App\VinciUser;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Intervention\Image\ImageManager;
 
 define('BOT_TOKEN', '60ebeb171fa26f39c539a1e0735e35c0a37a6a5973d31231589c1d19d149c574b25d001b11ebfd17b704d');
 define('BOT_KEY', 'c5b826d7');
@@ -14,6 +15,25 @@ define('BOT_KEY', 'c5b826d7');
 class VkCallback extends Controller
 {
     public function index(Request $r) {
+        if ($r->has('test')) {
+            $file_contents = file_get_contents('https://pp.vk.me/c630029/v630029187/4572b/GASCpwdjFPo.jpg');
+
+            $manager = new ImageManager(array('driver' => 'gd'));
+
+            $image = $manager->make($file_contents);
+
+            $w = $image->width();
+            $h = $image->height();
+
+            if ($h > $w) {
+                $image = $image->crop( $w, $w, 0, round(($h-$w)/2) );
+                $file_contents = $image->response('jpg', 90);
+            } else if ($w > $h) {
+                $image = $image->crop( $h, $h, round(($w-$h)/2), 0 );
+                $file_contents = $image->response('jpg', 90);
+            }
+            return $file_contents;
+        }
 
         $message = $r->all();
 

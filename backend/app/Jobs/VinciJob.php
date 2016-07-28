@@ -146,7 +146,7 @@ class VinciJob extends Job implements ShouldQueue
             $url = $this->params['photo'];
             $file_contents = file_get_contents($url);
 
-            $manager = new ImageManager(array('driver' => 'dg'));
+            $manager = new ImageManager(array('driver' => 'gd'));
 
             $image = $manager->make($file_contents);
 

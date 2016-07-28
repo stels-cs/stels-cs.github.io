@@ -63,12 +63,7 @@ class VkCallback extends Controller
             }
 
             if (!empty($max['url'])) {
-                $params = [
-                    'peer_id'=> $message['user_id'],
-                    'message' => "Теперь выберите фильтр",
-                    'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
-                ];
-                $this->api('messages.send', $params);
+                $this->chooseFiter($user, $message);
 
                 dispatch( new VinciJob(
                     [
@@ -77,8 +72,6 @@ class VkCallback extends Controller
                         'photo' => $max['url'],
                     ]
                 ) );
-                $user->page = 1;
-                $user->save();
             } else {
                 if (empty($user)) {
                     $params = [
@@ -152,13 +145,7 @@ class VkCallback extends Controller
 
 
                     } else {
-
-                        $params = [
-                            'peer_id'=> $message['user_id'],
-                            'message' => "Выберите фильтр"
-                        ];
-                        $this->api('messages.send', $params);
-
+                        $this->chooseFiter($user, $message, true);
                     }
                 }
             }
@@ -230,6 +217,18 @@ class VkCallback extends Controller
                 throw new \Exception('API ERROR '.$raw);
             }
         }
+    }
+
+    private function chooseFiter($user, $message, $ex = false)
+    {
+        $params = [
+            'peer_id'=> $message['user_id'],
+            'message' => "Теперь выберите фильтр",
+            'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
+        ];
+        $this->api('messages.send', $params);
+        $user->page = 1;
+        $user->save();
     }
 
 }

@@ -3,13 +3,11 @@
 namespace App\Jobs;
 
 use App\Jobs\Job;
-use App\Models\VkUserLike;
-use App\Providers\Vk\Auth;
-use App\Providers\Vk\VkApiException;
 use App\VinciUser;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Intervention\Image\ImageManager;
 
 if (!defined('BOT_TOKEN')) {
     define('BOT_TOKEN', '60ebeb171fa26f39c539a1e0735e35c0a37a6a5973d31231589c1d19d149c574b25d001b11ebfd17b704d');
@@ -147,6 +145,22 @@ class VinciJob extends Job implements ShouldQueue
         if ($type == 'init')  {
             $url = $this->params['photo'];
             $file_contents = file_get_contents($url);
+
+            $manager = new ImageManager(array('driver' => 'dg'));
+
+            $image = $manager->make($file_contents);
+
+            $w = $image->width();
+            $h = $image->height();
+
+            if ($h > $w) {
+                $image = $image->crop( $w, $w, 0, round(($h-$w)/2) );
+                $file_contents = $image->response('jpg', 90);
+            } else if ($w > $h) {
+                $image = $image->crop( $h, $h, round(($w-$h)/2), 0 );
+                $file_contents = $image->response('jpg', 90);
+            }
+            
 
 
             $header = 'Content-Type: multipart/form-data; boundary='.MULTIPART_BOUNDARY;

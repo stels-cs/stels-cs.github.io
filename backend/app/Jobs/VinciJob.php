@@ -240,7 +240,6 @@ class VinciJob extends Job implements ShouldQueue
                                 'server' => $server,
                                 'hash' => $hash
                             ]);
-                            \Log::error(print_r($data,true));
                             $id = $data['response'][0]['id'];
                             $ownerId = $data['response'][0]['owner_id'];
                             $attach = 'photo'.$ownerId.'_'.$id;
@@ -330,7 +329,7 @@ class VinciJob extends Job implements ShouldQueue
                 if (in_array($code, [0, 1, 6, 10]) && $try < 4) {
                     \Log::error($raw);
                     sleep(1);
-                    return $this->$this->api($method, $parameters, $try + 1);
+                    return $this->api($method, $parameters, $try + 1);
                 } else {
                     throw new \Exception('API ERROR '.$raw);
                 }
@@ -341,7 +340,7 @@ class VinciJob extends Job implements ShouldQueue
             \Log::error('VK API ERROR: '.$raw);
             if ($try < 4) {
                 sleep(1);
-                return $this->$this->api($method, $parameters, $try + 1);
+                return $this->api($method, $parameters, $try + 1);
             } else {
                 throw new \Exception('API ERROR '.$raw);
             }

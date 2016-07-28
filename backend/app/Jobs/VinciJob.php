@@ -24,7 +24,7 @@ class VinciJob extends Job implements ShouldQueue
     use InteractsWithQueue, SerializesModels;
 
     protected $params;
-    
+
     public function __construct($params)
     {
         $this->params = $params;
@@ -169,7 +169,7 @@ class VinciJob extends Job implements ShouldQueue
                 $json = json_decode($data, true);
                 if ($json && isset($json['preload'])) {
                     $preload = $json['preload'];
-                    
+
                     $user = VinciUser::find($userId);
 
                     if ($user) {
@@ -264,7 +264,7 @@ class VinciJob extends Job implements ShouldQueue
         } else if ($type == 'apply-filter') {
             $filterId = $this->params['filter'];
 
-            
+
             $user = VinciUser::find($userId);
 
             if ($user && !empty($user['preload'])) {
@@ -287,6 +287,8 @@ class VinciJob extends Job implements ShouldQueue
                     ]
                 ) );
             }
+        } else {
+            \Log::error('Bad params', $this->params);
         }
     }
 

@@ -15,6 +15,7 @@ class VinciUser extends Migration
         Schema::create('vinci-user', function (Blueprint $table) {
             $table->integer('id');
             $table->string('preload');
+            $table->integer('page')->default(1);
         });
     }
 
@@ -25,6 +26,6 @@ class VinciUser extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('vinci-user');
     }
 }

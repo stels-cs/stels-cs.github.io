@@ -65,7 +65,8 @@ class VkCallback extends Controller
             if (!empty($max['url'])) {
                 $params = [
                     'peer_id'=> $message['user_id'],
-                    'message' => "Теперь выберите фильтр"
+                    'message' => "Теперь выберите фильтр",
+                    'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
                 ];
                 $this->api('messages.send', $params);
 
@@ -76,7 +77,8 @@ class VkCallback extends Controller
                         'photo' => $max['url'],
                     ]
                 ) );
-                
+                $user->page = 1;
+                $user->save();
             } else {
                 if (empty($user)) {
                     $params = [
@@ -89,8 +91,49 @@ class VkCallback extends Controller
                     $body = (int) $body;
                     if ($body >= 1 && $body <= 20) {
 
-                        $user->preload = '';
-                        $user->save();
+                        if ($body == 9 && $user->page == 1) {
+                            $user->page = 2;
+                            $user->save();
+                            $params = [
+                                'peer_id'=> $message['user_id'],
+                                'attachment' => 'photo19039187_420448365_b5bc5d7ce6bc5117e5'
+                            ];
+                            $this->api('messages.send', $params);
+                            return;
+                        }
+
+                        if ($body == 8 && $user->page == 2) {
+                            $user->page = 1;
+                            $user->save();
+                            $params = [
+                                'peer_id'=> $message['user_id'],
+                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
+                            ];
+                            $this->api('messages.send', $params);
+                            return;
+                        }
+
+                        if ($body == 16 && $user->page == 2) {
+                            $user->page = 3;
+                            $user->save();
+                            $params = [
+                                'peer_id'=> $message['user_id'],
+                                'attachment' => 'photo19039187_420448365_b5bc5d7ce6bc5117e5'
+                            ];
+                            $this->api('messages.send', $params);
+                            return;
+                        }
+
+                        if ($body == 15 && $user->page == 3) {
+                            $user->page = 2;
+                            $user->save();
+                            $params = [
+                                'peer_id'=> $message['user_id'],
+                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
+                            ];
+                            $this->api('messages.send', $params);
+                            return;
+                        }
 
                         $params = [
                             'peer_id'=> $message['user_id'],

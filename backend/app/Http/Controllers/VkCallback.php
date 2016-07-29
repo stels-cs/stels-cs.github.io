@@ -109,7 +109,8 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
+                                'message' => "Чтобы посмотреть другие фильтры отправь цифру 16.\nЧтобы вернуться к предыдущим фильтрам отправь цифру 8.",
+                                'attachment' => 'photo19039187_420449968_d53a667a03a58241d6'
                             ];
                             $this->api('messages.send', $params);
                             return;
@@ -120,7 +121,8 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
+                                'message' => 'Чтобы посмотреть другие фильтры отправь цифру 9.',
+                                'attachment' => 'photo19039187_420449967_ec3b3cf76a5d537c2f'
                             ];
                             $this->api('messages.send', $params);
                             return;
@@ -131,7 +133,8 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448365_b5bc5d7ce6bc5117e5'
+                                'message' => "Чтобы вернуться к предыдущим фильтрам отправь цифру 15.",
+                                'attachment' => 'photo19039187_420449969_5b8df24045ce11b9a2'
                             ];
                             $this->api('messages.send', $params);
                             return;
@@ -142,7 +145,8 @@ class VkCallback extends Controller
                             $user->save();
                             $params = [
                                 'peer_id'=> $message['user_id'],
-                                'attachment' => 'photo19039187_420448364_9f0a23d0c0234cdff5'
+                                'message' => "Чтобы посмотреть другие фильтры отправь цифру 16.\nЧтобы вернуться к предыдущим фильтрам отправь цифру 8.",
+                                'attachment' => 'photo19039187_420449968_d53a667a03a58241d6'
                             ];
                             $this->api('messages.send', $params);
                             return;
@@ -243,8 +247,8 @@ class VkCallback extends Controller
     {
         $params = [
             'peer_id'=> $message['user_id'],
-            'message' => "Теперь выберите фильтр",
-            'attachment' => 'photo19039187_420448361_fa14a001ec4ec4ee9b'
+            'message' => "Отправь номер фильтра, чтобы применить его.\n\nЧтобы посмотреть другие фильтры отправь цифру 9.",
+            'attachment' => 'photo19039187_420449967_ec3b3cf76a5d537c2f'
         ];
         $this->api('messages.send', $params);
         $user->page = 1;

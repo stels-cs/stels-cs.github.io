@@ -144,7 +144,23 @@ class VinciJob extends Job implements ShouldQueue
 
         if ($type == 'init')  {
             $url = $this->params['photo'];
-            $file_contents = file_get_contents($url);
+            $context = stream_context_create(array(
+                'http' => array(
+                    'timeout' => 30,
+                    'ignore_errors' => true
+                )
+            ));
+            $file_contents = false;
+            try {
+                $file_contents = file_get_contents($url, null, $context);
+            } catch (\Exception $e) {
+                
+            }
+            
+            if (!$file_contents) {
+                $this->api('messages.send', ['peer_id'=>$userId, 'message'=>'Не удалось скачать вашу фотографию, попробуйте еще раз']);
+                return;
+            }
 
             $manager = new ImageManager(array('driver' => 'gd'));
 
@@ -181,7 +197,7 @@ class VinciJob extends Job implements ShouldQueue
                     'ignore_errors' => true
                 )
             ));
-            $data = file_get_contents(UPLOAD_URL, false, $context);
+            $data = file_get_contents(UPLOAD_URL, null, $context);
             if ($data) {
                 $json = json_decode($data, true);
                 if ($json && isset($json['preload'])) {

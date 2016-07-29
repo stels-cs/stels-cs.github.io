@@ -57,7 +57,7 @@ class VkCallback extends Controller
     {
         $user = VinciUser::find($message['user_id']);
         if (!$user) {
-            VinciUser::create(['id'=>$message['user_id'], 'preload'=>'', 'page'=>-1]);
+            $user = VinciUser::create(['id'=>$message['user_id'], 'preload'=>'', 'page'=>-1]);
         }
 
         try {

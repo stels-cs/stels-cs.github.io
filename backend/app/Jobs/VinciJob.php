@@ -279,6 +279,7 @@ class VinciJob extends Job implements ShouldQueue
             }
         } else if ($type == 'apply-filter') {
             $filterId = $this->params['filter'];
+            $retry = isset($this->params['retry']) ? $this->params['retry'] : 0;
 
 
             $user = VinciUser::find($userId);
@@ -295,13 +296,16 @@ class VinciJob extends Job implements ShouldQueue
 
             } else {
 
-                dispatch( new VinciJob(
-                    [
-                        'type' => 'apply-filter',
-                        'user_id' => $userId,
-                        'filter' => $filterId,
-                    ]
-                ) );
+                if ($retry < 10000) {
+                    dispatch(new VinciJob(
+                        [
+                            'type' => 'apply-filter',
+                            'user_id' => $userId,
+                            'filter' => $filterId,
+                            'retry' => $retry + 1
+                        ]
+                    ));
+                }
             }
         } else {
             \Log::error('Bad params', $this->params);

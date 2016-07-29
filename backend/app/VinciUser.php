@@ -8,5 +8,5 @@ class VinciUser extends Model
 {
     protected $table = 'vinci-user';
     public $timestamps = false;
-    protected $fillable = ['id', 'preload'];
+    protected $fillable = ['id', 'preload', 'page'];
 }

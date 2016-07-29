@@ -57,7 +57,7 @@ class VkCallback extends Controller
     {
         $user = VinciUser::find($message['user_id']);
         if (!$user) {
-            VinciUser::create(['id'=>$message['user_id'], 'preload'=>'']);
+            VinciUser::create(['id'=>$message['user_id'], 'preload'=>'', 'page'=>-1]);
         }
 
         try {
@@ -93,7 +93,7 @@ class VkCallback extends Controller
                     ]
                 ) );
             } else {
-                if (empty($user)) {
+                if (empty($user) || $user->page < 0) {
                     $params = [
                         'peer_id' => $message['user_id'],
                         'message' => "Привет!\nЭто бот Vinci отправь мне фотграфию и я сделаю магию!"

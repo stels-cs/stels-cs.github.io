@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 class MeController extends Controller
 {
+    //asdfsdf
     public function index(Request $r) {
         $viewerId = $r->get('viewer_id', 1);
         $authKey = $r->get('auth_key', '');
@@ -20,4 +21,5 @@ class MeController extends Controller
             return response()->json(['error'=>'Invalid auth key'], 403);
         }
     }
+    //HEY
 }

@@ -13910,7 +13910,7 @@
 	                        this.chooseItem(items[0]);
 	                        this.setState({ isOpen: false });
 	                    } else {
-	                        this.setState({ isOpen: false, value: '', fetching: false, items: [] });
+	                        this.setState({ isOpen: false, value: '', fetching: false, items: this.props.items || [], selectedIndex: 0 });
 	                    }
 	                }
 	            }

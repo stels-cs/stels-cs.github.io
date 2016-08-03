@@ -9040,7 +9040,7 @@
 	
 	var _Root2 = _interopRequireDefault(_Root);
 	
-	var _reactDom = __webpack_require__(/*! react-dom */ 344);
+	var _reactDom = __webpack_require__(/*! react-dom */ 341);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -13079,11 +13079,11 @@
 	
 	var _Autocomplete = __webpack_require__(/*! ../components/Autocomplete */ 333);
 	
-	var _AutocompleteItem = __webpack_require__(/*! ../components/AutocompleteItem */ 338);
+	var _AutocompleteItem = __webpack_require__(/*! ../components/AutocompleteItem */ 481);
 	
-	var _city = __webpack_require__(/*! ../tools/city */ 341);
+	var _city = __webpack_require__(/*! ../tools/city */ 484);
 	
-	__webpack_require__(/*! ../style/App.scss */ 342);
+	__webpack_require__(/*! ../style/App.scss */ 485);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -13108,7 +13108,7 @@
 	        }
 	
 	        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_Object$getPrototypeO = Object.getPrototypeOf(Root)).call.apply(_Object$getPrototypeO, [this].concat(args))), _this), _this.state = {
-	            value: 'А'
+	            value: ''
 	        }, _temp), _possibleConstructorReturn(_this, _ret);
 	    }
 	
@@ -13179,19 +13179,22 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        'item',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13203,7 +13206,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13217,7 +13221,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        _react2.default.createElement(
@@ -13227,7 +13232,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ','
 	                        ),
 	                        ' item',
@@ -13238,7 +13244,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ';'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13252,7 +13259,8 @@
 	                        '.',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#660066' } },
+	                            {
+	                                style: { color: '#660066' } },
 	                            'setState'
 	                        ),
 	                        _react2.default.createElement(
@@ -13262,13 +13270,15 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        'value',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ':'
 	                        ),
 	                        'item.',
@@ -13279,7 +13289,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        _react2.default.createElement(
@@ -13289,7 +13300,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ';'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13302,7 +13314,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13315,7 +13328,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13329,7 +13343,8 @@
 	                        'search',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13341,7 +13356,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13357,13 +13373,15 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        ' search.',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#660066' } },
+	                            {
+	                                style: { color: '#660066' } },
 	                            'trim'
 	                        ),
 	                        _react2.default.createElement(
@@ -13373,7 +13391,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        '.',
@@ -13385,7 +13404,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13403,19 +13423,22 @@
 	                        "\t",
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#000066', fontWeight: 'bold' } },
+	                            {
+	                                style: { color: '#000066', fontWeight: 'bold' } },
 	                            'return'
 	                        ),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#000066', fontWeight: 'bold' } },
+	                            {
+	                                style: { color: '#000066', fontWeight: 'bold' } },
 	                            'new'
 	                        ),
 	                        ' Promise',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        ' ',
@@ -13427,7 +13450,8 @@
 	                        'resolve',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13439,7 +13463,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13452,7 +13477,8 @@
 	                        'setTimeout',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        ' ',
@@ -13463,7 +13489,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13475,19 +13502,22 @@
 	                        ' resolve',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        ' searchCity',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        'search',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13498,7 +13528,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ','
 	                        ),
 	                        ' ',
@@ -13510,7 +13541,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        _react2.default.createElement(
@@ -13531,7 +13563,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        _react2.default.createElement(
@@ -13550,13 +13583,15 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#000066', fontWeight: 'bold' } },
+	                            {
+	                                style: { color: '#000066', fontWeight: 'bold' } },
 	                            'else'
 	                        ),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13572,13 +13607,15 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#000066', fontWeight: 'bold' } },
+	                            {
+	                                style: { color: '#000066', fontWeight: 'bold' } },
 	                            'new'
 	                        ),
 	                        ' Promise',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        ' ',
@@ -13590,7 +13627,8 @@
 	                        'resolve',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13602,13 +13640,15 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        ' resolve',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        _react2.default.createElement(
@@ -13618,7 +13658,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ']'
 	                        ),
 	                        _react2.default.createElement(
@@ -13629,7 +13670,8 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        ' ',
@@ -13640,7 +13682,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            ';'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13668,12 +13711,14 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        'item',
@@ -13685,7 +13730,8 @@
 	                        ' isSelected',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13697,19 +13743,22 @@
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#000066', fontWeight: 'bold' } },
+	                            {
+	                                style: { color: '#000066', fontWeight: 'bold' } },
 	                            'return'
 	                        ),
 	                        ' ',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '('
 	                        ),
 	                        _react2.default.createElement(
@@ -13720,18 +13769,21 @@
 	                        'AutocompleteItem selected',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#339933' } },
+	                            {
+	                                style: { color: '#339933' } },
 	                            '='
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        'isSelected',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        ' item',
@@ -13742,13 +13794,15 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '{'
 	                        ),
 	                        'item',
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        _react2.default.createElement(
@@ -13758,7 +13812,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            ')'
 	                        ),
 	                        ' ',
@@ -13769,7 +13824,8 @@
 	                        ),
 	                        _react2.default.createElement(
 	                            'span',
-	                            { style: { color: '#009900' } },
+	                            {
+	                                style: { color: '#009900' } },
 	                            '}'
 	                        ),
 	                        _react2.default.createElement('br', null),
@@ -13795,6 +13851,43 @@
 	                        _react2.default.createElement('br', null),
 	                        'itemRender – функция, возвращающая компонент, отрисовывающий элемент списка выбора'
 	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'p',
+	                    { style: { margin: '30px 0' } },
+	                    'Пример списка, раскрывающегося вверх'
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'Form' },
+	                    _react2.default.createElement(
+	                        'label',
+	                        null,
+	                        'Выберите город:'
+	                    ),
+	                    _react2.default.createElement(_Autocomplete.Autocomplete, {
+	                        onSelect: function onSelect(item) {
+	                            console.log('Выбранное значение: ', item);
+	                            _this2.setState({ value: item.value });
+	                        },
+	                        fetchData: function fetchData(search) {
+	                            if (search.trim().length) {
+	                                return new Promise(function (resolve) {
+	                                    setTimeout(function () {
+	                                        return resolve((0, _city.searchCity)(search));
+	                                    }, 500);
+	                                });
+	                            } else {
+	                                return new Promise(function (resolve) {
+	                                    resolve([]);
+	                                });
+	                            }
+	                        },
+	                        itemRender: function itemRender(item, isSelected) {
+	                            return _react2.default.createElement(_AutocompleteItem.AutocompleteItem, { selected: isSelected, item: item });
+	                        },
+	                        items: [{ value: 'Москва', help: 'Московская область' }, { value: 'Санкт-Петербург', help: 'Ленинградская область' }]
+	                    })
 	                )
 	            );
 	        }
@@ -13835,6 +13928,12 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var scrollIntoView = __webpack_require__(/*! dom-scroll-into-view */ 338);
+	
+	var _require = __webpack_require__(/*! react-dom */ 341);
+	
+	var findDOMNode = _require.findDOMNode;
+	
 	var Autocomplete = exports.Autocomplete = function (_Component) {
 	    _inherits(Autocomplete, _Component);
 	
@@ -13849,7 +13948,9 @@
 	            isOpen: false,
 	            selectedIndex: 0,
 	            fetching: false,
-	            selectedValue: false
+	            selectedValue: false,
+	            maxListHeight: 500,
+	            realMaxListHeight: 500
 	        };
 	        _this.timer = null;
 	        _this.skipBlur = false;
@@ -13871,13 +13972,17 @@
 	            var input = this.refs.input;
 	            var rect = input.getBoundingClientRect();
 	            var style = window.getComputedStyle(input);
-	            var left = parseInt(style.marginLeft) || 0;
-	            var right = parseInt(style.marginRight) || 0;
-	            var bottom = parseInt(style.marginBottom) || 0;
+	            var spaceInTop = rect.top + window.scrollY;
+	            var body = document.body,
+	                html = document.documentElement;
+	            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+	            var spaceInBottom = height - rect.bottom - window.scrollY;
 	            this.setState({
-	                menuTop: rect.bottom + bottom - 1,
-	                menuLeft: rect.left + left,
-	                menuWidth: rect.width + left + right
+	                yOffset: rect.bottom - rect.top,
+	                xOffset: 0,
+	                menuWidth: rect.width,
+	                reverse: spaceInBottom < this.state.maxListHeight && spaceInTop > spaceInBottom,
+	                realMaxListHeight: Math.min(Math.max(spaceInTop, spaceInBottom, 50), this.state.maxListHeight)
 	            });
 	        }
 	    }, {
@@ -13894,6 +13999,7 @@
 	        key: 'onFocus',
 	        value: function onFocus() {
 	            this.setState({ isOpen: true });
+	            this.smartScroll();
 	        }
 	    }, {
 	        key: 'onBlur',
@@ -13916,25 +14022,53 @@
 	            }
 	        }
 	    }, {
-	        key: 'onKeyDown',
-	        value: function onKeyDown(event) {
+	        key: 'indexDown',
+	        value: function indexDown() {
 	            var _state2 = this.state;
 	            var selectedIndex = _state2.selectedIndex;
 	            var items = _state2.items;
 	
+	            if (selectedIndex < items.length - 1) {
+	                this.setState({ isOpen: true, selectedIndex: selectedIndex + 1 });
+	            } else {
+	                this.setState({ isOpen: true, selectedIndex: 0 });
+	            }
+	            this.smartScroll();
+	        }
+	    }, {
+	        key: 'indexUp',
+	        value: function indexUp() {
+	            var _state3 = this.state;
+	            var selectedIndex = _state3.selectedIndex;
+	            var items = _state3.items;
+	
+	            if (selectedIndex > 0) {
+	                this.setState({ isOpen: true, selectedIndex: selectedIndex - 1 });
+	            } else {
+	                this.setState({ isOpen: true, selectedIndex: items.length - 1 });
+	            }
+	            this.smartScroll();
+	        }
+	    }, {
+	        key: 'onKeyDown',
+	        value: function onKeyDown(event) {
+	            var _state4 = this.state;
+	            var selectedIndex = _state4.selectedIndex;
+	            var items = _state4.items;
+	
 	            switch (event.key) {
 	                case 'ArrowDown':
-	                    if (selectedIndex < items.length - 1) {
-	                        this.setState({ isOpen: true, selectedIndex: selectedIndex + 1 });
+	                    if (this.state.reverse) {
+	                        this.indexUp();
 	                    } else {
-	                        this.setState({ isOpen: true, selectedIndex: 0 });
+	                        this.indexDown();
 	                    }
 	                    break;
 	                case 'ArrowUp':
-	                    if (selectedIndex > 0) {
-	                        this.setState({ isOpen: true, selectedIndex: selectedIndex - 1 });
+	                    if (this.state.reverse) {
+	                        this.indexDown();
 	                    } else {
-	                        this.setState({ isOpen: true, selectedIndex: items.length - 1 });
+	                        this.indexUp();
 	                    }
 	                    break;
 	                case 'Escape':
@@ -13980,12 +14114,24 @@
 	                            items = _this3.props.items;
 	                        }
 	                        _this3.setState({ fetching: false, items: items, isOpen: true, selectedIndex: 0 });
+	                        _this3.smartScroll();
 	                    }
 	                }).catch(function () {
 	                    if (_this3.state.value == value) {
 	                        _this3.setState({ fetching: false, items: [], isOpen: true });
 	                    }
 	                });
+	            }
+	        }
+	    }, {
+	        key: 'smartScroll',
+	        value: function smartScroll() {
+	            if (this.isOpen() && this.state.items.length) {
+	                var list = this.refs.list;
+	                var item = this.refs['node-' + this.state.selectedIndex];
+	                if (item) {
+	                    scrollIntoView(findDOMNode(item), findDOMNode(list), { onlyScrollIfNeeded: true });
+	                }
 	            }
 	        }
 	    }, {
@@ -14003,22 +14149,26 @@
 	            var _this4 = this;
 	
 	            var style = {
-	                left: this.state.menuLeft,
-	                top: this.state.menuTop,
-	                minWidth: this.state.menuWidth
+	                left: this.state.xOffset,
+	                minWidth: this.state.menuWidth,
+	                maxHeight: this.state.realMaxListHeight
 	            };
+	            var className = ['Autocomplete__list'];
+	            if (this.state.reverse) {
+	                style.bottom = this.state.yOffset;
+	                className.push(' Autocomplete__list--reverse');
+	            } else {
+	                style.top = this.state.yOffset;
+	            }
+	            var items = [];
 	            if (this.state.fetching) {
-	                return _react2.default.createElement(
+	                items.push(_react2.default.createElement(
 	                    'div',
-	                    { className: 'Autocomplete__list', style: style },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'Autocomplete__wait' },
-	                        this.props.wait
-	                    )
-	                );
+	                    { key: 1, className: 'Autocomplete__wait' },
+	                    this.props.wait
+	                ));
 	            } else if (this.state.items.length) {
-	                var items = this.state.items.map(function (item, index) {
+	                items = this.state.items.map(function (item, index) {
 	                    var node = _this4.props.itemRender(item, _this4.state.selectedIndex == index);
 	                    node = _react2.default.cloneElement(node, {
 	                        ref: 'node-' + index,
@@ -14035,35 +14185,41 @@
 	                    });
 	                    return node;
 	                });
-	                return _react2.default.createElement(
-	                    'div',
-	                    { className: 'Autocomplete__list', style: style },
-	                    items
-	                );
+	                if (this.state.reverse) {
+	                    items = items.reverse();
+	                }
 	            } else {
-	                return _react2.default.createElement(
+	                items.push(_react2.default.createElement(
 	                    'div',
-	                    { className: 'Autocomplete__list', style: style },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'Autocomplete__no-items' },
-	                        this.props.emptyItems
-	                    )
-	                );
+	                    { key: 1, className: 'Autocomplete__no-items' },
+	                    this.props.emptyItems
+	                ));
 	            }
+	            return _react2.default.createElement(
+	                'div',
+	                { ref: 'list', className: className.join(' '), style: style },
+	                items
+	            );
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _this5 = this;
 	
+	            var className = ['Autocomplete__input'];
+	            if (this.state.reverse) {
+	                className.push('Autocomplete__input--reverse');
+	            }
+	            if (this.isOpen()) {
+	                className.push('open');
+	            }
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'Autocomplete' },
 	                _react2.default.createElement('input', {
 	                    type: 'text',
 	                    ref: 'input',
-	                    className: this.isOpen() ? 'Autocomplete__input open' : 'Autocomplete__input',
+	                    className: className.join(' '),
 	                    onFocus: function onFocus() {
 	                        return _this5.onFocus();
 	                    },
@@ -14144,7 +14300,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".Autocomplete {\n  display: inline-block;\n  margin: 0 5px; }\n  .Autocomplete__input {\n    min-width: 300px;\n    padding: 0 8px;\n    margin: 0;\n    border-radius: 4px;\n    background-color: #fff;\n    border: 1px solid #a4a4a4;\n    box-shadow: inset 1px 1px 1px rgba(198, 198, 198, 0.9);\n    font-size: 14px;\n    line-height: 28px; }\n    .Autocomplete__input:focus {\n      border-color: #569d56;\n      outline: 0; }\n    .Autocomplete__input.open {\n      border-radius: 4px 4px 0 0; }\n  .Autocomplete__list {\n    display: inline-block;\n    border: 1px solid #569d56;\n    position: absolute;\n    background: #FFF;\n    border-radius: 0 0 4px 4px;\n    box-sizing: border-box;\n    box-shadow: 0px 0px 1px rgba(198, 198, 198, 0.9); }\n  .Autocomplete__wait {\n    color: #569d56;\n    font-size: 12px;\n    padding: 10px; }\n  .Autocomplete__no-items {\n    color: #a4a4a4;\n    font-size: 12px;\n    padding: 10px; }\n", ""]);
+	exports.push([module.id, ".Autocomplete {\n  display: inline-block;\n  margin: 0 5px;\n  position: relative; }\n  .Autocomplete__input {\n    min-width: 300px;\n    padding: 0 8px;\n    margin: 0;\n    border-radius: 4px;\n    background-color: #fff;\n    border: 1px solid #a4a4a4;\n    box-shadow: inset 1px 1px 1px rgba(198, 198, 198, 0.9);\n    font-size: 14px;\n    line-height: 28px; }\n    .Autocomplete__input:focus {\n      border-color: #569d56;\n      outline: 0; }\n    .Autocomplete__input.open {\n      border-radius: 4px 4px 0 0; }\n    .Autocomplete__input--reverse.open {\n      border-radius: 0 0 4px 4px; }\n  .Autocomplete__list {\n    z-index: 2000;\n    display: inline-block;\n    border: 1px solid #569d56;\n    position: absolute;\n    background: #FFF;\n    border-radius: 0 0 4px 4px;\n    box-sizing: border-box;\n    box-shadow: 0px 0px 1px rgba(198, 198, 198, 0.9);\n    overflow: auto; }\n    .Autocomplete__list--reverse {\n      border-radius: 4px 4px 0 0; }\n  .Autocomplete__wait {\n    color: #569d56;\n    font-size: 12px;\n    padding: 10px; }\n  .Autocomplete__no-items {\n    color: #a4a4a4;\n    font-size: 12px;\n    padding: 10px; }\n", ""]);
 	
 	// exports
 
@@ -14465,199 +14621,601 @@
 
 /***/ },
 /* 338 */
-/*!********************************************!*\
-  !*** ./app/components/AutocompleteItem.js ***!
-  \********************************************/
+/*!*********************************************!*\
+  !*** ./~/dom-scroll-into-view/lib/index.js ***!
+  \*********************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.AutocompleteItem = undefined;
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 299);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	__webpack_require__(/*! ../style/AutocompleteItem.scss */ 339);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var AutocompleteItem = exports.AutocompleteItem = function (_Component) {
-	    _inherits(AutocompleteItem, _Component);
-	
-	    function AutocompleteItem() {
-	        _classCallCheck(this, AutocompleteItem);
-	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(AutocompleteItem).apply(this, arguments));
-	    }
-	
-	    _createClass(AutocompleteItem, [{
-	        key: 'render',
-	        value: function render() {
-	            var _this2 = this;
-	
-	            return _react2.default.createElement(
-	                'div',
-	                { onClick: function onClick(event) {
-	                        _this2.props.onClick(event);
-	                    },
-	                    onMouseDown: function onMouseDown(event) {
-	                        _this2.props.onMouseDown(event);
-	                    },
-	                    onMouseEnter: function onMouseEnter(event) {
-	                        return _this2.props.onMouseEnter(event);
-	                    },
-	                    className: this.props.selected ? 'AutocompleteItem selected' : 'AutocompleteItem' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'AutocompleteItem__title' },
-	                    this.props.item.value
-	                ),
-	                _react2.default.createElement(
-	                    'span',
-	                    { className: 'AutocompleteItem__help' },
-	                    this.props.item.help
-	                )
-	            );
-	        }
-	    }]);
-
-	    return AutocompleteItem;
-	}(_react.Component);
+	module.exports = __webpack_require__(/*! ./dom-scroll-into-view */ 339);
 
 /***/ },
 /* 339 */
-/*!*****************************************!*\
-  !*** ./app/style/AutocompleteItem.scss ***!
-  \*****************************************/
+/*!************************************************************!*\
+  !*** ./~/dom-scroll-into-view/lib/dom-scroll-into-view.js ***!
+  \************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
+	'use strict';
 	
-	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./AutocompleteItem.scss */ 340);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 337)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./AutocompleteItem.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./AutocompleteItem.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
+	var util = __webpack_require__(/*! ./util */ 340);
+	
+	function scrollIntoView(elem, container, config) {
+	  config = config || {};
+	  // document 归一化到 window
+	  if (container.nodeType === 9) {
+	    container = util.getWindow(container);
+	  }
+	
+	  var allowHorizontalScroll = config.allowHorizontalScroll;
+	  var onlyScrollIfNeeded = config.onlyScrollIfNeeded;
+	  var alignWithTop = config.alignWithTop;
+	  var alignWithLeft = config.alignWithLeft;
+	  var offsetTop = config.offsetTop || 0;
+	  var offsetLeft = config.offsetLeft || 0;
+	  var offsetBottom = config.offsetBottom || 0;
+	  var offsetRight = config.offsetRight || 0;
+	
+	  allowHorizontalScroll = allowHorizontalScroll === undefined ? true : allowHorizontalScroll;
+	
+	  var isWin = util.isWindow(container);
+	  var elemOffset = util.offset(elem);
+	  var eh = util.outerHeight(elem);
+	  var ew = util.outerWidth(elem);
+	  var containerOffset = undefined;
+	  var ch = undefined;
+	  var cw = undefined;
+	  var containerScroll = undefined;
+	  var diffTop = undefined;
+	  var diffBottom = undefined;
+	  var win = undefined;
+	  var winScroll = undefined;
+	  var ww = undefined;
+	  var wh = undefined;
+	
+	  if (isWin) {
+	    win = container;
+	    wh = util.height(win);
+	    ww = util.width(win);
+	    winScroll = {
+	      left: util.scrollLeft(win),
+	      top: util.scrollTop(win)
+	    };
+	    // elem 相对 container 可视视窗的距离
+	    diffTop = {
+	      left: elemOffset.left - winScroll.left - offsetLeft,
+	      top: elemOffset.top - winScroll.top - offsetTop
+	    };
+	    diffBottom = {
+	      left: elemOffset.left + ew - (winScroll.left + ww) + offsetRight,
+	      top: elemOffset.top + eh - (winScroll.top + wh) + offsetBottom
+	    };
+	    containerScroll = winScroll;
+	  } else {
+	    containerOffset = util.offset(container);
+	    ch = container.clientHeight;
+	    cw = container.clientWidth;
+	    containerScroll = {
+	      left: container.scrollLeft,
+	      top: container.scrollTop
+	    };
+	    // elem 相对 container 可视视窗的距离
+	    // 注意边框, offset 是边框到根节点
+	    diffTop = {
+	      left: elemOffset.left - (containerOffset.left + (parseFloat(util.css(container, 'borderLeftWidth')) || 0)) - offsetLeft,
+	      top: elemOffset.top - (containerOffset.top + (parseFloat(util.css(container, 'borderTopWidth')) || 0)) - offsetTop
+	    };
+	    diffBottom = {
+	      left: elemOffset.left + ew - (containerOffset.left + cw + (parseFloat(util.css(container, 'borderRightWidth')) || 0)) + offsetRight,
+	      top: elemOffset.top + eh - (containerOffset.top + ch + (parseFloat(util.css(container, 'borderBottomWidth')) || 0)) + offsetBottom
+	    };
+	  }
+	
+	  if (diffTop.top < 0 || diffBottom.top > 0) {
+	    // 强制向上
+	    if (alignWithTop === true) {
+	      util.scrollTop(container, containerScroll.top + diffTop.top);
+	    } else if (alignWithTop === false) {
+	      util.scrollTop(container, containerScroll.top + diffBottom.top);
+	    } else {
+	      // 自动调整
+	      if (diffTop.top < 0) {
+	        util.scrollTop(container, containerScroll.top + diffTop.top);
+	      } else {
+	        util.scrollTop(container, containerScroll.top + diffBottom.top);
+	      }
+	    }
+	  } else {
+	    if (!onlyScrollIfNeeded) {
+	      alignWithTop = alignWithTop === undefined ? true : !!alignWithTop;
+	      if (alignWithTop) {
+	        util.scrollTop(container, containerScroll.top + diffTop.top);
+	      } else {
+	        util.scrollTop(container, containerScroll.top + diffBottom.top);
+	      }
+	    }
+	  }
+	
+	  if (allowHorizontalScroll) {
+	    if (diffTop.left < 0 || diffBottom.left > 0) {
+	      // 强制向上
+	      if (alignWithLeft === true) {
+	        util.scrollLeft(container, containerScroll.left + diffTop.left);
+	      } else if (alignWithLeft === false) {
+	        util.scrollLeft(container, containerScroll.left + diffBottom.left);
+	      } else {
+	        // 自动调整
+	        if (diffTop.left < 0) {
+	          util.scrollLeft(container, containerScroll.left + diffTop.left);
+	        } else {
+	          util.scrollLeft(container, containerScroll.left + diffBottom.left);
+	        }
+	      }
+	    } else {
+	      if (!onlyScrollIfNeeded) {
+	        alignWithLeft = alignWithLeft === undefined ? true : !!alignWithLeft;
+	        if (alignWithLeft) {
+	          util.scrollLeft(container, containerScroll.left + diffTop.left);
+	        } else {
+	          util.scrollLeft(container, containerScroll.left + diffBottom.left);
+	        }
+	      }
+	    }
+	  }
 	}
+	
+	module.exports = scrollIntoView;
 
 /***/ },
 /* 340 */
-/*!************************************************************************!*\
-  !*** ./~/css-loader!./~/sass-loader!./app/style/AutocompleteItem.scss ***!
-  \************************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 336)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".AutocompleteItem {\n  padding: 5px 10px;\n  cursor: pointer; }\n  .AutocompleteItem__title {\n    font-size: 16px; }\n  .AutocompleteItem__help {\n    font-size: 12px;\n    color: #CCC; }\n  .AutocompleteItem.selected {\n    background-color: #569d56;\n    color: #FFF; }\n    .AutocompleteItem.selected .AutocompleteItem__help {\n      color: #FFF; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 341 */
-/*!***************************!*\
-  !*** ./app/tools/city.js ***!
-  \***************************/
+/*!********************************************!*\
+  !*** ./~/dom-scroll-into-view/lib/util.js ***!
+  \********************************************/
 /***/ function(module, exports) {
 
 	'use strict';
 	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	var RE_NUM = /[\-+]?(?:\d*\.|)\d+(?:[eE][\-+]?\d+|)/.source;
+	
+	function getClientPosition(elem) {
+	  var box = undefined;
+	  var x = undefined;
+	  var y = undefined;
+	  var doc = elem.ownerDocument;
+	  var body = doc.body;
+	  var docElem = doc && doc.documentElement;
+	  // 根据 GBS 最新数据，A-Grade Browsers 都已支持 getBoundingClientRect 方法，不用再考虑传统的实现方式
+	  box = elem.getBoundingClientRect();
+	
+	  // 注：jQuery 还考虑减去 docElem.clientLeft/clientTop
+	  // 但测试发现，这样反而会导致当 html 和 body 有边距/边框样式时，获取的值不正确
+	  // 此外，ie6 会忽略 html 的 margin 值，幸运地是没有谁会去设置 html 的 margin
+	
+	  x = box.left;
+	  y = box.top;
+	
+	  // In IE, most of the time, 2 extra pixels are added to the top and left
+	  // due to the implicit 2-pixel inset border.  In IE6/7 quirks mode and
+	  // IE6 standards mode, this border can be overridden by setting the
+	  // document element's border to zero -- thus, we cannot rely on the
+	  // offset always being 2 pixels.
+	
+	  // In quirks mode, the offset can be determined by querying the body's
+	  // clientLeft/clientTop, but in standards mode, it is found by querying
+	  // the document element's clientLeft/clientTop.  Since we already called
+	  // getClientBoundingRect we have already forced a reflow, so it is not
+	  // too expensive just to query them all.
+	
+	  // ie 下应该减去窗口的边框吧，毕竟默认 absolute 都是相对窗口定位的
+	  // 窗口边框标准是设 documentElement ,quirks 时设置 body
+	  // 最好禁止在 body 和 html 上边框 ，但 ie < 9 html 默认有 2px ，减去
+	  // 但是非 ie 不可能设置窗口边框，body html 也不是窗口 ,ie 可以通过 html,body 设置
+	  // 标准 ie 下 docElem.clientTop 就是 border-top
+	  // ie7 html 即窗口边框改变不了。永远为 2
+	  // 但标准 firefox/chrome/ie9 下 docElem.clientTop 是窗口边框，即使设了 border-top 也为 0
+	
+	  x -= docElem.clientLeft || body.clientLeft || 0;
+	  y -= docElem.clientTop || body.clientTop || 0;
+	
+	  return {
+	    left: x,
+	    top: y
+	  };
+	}
+	
+	function getScroll(w, top) {
+	  var ret = w['page' + (top ? 'Y' : 'X') + 'Offset'];
+	  var method = 'scroll' + (top ? 'Top' : 'Left');
+	  if (typeof ret !== 'number') {
+	    var d = w.document;
+	    // ie6,7,8 standard mode
+	    ret = d.documentElement[method];
+	    if (typeof ret !== 'number') {
+	      // quirks mode
+	      ret = d.body[method];
+	    }
+	  }
+	  return ret;
+	}
+	
+	function getScrollLeft(w) {
+	  return getScroll(w);
+	}
+	
+	function getScrollTop(w) {
+	  return getScroll(w, true);
+	}
+	
+	function getOffset(el) {
+	  var pos = getClientPosition(el);
+	  var doc = el.ownerDocument;
+	  var w = doc.defaultView || doc.parentWindow;
+	  pos.left += getScrollLeft(w);
+	  pos.top += getScrollTop(w);
+	  return pos;
+	}
+	function _getComputedStyle(elem, name, computedStyle_) {
+	  var val = '';
+	  var d = elem.ownerDocument;
+	  var computedStyle = computedStyle_ || d.defaultView.getComputedStyle(elem, null);
+	
+	  // https://github.com/kissyteam/kissy/issues/61
+	  if (computedStyle) {
+	    val = computedStyle.getPropertyValue(name) || computedStyle[name];
+	  }
+	
+	  return val;
+	}
+	
+	var _RE_NUM_NO_PX = new RegExp('^(' + RE_NUM + ')(?!px)[a-z%]+$', 'i');
+	var RE_POS = /^(top|right|bottom|left)$/;
+	var CURRENT_STYLE = 'currentStyle';
+	var RUNTIME_STYLE = 'runtimeStyle';
+	var LEFT = 'left';
+	var PX = 'px';
+	
+	function _getComputedStyleIE(elem, name) {
+	  // currentStyle maybe null
+	  // http://msdn.microsoft.com/en-us/library/ms535231.aspx
+	  var ret = elem[CURRENT_STYLE] && elem[CURRENT_STYLE][name];
+	
+	  // 当 width/height 设置为百分比时，通过 pixelLeft 方式转换的 width/height 值
+	  // 一开始就处理了! CUSTOM_STYLE.height,CUSTOM_STYLE.width ,cssHook 解决@2011-08-19
+	  // 在 ie 下不对，需要直接用 offset 方式
+	  // borderWidth 等值也有问题，但考虑到 borderWidth 设为百分比的概率很小，这里就不考虑了
+	
+	  // From the awesome hack by Dean Edwards
+	  // http://erik.eae.net/archives/2007/07/27/18.54.15/#comment-102291
+	  // If we're not dealing with a regular pixel number
+	  // but a number that has a weird ending, we need to convert it to pixels
+	  // exclude left right for relativity
+	  if (_RE_NUM_NO_PX.test(ret) && !RE_POS.test(name)) {
+	    // Remember the original values
+	    var style = elem.style;
+	    var left = style[LEFT];
+	    var rsLeft = elem[RUNTIME_STYLE][LEFT];
+	
+	    // prevent flashing of content
+	    elem[RUNTIME_STYLE][LEFT] = elem[CURRENT_STYLE][LEFT];
+	
+	    // Put in the new values to get a computed value out
+	    style[LEFT] = name === 'fontSize' ? '1em' : ret || 0;
+	    ret = style.pixelLeft + PX;
+	
+	    // Revert the changed values
+	    style[LEFT] = left;
+	
+	    elem[RUNTIME_STYLE][LEFT] = rsLeft;
+	  }
+	  return ret === '' ? 'auto' : ret;
+	}
+	
+	var getComputedStyleX = undefined;
+	if (typeof window !== 'undefined') {
+	  getComputedStyleX = window.getComputedStyle ? _getComputedStyle : _getComputedStyleIE;
+	}
+	
+	function each(arr, fn) {
+	  for (var i = 0; i < arr.length; i++) {
+	    fn(arr[i]);
+	  }
+	}
+	
+	function isBorderBoxFn(elem) {
+	  return getComputedStyleX(elem, 'boxSizing') === 'border-box';
+	}
+	
+	var BOX_MODELS = ['margin', 'border', 'padding'];
+	var CONTENT_INDEX = -1;
+	var PADDING_INDEX = 2;
+	var BORDER_INDEX = 1;
+	var MARGIN_INDEX = 0;
+	
+	function swap(elem, options, callback) {
+	  var old = {};
+	  var style = elem.style;
+	  var name = undefined;
+	
+	  // Remember the old values, and insert the new ones
+	  for (name in options) {
+	    if (options.hasOwnProperty(name)) {
+	      old[name] = style[name];
+	      style[name] = options[name];
+	    }
+	  }
+	
+	  callback.call(elem);
+	
+	  // Revert the old values
+	  for (name in options) {
+	    if (options.hasOwnProperty(name)) {
+	      style[name] = old[name];
+	    }
+	  }
+	}
+	
+	function getPBMWidth(elem, props, which) {
+	  var value = 0;
+	  var prop = undefined;
+	  var j = undefined;
+	  var i = undefined;
+	  for (j = 0; j < props.length; j++) {
+	    prop = props[j];
+	    if (prop) {
+	      for (i = 0; i < which.length; i++) {
+	        var cssProp = undefined;
+	        if (prop === 'border') {
+	          cssProp = prop + which[i] + 'Width';
+	        } else {
+	          cssProp = prop + which[i];
+	        }
+	        value += parseFloat(getComputedStyleX(elem, cssProp)) || 0;
+	      }
+	    }
+	  }
+	  return value;
+	}
+	
+	/**
+	 * A crude way of determining if an object is a window
+	 * @member util
+	 */
+	function isWindow(obj) {
+	  // must use == for ie8
+	  /* eslint eqeqeq:0 */
+	  return obj != null && obj == obj.window;
+	}
+	
+	var domUtils = {};
+	
+	each(['Width', 'Height'], function (name) {
+	  domUtils['doc' + name] = function (refWin) {
+	    var d = refWin.document;
+	    return Math.max(
+	    // firefox chrome documentElement.scrollHeight< body.scrollHeight
+	    // ie standard mode : documentElement.scrollHeight> body.scrollHeight
+	    d.documentElement['scroll' + name],
+	    // quirks : documentElement.scrollHeight 最大等于可视窗口多一点？
+	    d.body['scroll' + name], domUtils['viewport' + name](d));
+	  };
+	
+	  domUtils['viewport' + name] = function (win) {
+	    // pc browser includes scrollbar in window.innerWidth
+	    var prop = 'client' + name;
+	    var doc = win.document;
+	    var body = doc.body;
+	    var documentElement = doc.documentElement;
+	    var documentElementProp = documentElement[prop];
+	    // 标准模式取 documentElement
+	    // backcompat 取 body
+	    return doc.compatMode === 'CSS1Compat' && documentElementProp || body && body[prop] || documentElementProp;
+	  };
 	});
-	exports.searchCity = searchCity;
-	var map = [['Адыгейск', '(региональное)', '01', 'Адыгея Республика', '-'], ['Майкоп', '(региональное)', '01', 'Адыгея Республика', 'региона'], ['Агидель', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Баймак', 'Баймакский Район', '02', 'Башкортостан Республика', 'района'], ['Белебей', 'Белебеевский Район', '02', 'Башкортостан Республика', 'района'], ['Белорецк', 'Белорецкий Район', '02', 'Башкортостан Республика', 'района'], ['Бирск', 'Бирский Район', '02', 'Башкортостан Республика', 'района'], ['Благовещенск', 'Благовещенский Район', '02', 'Башкортостан Республика', 'района'], ['Давлеканово', 'Давлекановский Район', '02', 'Башкортостан Республика', 'района'], ['Дюртюли', 'Дюртюлинский Район', '02', 'Башкортостан Республика', 'района'], ['Ишимбай', 'Ишимбайский Район', '02', 'Башкортостан Республика', 'района'], ['Кумертау', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Межгорье', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Мелеуз', 'Мелеузовский Район', '02', 'Башкортостан Республика', 'района'], ['Нефтекамск', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Октябрьский', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Салават', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Сибай', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Стерлитамак', '(региональное)', '02', 'Башкортостан Республика', 'района'], ['Туймазы', 'Туймазинский Район', '02', 'Башкортостан Республика', 'района'], ['Уфа', '(региональное)', '02', 'Башкортостан Республика', 'района и региона'], ['Учалы', 'Учалинский Район', '02', 'Башкортостан Республика', 'района'], ['Янаул', 'Янаульский Район', '02', 'Башкортостан Республика', 'района'], ['Бабушкин', 'Кабанский Район', '03', 'Бурятия Республика', '-'], ['Гусиноозерск', 'Селенгинский Район', '03', 'Бурятия Республика', 'района'], ['Закаменск', 'Закаменский Район', '03', 'Бурятия Республика', 'района'], ['Кяхта', 'Кяхтинский Район', '03', 'Бурятия Республика', 'района'], ['Северобайкальск', '(региональное)', '03', 'Бурятия Республика', '-'], ['Улан-Удэ', '(региональное)', '03', 'Бурятия Республика', 'региона'], ['Горно-Алтайск', '(региональное)', '04', 'Алтай Республика', 'региона'], ['Буйнакск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Дагестанские Огни', '(региональное)', '05', 'Дагестан Республика', '-'], ['Дербент', '(региональное)', '05', 'Дагестан Республика', '-'], ['Избербаш', '(региональное)', '05', 'Дагестан Республика', '-'], ['Каспийск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Кизилюрт', '(региональное)', '05', 'Дагестан Республика', '-'], ['Кизляр', '(региональное)', '05', 'Дагестан Республика', '-'], ['Махачкала', '(региональное)', '05', 'Дагестан Республика', 'региона'], ['Хасавюрт', '(региональное)', '05', 'Дагестан Республика', '-'], ['Южно-Сухокумск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Карабулак', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Магас', '(региональное)', '06', 'Ингушетия Республика', 'региона'], ['Малгобек', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Назрань', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Баксан', '(региональное)', '07', 'Кабардино-Балкарская Республика', 'района'], ['Майский', 'Майский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Нальчик', '(региональное)', '07', 'Кабардино-Балкарская Республика', 'региона'], ['Нарткала', 'Урванский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Прохладный', '(региональное)', '07', 'Кабардино-Балкарская Республика', '-'], ['Терек', 'Терский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Тырныауз', 'Эльбрусский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Чегем', 'Чегемский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Городовиковск', 'Городовиковский Район', '08', 'Калмыкия Республика', 'района'], ['Лагань', 'Лаганский Район', '08', 'Калмыкия Республика', 'района'], ['Элиста', '(региональное)', '08', 'Калмыкия Республика', 'региона'], ['Карачаевск', '(региональное)', '09', 'Карачаево-Черкесская Республика', '-'], ['Теберда', '(региональное)', '09', 'Карачаево-Черкесская Республика', '-'], ['Усть-Джегута', 'Усть-Джегутинский Район', '09', 'Карачаево-Черкесская Республика', 'района'], ['Черкесск', '(региональное)', '09', 'Карачаево-Черкесская Республика', 'региона'], ['Беломорск', 'Беломорский Район', '10', 'Карелия Республика', 'района'], ['Кемь', 'Кемский Район', '10', 'Карелия Республика', '-'], ['Кондопога', 'Кондопожский Район', '10', 'Карелия Республика', 'района'], ['Костомукша', '(региональное)', '10', 'Карелия Республика', '-'], ['Лахденпохья', 'Лахденпохский Район', '10', 'Карелия Республика', 'района'], ['Медвежьегорск', 'Медвежьегорский Район', '10', 'Карелия Республика', 'района'], ['Олонец', 'Олонецкий Район', '10', 'Карелия Республика', 'района'], ['Петрозаводск', '(региональное)', '10', 'Карелия Республика', 'региона'], ['Питкяранта', 'Питкярантский Район', '10', 'Карелия Республика', 'района'], ['Пудож', 'Пудожский Район', '10', 'Карелия Республика', 'района'], ['Сегежа', 'Сегежский Район', '10', 'Карелия Республика', 'района'], ['Сортавала', '(региональное)', '10', 'Карелия Республика', '-'], ['Суоярви', 'Суоярвский Район', '10', 'Карелия Республика', 'района'], ['Воркута', '(региональное)', '11', 'Коми Республика', '-'], ['Вуктыл', '(региональное)', '11', 'Коми Республика', '-'], ['Емва', 'Княжпогостский Район', '11', 'Коми Республика', 'района'], ['Инта', '(региональное)', '11', 'Коми Республика', '-'], ['Микунь', 'Усть-Вымский Район', '11', 'Коми Республика', '-'], ['Печора', '(региональное)', '11', 'Коми Республика', '-'], ['Сосногорск', '(региональное)', '11', 'Коми Республика', '-'], ['Сыктывкар', '(региональное)', '11', 'Коми Республика', 'региона'], ['Усинск', '(региональное)', '11', 'Коми Республика', '-'], ['Ухта', '(региональное)', '11', 'Коми Республика', '-'], ['Волжск', '(региональное)', '12', 'Марий Эл Республика', '-'], ['Звенигово', 'Звениговский Район', '12', 'Марий Эл Республика', 'района'], ['Йошкар-Ола', '(региональное)', '12', 'Марий Эл Республика', 'региона'], ['Козьмодемьянск', '(региональное)', '12', 'Марий Эл Республика', '-'], ['Ардатов', 'Ардатовский Район', '13', 'Мордовия Республика', 'района'], ['Инсар', 'Инсарский Район', '13', 'Мордовия Республика', 'района'], ['Ковылкино', '(региональное)', '13', 'Мордовия Республика', 'района'], ['Краснослободск', 'Краснослободский Район', '13', 'Мордовия Республика', 'района'], ['Рузаевка', '(региональное)', '13', 'Мордовия Республика', 'района'], ['Саранск', '(региональное)', '13', 'Мордовия Республика', 'региона'], ['Темников', 'Темниковский Район', '13', 'Мордовия Республика', 'района'], ['Алдан', 'Алданский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Верхоянск', 'Верхоянский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Вилюйск', 'Вилюйский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Ленск', 'Ленский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Мирный', 'Мирнинский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Нерюнгри', '(региональное)', '14', 'Саха /Якутия/ Республика', '-'], ['Нюрба', 'Нюрбинский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Олекминск', 'Олекминский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Покровск', 'Хангаласский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Среднеколымск', 'Среднеколымский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Томмот', 'Алданский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Удачный', 'Мирнинский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Якутск', '(региональное)', '14', 'Саха /Якутия/ Республика', 'региона'], ['Алагир', 'Алагирский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Ардон', 'Ардонский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Беслан', 'Правобережный Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Владикавказ', '(региональное)', '15', 'Северная Осетия - Алания Республика', 'региона'], ['Дигора', 'Дигорский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Моздок', 'Моздокский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Агрыз', 'Агрызский Район', '16', 'Татарстан Республика', 'района'], ['Азнакаево', 'Азнакаевский Район', '16', 'Татарстан Республика', 'района'], ['Альметьевск', 'Альметьевский Район', '16', 'Татарстан Республика', 'района'], ['Арск', 'Арский Район', '16', 'Татарстан Республика', 'района'], ['Бавлы', 'Бавлинский Район', '16', 'Татарстан Республика', 'района'], ['Болгар', 'Спасский Район', '16', 'Татарстан Республика', 'района'], ['Бугульма', 'Бугульминский Район', '16', 'Татарстан Республика', 'района'], ['Буинск', 'Буинский Район', '16', 'Татарстан Республика', 'района'], ['Елабуга', 'Елабужский Район', '16', 'Татарстан Республика', 'района'], ['Заинск', 'Заинский Район', '16', 'Татарстан Республика', 'района'], ['Зеленодольск', 'Зеленодольский Район', '16', 'Татарстан Республика', 'района'], ['Казань', '(региональное)', '16', 'Татарстан Республика', 'региона'], ['Лаишево', 'Лаишевский Район', '16', 'Татарстан Республика', 'района'], ['Лениногорск', 'Лениногорский Район', '16', 'Татарстан Республика', 'района'], ['Мамадыш', 'Мамадышский Район', '16', 'Татарстан Республика', 'района'], ['Менделеевск', 'Менделеевский Район', '16', 'Татарстан Республика', 'района'], ['Мензелинск', 'Мензелинский Район', '16', 'Татарстан Республика', 'района'], ['Набережные Челны', '(региональное)', '16', 'Татарстан Республика', '-'], ['Нижнекамск', 'Нижнекамский Район', '16', 'Татарстан Республика', 'района'], ['Нурлат', 'Нурлатский Район', '16', 'Татарстан Республика', 'района'], ['Тетюши', 'Тетюшский Район', '16', 'Татарстан Республика', 'района'], ['Чистополь', 'Чистопольский Район', '16', 'Татарстан Республика', 'района'], ['Ак-Довурак', '(региональное)', '17', 'Тыва Республика', '-'], ['Кызыл', '(региональное)', '17', 'Тыва Республика', 'региона'], ['Туран', 'Пий-Хемский Район', '17', 'Тыва Республика', 'района'], ['Чадан', 'Дзун-Хемчикский Район', '17', 'Тыва Республика', 'района'], ['Шагонар', 'Улуг-Хемский Район', '17', 'Тыва Республика', 'района'], ['Воткинск', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Глазов', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Ижевск', '(региональное)', '18', 'Удмуртская Республика', 'региона'], ['Камбарка', 'Камбарский Район', '18', 'Удмуртская Республика', 'района'], ['Можга', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Сарапул', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Абаза', '(региональное)', '19', 'Хакасия Республика', '-'], ['Абакан', '(региональное)', '19', 'Хакасия Республика', 'региона'], ['Саяногорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Сорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Черногорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Аргун', '(региональное)', '20', 'Чеченская Республика', '-'], ['Грозный', '(региональное)', '20', 'Чеченская Республика', 'региона'], ['Гудермес', 'Гудермесский Район', '20', 'Чеченская Республика', 'района'], ['Урус-Мартан', 'Урус-Мартановский Район', '20', 'Чеченская Республика', 'района'], ['Шали', 'Шалинский Район', '20', 'Чеченская Республика', 'района'], ['Алатырь', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Канаш', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Козловка', 'Козловский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Мариинский Посад', 'Мариинско-Посадский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Новочебоксарск', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Цивильск', 'Цивильский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Чебоксары', '(региональное)', '21', 'Чувашская Республика - Чувашия', 'региона'], ['Шумерля', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Ядрин', 'Ядринский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Алейск', '(региональное)', '22', 'Алтайский Край', '-'], ['Барнаул', '(региональное)', '22', 'Алтайский Край', 'региона'], ['Белокуриха', '(региональное)', '22', 'Алтайский Край', '-'], ['Бийск', '(региональное)', '22', 'Алтайский Край', '-'], ['Горняк', 'Локтевский Район', '22', 'Алтайский Край', 'района'], ['Заринск', '(региональное)', '22', 'Алтайский Край', '-'], ['Змеиногорск', 'Змеиногорский Район', '22', 'Алтайский Край', 'района'], ['Камень-на-Оби', '(региональное)', '22', 'Алтайский Край', '-'], ['Новоалтайск', '(региональное)', '22', 'Алтайский Край', '-'], ['Рубцовск', '(региональное)', '22', 'Алтайский Край', '-'], ['Славгород', '(региональное)', '22', 'Алтайский Край', '-'], ['Яровое', '(региональное)', '22', 'Алтайский Край', '-'], ['Абинск', 'Абинский Район', '23', 'Краснодарский Край', 'района'], ['Анапа', 'Анапский Район', '23', 'Краснодарский Край', 'района'], ['Апшеронск', 'Апшеронский Район', '23', 'Краснодарский Край', 'района'], ['Армавир', '(региональное)', '23', 'Краснодарский Край', '-'], ['Белореченск', 'Белореченский Район', '23', 'Краснодарский Край', 'района'], ['Геленджик', '(региональное)', '23', 'Краснодарский Край', '-'], ['Горячий Ключ', '(региональное)', '23', 'Краснодарский Край', '-'], ['Гулькевичи', 'Гулькевичский Район', '23', 'Краснодарский Край', 'района'], ['Ейск', 'Ейский Район', '23', 'Краснодарский Край', 'района'], ['Кореновск', 'Кореновский Район', '23', 'Краснодарский Край', 'района'], ['Краснодар', '(региональное)', '23', 'Краснодарский Край', 'региона'], ['Кропоткин', 'Кавказский Район', '23', 'Краснодарский Край', '-'], ['Крымск', 'Крымский Район', '23', 'Краснодарский Край', 'района'], ['Курганинск', 'Курганинский Район', '23', 'Краснодарский Край', 'района'], ['Лабинск', 'Лабинский Район', '23', 'Краснодарский Край', 'района'], ['Новокубанск', 'Новокубанский Район', '23', 'Краснодарский Край', 'района'], ['Новороссийск', '(региональное)', '23', 'Краснодарский Край', '-'], ['Приморско-Ахтарск', 'Приморско-Ахтарский Район', '23', 'Краснодарский Край', 'района'], ['Славянск-на-Кубани', 'Славянский Район', '23', 'Краснодарский Край', 'района'], ['Сочи', '(региональное)', '23', 'Краснодарский Край', '-'], ['Темрюк', 'Темрюкский Район', '23', 'Краснодарский Край', 'района'], ['Тимашевск', 'Тимашевский Район', '23', 'Краснодарский Край', 'района'], ['Тихорецк', 'Тихорецкий Район', '23', 'Краснодарский Край', 'района'], ['Туапсе', 'Туапсинский Район', '23', 'Краснодарский Край', 'района'], ['Усть-Лабинск', 'Усть-Лабинский Район', '23', 'Краснодарский Край', 'района'], ['Хадыженск', 'Апшеронский Район', '23', 'Краснодарский Край', '-'], ['Артемовск', 'Курагинский Район', '24', 'Красноярский Край', '-'], ['Ачинск', '(региональное)', '24', 'Красноярский Край', '-'], ['Боготол', '(региональное)', '24', 'Красноярский Край', '-'], ['Бородино', '(региональное)', '24', 'Красноярский Край', '-'], ['Дивногорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Дудинка', 'Таймырский Долгано-Ненецкий Район', '24', 'Красноярский Край', 'района'], ['Енисейск', '(региональное)', '24', 'Красноярский Край', '-'], ['Железногорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Заозерный', 'Рыбинский Район', '24', 'Красноярский Край', '-'], ['Зеленогорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Игарка', 'Туруханский Район', '24', 'Красноярский Край', '-'], ['Иланский', 'Иланский Район', '24', 'Красноярский Край', 'района'], ['Канск', '(региональное)', '24', 'Красноярский Край', '-'], ['Кодинск', 'Кежемский Район', '24', 'Красноярский Край', 'района'], ['Красноярск', '(региональное)', '24', 'Красноярский Край', 'региона'], ['Лесосибирск', '(региональное)', '24', 'Красноярский Край', '-'], ['Минусинск', '(региональное)', '24', 'Красноярский Край', '-'], ['Назарово', '(региональное)', '24', 'Красноярский Край', '-'], ['Норильск', '(региональное)', '24', 'Красноярский Край', '-'], ['Сосновоборск', '(региональное)', '24', 'Красноярский Край', '-'], ['Ужур', 'Ужурский Район', '24', 'Красноярский Край', 'района'], ['Уяр', 'Уярский Район', '24', 'Красноярский Край', 'района'], ['Шарыпово', '(региональное)', '24', 'Красноярский Край', '-'], ['Арсеньев', '(региональное)', '25', 'Приморский Край', '-'], ['Артем', '(региональное)', '25', 'Приморский Край', '-'], ['Большой Камень', '(региональное)', '25', 'Приморский Край', '-'], ['Владивосток', '(региональное)', '25', 'Приморский Край', 'региона'], ['Дальнегорск', '(региональное)', '25', 'Приморский Край', '-'], ['Дальнереченск', '(региональное)', '25', 'Приморский Край', '-'], ['Лесозаводск', '(региональное)', '25', 'Приморский Край', '-'], ['Находка', '(региональное)', '25', 'Приморский Край', '-'], ['Партизанск', '(региональное)', '25', 'Приморский Край', '-'], ['Спасск-Дальний', '(региональное)', '25', 'Приморский Край', '-'], ['Уссурийск', '(региональное)', '25', 'Приморский Край', '-'], ['Фокино', '(региональное)', '25', 'Приморский Край', '-'], ['Благодарный', 'Благодарненский Район', '26', 'Ставропольский Край', 'района'], ['Буденновск', 'Буденновский Район', '26', 'Ставропольский Край', 'района'], ['Георгиевск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Ессентуки', '(региональное)', '26', 'Ставропольский Край', '-'], ['Железноводск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Зеленокумск', 'Советский Район', '26', 'Ставропольский Край', 'района'], ['Изобильный', 'Изобильненский Район', '26', 'Ставропольский Край', 'района'], ['Ипатово', 'Ипатовский Район', '26', 'Ставропольский Край', 'района'], ['Кисловодск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Лермонтов', '(региональное)', '26', 'Ставропольский Край', '-'], ['Минеральные Воды', 'Минераловодский Район', '26', 'Ставропольский Край', 'района'], ['Михайловск', 'Шпаковский Район', '26', 'Ставропольский Край', 'района'], ['Невинномысск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Нефтекумск', 'Нефтекумский Район', '26', 'Ставропольский Край', 'района'], ['Новоалександровск', 'Новоалександровский Район', '26', 'Ставропольский Край', 'района'], ['Новопавловск', 'Кировский Район', '26', 'Ставропольский Край', 'района'], ['Пятигорск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Светлоград', 'Петровский Район', '26', 'Ставропольский Край', 'района'], ['Ставрополь', '(региональное)', '26', 'Ставропольский Край', 'региона'], ['Амурск', '(региональное)', '27', 'Хабаровский Край', '-'], ['Бикин', '(региональное)', '27', 'Хабаровский Край', '-'], ['Вяземский', 'Вяземский Район', '27', 'Хабаровский Край', 'района'], ['Комсомольск-на-Амуре', '(региональное)', '27', 'Хабаровский Край', '-'], ['Николаевск-на-Амуре', '(региональное)', '27', 'Хабаровский Край', '-'], ['Советская Гавань', '(региональное)', '27', 'Хабаровский Край', '-'], ['Хабаровск', '(региональное)', '27', 'Хабаровский Край', 'региона'], ['Белогорск', '(региональное)', '28', 'Амурская Область', '-'], ['Благовещенск', '(региональное)', '28', 'Амурская Область', 'региона'], ['Завитинск', 'Завитинский Район', '28', 'Амурская Область', 'района'], ['Зея', '(региональное)', '28', 'Амурская Область', '-'], ['Райчихинск', '(региональное)', '28', 'Амурская Область', '-'], ['Свободный', '(региональное)', '28', 'Амурская Область', '-'], ['Сковородино', 'Сковородинский Район', '28', 'Амурская Область', 'района'], ['Тында', '(региональное)', '28', 'Амурская Область', '-'], ['Шимановск', '(региональное)', '28', 'Амурская Область', '-'], ['Архангельск', '(региональное)', '29', 'Архангельская Область', 'региона'], ['Вельск', 'Вельский Район', '29', 'Архангельская Область', 'района'], ['Каргополь', 'Каргопольский Район', '29', 'Архангельская Область', 'района'], ['Коряжма', '(региональное)', '29', 'Архангельская Область', '-'], ['Котлас', 'Котласский Район', '29', 'Архангельская Область', 'района'], ['Мезень', 'Мезенский Район', '29', 'Архангельская Область', 'района'], ['Мирный', '(региональное)', '29', 'Архангельская Область', '-'], ['Новодвинск', '(региональное)', '29', 'Архангельская Область', '-'], ['Няндома', 'Няндомский Район', '29', 'Архангельская Область', 'района'], ['Онега', 'Онежский Район', '29', 'Архангельская Область', 'района'], ['Северодвинск', '(региональное)', '29', 'Архангельская Область', '-'], ['Сольвычегодск', 'Котласский Район', '29', 'Архангельская Область', '-'], ['Шенкурск', 'Шенкурский Район', '29', 'Архангельская Область', 'района'], ['Астрахань', '(региональное)', '30', 'Астраханская Область', 'региона'], ['Ахтубинск', 'Ахтубинский Район', '30', 'Астраханская Область', 'района'], ['Ахтубинск-7', 'Ахтубинский Район', '30', 'Астраханская Область', '-'], ['Знаменск', '(региональное)', '30', 'Астраханская Область', '-'], ['Камызяк', 'Камызякский Район', '30', 'Астраханская Область', 'района'], ['Нариманов', 'Наримановский Район', '30', 'Астраханская Область', 'района'], ['Харабали', 'Харабалинский Район', '30', 'Астраханская Область', 'района'], ['Алексеевка', 'Алексеевский Район', '31', 'Белгородская Область', 'района'], ['Белгород', '(региональное)', '31', 'Белгородская Область', 'региона'], ['Бирюч', 'Красногвардейский Район', '31', 'Белгородская Область', 'района'], ['Валуйки', 'Валуйский Район', '31', 'Белгородская Область', 'района'], ['Грайворон', 'Грайворонский Район', '31', 'Белгородская Область', 'района'], ['Губкин', '(региональное)', '31', 'Белгородская Область', 'района'], ['Короча', 'Корочанский Район', '31', 'Белгородская Область', 'района'], ['Новый Оскол', 'Новооскольский Район', '31', 'Белгородская Область', 'района'], ['Старый Оскол', '(региональное)', '31', 'Белгородская Область', 'района'], ['Строитель', 'Яковлевский Район', '31', 'Белгородская Область', 'района'], ['Шебекино', '(региональное)', '31', 'Белгородская Область', 'района'], ['Брянск', '(региональное)', '32', 'Брянская Область', 'региона'], ['Дятьково', 'Дятьковский Район', '32', 'Брянская Область', 'района'], ['Жуковка', 'Жуковский Район', '32', 'Брянская Область', 'района'], ['Злынка', 'Злынковский Район', '32', 'Брянская Область', 'района'], ['Карачев', 'Карачевский Район', '32', 'Брянская Область', 'района'], ['Клинцы', '(региональное)', '32', 'Брянская Область', '-'], ['Мглин', 'Мглинский Район', '32', 'Брянская Область', 'района'], ['Новозыбков', '(региональное)', '32', 'Брянская Область', '-'], ['Почеп', 'Почепский Район', '32', 'Брянская Область', 'района'], ['Севск', 'Севский Район', '32', 'Брянская Область', 'района'], ['Сельцо', '(региональное)', '32', 'Брянская Область', '-'], ['Стародуб', 'Стародубский Район', '32', 'Брянская Область', 'района'], ['Сураж', 'Суражский Район', '32', 'Брянская Область', 'района'], ['Трубчевск', 'Трубчевский Район', '32', 'Брянская Область', 'района'], ['Унеча', 'Унечский Район', '32', 'Брянская Область', 'района'], ['Фокино', 'Дятьковский Район', '32', 'Брянская Область', '-'], ['Александров', 'Александровский Район', '33', 'Владимирская Область', 'района'], ['Владимир', '(региональное)', '33', 'Владимирская Область', 'региона'], ['Вязники', 'Вязниковский Район', '33', 'Владимирская Область', 'района'], ['Гороховец', 'Гороховецкий Район', '33', 'Владимирская Область', 'района'], ['Гусь-Хрустальный', '(региональное)', '33', 'Владимирская Область', '-'], ['Камешково', 'Камешковский Район', '33', 'Владимирская Область', 'района'], ['Карабаново', 'Александровский Район', '33', 'Владимирская Область', '-'], ['Киржач', 'Киржачский Район', '33', 'Владимирская Область', 'района'], ['Ковров', '(региональное)', '33', 'Владимирская Область', '-'], ['Кольчугино', 'Кольчугинский Район', '33', 'Владимирская Область', 'района'], ['Костерево', 'Петушинский Район', '33', 'Владимирская Область', '-'], ['Курлово', 'Гусь-Хрустальный Район', '33', 'Владимирская Область', '-'], ['Лакинск', 'Собинский Район', '33', 'Владимирская Область', '-'], ['Меленки', 'Меленковский Район', '33', 'Владимирская Область', 'района'], ['Муром', '(региональное)', '33', 'Владимирская Область', '-'], ['Петушки', 'Петушинский Район', '33', 'Владимирская Область', 'района'], ['Покров', 'Петушинский Район', '33', 'Владимирская Область', '-'], ['Радужный', '(региональное)', '33', 'Владимирская Область', '-'], ['Собинка', 'Собинский Район', '33', 'Владимирская Область', 'района'], ['Струнино', 'Александровский Район', '33', 'Владимирская Область', '-'], ['Судогда', 'Судогодский Район', '33', 'Владимирская Область', 'района'], ['Суздаль', 'Суздальский Район', '33', 'Владимирская Область', 'района'], ['Юрьев-Польский', 'Юрьев-Польский Район', '33', 'Владимирская Область', 'района'], ['Волгоград', '(региональное)', '34', 'Волгоградская Область', 'региона'], ['Волжский', '(региональное)', '34', 'Волгоградская Область', '-'], ['Дубовка', 'Дубовский Район', '34', 'Волгоградская Область', 'района'], ['Жирновск', 'Жирновский Район', '34', 'Волгоградская Область', 'района'], ['Калач-на-Дону', 'Калачевский Район', '34', 'Волгоградская Область', 'района'], ['Камышин', '(региональное)', '34', 'Волгоградская Область', '-'], ['Котельниково', 'Котельниковский Район', '34', 'Волгоградская Область', 'района'], ['Котово', 'Котовский Район', '34', 'Волгоградская Область', 'района'], ['Краснослободск', 'Среднеахтубинский Район', '34', 'Волгоградская Область', '-'], ['Ленинск', 'Ленинский Район', '34', 'Волгоградская Область', 'района'], ['Михайловка', '(региональное)', '34', 'Волгоградская Область', '-'], ['Николаевск', 'Николаевский Район', '34', 'Волгоградская Область', 'района'], ['Новоаннинский', 'Новоаннинский Район', '34', 'Волгоградская Область', 'района'], ['Палласовка', 'Палласовский Район', '34', 'Волгоградская Область', 'района'], ['Петров Вал', 'Камышинский Район', '34', 'Волгоградская Область', '-'], ['Серафимович', 'Серафимовичский Район', '34', 'Волгоградская Область', 'района'], ['Суровикино', 'Суровикинский Район', '34', 'Волгоградская Область', 'района'], ['Урюпинск', '(региональное)', '34', 'Волгоградская Область', '-'], ['Фролово', '(региональное)', '34', 'Волгоградская Область', '-'], ['Бабаево', 'Бабаевский Район', '35', 'Вологодская Область', 'района'], ['Белозерск', 'Белозерский Район', '35', 'Вологодская Область', 'района'], ['Великий Устюг', 'Великоустюгский Район', '35', 'Вологодская Область', 'района'], ['Вологда', '(региональное)', '35', 'Вологодская Область', 'региона'], ['Вытегра', 'Вытегорский Район', '35', 'Вологодская Область', 'района'], ['Грязовец', 'Грязовецкий Район', '35', 'Вологодская Область', 'района'], ['Кадников', 'Сокольский Район', '35', 'Вологодская Область', '-'], ['Кириллов', 'Кирилловский Район', '35', 'Вологодская Область', 'района'], ['Красавино', 'Великоустюгский Район', '35', 'Вологодская Область', '-'], ['Никольск', 'Никольский Район', '35', 'Вологодская Область', 'района'], ['Сокол', 'Сокольский Район', '35', 'Вологодская Область', 'района'], ['Тотьма', 'Тотемский Район', '35', 'Вологодская Область', 'района'], ['Устюжна', 'Устюженский Район', '35', 'Вологодская Область', 'района'], ['Харовск', 'Харовский Район', '35', 'Вологодская Область', 'района'], ['Череповец', '(региональное)', '35', 'Вологодская Область', '-'], ['Бобров', 'Бобровский Район', '36', 'Воронежская Область', 'района'], ['Богучар', 'Богучарский Район', '36', 'Воронежская Область', 'района'], ['Борисоглебск', 'Борисоглебский Район', '36', 'Воронежская Область', 'района'], ['Бутурлиновка', 'Бутурлиновский Район', '36', 'Воронежская Область', 'района'], ['Воронеж', '(региональное)', '36', 'Воронежская Область', 'региона'], ['Воронеж-45', '(региональное)', '36', 'Воронежская Область', '-'], ['Калач', 'Калачеевский Район', '36', 'Воронежская Область', 'района'], ['Лиски', 'Лискинский Район', '36', 'Воронежская Область', 'района'], ['Нововоронеж', '(региональное)', '36', 'Воронежская Область', '-'], ['Новохоперск', 'Новохоперский Район', '36', 'Воронежская Область', 'района'], ['Острогожск', 'Острогожский Район', '36', 'Воронежская Область', 'района'], ['Павловск', 'Павловский Район', '36', 'Воронежская Область', 'района'], ['Поворино', 'Поворинский Район', '36', 'Воронежская Область', 'района'], ['Россошь', 'Россошанский Район', '36', 'Воронежская Область', 'района'], ['Семилуки', 'Семилукский Район', '36', 'Воронежская Область', 'района'], ['Эртиль', 'Эртильский Район', '36', 'Воронежская Область', 'района'], ['Вичуга', 'Вичугский Район', '37', 'Ивановская Область', 'района'], ['Гаврилов Посад', 'Гаврилово-Посадский Район', '37', 'Ивановская Область', 'района'], ['Заволжск', 'Заволжский Район', '37', 'Ивановская Область', 'района'], ['Иваново', '(региональное)', '37', 'Ивановская Область', 'региона'], ['Кинешма', 'Кинешемский Район', '37', 'Ивановская Область', 'района'], ['Комсомольск', 'Комсомольский Район', '37', 'Ивановская Область', 'района'], ['Кохма', 'Ивановский Район', '37', 'Ивановская Область', 'района'], ['Наволоки', 'Кинешемский Район', '37', 'Ивановская Область', '-'], ['Плес', 'Приволжский Район', '37', 'Ивановская Область', '-'], ['Приволжск', 'Приволжский Район', '37', 'Ивановская Область', 'района'], ['Пучеж', 'Пучежский Район', '37', 'Ивановская Область', 'района'], ['Родники', 'Родниковский Район', '37', 'Ивановская Область', 'района'], ['Тейково', 'Тейковский Район', '37', 'Ивановская Область', 'района'], ['Фурманов', 'Фурмановский Район', '37', 'Ивановская Область', 'района'], ['Шуя', 'Шуйский Район', '37', 'Ивановская Область', 'района'], ['Южа', 'Южский Район', '37', 'Ивановская Область', 'района'], ['Юрьевец', 'Юрьевецкий Район', '37', 'Ивановская Область', 'района'], ['Алзамай', 'Нижнеудинский Район', '38', 'Иркутская Область', '-'], ['Ангарск', '(региональное)', '38', 'Иркутская Область', '-'], ['Байкальск', 'Слюдянский Район', '38', 'Иркутская Область', '-'], ['Бирюсинск', 'Тайшетский Район', '38', 'Иркутская Область', '-'], ['Бодайбо', '(региональное)', '38', 'Иркутская Область', '-'], ['Братск', '(региональное)', '38', 'Иркутская Область', '-'], ['Вихоревка', 'Братский Район', '38', 'Иркутская Область', '-'], ['Железногорск-Илимский', 'Нижнеилимский Район', '38', 'Иркутская Область', 'района'], ['Зима', '(региональное)', '38', 'Иркутская Область', '-'], ['Иркутск', '(региональное)', '38', 'Иркутская Область', 'региона'], ['Иркутск-45', '(региональное)', '38', 'Иркутская Область', '-'], ['Киренск', 'Киренский Район', '38', 'Иркутская Область', 'района'], ['Нижнеудинск', '(региональное)', '38', 'Иркутская Область', '-'], ['Саянск', '(региональное)', '38', 'Иркутская Область', '-'], ['Свирск', '(региональное)', '38', 'Иркутская Область', '-'], ['Слюдянка', 'Слюдянский Район', '38', 'Иркутская Область', 'района'], ['Тайшет', '(региональное)', '38', 'Иркутская Область', '-'], ['Тулун', '(региональное)', '38', 'Иркутская Область', '-'], ['Усолье-Сибирское', '(региональное)', '38', 'Иркутская Область', '-'], ['Усть-Илимск', '(региональное)', '38', 'Иркутская Область', '-'], ['Усть-Кут', '(региональное)', '38', 'Иркутская Область', '-'], ['Черемхово', '(региональное)', '38', 'Иркутская Область', '-'], ['Шелехов', '(региональное)', '38', 'Иркутская Область', '-'], ['Багратионовск', 'Багратионовский Район', '39', 'Калининградская Область', 'района'], ['Балтийск', 'Балтийский Район', '39', 'Калининградская Область', 'района'], ['Гвардейск', 'Гвардейский Район', '39', 'Калининградская Область', 'района'], ['Гурьевск', 'Гурьевский Район', '39', 'Калининградская Область', 'района'], ['Гусев', 'Гусевский Район', '39', 'Калининградская Область', 'района'], ['Зеленоградск', 'Зеленоградский Район', '39', 'Калининградская Область', 'района'], ['Калининград', '(региональное)', '39', 'Калининградская Область', 'региона'], ['Краснознаменск', 'Краснознаменский Район', '39', 'Калининградская Область', 'района'], ['Ладушкин', '(региональное)', '39', 'Калининградская Область', '-'], ['Мамоново', '(региональное)', '39', 'Калининградская Область', '-'], ['Неман', 'Неманский Район', '39', 'Калининградская Область', 'района'], ['Нестеров', 'Нестеровский Район', '39', 'Калининградская Область', 'района'], ['Озерск', 'Озерский Район', '39', 'Калининградская Область', 'района'], ['Пионерский', '(региональное)', '39', 'Калининградская Область', '-'], ['Полесск', 'Полесский Район', '39', 'Калининградская Область', 'района'], ['Правдинск', 'Правдинский Район', '39', 'Калининградская Область', 'района'], ['Приморск', 'Балтийский Район', '39', 'Калининградская Область', '-'], ['Светлогорск', 'Светлогорский Район', '39', 'Калининградская Область', 'района'], ['Светлый', '(региональное)', '39', 'Калининградская Область', '-'], ['Славск', 'Славский Район', '39', 'Калининградская Область', 'района'], ['Советск', '(региональное)', '39', 'Калининградская Область', '-'], ['Черняховск', 'Черняховский Район', '39', 'Калининградская Область', 'района'], ['Балабаново', 'Боровский Район', '40', 'Калужская Область', '-'], ['Белоусово', 'Жуковский Район', '40', 'Калужская Область', '-'], ['Боровск', 'Боровский Район', '40', 'Калужская Область', 'района'], ['Боровск-1', 'Боровский Район', '40', 'Калужская Область', '-'], ['Ермолино', 'Боровский Район', '40', 'Калужская Область', '-'], ['Жиздра', 'Жиздринский Район', '40', 'Калужская Область', 'района'], ['Жуков', 'Жуковский Район', '40', 'Калужская Область', 'района'], ['Калуга', '(региональное)', '40', 'Калужская Область', 'региона'], ['Киров', 'Кировский Район', '40', 'Калужская Область', 'района'], ['Козельск', 'Козельский Район', '40', 'Калужская Область', 'района'], ['Кондрово', 'Дзержинский Район', '40', 'Калужская Область', 'района'], ['Кременки', 'Жуковский Район', '40', 'Калужская Область', '-'], ['Людиново', 'Людиновский Район', '40', 'Калужская Область', 'района'], ['Малоярославец', 'Малоярославецкий Район', '40', 'Калужская Область', 'района'], ['Медынь', 'Медынский Район', '40', 'Калужская Область', 'района'], ['Мещовск', 'Мещовский Район', '40', 'Калужская Область', 'района'], ['Мосальск', 'Мосальский Район', '40', 'Калужская Область', 'района'], ['Обнинск', '(региональное)', '40', 'Калужская Область', '-'], ['Сосенский', 'Козельский Район', '40', 'Калужская Область', '-'], ['Спас-Деменск', 'Спас-Деменский Район', '40', 'Калужская Область', 'района'], ['Сухиничи', 'Сухиничский Район', '40', 'Калужская Область', 'района'], ['Таруса', 'Тарусский Район', '40', 'Калужская Область', '-'], ['Юхнов', 'Юхновский Район', '40', 'Калужская Область', 'района'], ['Юхнов-1', 'Юхновский Район', '40', 'Калужская Область', '-'], ['Юхнов-2', 'Юхновский Район', '40', 'Калужская Область', '-'], ['Вилючинск', '(региональное)', '41', 'Камчатский Край', '-'], ['Елизово', 'Елизовский Район', '41', 'Камчатский Край', 'района'], ['Петропавловск-Камчатский', '(региональное)', '41', 'Камчатский Край', 'региона'], ['Анжеро-Судженск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Белово', '(региональное)', '42', 'Кемеровская Область', '-'], ['Березовский', '(региональное)', '42', 'Кемеровская Область', '-'], ['Гурьевск', 'Гурьевский Район', '42', 'Кемеровская Область', 'района'], ['Калтан', '(региональное)', '42', 'Кемеровская Область', '-'], ['Кемерово', '(региональное)', '42', 'Кемеровская Область', 'региона'], ['Киселевск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Ленинск-Кузнецкий', '(региональное)', '42', 'Кемеровская Область', '-'], ['Мариинск', 'Мариинский Район', '42', 'Кемеровская Область', 'района'], ['Междуреченск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Мыски', '(региональное)', '42', 'Кемеровская Область', '-'], ['Новокузнецк', '(региональное)', '42', 'Кемеровская Область', '-'], ['Осинники', '(региональное)', '42', 'Кемеровская Область', '-'], ['Полысаево', '(региональное)', '42', 'Кемеровская Область', '-'], ['Прокопьевск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Салаир', 'Гурьевский Район', '42', 'Кемеровская Область', '-'], ['Тайга', '(региональное)', '42', 'Кемеровская Область', '-'], ['Таштагол', 'Таштагольский Район', '42', 'Кемеровская Область', 'района'], ['Топки', 'Топкинский Район', '42', 'Кемеровская Область', 'района'], ['Юрга', '(региональное)', '42', 'Кемеровская Область', '-'], ['Белая Холуница', 'Белохолуницкий Район', '43', 'Кировская Область', 'района'], ['Вятские Поляны', 'Вятскополянский Район', '43', 'Кировская Область', 'района'], ['Зуевка', 'Зуевский Район', '43', 'Кировская Область', 'района'], ['Киров', '(региональное)', '43', 'Кировская Область', 'региона'], ['Кирово-Чепецк', 'Кирово-Чепецкий Район', '43', 'Кировская Область', 'района'], ['Кирс', 'Верхнекамский Район', '43', 'Кировская Область', 'района'], ['Котельнич', 'Котельничский Район', '43', 'Кировская Область', 'района'], ['Луза', 'Лузский Район', '43', 'Кировская Область', 'района'], ['Малмыж', 'Малмыжский Район', '43', 'Кировская Область', 'района'], ['Мураши', 'Мурашинский Район', '43', 'Кировская Область', 'района'], ['Нолинск', 'Нолинский Район', '43', 'Кировская Область', 'района'], ['Омутнинск', 'Омутнинский Район', '43', 'Кировская Область', 'района'], ['Орлов', 'Орловский Район', '43', 'Кировская Область', 'района'], ['Слободской', 'Слободской Район', '43', 'Кировская Область', 'района'], ['Советск', 'Советский Район', '43', 'Кировская Область', 'района'], ['Сосновка', 'Вятскополянский Район', '43', 'Кировская Область', '-'], ['Уржум', 'Уржумский Район', '43', 'Кировская Область', 'района'], ['Яранск', 'Яранский Район', '43', 'Кировская Область', 'района'], ['Буй', 'Буйский Район', '44', 'Костромская Область', 'района'], ['Волгореченск', '(региональное)', '44', 'Костромская Область', '-'], ['Галич', 'Галичский Район', '44', 'Костромская Область', 'района'], ['Кологрив', 'Кологривский Район', '44', 'Костромская Область', 'района'], ['Кострома', 'Костромской Район', '44', 'Костромская Область', 'района и региона'], ['Макарьев', 'Макарьевский Район', '44', 'Костромская Область', 'района'], ['Мантурово', 'Мантуровский Район', '44', 'Костромская Область', 'района'], ['Нерехта', 'Нерехтский Район', '44', 'Костромская Область', 'района'], ['Нея', 'Нейский Район', '44', 'Костромская Область', 'района'], ['Солигалич', 'Солигаличский Район', '44', 'Костромская Область', 'района'], ['Чухлома', 'Чухломский Район', '44', 'Костромская Область', 'района'], ['Шарья', 'Шарьинский Район', '44', 'Костромская Область', 'района'], ['Далматово', 'Далматовский Район', '45', 'Курганская Область', 'района'], ['Катайск', 'Катайский Район', '45', 'Курганская Область', 'района'], ['Курган', '(региональное)', '45', 'Курганская Область', 'региона'], ['Куртамыш', 'Куртамышский Район', '45', 'Курганская Область', 'района'], ['Макушино', 'Макушинский Район', '45', 'Курганская Область', 'района'], ['Петухово', 'Петуховский Район', '45', 'Курганская Область', 'района'], ['Шадринск', '(региональное)', '45', 'Курганская Область', '-'], ['Шумиха', 'Шумихинский Район', '45', 'Курганская Область', 'района'], ['Щучье', 'Щучанский Район', '45', 'Курганская Область', 'района'], ['Дмитриев', 'Дмитриевский Район', '46', 'Курская Область', '-'], ['Железногорск', '(региональное)', '46', 'Курская Область', 'района'], ['Курск', '(региональное)', '46', 'Курская Область', 'региона'], ['Курчатов', '(региональное)', '46', 'Курская Область', 'района'], ['Льгов', '(региональное)', '46', 'Курская Область', 'района'], ['Обоянь', 'Обоянский Район', '46', 'Курская Область', 'района'], ['Рыльск', 'Рыльский Район', '46', 'Курская Область', 'района'], ['Суджа', 'Суджанский Район', '46', 'Курская Область', 'района'], ['Фатеж', 'Фатежский Район', '46', 'Курская Область', 'района'], ['Щигры', '(региональное)', '46', 'Курская Область', 'района'], ['Бокситогорск', 'Бокситогорский Район', '47', 'Ленинградская Область', 'района'], ['Волосово', 'Волосовский Район', '47', 'Ленинградская Область', 'района'], ['Волхов', 'Волховский Район', '47', 'Ленинградская Область', 'района'], ['Всеволожск', 'Всеволожский Район', '47', 'Ленинградская Область', 'района'], ['Выборг', 'Выборгский Район', '47', 'Ленинградская Область', 'района'], ['Высоцк', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Гатчина', 'Гатчинский Район', '47', 'Ленинградская Область', 'района'], ['Ивангород', 'Кингисеппский Район', '47', 'Ленинградская Область', '-'], ['Каменногорск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Кингисепп', 'Кингисеппский Район', '47', 'Ленинградская Область', 'района'], ['Кириши', 'Киришский Район', '47', 'Ленинградская Область', 'района'], ['Кировск', 'Кировский Район', '47', 'Ленинградская Область', 'района'], ['Коммунар', 'Гатчинский Район', '47', 'Ленинградская Область', '-'], ['Лодейное Поле', 'Лодейнопольский Район', '47', 'Ленинградская Область', 'района'], ['Луга', 'Лужский Район', '47', 'Ленинградская Область', 'района'], ['Любань', 'Тосненский Район', '47', 'Ленинградская Область', '-'], ['Никольское', 'Тосненский Район', '47', 'Ленинградская Область', '-'], ['Новая Ладога', 'Волховский Район', '47', 'Ленинградская Область', '-'], ['Отрадное', 'Кировский Район', '47', 'Ленинградская Область', '-'], ['Пикалево', 'Бокситогорский Район', '47', 'Ленинградская Область', '-'], ['Подпорожье', 'Подпорожский Район', '47', 'Ленинградская Область', 'района'], ['Приморск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Приозерск', 'Приозерский Район', '47', 'Ленинградская Область', 'района'], ['Светогорск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Сертолово', 'Всеволожский Район', '47', 'Ленинградская Область', '-'], ['Сланцы', 'Сланцевский Район', '47', 'Ленинградская Область', 'района'], ['Сосновый Бор', '(региональное)', '47', 'Ленинградская Область', '-'], ['Сясьстрой', 'Волховский Район', '47', 'Ленинградская Область', '-'], ['Тихвин', 'Тихвинский Район', '47', 'Ленинградская Область', 'района'], ['Тосно', 'Тосненский Район', '47', 'Ленинградская Область', 'района'], ['Шлиссельбург', 'Кировский Район', '47', 'Ленинградская Область', '-'], ['Грязи', 'Грязинский Район', '48', 'Липецкая Область', 'района'], ['Данков', 'Данковский Район', '48', 'Липецкая Область', 'района'], ['Елец', '(региональное)', '48', 'Липецкая Область', '-'], ['Задонск', 'Задонский Район', '48', 'Липецкая Область', 'района'], ['Лебедянь', 'Лебедянский Район', '48', 'Липецкая Область', 'района'], ['Липецк', '(региональное)', '48', 'Липецкая Область', 'региона'], ['Усмань', 'Усманский Район', '48', 'Липецкая Область', 'района'], ['Чаплыгин', 'Чаплыгинский Район', '48', 'Липецкая Область', 'района'], ['Магадан', '(региональное)', '49', 'Магаданская Область', 'региона'], ['Сусуман', 'Сусуманский Район', '49', 'Магаданская Область', 'района'], ['Апрелевка', 'Наро-Фоминский Район', '50', 'Московская Область', '-'], ['Балашиха', '(региональное)', '50', 'Московская Область', '-'], ['Бронницы', '(региональное)', '50', 'Московская Область', '-'], ['Верея', 'Наро-Фоминский Район', '50', 'Московская Область', '-'], ['Видное', 'Ленинский Район', '50', 'Московская Область', 'района'], ['Волоколамск', 'Волоколамский Район', '50', 'Московская Область', 'района'], ['Воскресенск', 'Воскресенский Район', '50', 'Московская Область', 'района'], ['Высоковск', 'Клинский Район', '50', 'Московская Область', '-'], ['Голицыно', 'Одинцовский Район', '50', 'Московская Область', '-'], ['Городской округ Черноголовка', '(региональное)', '50', 'Московская Область', '-'], ['Дедовск', 'Истринский Район', '50', 'Московская Область', '-'], ['Дзержинский', '(региональное)', '50', 'Московская Область', '-'], ['Дмитров', 'Дмитровский Район', '50', 'Московская Область', 'района'], ['Долгопрудный', '(региональное)', '50', 'Московская Область', '-'], ['Домодедово', '(региональное)', '50', 'Московская Область', '-'], ['Дрезна', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Дубна', '(региональное)', '50', 'Московская Область', '-'], ['Егорьевск', 'Егорьевский Район', '50', 'Московская Область', 'района'], ['Железнодорожный', '(региональное)', '50', 'Московская Область', '-'], ['Жуковский', '(региональное)', '50', 'Московская Область', '-'], ['Зарайск', 'Зарайский Район', '50', 'Московская Область', 'района'], ['Звенигород', '(региональное)', '50', 'Московская Область', '-'], ['Ивантеевка', '(региональное)', '50', 'Московская Область', '-'], ['Истра', 'Истринский Район', '50', 'Московская Область', 'района'], ['Истра-1', 'Истринский Район', '50', 'Московская Область', '-'], ['Кашира', 'Каширский Район', '50', 'Московская Область', 'района'], ['Кашира-8', 'Каширский Район', '50', 'Московская Область', '-'], ['Климовск', '(региональное)', '50', 'Московская Область', '-'], ['Клин', 'Клинский Район', '50', 'Московская Область', 'района'], ['Коломна', '(региональное)', '50', 'Московская Область', '-'], ['Королев', '(региональное)', '50', 'Московская Область', '-'], ['Котельники', '(региональное)', '50', 'Московская Область', '-'], ['Красноармейск', '(региональное)', '50', 'Московская Область', '-'], ['Красногорск', 'Красногорский Район', '50', 'Московская Область', 'района'], ['Краснозаводск', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Краснознаменск', '(региональное)', '50', 'Московская Область', '-'], ['Кубинка', 'Одинцовский Район', '50', 'Московская Область', '-'], ['Куровское', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Ликино-Дулево', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Лобня', '(региональное)', '50', 'Московская Область', '-'], ['Лосино-Петровский', '(региональное)', '50', 'Московская Область', '-'], ['Луховицы', 'Луховицкий Район', '50', 'Московская Область', 'района'], ['Лыткарино', '(региональное)', '50', 'Московская Область', '-'], ['Люберцы', 'Люберецкий Район', '50', 'Московская Область', 'района'], ['Можайск', 'Можайский Район', '50', 'Московская Область', 'района'], ['Мытищи', 'Мытищинский Район', '50', 'Московская Область', 'района'], ['Наро-Фоминск', 'Наро-Фоминский Район', '50', 'Московская Область', 'района'], ['Ногинск', 'Ногинский Район', '50', 'Московская Область', 'района'], ['Одинцово', 'Одинцовский Район', '50', 'Московская Область', 'района'], ['Ожерелье', 'Каширский Район', '50', 'Московская Область', '-'], ['Озеры', 'Озерский Район', '50', 'Московская Область', 'района'], ['Орехово-Зуево', '(региональное)', '50', 'Московская Область', '-'], ['Павловский Посад', 'Павлово-Посадский Район', '50', 'Московская Область', 'района'], ['Пересвет', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Подольск', '(региональное)', '50', 'Московская Область', '-'], ['Протвино', '(региональное)', '50', 'Московская Область', '-'], ['Пушкино', 'Пушкинский Район', '50', 'Московская Область', 'района'], ['Пущино', '(региональное)', '50', 'Московская Область', '-'], ['Раменское', 'Раменский Район', '50', 'Московская Область', 'района'], ['Реутов', '(региональное)', '50', 'Московская Область', '-'], ['Рошаль', '(региональное)', '50', 'Московская Область', '-'], ['Руза', 'Рузский Район', '50', 'Московская Область', 'района'], ['Сергиев Посад', 'Сергиево-Посадский Район', '50', 'Московская Область', 'района'], ['Сергиев Посад-7', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Серпухов', '(региональное)', '50', 'Московская Область', '-'], ['Снегири', 'Истринский Район', '50', 'Московская Область', '-'], ['Солнечногорск', 'Солнечногорский Район', '50', 'Московская Область', 'района'], ['Солнечногорск-2', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-25', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-30', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-7', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Старая Купавна', 'Ногинский Район', '50', 'Московская Область', '-'], ['Ступино', 'Ступинский Район', '50', 'Московская Область', 'района'], ['Талдом', 'Талдомский Район', '50', 'Московская Область', 'района'], ['Фрязино', '(региональное)', '50', 'Московская Область', '-'], ['Химки', '(региональное)', '50', 'Московская Область', '-'], ['Хотьково', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Черноголовка', 'Ногинский Район', '50', 'Московская Область', '-'], ['Чехов', 'Чеховский Район', '50', 'Московская Область', 'района'], ['Чехов-2', 'Чеховский Район', '50', 'Московская Область', '-'], ['Чехов-3', 'Чеховский Район', '50', 'Московская Область', '-'], ['Чехов-8', 'Чеховский Район', '50', 'Московская Область', '-'], ['Шатура', 'Шатурский Район', '50', 'Московская Область', 'района'], ['Щелково', 'Щелковский Район', '50', 'Московская Область', 'района'], ['Электрогорск', '(региональное)', '50', 'Московская Область', '-'], ['Электросталь', '(региональное)', '50', 'Московская Область', '-'], ['Электроугли', 'Ногинский Район', '50', 'Московская Область', '-'], ['Юбилейный', '(региональное)', '50', 'Московская Область', '-'], ['Яхрома', 'Дмитровский Район', '50', 'Московская Область', '-'], ['Апатиты', '(региональное)', '51', 'Мурманская Область', '-'], ['Гаджиево', '(региональное)', '51', 'Мурманская Область', '-'], ['Заозерск', '(региональное)', '51', 'Мурманская Область', '-'], ['Заполярный', 'Печенгский Район', '51', 'Мурманская Область', '-'], ['Кандалакша', '(региональное)', '51', 'Мурманская Область', '-'], ['Кировск', '(региональное)', '51', 'Мурманская Область', '-'], ['Ковдор', 'Ковдорский Район', '51', 'Мурманская Область', 'района'], ['Кола', 'Кольский Район', '51', 'Мурманская Область', 'района'], ['Мончегорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Мурманск', '(региональное)', '51', 'Мурманская Область', 'региона'], ['Оленегорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-1', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-2', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-4', '(региональное)', '51', 'Мурманская Область', '-'], ['Островной', '(региональное)', '51', 'Мурманская Область', '-'], ['Полярные Зори', '(региональное)', '51', 'Мурманская Область', '-'], ['Полярный', '(региональное)', '51', 'Мурманская Область', '-'], ['Североморск', '(региональное)', '51', 'Мурманская Область', '-'], ['Снежногорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Арзамас', '(региональное)', '52', 'Нижегородская Область', '-'], ['Балахна', 'Балахнинский Район', '52', 'Нижегородская Область', 'района'], ['Богородск', 'Богородский Район', '52', 'Нижегородская Область', 'района'], ['Бор', '(региональное)', '52', 'Нижегородская Область', '-'], ['Ветлуга', 'Ветлужский Район', '52', 'Нижегородская Область', 'района'], ['Володарск', 'Володарский Район', '52', 'Нижегородская Область', 'района'], ['Ворсма', 'Павловский Район', '52', 'Нижегородская Область', '-'], ['Выкса', '(региональное)', '52', 'Нижегородская Область', 'района'], ['Горбатов', 'Павловский Район', '52', 'Нижегородская Область', '-'], ['Городец', 'Городецкий Район', '52', 'Нижегородская Область', 'района'], ['Дзержинск', '(региональное)', '52', 'Нижегородская Область', '-'], ['Заволжье', 'Городецкий Район', '52', 'Нижегородская Область', '-'], ['Княгинино', 'Княгининский Район', '52', 'Нижегородская Область', 'района'], ['Кстово', 'Кстовский Район', '52', 'Нижегородская Область', 'района'], ['Кулебаки', 'Кулебакский Район', '52', 'Нижегородская Область', 'района'], ['Лукоянов', 'Лукояновский Район', '52', 'Нижегородская Область', 'района'], ['Лысково', 'Лысковский Район', '52', 'Нижегородская Область', 'района'], ['Навашино', 'Навашинский Район', '52', 'Нижегородская Область', 'района'], ['Нижний Новгород', '(региональное)', '52', 'Нижегородская Область', 'региона'], ['Павлово', 'Павловский Район', '52', 'Нижегородская Область', 'района'], ['Первомайск', '(региональное)', '52', 'Нижегородская Область', '-'], ['Перевоз', 'Перевозский Район', '52', 'Нижегородская Область', 'района'], ['Саров', '(региональное)', '52', 'Нижегородская Область', '-'], ['Семенов', '(региональное)', '52', 'Нижегородская Область', '-'], ['Сергач', 'Сергачский Район', '52', 'Нижегородская Область', 'района'], ['Урень', 'Уренский Район', '52', 'Нижегородская Область', 'района'], ['Чкаловск', 'Чкаловский Район', '52', 'Нижегородская Область', 'района'], ['Шахунья', '(региональное)', '52', 'Нижегородская Область', '-'], ['Боровичи', 'Боровичский Район', '53', 'Новгородская Область', 'района'], ['Валдай', 'Валдайский Район', '53', 'Новгородская Область', 'района'], ['Великий Новгород', '(региональное)', '53', 'Новгородская Область', 'региона'], ['Малая Вишера', 'Маловишерский Район', '53', 'Новгородская Область', 'района'], ['Окуловка', 'Окуловский Район', '53', 'Новгородская Область', 'района'], ['Пестово', 'Пестовский Район', '53', 'Новгородская Область', 'района'], ['Сольцы', 'Солецкий Район', '53', 'Новгородская Область', 'района'], ['Сольцы 2', 'Солецкий Район', '53', 'Новгородская Область', '-'], ['Старая Русса', 'Старорусский Район', '53', 'Новгородская Область', 'района'], ['Холм', 'Холмский Район', '53', 'Новгородская Область', 'района'], ['Чудово', 'Чудовский Район', '53', 'Новгородская Область', 'района'], ['Барабинск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Бердск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Болотное', 'Болотнинский Район', '54', 'Новосибирская Область', 'района'], ['Искитим', '(региональное)', '54', 'Новосибирская Область', '-'], ['Карасук', 'Карасукский Район', '54', 'Новосибирская Область', 'района'], ['Каргат', 'Каргатский Район', '54', 'Новосибирская Область', 'района'], ['Куйбышев', '(региональное)', '54', 'Новосибирская Область', '-'], ['Купино', 'Купинский Район', '54', 'Новосибирская Область', 'района'], ['Новосибирск', '(региональное)', '54', 'Новосибирская Область', 'региона'], ['Обь', '(региональное)', '54', 'Новосибирская Область', '-'], ['Татарск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Тогучин', 'Тогучинский Район', '54', 'Новосибирская Область', 'района'], ['Черепаново', 'Черепановский Район', '54', 'Новосибирская Область', 'района'], ['Чулым', 'Чулымский Район', '54', 'Новосибирская Область', 'района'], ['Чулым-3', 'Чулымский Район', '54', 'Новосибирская Область', '-'], ['Исилькуль', 'Исилькульский Район', '55', 'Омская Область', 'района'], ['Калачинск', 'Калачинский Район', '55', 'Омская Область', 'района'], ['Называевск', 'Называевский Район', '55', 'Омская Область', 'района'], ['Омск', '(региональное)', '55', 'Омская Область', 'региона'], ['Тара', 'Тарский Район', '55', 'Омская Область', 'района'], ['Тюкалинск', 'Тюкалинский Район', '55', 'Омская Область', 'района'], ['Абдулино', 'Абдулинский Район', '56', 'Оренбургская Область', 'района'], ['Бугуруслан', '(региональное)', '56', 'Оренбургская Область', '-'], ['Бузулук', '(региональное)', '56', 'Оренбургская Область', '-'], ['Гай', '(региональное)', '56', 'Оренбургская Область', '-'], ['Кувандык', '(региональное)', '56', 'Оренбургская Область', '-'], ['Медногорск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Новотроицк', '(региональное)', '56', 'Оренбургская Область', '-'], ['Оренбург', '(региональное)', '56', 'Оренбургская Область', 'региона'], ['Орск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Соль-Илецк', 'Соль-Илецкий Район', '56', 'Оренбургская Область', 'района'], ['Сорочинск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Ясный', 'Ясненский Район', '56', 'Оренбургская Область', 'района'], ['Болхов', 'Болховский Район', '57', 'Орловская Область', 'района'], ['Дмитровск', 'Дмитровский Район', '57', 'Орловская Область', 'района'], ['Ливны', '(региональное)', '57', 'Орловская Область', '-'], ['Малоархангельск', 'Малоархангельский Район', '57', 'Орловская Область', 'района'], ['Мценск', '(региональное)', '57', 'Орловская Область', '-'], ['Новосиль', 'Новосильский Район', '57', 'Орловская Область', 'района'], ['Орёл', '(региональное)', '57', 'Орловская Область', 'региона'], ['Белинский', 'Белинский Район', '58', 'Пензенская Область', 'района'], ['Городище', 'Городищенский Район', '58', 'Пензенская Область', 'района'], ['Заречный', '(региональное)', '58', 'Пензенская Область', '-'], ['Каменка', 'Каменский Район', '58', 'Пензенская Область', 'района'], ['Кузнецк', 'Кузнецкий Район', '58', 'Пензенская Область', 'района'], ['Кузнецк-12', 'Кузнецкий Район', '58', 'Пензенская Область', '-'], ['Кузнецк-8', 'Кузнецкий Район', '58', 'Пензенская Область', '-'], ['Нижний Ломов', 'Нижнеломовский Район', '58', 'Пензенская Область', 'района'], ['Никольск', 'Никольский Район', '58', 'Пензенская Область', 'района'], ['Пенза', '(региональное)', '58', 'Пензенская Область', '-'], ['Сердобск', 'Сердобский Район', '58', 'Пензенская Область', 'района'], ['Спасск', 'Спасский Район', '58', 'Пензенская Область', 'района'], ['Сурск', 'Городищенский Район', '58', 'Пензенская Область', '-'], ['Александровск', '(региональное)', '59', 'Пермский Край', '-'], ['Березники', '(региональное)', '59', 'Пермский Край', '-'], ['Верещагино', 'Верещагинский Район', '59', 'Пермский Край', 'района'], ['Горнозаводск', 'Горнозаводский Район', '59', 'Пермский Край', 'района'], ['Гремячинск', '(региональное)', '59', 'Пермский Край', '-'], ['Губаха', '(региональное)', '59', 'Пермский Край', '-'], ['Добрянка', '(региональное)', '59', 'Пермский Край', '-'], ['Кизел', '(региональное)', '59', 'Пермский Край', '-'], ['Красновишерск', 'Красновишерский Район', '59', 'Пермский Край', 'района'], ['Краснокамск', 'Краснокамский Район', '59', 'Пермский Край', 'района'], ['Кудымкар', '(региональное)', '59', 'Пермский Край', '-'], ['Кунгур', '(региональное)', '59', 'Пермский Край', '-'], ['Лысьва', '(региональное)', '59', 'Пермский Край', '-'], ['Нытва', 'Нытвенский Район', '59', 'Пермский Край', 'района'], ['Оса', 'Осинский Район', '59', 'Пермский Край', 'района'], ['Оханск', 'Оханский Район', '59', 'Пермский Край', 'района'], ['Очер', 'Очерский Район', '59', 'Пермский Край', 'района'], ['Пермь', '(региональное)', '59', 'Пермский Край', 'региона'], ['Соликамск', '(региональное)', '59', 'Пермский Край', '-'], ['Усолье', 'Усольский Район', '59', 'Пермский Край', 'района'], ['Чайковский', '(региональное)', '59', 'Пермский Край', '-'], ['Чердынь', 'Чердынский Район', '59', 'Пермский Край', 'района'], ['Чермоз', 'Ильинский Район', '59', 'Пермский Край', '-'], ['Чернушка', 'Чернушинский Район', '59', 'Пермский Край', 'района'], ['Чусовой', '(региональное)', '59', 'Пермский Край', '-'], ['Великие Луки', '(региональное)', '60', 'Псковская Область', '-'], ['Великие Луки-1', 'Великолукский Район', '60', 'Псковская Область', '-'], ['Гдов', 'Гдовский Район', '60', 'Псковская Область', 'района'], ['Дно', 'Дновский Район', '60', 'Псковская Область', 'района'], ['Невель', 'Невельский Район', '60', 'Псковская Область', 'района'], ['Новоржев', 'Новоржевский Район', '60', 'Псковская Область', 'района'], ['Новосокольники', 'Новосокольнический Район', '60', 'Псковская Область', 'района'], ['Опочка', 'Опочецкий Район', '60', 'Псковская Область', 'района'], ['Остров', 'Островский Район', '60', 'Псковская Область', 'района'], ['Печоры', 'Печорский Район', '60', 'Псковская Область', 'района'], ['Порхов', 'Порховский Район', '60', 'Псковская Область', 'района'], ['Псков', '(региональное)', '60', 'Псковская Область', 'региона'], ['Пустошка', 'Пустошкинский Район', '60', 'Псковская Область', 'района'], ['Пыталово', 'Пыталовский Район', '60', 'Псковская Область', 'района'], ['Себеж', 'Себежский Район', '60', 'Псковская Область', 'района'], ['Азов', '(региональное)', '61', 'Ростовская Область', '-'], ['Аксай', 'Аксайский Район', '61', 'Ростовская Область', 'района'], ['Батайск', '(региональное)', '61', 'Ростовская Область', '-'], ['Белая Калитва', 'Белокалитвинский Район', '61', 'Ростовская Область', 'района'], ['Волгодонск', '(региональное)', '61', 'Ростовская Область', '-'], ['Гуково', '(региональное)', '61', 'Ростовская Область', '-'], ['Донецк', '(региональное)', '61', 'Ростовская Область', '-'], ['Зверево', '(региональное)', '61', 'Ростовская Область', '-'], ['Зерноград', 'Зерноградский Район', '61', 'Ростовская Область', 'района'], ['Каменск-Шахтинский', '(региональное)', '61', 'Ростовская Область', '-'], ['Константиновск', 'Константиновский Район', '61', 'Ростовская Область', 'района'], ['Красный Сулин', 'Красносулинский Район', '61', 'Ростовская Область', 'района'], ['Миллерово', 'Миллеровский Район', '61', 'Ростовская Область', 'района'], ['Морозовск', 'Морозовский Район', '61', 'Ростовская Область', 'района'], ['Новочеркасск', '(региональное)', '61', 'Ростовская Область', '-'], ['Новошахтинск', '(региональное)', '61', 'Ростовская Область', '-'], ['Пролетарск', 'Пролетарский Район', '61', 'Ростовская Область', 'района'], ['Ростов-на-Дону', '(региональное)', '61', 'Ростовская Область', 'региона'], ['Сальск', 'Сальский Район', '61', 'Ростовская Область', 'района'], ['Семикаракорск', 'Семикаракорский Район', '61', 'Ростовская Область', 'района'], ['Таганрог', '(региональное)', '61', 'Ростовская Область', '-'], ['Цимлянск', 'Цимлянский Район', '61', 'Ростовская Область', 'района'], ['Шахты', '(региональное)', '61', 'Ростовская Область', '-'], ['Касимов', '(региональное)', '62', 'Рязанская Область', 'района'], ['Кораблино', 'Кораблинский Район', '62', 'Рязанская Область', 'района'], ['Михайлов', 'Михайловский Район', '62', 'Рязанская Область', 'района'], ['Новомичуринск', 'Пронский Район', '62', 'Рязанская Область', '-'], ['Рыбное', 'Рыбновский Район', '62', 'Рязанская Область', 'района'], ['Ряжск', 'Ряжский Район', '62', 'Рязанская Область', 'района'], ['Рязань', '(региональное)', '62', 'Рязанская Область', 'региона'], ['Сасово', '(региональное)', '62', 'Рязанская Область', '-'], ['Скопин', '(региональное)', '62', 'Рязанская Область', 'района'], ['Спас-Клепики', 'Клепиковский Район', '62', 'Рязанская Область', 'района'], ['Спасск-Рязанский', 'Спасский Район', '62', 'Рязанская Область', 'района'], ['Шацк', 'Шацкий Район', '62', 'Рязанская Область', 'района'], ['Жигулевск', '(региональное)', '63', 'Самарская Область', '-'], ['Кинель', '(региональное)', '63', 'Самарская Область', '-'], ['Нефтегорск', 'Нефтегорский Район', '63', 'Самарская Область', 'района'], ['Новокуйбышевск', '(региональное)', '63', 'Самарская Область', '-'], ['Октябрьск', '(региональное)', '63', 'Самарская Область', '-'], ['Отрадный', '(региональное)', '63', 'Самарская Область', '-'], ['Похвистнево', '(региональное)', '63', 'Самарская Область', '-'], ['Самара', '(региональное)', '63', 'Самарская Область', 'региона'], ['Сызрань', '(региональное)', '63', 'Самарская Область', '-'], ['Тольятти', '(региональное)', '63', 'Самарская Область', '-'], ['Чапаевск', '(региональное)', '63', 'Самарская Область', '-'], ['Аркадак', 'Аркадакский Район', '64', 'Саратовская Область', 'района'], ['Аткарск', '(региональное)', '64', 'Саратовская Область', '-'], ['Балаково', '(региональное)', '64', 'Саратовская Область', '-'], ['Балашов', '(региональное)', '64', 'Саратовская Область', '-'], ['Вольск', '(региональное)', '64', 'Саратовская Область', '-'], ['Вольск-18', '(региональное)', '64', 'Саратовская Область', '-'], ['Ершов', 'Ершовский Район', '64', 'Саратовская Область', 'района'], ['Калининск', 'Калининский Район', '64', 'Саратовская Область', 'района'], ['Красноармейск', '(региональное)', '64', 'Саратовская Область', '-'], ['Красный Кут', 'Краснокутский Район', '64', 'Саратовская Область', 'района'], ['Маркс', '(региональное)', '64', 'Саратовская Область', '-'], ['Новоузенск', 'Новоузенский Район', '64', 'Саратовская Область', 'района'], ['Петровск', '(региональное)', '64', 'Саратовская Область', '-'], ['Пугачев', '(региональное)', '64', 'Саратовская Область', 'района'], ['Ртищево', '(региональное)', '64', 'Саратовская Область', '-'], ['Саратов', '(региональное)', '64', 'Саратовская Область', 'региона'], ['Хвалынск', '(региональное)', '64', 'Саратовская Область', '-'], ['Шиханы', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс-19', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс-2', '(региональное)', '64', 'Саратовская Область', '-'], ['Александровск-Сахалинский', 'Александровск-Сахалинский Район', '65', 'Сахалинская Область', 'района'], ['Анива', 'Анивский Район', '65', 'Сахалинская Область', 'района'], ['Долинск', 'Долинский Район', '65', 'Сахалинская Область', 'района'], ['Корсаков', 'Корсаковский Район', '65', 'Сахалинская Область', 'района'], ['Курильск', 'Курильский Район', '65', 'Сахалинская Область', 'района'], ['Макаров', 'Макаровский Район', '65', 'Сахалинская Область', 'района'], ['Невельск', 'Невельский Район', '65', 'Сахалинская Область', 'района'], ['Оха', 'Охинский Район', '65', 'Сахалинская Область', 'района'], ['Поронайск', 'Поронайский Район', '65', 'Сахалинская Область', 'района'], ['Северо-Курильск', 'Северо-Курильский Район', '65', 'Сахалинская Область', 'района'], ['Томари', 'Томаринский Район', '65', 'Сахалинская Область', 'района'], ['Углегорск', 'Углегорский Район', '65', 'Сахалинская Область', 'района'], ['Холмск', 'Холмский Район', '65', 'Сахалинская Область', 'района'], ['Шахтерск', 'Углегорский Район', '65', 'Сахалинская Область', '-'], ['Южно-Сахалинск', '(региональное)', '65', 'Сахалинская Область', 'региона'], ['Алапаевск', '(региональное)', '66', 'Свердловская Область', '-'], ['Арамиль', 'Сысертский Район', '66', 'Свердловская Область', '-'], ['Артемовский', 'Артемовский Район', '66', 'Свердловская Область', 'района'], ['Асбест', '(региональное)', '66', 'Свердловская Область', '-'], ['Березовский', '(региональное)', '66', 'Свердловская Область', '-'], ['Богданович', 'Богдановичский Район', '66', 'Свердловская Область', '-'], ['Верхний Тагил', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхняя Пышма', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхняя Салда', 'Верхнесалдинский Район', '66', 'Свердловская Область', '-'], ['Верхняя Тура', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхотурье', 'Верхотурский Район', '66', 'Свердловская Область', 'района'], ['Волчанск', '(региональное)', '66', 'Свердловская Область', '-'], ['Дегтярск', '(региональное)', '66', 'Свердловская Область', '-'], ['Екатеринбург', '(региональное)', '66', 'Свердловская Область', 'региона'], ['Заречный', '(региональное)', '66', 'Свердловская Область', '-'], ['Ивдель', '(региональное)', '66', 'Свердловская Область', '-'], ['Ирбит', '(региональное)', '66', 'Свердловская Область', '-'], ['Каменск-Уральский', '(региональное)', '66', 'Свердловская Область', '-'], ['Камышлов', '(региональное)', '66', 'Свердловская Область', '-'], ['Карпинск', '(региональное)', '66', 'Свердловская Область', '-'], ['Качканар', '(региональное)', '66', 'Свердловская Область', '-'], ['Кировград', '(региональное)', '66', 'Свердловская Область', '-'], ['Краснотурьинск', '(региональное)', '66', 'Свердловская Область', '-'], ['Красноуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Красноуфимск', '(региональное)', '66', 'Свердловская Область', '-'], ['Кушва', '(региональное)', '66', 'Свердловская Область', '-'], ['Лесной', '(региональное)', '66', 'Свердловская Область', '-'], ['Михайловск', 'Нижнесергинский Район', '66', 'Свердловская Область', '-'], ['Невьянск', 'Невьянский Район', '66', 'Свердловская Область', '-'], ['Нижние Серги', 'Нижнесергинский Район', '66', 'Свердловская Область', 'района'], ['Нижние Серги-3', 'Нижнесергинский Район', '66', 'Свердловская Область', '-'], ['Нижний Тагил', '(региональное)', '66', 'Свердловская Область', '-'], ['Нижняя Салда', '(региональное)', '66', 'Свердловская Область', '-'], ['Нижняя Тура', '(региональное)', '66', 'Свердловская Область', '-'], ['Новая Ляля', 'Новолялинский Район', '66', 'Свердловская Область', 'района'], ['Новоуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Первоуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Полевской', '(региональное)', '66', 'Свердловская Область', '-'], ['Ревда', '(региональное)', '66', 'Свердловская Область', '-'], ['Реж', 'Режевской Район', '66', 'Свердловская Область', 'района'], ['Североуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Серов', '(региональное)', '66', 'Свердловская Область', '-'], ['Среднеуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Сухой Лог', 'Сухоложский Район', '66', 'Свердловская Область', '-'], ['Сысерть', 'Сысертский Район', '66', 'Свердловская Область', 'района'], ['Тавда', '(региональное)', '66', 'Свердловская Область', '-'], ['Талица', 'Талицкий Район', '66', 'Свердловская Область', 'района'], ['Туринск', 'Туринский Район', '66', 'Свердловская Область', 'района'], ['Велиж', 'Велижский Район', '67', 'Смоленская Область', 'района'], ['Вязьма', 'Вяземский Район', '67', 'Смоленская Область', 'района'], ['Гагарин', 'Гагаринский Район', '67', 'Смоленская Область', 'района'], ['Демидов', 'Демидовский Район', '67', 'Смоленская Область', 'района'], ['Десногорск', '(региональное)', '67', 'Смоленская Область', '-'], ['Дорогобуж', 'Дорогобужский Район', '67', 'Смоленская Область', 'района'], ['Духовщина', 'Духовщинский Район', '67', 'Смоленская Область', 'района'], ['Ельня', 'Ельнинский Район', '67', 'Смоленская Область', 'района'], ['Починок', 'Починковский Район', '67', 'Смоленская Область', 'района'], ['Рославль', 'Рославльский Район', '67', 'Смоленская Область', 'района'], ['Рудня', 'Руднянский Район', '67', 'Смоленская Область', 'района'], ['Сафоново', 'Сафоновский Район', '67', 'Смоленская Область', 'района'], ['Смоленск', '(региональное)', '67', 'Смоленская Область', 'региона'], ['Сычевка', 'Сычевский Район', '67', 'Смоленская Область', 'района'], ['Ярцево', 'Ярцевский Район', '67', 'Смоленская Область', 'района'], ['Жердевка', 'Жердевский Район', '68', 'Тамбовская Область', 'района'], ['Кирсанов', '(региональное)', '68', 'Тамбовская Область', '-'], ['Котовск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Мичуринск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Моршанск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Рассказово', '(региональное)', '68', 'Тамбовская Область', '-'], ['Тамбов', '(региональное)', '68', 'Тамбовская Область', 'региона'], ['Уварово', '(региональное)', '68', 'Тамбовская Область', '-'], ['Андреаполь', 'Андреапольский Район', '69', 'Тверская Область', 'района'], ['Бежецк', 'Бежецкий Район', '69', 'Тверская Область', 'района'], ['Белый', 'Бельский Район', '69', 'Тверская Область', 'района'], ['Бологое', 'Бологовский Район', '69', 'Тверская Область', 'района'], ['Весьегонск', 'Весьегонский Район', '69', 'Тверская Область', 'района'], ['Вышний Волочек', '(региональное)', '69', 'Тверская Область', '-'], ['Западная Двина', 'Западнодвинский Район', '69', 'Тверская Область', 'района'], ['Зубцов', 'Зубцовский Район', '69', 'Тверская Область', 'района'], ['Калязин', 'Калязинский Район', '69', 'Тверская Область', 'района'], ['Кашин', 'Кашинский Район', '69', 'Тверская Область', 'района'], ['Кимры', '(региональное)', '69', 'Тверская Область', '-'], ['Конаково', 'Конаковский Район', '69', 'Тверская Область', 'района'], ['Красный Холм', 'Краснохолмский Район', '69', 'Тверская Область', 'района'], ['Кувшиново', 'Кувшиновский Район', '69', 'Тверская Область', 'района'], ['Лихославль', 'Лихославльский Район', '69', 'Тверская Область', 'района'], ['Нелидово', '(региональное)', '69', 'Тверская Область', '-'], ['Осташков', 'Осташковский Район', '69', 'Тверская Область', 'района'], ['Ржев', '(региональное)', '69', 'Тверская Область', '-'], ['Старица', 'Старицкий Район', '69', 'Тверская Область', 'района'], ['Тверь', '(региональное)', '69', 'Тверская Область', 'региона'], ['Торжок', '(региональное)', '69', 'Тверская Область', '-'], ['Торопец', 'Торопецкий Район', '69', 'Тверская Область', 'района'], ['Удомля', 'Удомельский Район', '69', 'Тверская Область', 'района'], ['Асино', 'Асиновский Район', '70', 'Томская Область', 'района'], ['Кедровый', '(региональное)', '70', 'Томская Область', '-'], ['Колпашево', 'Колпашевский Район', '70', 'Томская Область', 'района'], ['Северск', '(региональное)', '70', 'Томская Область', '-'], ['Стрежевой', '(региональное)', '70', 'Томская Область', '-'], ['Томск', '(региональное)', '70', 'Томская Область', 'района и региона'], ['Алексин', 'Алексинский Район', '71', 'Тульская Область', 'района'], ['Белев', 'Белевский Район', '71', 'Тульская Область', 'района'], ['Богородицк', 'Богородицкий Район', '71', 'Тульская Область', 'района'], ['Болохово', 'Киреевский Район', '71', 'Тульская Область', '-'], ['Венев', 'Веневский Район', '71', 'Тульская Область', 'района'], ['Донской', '(региональное)', '71', 'Тульская Область', '-'], ['Ефремов', 'Ефремовский Район', '71', 'Тульская Область', 'района'], ['Кимовск', 'Кимовский Район', '71', 'Тульская Область', 'района'], ['Киреевск', 'Киреевский Район', '71', 'Тульская Область', 'района'], ['Липки', 'Киреевский Район', '71', 'Тульская Область', '-'], ['Новомосковск', 'Новомосковский Район', '71', 'Тульская Область', 'района'], ['Плавск', 'Плавский Район', '71', 'Тульская Область', 'района'], ['Советск', 'Щекинский Район', '71', 'Тульская Область', '-'], ['Суворов', 'Суворовский Район', '71', 'Тульская Область', 'района'], ['Тула', '(региональное)', '71', 'Тульская Область', 'региона'], ['Узловая', 'Узловский Район', '71', 'Тульская Область', 'района'], ['Чекалин', 'Суворовский Район', '71', 'Тульская Область', '-'], ['Щекино', 'Щекинский Район', '71', 'Тульская Область', 'района'], ['Ясногорск', 'Ясногорский Район', '71', 'Тульская Область', 'района'], ['Заводоуковск', 'Заводоуковский Район', '72', 'Тюменская Область', 'района'], ['Ишим', 'Ишимский Район', '72', 'Тюменская Область', 'района'], ['Тобольск', '(региональное)', '72', 'Тюменская Область', '-'], ['Тюмень', '(региональное)', '72', 'Тюменская Область', '-'], ['Ялуторовск', 'Ялуторовский Район', '72', 'Тюменская Область', 'района'], ['Барыш', '(региональное)', '73', 'Ульяновская Область', '-'], ['Димитровград', '(региональное)', '73', 'Ульяновская Область', '-'], ['Инза', 'Инзенский Район', '73', 'Ульяновская Область', 'района'], ['Новоульяновск', '(региональное)', '73', 'Ульяновская Область', '-'], ['Сенгилей', 'Сенгилеевский Район', '73', 'Ульяновская Область', 'района'], ['Ульяновск', '(региональное)', '73', 'Ульяновская Область', 'региона'], ['Аша', 'Ашинский Район', '74', 'Челябинская Область', 'района'], ['Бакал', 'Саткинский Район', '74', 'Челябинская Область', '-'], ['Верхнеуральск', 'Верхнеуральский Район', '74', 'Челябинская Область', 'района'], ['Верхний Уфалей', '(региональное)', '74', 'Челябинская Область', '-'], ['Еманжелинск', 'Еманжелинский Район', '74', 'Челябинская Область', 'района'], ['Златоуст', '(региональное)', '74', 'Челябинская Область', '-'], ['Карабаш', '(региональное)', '74', 'Челябинская Область', '-'], ['Карталы', 'Карталинский Район', '74', 'Челябинская Область', 'района'], ['Касли', 'Каслинский Район', '74', 'Челябинская Область', 'района'], ['Катав-Ивановск', 'Катав-Ивановский Район', '74', 'Челябинская Область', 'района'], ['Копейск', '(региональное)', '74', 'Челябинская Область', '-'], ['Коркино', 'Коркинский Район', '74', 'Челябинская Область', 'района'], ['Куса', 'Кусинский Район', '74', 'Челябинская Область', 'района'], ['Кыштым', '(региональное)', '74', 'Челябинская Область', '-'], ['Магнитогорск', '(региональное)', '74', 'Челябинская Область', '-'], ['Миасс', '(региональное)', '74', 'Челябинская Область', '-'], ['Миньяр', 'Ашинский Район', '74', 'Челябинская Область', '-'], ['Нязепетровск', 'Нязепетровский Район', '74', 'Челябинская Область', 'района'], ['Озерск', '(региональное)', '74', 'Челябинская Область', '-'], ['Пласт', 'Пластовский Район', '74', 'Челябинская Область', 'района'], ['Сатка', 'Саткинский Район', '74', 'Челябинская Область', 'района'], ['Сим', 'Ашинский Район', '74', 'Челябинская Область', '-'], ['Снежинск', '(региональное)', '74', 'Челябинская Область', '-'], ['Трехгорный', '(региональное)', '74', 'Челябинская Область', '-'], ['Трехгорный-1', '(региональное)', '74', 'Челябинская Область', '-'], ['Троицк', '(региональное)', '74', 'Челябинская Область', '-'], ['Усть-Катав', '(региональное)', '74', 'Челябинская Область', '-'], ['Чебаркуль', '(региональное)', '74', 'Челябинская Область', '-'], ['Челябинск', '(региональное)', '74', 'Челябинская Область', 'региона'], ['Южноуральск', '(региональное)', '74', 'Челябинская Область', '-'], ['Юрюзань', 'Катав-Ивановский Район', '74', 'Челябинская Область', '-'], ['Балей', 'Балейский Район', '75', 'Забайкальский Край', 'района'], ['Борзя', 'Борзинский Район', '75', 'Забайкальский Край', 'района'], ['Краснокаменск', 'Краснокаменский Район', '75', 'Забайкальский Край', 'района'], ['Могоча', 'Могочинский Район', '75', 'Забайкальский Край', 'района'], ['Нерчинск', 'Нерчинский Район', '75', 'Забайкальский Край', 'района'], ['Петровск-Забайкальский', 'Петровск-Забайкальский Район', '75', 'Забайкальский Край', 'района'], ['Сретенск', 'Сретенский Район', '75', 'Забайкальский Край', 'района'], ['Хилок', 'Хилокский Район', '75', 'Забайкальский Край', 'района'], ['Чита', '(региональное)', '75', 'Забайкальский Край', 'региона'], ['Шилка', 'Шилкинский Район', '75', 'Забайкальский Край', 'района'], ['Гаврилов-Ям', 'Гаврилов-Ямский Район', '76', 'Ярославская Область', 'района'], ['Данилов', 'Даниловский Район', '76', 'Ярославская Область', 'района'], ['Любим', 'Любимский Район', '76', 'Ярославская Область', 'района'], ['Мышкин', 'Мышкинский Район', '76', 'Ярославская Область', 'района'], ['Переславль-Залесский', '(региональное)', '76', 'Ярославская Область', '-'], ['Пошехонье', 'Пошехонский Район', '76', 'Ярославская Область', 'района'], ['Ростов', 'Ростовский Район', '76', 'Ярославская Область', 'района'], ['Рыбинск', 'Рыбинский Район', '76', 'Ярославская Область', 'района'], ['Тутаев', 'Тутаевский Район', '76', 'Ярославская Область', 'района'], ['Углич', 'Угличский Район', '76', 'Ярославская Область', 'района'], ['Ярославль', '(региональное)', '76', 'Ярославская Область', 'региона'], ['Зеленоград', '(региональное)', '77', 'Москва Город', '-'], ['Москва', '(федеральное)', '77', 'Москва Город', '-'], ['Московский', 'Московский Поселение', '77', 'Москва Город', 'района'], ['Московский', 'Московский Поселок', '77', 'Москва Город', 'района'], ['Троицк', '(региональное)', '77', 'Москва Город', '-'], ['Щербинка', '(региональное)', '77', 'Москва Город', '-'], ['Зеленогорск', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Колпино', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Красное Село', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Кронштадт', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Ломоносов', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Павловск', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Петергоф', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Пушкин', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Санкт-Петербург', '(федеральное)', '78', 'Санкт-Петербург Город', '-'], ['Сестрорецк', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Биробиджан', '(региональное)', '79', 'Еврейская Автономная область', 'региона'], ['Облучье', 'Облученский Район', '79', 'Еврейская Автономная область', 'района'], ['Нарьян-Мар', '(региональное)', '83', 'Ненецкий Автономный округ', 'региона'], ['Белоярский', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Когалым', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Лангепас', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Лянтор', 'Сургутский Район', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Мегион', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нефтеюганск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нижневартовск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нягань', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Покачи', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Пыть-Ях', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Радужный', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Советский', 'Советский Район', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', 'района'], ['Сургут', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Урай', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Ханты-Мансийск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', 'региона'], ['Югорск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Анадырь', '(региональное)', '87', 'Чукотский Автономный округ', 'региона'], ['Билибино', 'Билибинский Район', '87', 'Чукотский Автономный округ', 'района'], ['Певек', 'Чаунский Район', '87', 'Чукотский Автономный округ', 'района'], ['Губкинский', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Лабытнанги', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Муравленко', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Надым', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Новый Уренгой', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Ноябрьск', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Салехард', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', 'региона'], ['Тарко-Сале', 'Пуровский Район', '89', 'Ямало-Ненецкий Автономный округ', 'района'], ['Алупка', '(региональное)', '91', 'Крым Республика', '-'], ['Алушта', '(региональное)', '91', 'Крым Республика', '-'], ['Армянск', '(региональное)', '91', 'Крым Республика', '-'], ['Армянськ', 'Красноперекопский Район', '91', 'Крым Республика', '-'], ['Бахчисарай', 'Бахчисарайский Район', '91', 'Крым Республика', '-'], ['Белогорск', 'Белогорский Район', '91', 'Крым Республика', '-'], ['Джанкой', '(региональное)', '91', 'Крым Республика', '-'], ['Джанкой', 'Джанкойский Район', '91', 'Крым Республика', '-'], ['Евпатория', '(региональное)', '91', 'Крым Республика', '-'], ['Керчь', '(региональное)', '91', 'Крым Республика', '-'], ['Красноперекопск', '(региональное)', '91', 'Крым Республика', '-'], ['Красноперекопск', 'Красноперекопский Район', '91', 'Крым Республика', '-'], ['Подгорное', '(региональное)', '91', 'Крым Республика', '-'], ['Саки', '(региональное)', '91', 'Крым Республика', '-'], ['Саки', 'Сакский Район', '91', 'Крым Республика', '-'], ['Симферополь', '(региональное)', '91', 'Крым Республика', '-'], ['Старый крым', 'Кировский Район', '91', 'Крым Республика', '-'], ['Судак', '(региональное)', '91', 'Крым Республика', '-'], ['Феодосия', '(региональное)', '91', 'Крым Республика', '-'], ['Щелкино', 'Ленинский Район', '91', 'Крым Республика', '-'], ['Ялта', '(региональное)', '91', 'Крым Республика', '-'], ['Инкерман', '(региональное)', '92', 'Севастополь Город', '-'], ['Севастополь', '(региональное)', '92', 'Севастополь Город']];
 	
-	function searchCity(search) {
-	    search = search.toLowerCase();
-	    var items = map.filter(function (item) {
-	        return item[0].toLowerCase().indexOf(search) === 0;
-	    });
-	    return items.map(function (item) {
-	        return {
-	            value: item[0],
-	            help: item[3]
-	        };
-	    });
+	/*
+	 得到元素的大小信息
+	 @param elem
+	 @param name
+	 @param {String} [extra]  'padding' : (css width) + padding
+	 'border' : (css width) + padding + border
+	 'margin' : (css width) + padding + border + margin
+	 */
+	function getWH(elem, name, extra) {
+	  if (isWindow(elem)) {
+	    return name === 'width' ? domUtils.viewportWidth(elem) : domUtils.viewportHeight(elem);
+	  } else if (elem.nodeType === 9) {
+	    return name === 'width' ? domUtils.docWidth(elem) : domUtils.docHeight(elem);
+	  }
+	  var which = name === 'width' ? ['Left', 'Right'] : ['Top', 'Bottom'];
+	  var borderBoxValue = name === 'width' ? elem.offsetWidth : elem.offsetHeight;
+	  var computedStyle = getComputedStyleX(elem);
+	  var isBorderBox = isBorderBoxFn(elem, computedStyle);
+	  var cssBoxValue = 0;
+	  if (borderBoxValue == null || borderBoxValue <= 0) {
+	    borderBoxValue = undefined;
+	    // Fall back to computed then un computed css if necessary
+	    cssBoxValue = getComputedStyleX(elem, name);
+	    if (cssBoxValue == null || Number(cssBoxValue) < 0) {
+	      cssBoxValue = elem.style[name] || 0;
+	    }
+	    // Normalize '', auto, and prepare for extra
+	    cssBoxValue = parseFloat(cssBoxValue) || 0;
+	  }
+	  if (extra === undefined) {
+	    extra = isBorderBox ? BORDER_INDEX : CONTENT_INDEX;
+	  }
+	  var borderBoxValueOrIsBorderBox = borderBoxValue !== undefined || isBorderBox;
+	  var val = borderBoxValue || cssBoxValue;
+	  if (extra === CONTENT_INDEX) {
+	    if (borderBoxValueOrIsBorderBox) {
+	      return val - getPBMWidth(elem, ['border', 'padding'], which, computedStyle);
+	    }
+	    return cssBoxValue;
+	  }
+	  if (borderBoxValueOrIsBorderBox) {
+	    var padding = extra === PADDING_INDEX ? -getPBMWidth(elem, ['border'], which, computedStyle) : getPBMWidth(elem, ['margin'], which, computedStyle);
+	    return val + (extra === BORDER_INDEX ? 0 : padding);
+	  }
+	  return cssBoxValue + getPBMWidth(elem, BOX_MODELS.slice(extra), which, computedStyle);
 	}
-
-/***/ },
-/* 342 */
-/*!****************************!*\
-  !*** ./app/style/App.scss ***!
-  \****************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
-	// load the styles
-	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./App.scss */ 343);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 337)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./App.scss", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./App.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
+	var cssShow = {
+	  position: 'absolute',
+	  visibility: 'hidden',
+	  display: 'block'
+	};
+	
+	// fix #119 : https://github.com/kissyteam/kissy/issues/119
+	function getWHIgnoreDisplay(elem) {
+	  var val = undefined;
+	  var args = arguments;
+	  // in case elem is window
+	  // elem.offsetWidth === undefined
+	  if (elem.offsetWidth !== 0) {
+	    val = getWH.apply(undefined, args);
+	  } else {
+	    swap(elem, cssShow, function () {
+	      val = getWH.apply(undefined, args);
+	    });
+	  }
+	  return val;
 	}
+	
+	function css(el, name, v) {
+	  var value = v;
+	  if ((typeof name === 'undefined' ? 'undefined' : _typeof(name)) === 'object') {
+	    for (var i in name) {
+	      if (name.hasOwnProperty(i)) {
+	        css(el, i, name[i]);
+	      }
+	    }
+	    return undefined;
+	  }
+	  if (typeof value !== 'undefined') {
+	    if (typeof value === 'number') {
+	      value += 'px';
+	    }
+	    el.style[name] = value;
+	    return undefined;
+	  }
+	  return getComputedStyleX(el, name);
+	}
+	
+	each(['width', 'height'], function (name) {
+	  var first = name.charAt(0).toUpperCase() + name.slice(1);
+	  domUtils['outer' + first] = function (el, includeMargin) {
+	    return el && getWHIgnoreDisplay(el, name, includeMargin ? MARGIN_INDEX : BORDER_INDEX);
+	  };
+	  var which = name === 'width' ? ['Left', 'Right'] : ['Top', 'Bottom'];
+	
+	  domUtils[name] = function (elem, val) {
+	    if (val !== undefined) {
+	      if (elem) {
+	        var computedStyle = getComputedStyleX(elem);
+	        var isBorderBox = isBorderBoxFn(elem);
+	        if (isBorderBox) {
+	          val += getPBMWidth(elem, ['padding', 'border'], which, computedStyle);
+	        }
+	        return css(elem, name, val);
+	      }
+	      return undefined;
+	    }
+	    return elem && getWHIgnoreDisplay(elem, name, CONTENT_INDEX);
+	  };
+	});
+	
+	// 设置 elem 相对 elem.ownerDocument 的坐标
+	function setOffset(elem, offset) {
+	  // set position first, in-case top/left are set even on static elem
+	  if (css(elem, 'position') === 'static') {
+	    elem.style.position = 'relative';
+	  }
+	
+	  var old = getOffset(elem);
+	  var ret = {};
+	  var current = undefined;
+	  var key = undefined;
+	
+	  for (key in offset) {
+	    if (offset.hasOwnProperty(key)) {
+	      current = parseFloat(css(elem, key)) || 0;
+	      ret[key] = current + offset[key] - old[key];
+	    }
+	  }
+	  css(elem, ret);
+	}
+	
+	module.exports = _extends({
+	  getWindow: function getWindow(node) {
+	    var doc = node.ownerDocument || node;
+	    return doc.defaultView || doc.parentWindow;
+	  },
+	  offset: function offset(el, value) {
+	    if (typeof value !== 'undefined') {
+	      setOffset(el, value);
+	    } else {
+	      return getOffset(el);
+	    }
+	  },
+	
+	  isWindow: isWindow,
+	  each: each,
+	  css: css,
+	  clone: function clone(obj) {
+	    var ret = {};
+	    for (var i in obj) {
+	      if (obj.hasOwnProperty(i)) {
+	        ret[i] = obj[i];
+	      }
+	    }
+	    var overflow = obj.overflow;
+	    if (overflow) {
+	      for (var i in obj) {
+	        if (obj.hasOwnProperty(i)) {
+	          ret.overflow[i] = obj.overflow[i];
+	        }
+	      }
+	    }
+	    return ret;
+	  },
+	  scrollLeft: function scrollLeft(w, v) {
+	    if (isWindow(w)) {
+	      if (v === undefined) {
+	        return getScrollLeft(w);
+	      }
+	      window.scrollTo(v, getScrollTop(w));
+	    } else {
+	      if (v === undefined) {
+	        return w.scrollLeft;
+	      }
+	      w.scrollLeft = v;
+	    }
+	  },
+	  scrollTop: function scrollTop(w, v) {
+	    if (isWindow(w)) {
+	      if (v === undefined) {
+	        return getScrollTop(w);
+	      }
+	      window.scrollTo(getScrollLeft(w), v);
+	    } else {
+	      if (v === undefined) {
+	        return w.scrollTop;
+	      }
+	      w.scrollTop = v;
+	    }
+	  },
+	
+	  viewportWidth: 0,
+	  viewportHeight: 0
+	}, domUtils);
 
 /***/ },
-/* 343 */
-/*!***********************************************************!*\
-  !*** ./~/css-loader!./~/sass-loader!./app/style/App.scss ***!
-  \***********************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 336)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0; }\n\n* {\n  font-family: Arial, Tahoma, sans-serif; }\n\n.container {\n  max-width: 920px;\n  margin: 0 auto; }\n\nheader {\n  padding: 10px 0;\n  font-size: 22px;\n  border-bottom: 1px solid #CCCCCC; }\n\n.Form {\n  margin: 10px 0;\n  padding: 20px;\n  border-radius: 5px;\n  border: 1px solid #CCC; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 344 */
+/* 341 */
 /*!******************************!*\
   !*** ./~/react-dom/index.js ***!
   \******************************/
@@ -14665,11 +15223,11 @@
 
 	'use strict';
 	
-	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 345);
+	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 342);
 
 
 /***/ },
-/* 345 */
+/* 342 */
 /*!*********************************!*\
   !*** ./~/react/lib/ReactDOM.js ***!
   \*********************************/
@@ -14690,16 +15248,16 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDefaultInjection = __webpack_require__(/*! ./ReactDefaultInjection */ 349);
-	var ReactMount = __webpack_require__(/*! ./ReactMount */ 476);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDefaultInjection = __webpack_require__(/*! ./ReactDefaultInjection */ 346);
+	var ReactMount = __webpack_require__(/*! ./ReactMount */ 473);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	var ReactVersion = __webpack_require__(/*! ./ReactVersion */ 330);
 	
-	var findDOMNode = __webpack_require__(/*! ./findDOMNode */ 481);
-	var getHostComponentFromComposite = __webpack_require__(/*! ./getHostComponentFromComposite */ 482);
-	var renderSubtreeIntoContainer = __webpack_require__(/*! ./renderSubtreeIntoContainer */ 483);
+	var findDOMNode = __webpack_require__(/*! ./findDOMNode */ 478);
+	var getHostComponentFromComposite = __webpack_require__(/*! ./getHostComponentFromComposite */ 479);
+	var renderSubtreeIntoContainer = __webpack_require__(/*! ./renderSubtreeIntoContainer */ 480);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	ReactDefaultInjection.inject();
@@ -14740,7 +15298,7 @@
 	}
 	
 	if (process.env.NODE_ENV !== 'production') {
-	  var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	  var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	  if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 	
 	    // First check if devtools is not installed
@@ -14779,7 +15337,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 346 */
+/* 343 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMComponentTree.js ***!
   \**********************************************/
@@ -14800,8 +15358,8 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 348);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 345);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	
@@ -14976,7 +15534,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 347 */
+/* 344 */
 /*!************************************!*\
   !*** ./~/react/lib/DOMProperty.js ***!
   \************************************/
@@ -15191,7 +15749,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 348 */
+/* 345 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactDOMComponentFlags.js ***!
   \***********************************************/
@@ -15217,7 +15775,7 @@
 	module.exports = ReactDOMComponentFlags;
 
 /***/ },
-/* 349 */
+/* 346 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDefaultInjection.js ***!
   \**********************************************/
@@ -15236,24 +15794,24 @@
 	
 	'use strict';
 	
-	var BeforeInputEventPlugin = __webpack_require__(/*! ./BeforeInputEventPlugin */ 350);
-	var ChangeEventPlugin = __webpack_require__(/*! ./ChangeEventPlugin */ 365);
-	var DefaultEventPluginOrder = __webpack_require__(/*! ./DefaultEventPluginOrder */ 383);
-	var EnterLeaveEventPlugin = __webpack_require__(/*! ./EnterLeaveEventPlugin */ 384);
-	var HTMLDOMPropertyConfig = __webpack_require__(/*! ./HTMLDOMPropertyConfig */ 389);
-	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 390);
-	var ReactDOMComponent = __webpack_require__(/*! ./ReactDOMComponent */ 404);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDOMEmptyComponent = __webpack_require__(/*! ./ReactDOMEmptyComponent */ 447);
-	var ReactDOMTreeTraversal = __webpack_require__(/*! ./ReactDOMTreeTraversal */ 448);
-	var ReactDOMTextComponent = __webpack_require__(/*! ./ReactDOMTextComponent */ 449);
-	var ReactDefaultBatchingStrategy = __webpack_require__(/*! ./ReactDefaultBatchingStrategy */ 450);
-	var ReactEventListener = __webpack_require__(/*! ./ReactEventListener */ 451);
-	var ReactInjection = __webpack_require__(/*! ./ReactInjection */ 454);
-	var ReactReconcileTransaction = __webpack_require__(/*! ./ReactReconcileTransaction */ 455);
-	var SVGDOMPropertyConfig = __webpack_require__(/*! ./SVGDOMPropertyConfig */ 463);
-	var SelectEventPlugin = __webpack_require__(/*! ./SelectEventPlugin */ 464);
-	var SimpleEventPlugin = __webpack_require__(/*! ./SimpleEventPlugin */ 465);
+	var BeforeInputEventPlugin = __webpack_require__(/*! ./BeforeInputEventPlugin */ 347);
+	var ChangeEventPlugin = __webpack_require__(/*! ./ChangeEventPlugin */ 362);
+	var DefaultEventPluginOrder = __webpack_require__(/*! ./DefaultEventPluginOrder */ 380);
+	var EnterLeaveEventPlugin = __webpack_require__(/*! ./EnterLeaveEventPlugin */ 381);
+	var HTMLDOMPropertyConfig = __webpack_require__(/*! ./HTMLDOMPropertyConfig */ 386);
+	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 387);
+	var ReactDOMComponent = __webpack_require__(/*! ./ReactDOMComponent */ 401);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDOMEmptyComponent = __webpack_require__(/*! ./ReactDOMEmptyComponent */ 444);
+	var ReactDOMTreeTraversal = __webpack_require__(/*! ./ReactDOMTreeTraversal */ 445);
+	var ReactDOMTextComponent = __webpack_require__(/*! ./ReactDOMTextComponent */ 446);
+	var ReactDefaultBatchingStrategy = __webpack_require__(/*! ./ReactDefaultBatchingStrategy */ 447);
+	var ReactEventListener = __webpack_require__(/*! ./ReactEventListener */ 448);
+	var ReactInjection = __webpack_require__(/*! ./ReactInjection */ 451);
+	var ReactReconcileTransaction = __webpack_require__(/*! ./ReactReconcileTransaction */ 452);
+	var SVGDOMPropertyConfig = __webpack_require__(/*! ./SVGDOMPropertyConfig */ 460);
+	var SelectEventPlugin = __webpack_require__(/*! ./SelectEventPlugin */ 461);
+	var SimpleEventPlugin = __webpack_require__(/*! ./SimpleEventPlugin */ 462);
 	
 	var alreadyInjected = false;
 	
@@ -15309,7 +15867,7 @@
 	};
 
 /***/ },
-/* 350 */
+/* 347 */
 /*!***********************************************!*\
   !*** ./~/react/lib/BeforeInputEventPlugin.js ***!
   \***********************************************/
@@ -15328,12 +15886,12 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 352);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var FallbackCompositionState = __webpack_require__(/*! ./FallbackCompositionState */ 360);
-	var SyntheticCompositionEvent = __webpack_require__(/*! ./SyntheticCompositionEvent */ 362);
-	var SyntheticInputEvent = __webpack_require__(/*! ./SyntheticInputEvent */ 364);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 349);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var FallbackCompositionState = __webpack_require__(/*! ./FallbackCompositionState */ 357);
+	var SyntheticCompositionEvent = __webpack_require__(/*! ./SyntheticCompositionEvent */ 359);
+	var SyntheticInputEvent = __webpack_require__(/*! ./SyntheticInputEvent */ 361);
 	
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
 	
@@ -15705,7 +16263,7 @@
 	module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 351 */
+/* 348 */
 /*!***************************************!*\
   !*** ./~/react/lib/EventConstants.js ***!
   \***************************************/
@@ -15810,7 +16368,7 @@
 	module.exports = EventConstants;
 
 /***/ },
-/* 352 */
+/* 349 */
 /*!*****************************************!*\
   !*** ./~/react/lib/EventPropagators.js ***!
   \*****************************************/
@@ -15829,12 +16387,12 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 353);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 355);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 350);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 352);
 	
-	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 357);
-	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 358);
+	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 354);
+	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 355);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var PropagationPhases = EventConstants.PropagationPhases;
@@ -15956,7 +16514,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 353 */
+/* 350 */
 /*!***************************************!*\
   !*** ./~/react/lib/EventPluginHub.js ***!
   \***************************************/
@@ -15977,12 +16535,12 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 354);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 355);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 356);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 351);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 352);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 353);
 	
-	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 357);
-	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 358);
+	var accumulateInto = __webpack_require__(/*! ./accumulateInto */ 354);
+	var forEachAccumulated = __webpack_require__(/*! ./forEachAccumulated */ 355);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	
 	/**
@@ -16214,7 +16772,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 354 */
+/* 351 */
 /*!********************************************!*\
   !*** ./~/react/lib/EventPluginRegistry.js ***!
   \********************************************/
@@ -16470,7 +17028,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 355 */
+/* 352 */
 /*!*****************************************!*\
   !*** ./~/react/lib/EventPluginUtils.js ***!
   \*****************************************/
@@ -16491,8 +17049,8 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 356);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 353);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -16708,7 +17266,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 356 */
+/* 353 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactErrorUtils.js ***!
   \****************************************/
@@ -16793,7 +17351,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 357 */
+/* 354 */
 /*!***************************************!*\
   !*** ./~/react/lib/accumulateInto.js ***!
   \***************************************/
@@ -16860,7 +17418,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 358 */
+/* 355 */
 /*!*******************************************!*\
   !*** ./~/react/lib/forEachAccumulated.js ***!
   \*******************************************/
@@ -16899,7 +17457,7 @@
 	module.exports = forEachAccumulated;
 
 /***/ },
-/* 359 */
+/* 356 */
 /*!********************************************!*\
   !*** ./~/fbjs/lib/ExecutionEnvironment.js ***!
   \********************************************/
@@ -16942,7 +17500,7 @@
 	module.exports = ExecutionEnvironment;
 
 /***/ },
-/* 360 */
+/* 357 */
 /*!*************************************************!*\
   !*** ./~/react/lib/FallbackCompositionState.js ***!
   \*************************************************/
@@ -16965,7 +17523,7 @@
 	
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 303);
 	
-	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 361);
+	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 358);
 	
 	/**
 	 * This helper class stores information about text content of a target node,
@@ -17045,7 +17603,7 @@
 	module.exports = FallbackCompositionState;
 
 /***/ },
-/* 361 */
+/* 358 */
 /*!***********************************************!*\
   !*** ./~/react/lib/getTextContentAccessor.js ***!
   \***********************************************/
@@ -17064,7 +17622,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
 	var contentKey = null;
 	
@@ -17086,7 +17644,7 @@
 	module.exports = getTextContentAccessor;
 
 /***/ },
-/* 362 */
+/* 359 */
 /*!**************************************************!*\
   !*** ./~/react/lib/SyntheticCompositionEvent.js ***!
   \**************************************************/
@@ -17105,7 +17663,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
 	/**
 	 * @interface Event
@@ -17130,7 +17688,7 @@
 	module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 363 */
+/* 360 */
 /*!***************************************!*\
   !*** ./~/react/lib/SyntheticEvent.js ***!
   \***************************************/
@@ -17399,7 +17957,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 364 */
+/* 361 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticInputEvent.js ***!
   \********************************************/
@@ -17418,7 +17976,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
 	/**
 	 * @interface Event
@@ -17444,7 +18002,7 @@
 	module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 365 */
+/* 362 */
 /*!******************************************!*\
   !*** ./~/react/lib/ChangeEventPlugin.js ***!
   \******************************************/
@@ -17463,17 +18021,17 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 353);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 352);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 350);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 349);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 380);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 381);
-	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 382);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 377);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 378);
+	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 379);
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
@@ -17777,7 +18335,7 @@
 	module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 366 */
+/* 363 */
 /*!*************************************!*\
   !*** ./~/react/lib/ReactUpdates.js ***!
   \*************************************/
@@ -17799,11 +18357,11 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 367);
+	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 364);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 303);
-	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 368);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 379);
+	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 365);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 376);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	
@@ -18037,7 +18595,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 367 */
+/* 364 */
 /*!**************************************!*\
   !*** ./~/react/lib/CallbackQueue.js ***!
   \**************************************/
@@ -18152,7 +18710,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 368 */
+/* 365 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactFeatureFlags.js ***!
   \******************************************/
@@ -18182,7 +18740,7 @@
 	module.exports = ReactFeatureFlags;
 
 /***/ },
-/* 369 */
+/* 366 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactReconciler.js ***!
   \****************************************/
@@ -18201,8 +18759,8 @@
 	
 	'use strict';
 	
-	var ReactRef = __webpack_require__(/*! ./ReactRef */ 370);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var ReactRef = __webpack_require__(/*! ./ReactRef */ 367);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
@@ -18365,7 +18923,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 370 */
+/* 367 */
 /*!*********************************!*\
   !*** ./~/react/lib/ReactRef.js ***!
   \*********************************/
@@ -18384,7 +18942,7 @@
 	
 	'use strict';
 	
-	var ReactOwner = __webpack_require__(/*! ./ReactOwner */ 371);
+	var ReactOwner = __webpack_require__(/*! ./ReactOwner */ 368);
 	
 	var ReactRef = {};
 	
@@ -18453,7 +19011,7 @@
 	module.exports = ReactRef;
 
 /***/ },
-/* 371 */
+/* 368 */
 /*!***********************************!*\
   !*** ./~/react/lib/ReactOwner.js ***!
   \***********************************/
@@ -18556,7 +19114,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 372 */
+/* 369 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactInstrumentation.js ***!
   \*********************************************/
@@ -18578,7 +19136,7 @@
 	var debugTool = null;
 	
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactDebugTool = __webpack_require__(/*! ./ReactDebugTool */ 373);
+	  var ReactDebugTool = __webpack_require__(/*! ./ReactDebugTool */ 370);
 	  debugTool = ReactDebugTool;
 	}
 	
@@ -18586,7 +19144,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 373 */
+/* 370 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDebugTool.js ***!
   \***************************************/
@@ -18605,13 +19163,13 @@
 	
 	'use strict';
 	
-	var ReactInvalidSetStateWarningDevTool = __webpack_require__(/*! ./ReactInvalidSetStateWarningDevTool */ 374);
-	var ReactHostOperationHistoryDevtool = __webpack_require__(/*! ./ReactHostOperationHistoryDevtool */ 375);
+	var ReactInvalidSetStateWarningDevTool = __webpack_require__(/*! ./ReactInvalidSetStateWarningDevTool */ 371);
+	var ReactHostOperationHistoryDevtool = __webpack_require__(/*! ./ReactHostOperationHistoryDevtool */ 372);
 	var ReactComponentTreeDevtool = __webpack_require__(/*! ./ReactComponentTreeDevtool */ 326);
-	var ReactChildrenMutationWarningDevtool = __webpack_require__(/*! ./ReactChildrenMutationWarningDevtool */ 376);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var ReactChildrenMutationWarningDevtool = __webpack_require__(/*! ./ReactChildrenMutationWarningDevtool */ 373);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
-	var performanceNow = __webpack_require__(/*! fbjs/lib/performanceNow */ 377);
+	var performanceNow = __webpack_require__(/*! fbjs/lib/performanceNow */ 374);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var eventHandlers = [];
@@ -18916,7 +19474,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 374 */
+/* 371 */
 /*!***********************************************************!*\
   !*** ./~/react/lib/ReactInvalidSetStateWarningDevTool.js ***!
   \***********************************************************/
@@ -18961,7 +19519,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 375 */
+/* 372 */
 /*!*********************************************************!*\
   !*** ./~/react/lib/ReactHostOperationHistoryDevtool.js ***!
   \*********************************************************/
@@ -19006,7 +19564,7 @@
 	module.exports = ReactHostOperationHistoryDevtool;
 
 /***/ },
-/* 376 */
+/* 373 */
 /*!************************************************************!*\
   !*** ./~/react/lib/ReactChildrenMutationWarningDevtool.js ***!
   \************************************************************/
@@ -19077,7 +19635,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 377 */
+/* 374 */
 /*!**************************************!*\
   !*** ./~/fbjs/lib/performanceNow.js ***!
   \**************************************/
@@ -19096,7 +19654,7 @@
 	 * @typechecks
 	 */
 	
-	var performance = __webpack_require__(/*! ./performance */ 378);
+	var performance = __webpack_require__(/*! ./performance */ 375);
 	
 	var performanceNow;
 	
@@ -19118,7 +19676,7 @@
 	module.exports = performanceNow;
 
 /***/ },
-/* 378 */
+/* 375 */
 /*!***********************************!*\
   !*** ./~/fbjs/lib/performance.js ***!
   \***********************************/
@@ -19137,7 +19695,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 356);
 	
 	var performance;
 	
@@ -19148,7 +19706,7 @@
 	module.exports = performance || {};
 
 /***/ },
-/* 379 */
+/* 376 */
 /*!************************************!*\
   !*** ./~/react/lib/Transaction.js ***!
   \************************************/
@@ -19390,7 +19948,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 380 */
+/* 377 */
 /*!***************************************!*\
   !*** ./~/react/lib/getEventTarget.js ***!
   \***************************************/
@@ -19433,7 +19991,7 @@
 	module.exports = getEventTarget;
 
 /***/ },
-/* 381 */
+/* 378 */
 /*!*****************************************!*\
   !*** ./~/react/lib/isEventSupported.js ***!
   \*****************************************/
@@ -19452,7 +20010,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
 	var useHasFeature;
 	if (ExecutionEnvironment.canUseDOM) {
@@ -19501,7 +20059,7 @@
 	module.exports = isEventSupported;
 
 /***/ },
-/* 382 */
+/* 379 */
 /*!*******************************************!*\
   !*** ./~/react/lib/isTextInputElement.js ***!
   \*******************************************/
@@ -19560,7 +20118,7 @@
 	module.exports = isTextInputElement;
 
 /***/ },
-/* 383 */
+/* 380 */
 /*!************************************************!*\
   !*** ./~/react/lib/DefaultEventPluginOrder.js ***!
   \************************************************/
@@ -19595,7 +20153,7 @@
 	module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 384 */
+/* 381 */
 /*!**********************************************!*\
   !*** ./~/react/lib/EnterLeaveEventPlugin.js ***!
   \**********************************************/
@@ -19614,10 +20172,10 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 352);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 385);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 349);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 382);
 	
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
 	
@@ -19708,7 +20266,7 @@
 	module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 385 */
+/* 382 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticMouseEvent.js ***!
   \********************************************/
@@ -19727,10 +20285,10 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 386);
-	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 387);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 383);
+	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 384);
 	
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 388);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 385);
 	
 	/**
 	 * @interface MouseEvent
@@ -19788,7 +20346,7 @@
 	module.exports = SyntheticMouseEvent;
 
 /***/ },
-/* 386 */
+/* 383 */
 /*!*****************************************!*\
   !*** ./~/react/lib/SyntheticUIEvent.js ***!
   \*****************************************/
@@ -19807,9 +20365,9 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 380);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 377);
 	
 	/**
 	 * @interface UIEvent
@@ -19855,7 +20413,7 @@
 	module.exports = SyntheticUIEvent;
 
 /***/ },
-/* 387 */
+/* 384 */
 /*!****************************************!*\
   !*** ./~/react/lib/ViewportMetrics.js ***!
   \****************************************/
@@ -19890,7 +20448,7 @@
 	module.exports = ViewportMetrics;
 
 /***/ },
-/* 388 */
+/* 385 */
 /*!**********************************************!*\
   !*** ./~/react/lib/getEventModifierState.js ***!
   \**********************************************/
@@ -19941,7 +20499,7 @@
 	module.exports = getEventModifierState;
 
 /***/ },
-/* 389 */
+/* 386 */
 /*!**********************************************!*\
   !*** ./~/react/lib/HTMLDOMPropertyConfig.js ***!
   \**********************************************/
@@ -19960,7 +20518,7 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
 	
 	var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 	var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -20158,7 +20716,7 @@
 	module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 390 */
+/* 387 */
 /*!*********************************************************!*\
   !*** ./~/react/lib/ReactComponentBrowserEnvironment.js ***!
   \*********************************************************/
@@ -20177,8 +20735,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 391);
-	var ReactDOMIDOperations = __webpack_require__(/*! ./ReactDOMIDOperations */ 403);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 388);
+	var ReactDOMIDOperations = __webpack_require__(/*! ./ReactDOMIDOperations */ 400);
 	
 	/**
 	 * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -20205,7 +20763,7 @@
 	module.exports = ReactComponentBrowserEnvironment;
 
 /***/ },
-/* 391 */
+/* 388 */
 /*!**********************************************!*\
   !*** ./~/react/lib/DOMChildrenOperations.js ***!
   \**********************************************/
@@ -20224,15 +20782,15 @@
 	
 	'use strict';
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var Danger = __webpack_require__(/*! ./Danger */ 398);
-	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 402);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var Danger = __webpack_require__(/*! ./Danger */ 395);
+	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 399);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 395);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 394);
-	var setTextContent = __webpack_require__(/*! ./setTextContent */ 396);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 392);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 391);
+	var setTextContent = __webpack_require__(/*! ./setTextContent */ 393);
 	
 	function getNodeAfter(parentNode, node) {
 	  // Special case for text components, which return [open, close] comments
@@ -20408,7 +20966,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 392 */
+/* 389 */
 /*!************************************!*\
   !*** ./~/react/lib/DOMLazyTree.js ***!
   \************************************/
@@ -20427,11 +20985,11 @@
 	
 	'use strict';
 	
-	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 393);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 394);
+	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 390);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 391);
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 395);
-	var setTextContent = __webpack_require__(/*! ./setTextContent */ 396);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 392);
+	var setTextContent = __webpack_require__(/*! ./setTextContent */ 393);
 	
 	var ELEMENT_NODE_TYPE = 1;
 	var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -20534,7 +21092,7 @@
 	module.exports = DOMLazyTree;
 
 /***/ },
-/* 393 */
+/* 390 */
 /*!**************************************!*\
   !*** ./~/react/lib/DOMNamespaces.js ***!
   \**************************************/
@@ -20562,7 +21120,7 @@
 	module.exports = DOMNamespaces;
 
 /***/ },
-/* 394 */
+/* 391 */
 /*!*************************************!*\
   !*** ./~/react/lib/setInnerHTML.js ***!
   \*************************************/
@@ -20581,13 +21139,13 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 393);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 390);
 	
 	var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 	var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 	
-	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 395);
+	var createMicrosoftUnsafeLocalFunction = __webpack_require__(/*! ./createMicrosoftUnsafeLocalFunction */ 392);
 	
 	// SVG temp container for IE lacking innerHTML
 	var reusableSVGContainer;
@@ -20668,7 +21226,7 @@
 	module.exports = setInnerHTML;
 
 /***/ },
-/* 395 */
+/* 392 */
 /*!***********************************************************!*\
   !*** ./~/react/lib/createMicrosoftUnsafeLocalFunction.js ***!
   \***********************************************************/
@@ -20708,7 +21266,7 @@
 	module.exports = createMicrosoftUnsafeLocalFunction;
 
 /***/ },
-/* 396 */
+/* 393 */
 /*!***************************************!*\
   !*** ./~/react/lib/setTextContent.js ***!
   \***************************************/
@@ -20727,9 +21285,9 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 397);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 394);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 394);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 391);
 	
 	/**
 	 * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -20764,7 +21322,7 @@
 	module.exports = setTextContent;
 
 /***/ },
-/* 397 */
+/* 394 */
 /*!****************************************************!*\
   !*** ./~/react/lib/escapeTextContentForBrowser.js ***!
   \****************************************************/
@@ -20894,7 +21452,7 @@
 	module.exports = escapeTextContentForBrowser;
 
 /***/ },
-/* 398 */
+/* 395 */
 /*!*******************************!*\
   !*** ./~/react/lib/Danger.js ***!
   \*******************************/
@@ -20915,10 +21473,10 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
-	var createNodesFromMarkup = __webpack_require__(/*! fbjs/lib/createNodesFromMarkup */ 399);
+	var createNodesFromMarkup = __webpack_require__(/*! fbjs/lib/createNodesFromMarkup */ 396);
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 309);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	
@@ -20951,7 +21509,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 399 */
+/* 396 */
 /*!*********************************************!*\
   !*** ./~/fbjs/lib/createNodesFromMarkup.js ***!
   \*********************************************/
@@ -20972,10 +21530,10 @@
 	
 	/*eslint-disable fb-www/unsafe-html*/
 	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 356);
 	
-	var createArrayFromMixed = __webpack_require__(/*! ./createArrayFromMixed */ 400);
-	var getMarkupWrap = __webpack_require__(/*! ./getMarkupWrap */ 401);
+	var createArrayFromMixed = __webpack_require__(/*! ./createArrayFromMixed */ 397);
+	var getMarkupWrap = __webpack_require__(/*! ./getMarkupWrap */ 398);
 	var invariant = __webpack_require__(/*! ./invariant */ 305);
 	
 	/**
@@ -21043,7 +21601,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 400 */
+/* 397 */
 /*!********************************************!*\
   !*** ./~/fbjs/lib/createArrayFromMixed.js ***!
   \********************************************/
@@ -21178,7 +21736,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 401 */
+/* 398 */
 /*!*************************************!*\
   !*** ./~/fbjs/lib/getMarkupWrap.js ***!
   \*************************************/
@@ -21198,7 +21756,7 @@
 	
 	/*eslint-disable fb-www/unsafe-html */
 	
-	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! ./ExecutionEnvironment */ 356);
 	
 	var invariant = __webpack_require__(/*! ./invariant */ 305);
 	
@@ -21281,7 +21839,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 402 */
+/* 399 */
 /*!***************************************************!*\
   !*** ./~/react/lib/ReactMultiChildUpdateTypes.js ***!
   \***************************************************/
@@ -21321,7 +21879,7 @@
 	module.exports = ReactMultiChildUpdateTypes;
 
 /***/ },
-/* 403 */
+/* 400 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactDOMIDOperations.js ***!
   \*********************************************/
@@ -21340,8 +21898,8 @@
 	
 	'use strict';
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 391);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 388);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
 	
 	/**
 	 * Operations used to process updates to DOM nodes.
@@ -21363,7 +21921,7 @@
 	module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 404 */
+/* 401 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMComponent.js ***!
   \******************************************/
@@ -21387,35 +21945,35 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var AutoFocusUtils = __webpack_require__(/*! ./AutoFocusUtils */ 405);
-	var CSSPropertyOperations = __webpack_require__(/*! ./CSSPropertyOperations */ 407);
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 393);
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 415);
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 353);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 354);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 421);
-	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 390);
-	var ReactDOMButton = __webpack_require__(/*! ./ReactDOMButton */ 424);
-	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 348);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDOMInput = __webpack_require__(/*! ./ReactDOMInput */ 426);
-	var ReactDOMOption = __webpack_require__(/*! ./ReactDOMOption */ 428);
-	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 429);
-	var ReactDOMTextarea = __webpack_require__(/*! ./ReactDOMTextarea */ 430);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactMultiChild = __webpack_require__(/*! ./ReactMultiChild */ 431);
-	var ReactServerRenderingTransaction = __webpack_require__(/*! ./ReactServerRenderingTransaction */ 443);
+	var AutoFocusUtils = __webpack_require__(/*! ./AutoFocusUtils */ 402);
+	var CSSPropertyOperations = __webpack_require__(/*! ./CSSPropertyOperations */ 404);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var DOMNamespaces = __webpack_require__(/*! ./DOMNamespaces */ 390);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 412);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 350);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 351);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 418);
+	var ReactComponentBrowserEnvironment = __webpack_require__(/*! ./ReactComponentBrowserEnvironment */ 387);
+	var ReactDOMButton = __webpack_require__(/*! ./ReactDOMButton */ 421);
+	var ReactDOMComponentFlags = __webpack_require__(/*! ./ReactDOMComponentFlags */ 345);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDOMInput = __webpack_require__(/*! ./ReactDOMInput */ 423);
+	var ReactDOMOption = __webpack_require__(/*! ./ReactDOMOption */ 425);
+	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 426);
+	var ReactDOMTextarea = __webpack_require__(/*! ./ReactDOMTextarea */ 427);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactMultiChild = __webpack_require__(/*! ./ReactMultiChild */ 428);
+	var ReactServerRenderingTransaction = __webpack_require__(/*! ./ReactServerRenderingTransaction */ 440);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 309);
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 397);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 394);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 381);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 378);
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 438);
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 446);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 435);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 443);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var Flags = ReactDOMComponentFlags;
@@ -22397,7 +22955,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 405 */
+/* 402 */
 /*!***************************************!*\
   !*** ./~/react/lib/AutoFocusUtils.js ***!
   \***************************************/
@@ -22416,9 +22974,9 @@
 	
 	'use strict';
 	
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
 	
-	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 406);
+	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 403);
 	
 	var AutoFocusUtils = {
 	  focusDOMComponent: function () {
@@ -22429,7 +22987,7 @@
 	module.exports = AutoFocusUtils;
 
 /***/ },
-/* 406 */
+/* 403 */
 /*!*********************************!*\
   !*** ./~/fbjs/lib/focusNode.js ***!
   \*********************************/
@@ -22463,7 +23021,7 @@
 	module.exports = focusNode;
 
 /***/ },
-/* 407 */
+/* 404 */
 /*!**********************************************!*\
   !*** ./~/react/lib/CSSPropertyOperations.js ***!
   \**********************************************/
@@ -22482,14 +23040,14 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 408);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 405);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
-	var camelizeStyleName = __webpack_require__(/*! fbjs/lib/camelizeStyleName */ 409);
-	var dangerousStyleValue = __webpack_require__(/*! ./dangerousStyleValue */ 411);
-	var hyphenateStyleName = __webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 412);
-	var memoizeStringOnly = __webpack_require__(/*! fbjs/lib/memoizeStringOnly */ 414);
+	var camelizeStyleName = __webpack_require__(/*! fbjs/lib/camelizeStyleName */ 406);
+	var dangerousStyleValue = __webpack_require__(/*! ./dangerousStyleValue */ 408);
+	var hyphenateStyleName = __webpack_require__(/*! fbjs/lib/hyphenateStyleName */ 409);
+	var memoizeStringOnly = __webpack_require__(/*! fbjs/lib/memoizeStringOnly */ 411);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var processStyleName = memoizeStringOnly(function (styleName) {
@@ -22677,7 +23235,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 408 */
+/* 405 */
 /*!************************************!*\
   !*** ./~/react/lib/CSSProperty.js ***!
   \************************************/
@@ -22833,7 +23391,7 @@
 	module.exports = CSSProperty;
 
 /***/ },
-/* 409 */
+/* 406 */
 /*!*****************************************!*\
   !*** ./~/fbjs/lib/camelizeStyleName.js ***!
   \*****************************************/
@@ -22852,7 +23410,7 @@
 	
 	'use strict';
 	
-	var camelize = __webpack_require__(/*! ./camelize */ 410);
+	var camelize = __webpack_require__(/*! ./camelize */ 407);
 	
 	var msPattern = /^-ms-/;
 	
@@ -22880,7 +23438,7 @@
 	module.exports = camelizeStyleName;
 
 /***/ },
-/* 410 */
+/* 407 */
 /*!********************************!*\
   !*** ./~/fbjs/lib/camelize.js ***!
   \********************************/
@@ -22919,7 +23477,7 @@
 	module.exports = camelize;
 
 /***/ },
-/* 411 */
+/* 408 */
 /*!********************************************!*\
   !*** ./~/react/lib/dangerousStyleValue.js ***!
   \********************************************/
@@ -22938,7 +23496,7 @@
 	
 	'use strict';
 	
-	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 408);
+	var CSSProperty = __webpack_require__(/*! ./CSSProperty */ 405);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var isUnitlessNumber = CSSProperty.isUnitlessNumber;
@@ -23007,7 +23565,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 412 */
+/* 409 */
 /*!******************************************!*\
   !*** ./~/fbjs/lib/hyphenateStyleName.js ***!
   \******************************************/
@@ -23026,7 +23584,7 @@
 	
 	'use strict';
 	
-	var hyphenate = __webpack_require__(/*! ./hyphenate */ 413);
+	var hyphenate = __webpack_require__(/*! ./hyphenate */ 410);
 	
 	var msPattern = /^ms-/;
 	
@@ -23053,7 +23611,7 @@
 	module.exports = hyphenateStyleName;
 
 /***/ },
-/* 413 */
+/* 410 */
 /*!*********************************!*\
   !*** ./~/fbjs/lib/hyphenate.js ***!
   \*********************************/
@@ -23093,7 +23651,7 @@
 	module.exports = hyphenate;
 
 /***/ },
-/* 414 */
+/* 411 */
 /*!*****************************************!*\
   !*** ./~/fbjs/lib/memoizeStringOnly.js ***!
   \*****************************************/
@@ -23130,7 +23688,7 @@
 	module.exports = memoizeStringOnly;
 
 /***/ },
-/* 415 */
+/* 412 */
 /*!**********************************************!*\
   !*** ./~/react/lib/DOMPropertyOperations.js ***!
   \**********************************************/
@@ -23149,12 +23707,12 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDOMInstrumentation = __webpack_require__(/*! ./ReactDOMInstrumentation */ 416);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDOMInstrumentation = __webpack_require__(/*! ./ReactDOMInstrumentation */ 413);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
-	var quoteAttributeValueForBrowser = __webpack_require__(/*! ./quoteAttributeValueForBrowser */ 420);
+	var quoteAttributeValueForBrowser = __webpack_require__(/*! ./quoteAttributeValueForBrowser */ 417);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -23367,7 +23925,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 416 */
+/* 413 */
 /*!************************************************!*\
   !*** ./~/react/lib/ReactDOMInstrumentation.js ***!
   \************************************************/
@@ -23389,7 +23947,7 @@
 	var debugTool = null;
 	
 	if (process.env.NODE_ENV !== 'production') {
-	  var ReactDOMDebugTool = __webpack_require__(/*! ./ReactDOMDebugTool */ 417);
+	  var ReactDOMDebugTool = __webpack_require__(/*! ./ReactDOMDebugTool */ 414);
 	  debugTool = ReactDOMDebugTool;
 	}
 	
@@ -23397,7 +23955,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 417 */
+/* 414 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMDebugTool.js ***!
   \******************************************/
@@ -23416,9 +23974,9 @@
 	
 	'use strict';
 	
-	var ReactDOMNullInputValuePropDevtool = __webpack_require__(/*! ./ReactDOMNullInputValuePropDevtool */ 418);
-	var ReactDOMUnknownPropertyDevtool = __webpack_require__(/*! ./ReactDOMUnknownPropertyDevtool */ 419);
-	var ReactDebugTool = __webpack_require__(/*! ./ReactDebugTool */ 373);
+	var ReactDOMNullInputValuePropDevtool = __webpack_require__(/*! ./ReactDOMNullInputValuePropDevtool */ 415);
+	var ReactDOMUnknownPropertyDevtool = __webpack_require__(/*! ./ReactDOMUnknownPropertyDevtool */ 416);
+	var ReactDebugTool = __webpack_require__(/*! ./ReactDebugTool */ 370);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
@@ -23473,7 +24031,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 418 */
+/* 415 */
 /*!**********************************************************!*\
   !*** ./~/react/lib/ReactDOMNullInputValuePropDevtool.js ***!
   \**********************************************************/
@@ -23525,7 +24083,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 419 */
+/* 416 */
 /*!*******************************************************!*\
   !*** ./~/react/lib/ReactDOMUnknownPropertyDevtool.js ***!
   \*******************************************************/
@@ -23544,8 +24102,8 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 354);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 351);
 	var ReactComponentTreeDevtool = __webpack_require__(/*! ./ReactComponentTreeDevtool */ 326);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -23646,7 +24204,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 420 */
+/* 417 */
 /*!******************************************************!*\
   !*** ./~/react/lib/quoteAttributeValueForBrowser.js ***!
   \******************************************************/
@@ -23665,7 +24223,7 @@
 	
 	'use strict';
 	
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 397);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 394);
 	
 	/**
 	 * Escapes attribute value to prevent scripting attacks.
@@ -23680,7 +24238,7 @@
 	module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 421 */
+/* 418 */
 /*!*************************************************!*\
   !*** ./~/react/lib/ReactBrowserEventEmitter.js ***!
   \*************************************************/
@@ -23701,13 +24259,13 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 354);
-	var ReactEventEmitterMixin = __webpack_require__(/*! ./ReactEventEmitterMixin */ 422);
-	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 387);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPluginRegistry = __webpack_require__(/*! ./EventPluginRegistry */ 351);
+	var ReactEventEmitterMixin = __webpack_require__(/*! ./ReactEventEmitterMixin */ 419);
+	var ViewportMetrics = __webpack_require__(/*! ./ViewportMetrics */ 384);
 	
-	var getVendorPrefixedEventName = __webpack_require__(/*! ./getVendorPrefixedEventName */ 423);
-	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 381);
+	var getVendorPrefixedEventName = __webpack_require__(/*! ./getVendorPrefixedEventName */ 420);
+	var isEventSupported = __webpack_require__(/*! ./isEventSupported */ 378);
 	
 	/**
 	 * Summary of `ReactBrowserEventEmitter` event handling:
@@ -24005,7 +24563,7 @@
 	module.exports = ReactBrowserEventEmitter;
 
 /***/ },
-/* 422 */
+/* 419 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactEventEmitterMixin.js ***!
   \***********************************************/
@@ -24024,7 +24582,7 @@
 	
 	'use strict';
 	
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 353);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 350);
 	
 	function runEventQueueInBatch(events) {
 	  EventPluginHub.enqueueEvents(events);
@@ -24046,7 +24604,7 @@
 	module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 423 */
+/* 420 */
 /*!***************************************************!*\
   !*** ./~/react/lib/getVendorPrefixedEventName.js ***!
   \***************************************************/
@@ -24065,7 +24623,7 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
 	/**
 	 * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -24155,7 +24713,7 @@
 	module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 424 */
+/* 421 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMButton.js ***!
   \***************************************/
@@ -24174,7 +24732,7 @@
 	
 	'use strict';
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 425);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 422);
 	
 	/**
 	 * Implements a <button> host component that does not receive mouse events
@@ -24187,7 +24745,7 @@
 	module.exports = ReactDOMButton;
 
 /***/ },
-/* 425 */
+/* 422 */
 /*!*******************************************!*\
   !*** ./~/react/lib/DisabledInputUtils.js ***!
   \*******************************************/
@@ -24245,7 +24803,7 @@
 	module.exports = DisabledInputUtils;
 
 /***/ },
-/* 426 */
+/* 423 */
 /*!**************************************!*\
   !*** ./~/react/lib/ReactDOMInput.js ***!
   \**************************************/
@@ -24267,11 +24825,11 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 425);
-	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 415);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 427);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 422);
+	var DOMPropertyOperations = __webpack_require__(/*! ./DOMPropertyOperations */ 412);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 424);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -24501,7 +25059,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 427 */
+/* 424 */
 /*!*****************************************!*\
   !*** ./~/react/lib/LinkedValueUtils.js ***!
   \*****************************************/
@@ -24646,7 +25204,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 428 */
+/* 425 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMOption.js ***!
   \***************************************/
@@ -24668,8 +25226,8 @@
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
 	var ReactChildren = __webpack_require__(/*! ./ReactChildren */ 302);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 429);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDOMSelect = __webpack_require__(/*! ./ReactDOMSelect */ 426);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	var didWarnInvalidOptionChildren = false;
@@ -24778,7 +25336,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 429 */
+/* 426 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactDOMSelect.js ***!
   \***************************************/
@@ -24799,10 +25357,10 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 425);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 427);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 422);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 424);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
@@ -24987,7 +25545,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 430 */
+/* 427 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactDOMTextarea.js ***!
   \*****************************************/
@@ -25009,10 +25567,10 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 425);
-	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 427);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var DisabledInputUtils = __webpack_require__(/*! ./DisabledInputUtils */ 422);
+	var LinkedValueUtils = __webpack_require__(/*! ./LinkedValueUtils */ 424);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -25151,7 +25709,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 431 */
+/* 428 */
 /*!****************************************!*\
   !*** ./~/react/lib/ReactMultiChild.js ***!
   \****************************************/
@@ -25172,17 +25730,17 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 432);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 433);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 402);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 429);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 430);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactMultiChildUpdateTypes = __webpack_require__(/*! ./ReactMultiChildUpdateTypes */ 399);
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 307);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
-	var ReactChildReconciler = __webpack_require__(/*! ./ReactChildReconciler */ 434);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
+	var ReactChildReconciler = __webpack_require__(/*! ./ReactChildReconciler */ 431);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 309);
-	var flattenChildren = __webpack_require__(/*! ./flattenChildren */ 442);
+	var flattenChildren = __webpack_require__(/*! ./flattenChildren */ 439);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	
 	/**
@@ -25613,7 +26171,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 432 */
+/* 429 */
 /*!**************************************************!*\
   !*** ./~/react/lib/ReactComponentEnvironment.js ***!
   \**************************************************/
@@ -25675,7 +26233,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 433 */
+/* 430 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactInstanceMap.js ***!
   \*****************************************/
@@ -25731,7 +26289,7 @@
 	module.exports = ReactInstanceMap;
 
 /***/ },
-/* 434 */
+/* 431 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactChildReconciler.js ***!
   \*********************************************/
@@ -25750,11 +26308,11 @@
 	
 	'use strict';
 	
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
 	
-	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 435);
+	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 432);
 	var KeyEscapeUtils = __webpack_require__(/*! ./KeyEscapeUtils */ 313);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 439);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 436);
 	var traverseAllChildren = __webpack_require__(/*! ./traverseAllChildren */ 311);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
@@ -25891,7 +26449,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 435 */
+/* 432 */
 /*!**************************************************!*\
   !*** ./~/react/lib/instantiateReactComponent.js ***!
   \**************************************************/
@@ -25913,10 +26471,10 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var ReactCompositeComponent = __webpack_require__(/*! ./ReactCompositeComponent */ 436);
-	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 440);
-	var ReactHostComponent = __webpack_require__(/*! ./ReactHostComponent */ 441);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var ReactCompositeComponent = __webpack_require__(/*! ./ReactCompositeComponent */ 433);
+	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 437);
+	var ReactHostComponent = __webpack_require__(/*! ./ReactHostComponent */ 438);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -26046,7 +26604,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 436 */
+/* 433 */
 /*!************************************************!*\
   !*** ./~/react/lib/ReactCompositeComponent.js ***!
   \************************************************/
@@ -26068,21 +26626,21 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 432);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 429);
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 307);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 306);
-	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 356);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 433);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 437);
+	var ReactErrorUtils = __webpack_require__(/*! ./ReactErrorUtils */ 353);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 430);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 434);
 	var ReactPropTypeLocations = __webpack_require__(/*! ./ReactPropTypeLocations */ 319);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
 	
 	var checkReactTypeSpec = __webpack_require__(/*! ./checkReactTypeSpec */ 327);
 	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 316);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 438);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 439);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 435);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 436);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var CompositeTypes = {
@@ -26999,7 +27557,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 437 */
+/* 434 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactNodeTypes.js ***!
   \***************************************/
@@ -27048,7 +27606,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 438 */
+/* 435 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/shallowEqual.js ***!
   \************************************/
@@ -27122,7 +27680,7 @@
 	module.exports = shallowEqual;
 
 /***/ },
-/* 439 */
+/* 436 */
 /*!***************************************************!*\
   !*** ./~/react/lib/shouldUpdateReactComponent.js ***!
   \***************************************************/
@@ -27172,7 +27730,7 @@
 	module.exports = shouldUpdateReactComponent;
 
 /***/ },
-/* 440 */
+/* 437 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactEmptyComponent.js ***!
   \********************************************/
@@ -27210,7 +27768,7 @@
 	module.exports = ReactEmptyComponent;
 
 /***/ },
-/* 441 */
+/* 438 */
 /*!*******************************************!*\
   !*** ./~/react/lib/ReactHostComponent.js ***!
   \*******************************************/
@@ -27295,7 +27853,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 442 */
+/* 439 */
 /*!****************************************!*\
   !*** ./~/react/lib/flattenChildren.js ***!
   \****************************************/
@@ -27378,7 +27936,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 443 */
+/* 440 */
 /*!********************************************************!*\
   !*** ./~/react/lib/ReactServerRenderingTransaction.js ***!
   \********************************************************/
@@ -27400,9 +27958,9 @@
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 303);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 379);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactServerUpdateQueue = __webpack_require__(/*! ./ReactServerUpdateQueue */ 444);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 376);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactServerUpdateQueue = __webpack_require__(/*! ./ReactServerUpdateQueue */ 441);
 	
 	/**
 	 * Executed within the scope of the `Transaction` instance. Consider these as
@@ -27477,7 +28035,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 444 */
+/* 441 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactServerUpdateQueue.js ***!
   \***********************************************/
@@ -27499,8 +28057,8 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 445);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 379);
+	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 442);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 376);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	function warnNoop(publicInstance, callerName) {
@@ -27627,7 +28185,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 445 */
+/* 442 */
 /*!*****************************************!*\
   !*** ./~/react/lib/ReactUpdateQueue.js ***!
   \*****************************************/
@@ -27649,9 +28207,9 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 307);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 433);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 430);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
@@ -27862,7 +28420,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 446 */
+/* 443 */
 /*!*******************************************!*\
   !*** ./~/react/lib/validateDOMNesting.js ***!
   \*******************************************/
@@ -28240,7 +28798,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 447 */
+/* 444 */
 /*!***********************************************!*\
   !*** ./~/react/lib/ReactDOMEmptyComponent.js ***!
   \***********************************************/
@@ -28261,8 +28819,8 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
 	
 	var ReactDOMEmptyComponent = function (instantiate) {
 	  // ReactCompositeComponent uses this:
@@ -28308,7 +28866,7 @@
 	module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 448 */
+/* 445 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMTreeTraversal.js ***!
   \**********************************************/
@@ -28453,7 +29011,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 449 */
+/* 446 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMTextComponent.js ***!
   \**********************************************/
@@ -28475,14 +29033,14 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304),
 	    _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 391);
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
+	var DOMChildrenOperations = __webpack_require__(/*! ./DOMChildrenOperations */ 388);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
 	
-	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 397);
+	var escapeTextContentForBrowser = __webpack_require__(/*! ./escapeTextContentForBrowser */ 394);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 446);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 443);
 	
 	/**
 	 * Text nodes violate a couple assumptions that React makes about components:
@@ -28633,7 +29191,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 450 */
+/* 447 */
 /*!*****************************************************!*\
   !*** ./~/react/lib/ReactDefaultBatchingStrategy.js ***!
   \*****************************************************/
@@ -28654,8 +29212,8 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 379);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 376);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 309);
 	
@@ -28709,7 +29267,7 @@
 	module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 451 */
+/* 448 */
 /*!*******************************************!*\
   !*** ./~/react/lib/ReactEventListener.js ***!
   \*******************************************/
@@ -28730,14 +29288,14 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 452);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 449);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 303);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
-	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 380);
-	var getUnboundedScrollPosition = __webpack_require__(/*! fbjs/lib/getUnboundedScrollPosition */ 453);
+	var getEventTarget = __webpack_require__(/*! ./getEventTarget */ 377);
+	var getUnboundedScrollPosition = __webpack_require__(/*! fbjs/lib/getUnboundedScrollPosition */ 450);
 	
 	/**
 	 * Find the deepest React component completely containing the root of the
@@ -28874,7 +29432,7 @@
 	module.exports = ReactEventListener;
 
 /***/ },
-/* 452 */
+/* 449 */
 /*!*************************************!*\
   !*** ./~/fbjs/lib/EventListener.js ***!
   \*************************************/
@@ -28966,7 +29524,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 453 */
+/* 450 */
 /*!**************************************************!*\
   !*** ./~/fbjs/lib/getUnboundedScrollPosition.js ***!
   \**************************************************/
@@ -29012,7 +29570,7 @@
 	module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 454 */
+/* 451 */
 /*!***************************************!*\
   !*** ./~/react/lib/ReactInjection.js ***!
   \***************************************/
@@ -29031,15 +29589,15 @@
 	
 	'use strict';
 	
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 353);
-	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 355);
-	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 432);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var EventPluginHub = __webpack_require__(/*! ./EventPluginHub */ 350);
+	var EventPluginUtils = __webpack_require__(/*! ./EventPluginUtils */ 352);
+	var ReactComponentEnvironment = __webpack_require__(/*! ./ReactComponentEnvironment */ 429);
 	var ReactClass = __webpack_require__(/*! ./ReactClass */ 318);
-	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 440);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 421);
-	var ReactHostComponent = __webpack_require__(/*! ./ReactHostComponent */ 441);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var ReactEmptyComponent = __webpack_require__(/*! ./ReactEmptyComponent */ 437);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 418);
+	var ReactHostComponent = __webpack_require__(/*! ./ReactHostComponent */ 438);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var ReactInjection = {
 	  Component: ReactComponentEnvironment.injection,
@@ -29056,7 +29614,7 @@
 	module.exports = ReactInjection;
 
 /***/ },
-/* 455 */
+/* 452 */
 /*!**************************************************!*\
   !*** ./~/react/lib/ReactReconcileTransaction.js ***!
   \**************************************************/
@@ -29077,13 +29635,13 @@
 	
 	var _assign = __webpack_require__(/*! object-assign */ 301);
 	
-	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 367);
+	var CallbackQueue = __webpack_require__(/*! ./CallbackQueue */ 364);
 	var PooledClass = __webpack_require__(/*! ./PooledClass */ 303);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 421);
-	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 456);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var Transaction = __webpack_require__(/*! ./Transaction */ 379);
-	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 445);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 418);
+	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 453);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var Transaction = __webpack_require__(/*! ./Transaction */ 376);
+	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 442);
 	
 	/**
 	 * Ensures that, when possible, the selection range (currently selected text
@@ -29243,7 +29801,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 456 */
+/* 453 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactInputSelection.js ***!
   \********************************************/
@@ -29262,11 +29820,11 @@
 	
 	'use strict';
 	
-	var ReactDOMSelection = __webpack_require__(/*! ./ReactDOMSelection */ 457);
+	var ReactDOMSelection = __webpack_require__(/*! ./ReactDOMSelection */ 454);
 	
-	var containsNode = __webpack_require__(/*! fbjs/lib/containsNode */ 459);
-	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 406);
-	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 462);
+	var containsNode = __webpack_require__(/*! fbjs/lib/containsNode */ 456);
+	var focusNode = __webpack_require__(/*! fbjs/lib/focusNode */ 403);
+	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 459);
 	
 	function isInDocument(node) {
 	  return containsNode(document.documentElement, node);
@@ -29375,7 +29933,7 @@
 	module.exports = ReactInputSelection;
 
 /***/ },
-/* 457 */
+/* 454 */
 /*!******************************************!*\
   !*** ./~/react/lib/ReactDOMSelection.js ***!
   \******************************************/
@@ -29394,10 +29952,10 @@
 	
 	'use strict';
 	
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
 	
-	var getNodeForCharacterOffset = __webpack_require__(/*! ./getNodeForCharacterOffset */ 458);
-	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 361);
+	var getNodeForCharacterOffset = __webpack_require__(/*! ./getNodeForCharacterOffset */ 455);
+	var getTextContentAccessor = __webpack_require__(/*! ./getTextContentAccessor */ 358);
 	
 	/**
 	 * While `isCollapsed` is available on the Selection object and `collapsed`
@@ -29595,7 +30153,7 @@
 	module.exports = ReactDOMSelection;
 
 /***/ },
-/* 458 */
+/* 455 */
 /*!**************************************************!*\
   !*** ./~/react/lib/getNodeForCharacterOffset.js ***!
   \**************************************************/
@@ -29677,7 +30235,7 @@
 	module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 459 */
+/* 456 */
 /*!************************************!*\
   !*** ./~/fbjs/lib/containsNode.js ***!
   \************************************/
@@ -29696,7 +30254,7 @@
 	 * 
 	 */
 	
-	var isTextNode = __webpack_require__(/*! ./isTextNode */ 460);
+	var isTextNode = __webpack_require__(/*! ./isTextNode */ 457);
 	
 	/*eslint-disable no-bitwise */
 	
@@ -29724,7 +30282,7 @@
 	module.exports = containsNode;
 
 /***/ },
-/* 460 */
+/* 457 */
 /*!**********************************!*\
   !*** ./~/fbjs/lib/isTextNode.js ***!
   \**********************************/
@@ -29743,7 +30301,7 @@
 	 * @typechecks
 	 */
 	
-	var isNode = __webpack_require__(/*! ./isNode */ 461);
+	var isNode = __webpack_require__(/*! ./isNode */ 458);
 	
 	/**
 	 * @param {*} object The object to check.
@@ -29756,7 +30314,7 @@
 	module.exports = isTextNode;
 
 /***/ },
-/* 461 */
+/* 458 */
 /*!******************************!*\
   !*** ./~/fbjs/lib/isNode.js ***!
   \******************************/
@@ -29786,7 +30344,7 @@
 	module.exports = isNode;
 
 /***/ },
-/* 462 */
+/* 459 */
 /*!****************************************!*\
   !*** ./~/fbjs/lib/getActiveElement.js ***!
   \****************************************/
@@ -29828,7 +30386,7 @@
 	module.exports = getActiveElement;
 
 /***/ },
-/* 463 */
+/* 460 */
 /*!*********************************************!*\
   !*** ./~/react/lib/SVGDOMPropertyConfig.js ***!
   \*********************************************/
@@ -30138,7 +30696,7 @@
 	module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 464 */
+/* 461 */
 /*!******************************************!*\
   !*** ./~/react/lib/SelectEventPlugin.js ***!
   \******************************************/
@@ -30157,17 +30715,17 @@
 	
 	'use strict';
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 352);
-	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 359);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 456);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 349);
+	var ExecutionEnvironment = __webpack_require__(/*! fbjs/lib/ExecutionEnvironment */ 356);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactInputSelection = __webpack_require__(/*! ./ReactInputSelection */ 453);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
-	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 462);
-	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 382);
+	var getActiveElement = __webpack_require__(/*! fbjs/lib/getActiveElement */ 459);
+	var isTextInputElement = __webpack_require__(/*! ./isTextInputElement */ 379);
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
-	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 438);
+	var shallowEqual = __webpack_require__(/*! fbjs/lib/shallowEqual */ 435);
 	
 	var topLevelTypes = EventConstants.topLevelTypes;
 	
@@ -30342,7 +30900,7 @@
 	module.exports = SelectEventPlugin;
 
 /***/ },
-/* 465 */
+/* 462 */
 /*!******************************************!*\
   !*** ./~/react/lib/SimpleEventPlugin.js ***!
   \******************************************/
@@ -30363,24 +30921,24 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var EventConstants = __webpack_require__(/*! ./EventConstants */ 351);
-	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 452);
-	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 352);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var SyntheticAnimationEvent = __webpack_require__(/*! ./SyntheticAnimationEvent */ 466);
-	var SyntheticClipboardEvent = __webpack_require__(/*! ./SyntheticClipboardEvent */ 467);
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
-	var SyntheticFocusEvent = __webpack_require__(/*! ./SyntheticFocusEvent */ 468);
-	var SyntheticKeyboardEvent = __webpack_require__(/*! ./SyntheticKeyboardEvent */ 469);
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 385);
-	var SyntheticDragEvent = __webpack_require__(/*! ./SyntheticDragEvent */ 472);
-	var SyntheticTouchEvent = __webpack_require__(/*! ./SyntheticTouchEvent */ 473);
-	var SyntheticTransitionEvent = __webpack_require__(/*! ./SyntheticTransitionEvent */ 474);
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 386);
-	var SyntheticWheelEvent = __webpack_require__(/*! ./SyntheticWheelEvent */ 475);
+	var EventConstants = __webpack_require__(/*! ./EventConstants */ 348);
+	var EventListener = __webpack_require__(/*! fbjs/lib/EventListener */ 449);
+	var EventPropagators = __webpack_require__(/*! ./EventPropagators */ 349);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var SyntheticAnimationEvent = __webpack_require__(/*! ./SyntheticAnimationEvent */ 463);
+	var SyntheticClipboardEvent = __webpack_require__(/*! ./SyntheticClipboardEvent */ 464);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
+	var SyntheticFocusEvent = __webpack_require__(/*! ./SyntheticFocusEvent */ 465);
+	var SyntheticKeyboardEvent = __webpack_require__(/*! ./SyntheticKeyboardEvent */ 466);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 382);
+	var SyntheticDragEvent = __webpack_require__(/*! ./SyntheticDragEvent */ 469);
+	var SyntheticTouchEvent = __webpack_require__(/*! ./SyntheticTouchEvent */ 470);
+	var SyntheticTransitionEvent = __webpack_require__(/*! ./SyntheticTransitionEvent */ 471);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 383);
+	var SyntheticWheelEvent = __webpack_require__(/*! ./SyntheticWheelEvent */ 472);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 309);
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 470);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 467);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var keyOf = __webpack_require__(/*! fbjs/lib/keyOf */ 322);
 	
@@ -30984,7 +31542,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 466 */
+/* 463 */
 /*!************************************************!*\
   !*** ./~/react/lib/SyntheticAnimationEvent.js ***!
   \************************************************/
@@ -31003,7 +31561,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
 	/**
 	 * @interface Event
@@ -31031,7 +31589,7 @@
 	module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 467 */
+/* 464 */
 /*!************************************************!*\
   !*** ./~/react/lib/SyntheticClipboardEvent.js ***!
   \************************************************/
@@ -31050,7 +31608,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
 	/**
 	 * @interface Event
@@ -31077,7 +31635,7 @@
 	module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 468 */
+/* 465 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticFocusEvent.js ***!
   \********************************************/
@@ -31096,7 +31654,7 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 386);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 383);
 	
 	/**
 	 * @interface FocusEvent
@@ -31121,7 +31679,7 @@
 	module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 469 */
+/* 466 */
 /*!***********************************************!*\
   !*** ./~/react/lib/SyntheticKeyboardEvent.js ***!
   \***********************************************/
@@ -31140,11 +31698,11 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 386);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 383);
 	
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 470);
-	var getEventKey = __webpack_require__(/*! ./getEventKey */ 471);
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 388);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 467);
+	var getEventKey = __webpack_require__(/*! ./getEventKey */ 468);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 385);
 	
 	/**
 	 * @interface KeyboardEvent
@@ -31213,7 +31771,7 @@
 	module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 470 */
+/* 467 */
 /*!*****************************************!*\
   !*** ./~/react/lib/getEventCharCode.js ***!
   \*****************************************/
@@ -31271,7 +31829,7 @@
 	module.exports = getEventCharCode;
 
 /***/ },
-/* 471 */
+/* 468 */
 /*!************************************!*\
   !*** ./~/react/lib/getEventKey.js ***!
   \************************************/
@@ -31290,7 +31848,7 @@
 	
 	'use strict';
 	
-	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 470);
+	var getEventCharCode = __webpack_require__(/*! ./getEventCharCode */ 467);
 	
 	/**
 	 * Normalization of deprecated HTML5 `key` values
@@ -31381,7 +31939,7 @@
 	module.exports = getEventKey;
 
 /***/ },
-/* 472 */
+/* 469 */
 /*!*******************************************!*\
   !*** ./~/react/lib/SyntheticDragEvent.js ***!
   \*******************************************/
@@ -31400,7 +31958,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 385);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 382);
 	
 	/**
 	 * @interface DragEvent
@@ -31425,7 +31983,7 @@
 	module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 473 */
+/* 470 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticTouchEvent.js ***!
   \********************************************/
@@ -31444,9 +32002,9 @@
 	
 	'use strict';
 	
-	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 386);
+	var SyntheticUIEvent = __webpack_require__(/*! ./SyntheticUIEvent */ 383);
 	
-	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 388);
+	var getEventModifierState = __webpack_require__(/*! ./getEventModifierState */ 385);
 	
 	/**
 	 * @interface TouchEvent
@@ -31478,7 +32036,7 @@
 	module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 474 */
+/* 471 */
 /*!*************************************************!*\
   !*** ./~/react/lib/SyntheticTransitionEvent.js ***!
   \*************************************************/
@@ -31497,7 +32055,7 @@
 	
 	'use strict';
 	
-	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 363);
+	var SyntheticEvent = __webpack_require__(/*! ./SyntheticEvent */ 360);
 	
 	/**
 	 * @interface Event
@@ -31525,7 +32083,7 @@
 	module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 475 */
+/* 472 */
 /*!********************************************!*\
   !*** ./~/react/lib/SyntheticWheelEvent.js ***!
   \********************************************/
@@ -31544,7 +32102,7 @@
 	
 	'use strict';
 	
-	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 385);
+	var SyntheticMouseEvent = __webpack_require__(/*! ./SyntheticMouseEvent */ 382);
 	
 	/**
 	 * @interface WheelEvent
@@ -31587,7 +32145,7 @@
 	module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 476 */
+/* 473 */
 /*!***********************************!*\
   !*** ./~/react/lib/ReactMount.js ***!
   \***********************************/
@@ -31608,27 +32166,27 @@
 	
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
-	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 392);
-	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 347);
-	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 421);
+	var DOMLazyTree = __webpack_require__(/*! ./DOMLazyTree */ 389);
+	var DOMProperty = __webpack_require__(/*! ./DOMProperty */ 344);
+	var ReactBrowserEventEmitter = __webpack_require__(/*! ./ReactBrowserEventEmitter */ 418);
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 307);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactDOMContainerInfo = __webpack_require__(/*! ./ReactDOMContainerInfo */ 477);
-	var ReactDOMFeatureFlags = __webpack_require__(/*! ./ReactDOMFeatureFlags */ 478);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactDOMContainerInfo = __webpack_require__(/*! ./ReactDOMContainerInfo */ 474);
+	var ReactDOMFeatureFlags = __webpack_require__(/*! ./ReactDOMFeatureFlags */ 475);
 	var ReactElement = __webpack_require__(/*! ./ReactElement */ 306);
-	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 368);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 433);
-	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 372);
-	var ReactMarkupChecksum = __webpack_require__(/*! ./ReactMarkupChecksum */ 479);
-	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 369);
-	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 445);
-	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 366);
+	var ReactFeatureFlags = __webpack_require__(/*! ./ReactFeatureFlags */ 365);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 430);
+	var ReactInstrumentation = __webpack_require__(/*! ./ReactInstrumentation */ 369);
+	var ReactMarkupChecksum = __webpack_require__(/*! ./ReactMarkupChecksum */ 476);
+	var ReactReconciler = __webpack_require__(/*! ./ReactReconciler */ 366);
+	var ReactUpdateQueue = __webpack_require__(/*! ./ReactUpdateQueue */ 442);
+	var ReactUpdates = __webpack_require__(/*! ./ReactUpdates */ 363);
 	
 	var emptyObject = __webpack_require__(/*! fbjs/lib/emptyObject */ 316);
-	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 435);
+	var instantiateReactComponent = __webpack_require__(/*! ./instantiateReactComponent */ 432);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
-	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 394);
-	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 439);
+	var setInnerHTML = __webpack_require__(/*! ./setInnerHTML */ 391);
+	var shouldUpdateReactComponent = __webpack_require__(/*! ./shouldUpdateReactComponent */ 436);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
 	var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
@@ -32095,7 +32653,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 477 */
+/* 474 */
 /*!**********************************************!*\
   !*** ./~/react/lib/ReactDOMContainerInfo.js ***!
   \**********************************************/
@@ -32114,7 +32672,7 @@
 	
 	'use strict';
 	
-	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 446);
+	var validateDOMNesting = __webpack_require__(/*! ./validateDOMNesting */ 443);
 	
 	var DOC_NODE_TYPE = 9;
 	
@@ -32137,7 +32695,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 478 */
+/* 475 */
 /*!*********************************************!*\
   !*** ./~/react/lib/ReactDOMFeatureFlags.js ***!
   \*********************************************/
@@ -32163,7 +32721,7 @@
 	module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 479 */
+/* 476 */
 /*!********************************************!*\
   !*** ./~/react/lib/ReactMarkupChecksum.js ***!
   \********************************************/
@@ -32182,7 +32740,7 @@
 	
 	'use strict';
 	
-	var adler32 = __webpack_require__(/*! ./adler32 */ 480);
+	var adler32 = __webpack_require__(/*! ./adler32 */ 477);
 	
 	var TAG_END = /\/?>/;
 	var COMMENT_START = /^<\!\-\-/;
@@ -32221,7 +32779,7 @@
 	module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 480 */
+/* 477 */
 /*!********************************!*\
   !*** ./~/react/lib/adler32.js ***!
   \********************************/
@@ -32273,7 +32831,7 @@
 	module.exports = adler32;
 
 /***/ },
-/* 481 */
+/* 478 */
 /*!************************************!*\
   !*** ./~/react/lib/findDOMNode.js ***!
   \************************************/
@@ -32295,10 +32853,10 @@
 	var _prodInvariant = __webpack_require__(/*! ./reactProdInvariant */ 304);
 	
 	var ReactCurrentOwner = __webpack_require__(/*! ./ReactCurrentOwner */ 307);
-	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 346);
-	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 433);
+	var ReactDOMComponentTree = __webpack_require__(/*! ./ReactDOMComponentTree */ 343);
+	var ReactInstanceMap = __webpack_require__(/*! ./ReactInstanceMap */ 430);
 	
-	var getHostComponentFromComposite = __webpack_require__(/*! ./getHostComponentFromComposite */ 482);
+	var getHostComponentFromComposite = __webpack_require__(/*! ./getHostComponentFromComposite */ 479);
 	var invariant = __webpack_require__(/*! fbjs/lib/invariant */ 305);
 	var warning = __webpack_require__(/*! fbjs/lib/warning */ 308);
 	
@@ -32342,7 +32900,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./~/process/browser.js */ 294)))
 
 /***/ },
-/* 482 */
+/* 479 */
 /*!******************************************************!*\
   !*** ./~/react/lib/getHostComponentFromComposite.js ***!
   \******************************************************/
@@ -32361,7 +32919,7 @@
 	
 	'use strict';
 	
-	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 437);
+	var ReactNodeTypes = __webpack_require__(/*! ./ReactNodeTypes */ 434);
 	
 	function getHostComponentFromComposite(inst) {
 	  var type;
@@ -32380,7 +32938,7 @@
 	module.exports = getHostComponentFromComposite;
 
 /***/ },
-/* 483 */
+/* 480 */
 /*!***************************************************!*\
   !*** ./~/react/lib/renderSubtreeIntoContainer.js ***!
   \***************************************************/
@@ -32399,9 +32957,202 @@
 	
 	'use strict';
 	
-	var ReactMount = __webpack_require__(/*! ./ReactMount */ 476);
+	var ReactMount = __webpack_require__(/*! ./ReactMount */ 473);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 481 */
+/*!********************************************!*\
+  !*** ./app/components/AutocompleteItem.js ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.AutocompleteItem = undefined;
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 299);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	__webpack_require__(/*! ../style/AutocompleteItem.scss */ 482);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var AutocompleteItem = exports.AutocompleteItem = function (_Component) {
+	    _inherits(AutocompleteItem, _Component);
+	
+	    function AutocompleteItem() {
+	        _classCallCheck(this, AutocompleteItem);
+	
+	        return _possibleConstructorReturn(this, Object.getPrototypeOf(AutocompleteItem).apply(this, arguments));
+	    }
+	
+	    _createClass(AutocompleteItem, [{
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+	
+	            return _react2.default.createElement(
+	                'div',
+	                { onClick: function onClick(event) {
+	                        _this2.props.onClick(event);
+	                    },
+	                    onMouseDown: function onMouseDown(event) {
+	                        _this2.props.onMouseDown(event);
+	                    },
+	                    onMouseEnter: function onMouseEnter(event) {
+	                        return _this2.props.onMouseEnter(event);
+	                    },
+	                    className: this.props.selected ? 'AutocompleteItem selected' : 'AutocompleteItem' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'AutocompleteItem__title' },
+	                    this.props.item.value
+	                ),
+	                _react2.default.createElement(
+	                    'span',
+	                    { className: 'AutocompleteItem__help' },
+	                    this.props.item.help
+	                )
+	            );
+	        }
+	    }]);
+
+	    return AutocompleteItem;
+	}(_react.Component);
+
+/***/ },
+/* 482 */
+/*!*****************************************!*\
+  !*** ./app/style/AutocompleteItem.scss ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./AutocompleteItem.scss */ 483);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 337)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./AutocompleteItem.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./AutocompleteItem.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 483 */
+/*!************************************************************************!*\
+  !*** ./~/css-loader!./~/sass-loader!./app/style/AutocompleteItem.scss ***!
+  \************************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 336)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".AutocompleteItem {\n  padding: 5px 10px;\n  cursor: pointer; }\n  .AutocompleteItem__title {\n    font-size: 16px; }\n  .AutocompleteItem__help {\n    font-size: 12px;\n    color: #CCC; }\n  .AutocompleteItem.selected {\n    background-color: #569d56;\n    color: #FFF; }\n    .AutocompleteItem.selected .AutocompleteItem__help {\n      color: #FFF; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 484 */
+/*!***************************!*\
+  !*** ./app/tools/city.js ***!
+  \***************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.searchCity = searchCity;
+	var map = [['Адыгейск', '(региональное)', '01', 'Адыгея Республика', '-'], ['Майкоп', '(региональное)', '01', 'Адыгея Республика', 'региона'], ['Агидель', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Баймак', 'Баймакский Район', '02', 'Башкортостан Республика', 'района'], ['Белебей', 'Белебеевский Район', '02', 'Башкортостан Республика', 'района'], ['Белорецк', 'Белорецкий Район', '02', 'Башкортостан Республика', 'района'], ['Бирск', 'Бирский Район', '02', 'Башкортостан Республика', 'района'], ['Благовещенск', 'Благовещенский Район', '02', 'Башкортостан Республика', 'района'], ['Давлеканово', 'Давлекановский Район', '02', 'Башкортостан Республика', 'района'], ['Дюртюли', 'Дюртюлинский Район', '02', 'Башкортостан Республика', 'района'], ['Ишимбай', 'Ишимбайский Район', '02', 'Башкортостан Республика', 'района'], ['Кумертау', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Межгорье', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Мелеуз', 'Мелеузовский Район', '02', 'Башкортостан Республика', 'района'], ['Нефтекамск', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Октябрьский', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Салават', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Сибай', '(региональное)', '02', 'Башкортостан Республика', '-'], ['Стерлитамак', '(региональное)', '02', 'Башкортостан Республика', 'района'], ['Туймазы', 'Туймазинский Район', '02', 'Башкортостан Республика', 'района'], ['Уфа', '(региональное)', '02', 'Башкортостан Республика', 'района и региона'], ['Учалы', 'Учалинский Район', '02', 'Башкортостан Республика', 'района'], ['Янаул', 'Янаульский Район', '02', 'Башкортостан Республика', 'района'], ['Бабушкин', 'Кабанский Район', '03', 'Бурятия Республика', '-'], ['Гусиноозерск', 'Селенгинский Район', '03', 'Бурятия Республика', 'района'], ['Закаменск', 'Закаменский Район', '03', 'Бурятия Республика', 'района'], ['Кяхта', 'Кяхтинский Район', '03', 'Бурятия Республика', 'района'], ['Северобайкальск', '(региональное)', '03', 'Бурятия Республика', '-'], ['Улан-Удэ', '(региональное)', '03', 'Бурятия Республика', 'региона'], ['Горно-Алтайск', '(региональное)', '04', 'Алтай Республика', 'региона'], ['Буйнакск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Дагестанские Огни', '(региональное)', '05', 'Дагестан Республика', '-'], ['Дербент', '(региональное)', '05', 'Дагестан Республика', '-'], ['Избербаш', '(региональное)', '05', 'Дагестан Республика', '-'], ['Каспийск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Кизилюрт', '(региональное)', '05', 'Дагестан Республика', '-'], ['Кизляр', '(региональное)', '05', 'Дагестан Республика', '-'], ['Махачкала', '(региональное)', '05', 'Дагестан Республика', 'региона'], ['Хасавюрт', '(региональное)', '05', 'Дагестан Республика', '-'], ['Южно-Сухокумск', '(региональное)', '05', 'Дагестан Республика', '-'], ['Карабулак', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Магас', '(региональное)', '06', 'Ингушетия Республика', 'региона'], ['Малгобек', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Назрань', '(региональное)', '06', 'Ингушетия Республика', '-'], ['Баксан', '(региональное)', '07', 'Кабардино-Балкарская Республика', 'района'], ['Майский', 'Майский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Нальчик', '(региональное)', '07', 'Кабардино-Балкарская Республика', 'региона'], ['Нарткала', 'Урванский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Прохладный', '(региональное)', '07', 'Кабардино-Балкарская Республика', '-'], ['Терек', 'Терский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Тырныауз', 'Эльбрусский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Чегем', 'Чегемский Район', '07', 'Кабардино-Балкарская Республика', 'района'], ['Городовиковск', 'Городовиковский Район', '08', 'Калмыкия Республика', 'района'], ['Лагань', 'Лаганский Район', '08', 'Калмыкия Республика', 'района'], ['Элиста', '(региональное)', '08', 'Калмыкия Республика', 'региона'], ['Карачаевск', '(региональное)', '09', 'Карачаево-Черкесская Республика', '-'], ['Теберда', '(региональное)', '09', 'Карачаево-Черкесская Республика', '-'], ['Усть-Джегута', 'Усть-Джегутинский Район', '09', 'Карачаево-Черкесская Республика', 'района'], ['Черкесск', '(региональное)', '09', 'Карачаево-Черкесская Республика', 'региона'], ['Беломорск', 'Беломорский Район', '10', 'Карелия Республика', 'района'], ['Кемь', 'Кемский Район', '10', 'Карелия Республика', '-'], ['Кондопога', 'Кондопожский Район', '10', 'Карелия Республика', 'района'], ['Костомукша', '(региональное)', '10', 'Карелия Республика', '-'], ['Лахденпохья', 'Лахденпохский Район', '10', 'Карелия Республика', 'района'], ['Медвежьегорск', 'Медвежьегорский Район', '10', 'Карелия Республика', 'района'], ['Олонец', 'Олонецкий Район', '10', 'Карелия Республика', 'района'], ['Петрозаводск', '(региональное)', '10', 'Карелия Республика', 'региона'], ['Питкяранта', 'Питкярантский Район', '10', 'Карелия Республика', 'района'], ['Пудож', 'Пудожский Район', '10', 'Карелия Республика', 'района'], ['Сегежа', 'Сегежский Район', '10', 'Карелия Республика', 'района'], ['Сортавала', '(региональное)', '10', 'Карелия Республика', '-'], ['Суоярви', 'Суоярвский Район', '10', 'Карелия Республика', 'района'], ['Воркута', '(региональное)', '11', 'Коми Республика', '-'], ['Вуктыл', '(региональное)', '11', 'Коми Республика', '-'], ['Емва', 'Княжпогостский Район', '11', 'Коми Республика', 'района'], ['Инта', '(региональное)', '11', 'Коми Республика', '-'], ['Микунь', 'Усть-Вымский Район', '11', 'Коми Республика', '-'], ['Печора', '(региональное)', '11', 'Коми Республика', '-'], ['Сосногорск', '(региональное)', '11', 'Коми Республика', '-'], ['Сыктывкар', '(региональное)', '11', 'Коми Республика', 'региона'], ['Усинск', '(региональное)', '11', 'Коми Республика', '-'], ['Ухта', '(региональное)', '11', 'Коми Республика', '-'], ['Волжск', '(региональное)', '12', 'Марий Эл Республика', '-'], ['Звенигово', 'Звениговский Район', '12', 'Марий Эл Республика', 'района'], ['Йошкар-Ола', '(региональное)', '12', 'Марий Эл Республика', 'региона'], ['Козьмодемьянск', '(региональное)', '12', 'Марий Эл Республика', '-'], ['Ардатов', 'Ардатовский Район', '13', 'Мордовия Республика', 'района'], ['Инсар', 'Инсарский Район', '13', 'Мордовия Республика', 'района'], ['Ковылкино', '(региональное)', '13', 'Мордовия Республика', 'района'], ['Краснослободск', 'Краснослободский Район', '13', 'Мордовия Республика', 'района'], ['Рузаевка', '(региональное)', '13', 'Мордовия Республика', 'района'], ['Саранск', '(региональное)', '13', 'Мордовия Республика', 'региона'], ['Темников', 'Темниковский Район', '13', 'Мордовия Республика', 'района'], ['Алдан', 'Алданский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Верхоянск', 'Верхоянский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Вилюйск', 'Вилюйский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Ленск', 'Ленский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Мирный', 'Мирнинский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Нерюнгри', '(региональное)', '14', 'Саха /Якутия/ Республика', '-'], ['Нюрба', 'Нюрбинский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Олекминск', 'Олекминский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Покровск', 'Хангаласский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Среднеколымск', 'Среднеколымский Улус', '14', 'Саха /Якутия/ Республика', 'района'], ['Томмот', 'Алданский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Удачный', 'Мирнинский Улус', '14', 'Саха /Якутия/ Республика', '-'], ['Якутск', '(региональное)', '14', 'Саха /Якутия/ Республика', 'региона'], ['Алагир', 'Алагирский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Ардон', 'Ардонский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Беслан', 'Правобережный Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Владикавказ', '(региональное)', '15', 'Северная Осетия - Алания Республика', 'региона'], ['Дигора', 'Дигорский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Моздок', 'Моздокский Район', '15', 'Северная Осетия - Алания Республика', 'района'], ['Агрыз', 'Агрызский Район', '16', 'Татарстан Республика', 'района'], ['Азнакаево', 'Азнакаевский Район', '16', 'Татарстан Республика', 'района'], ['Альметьевск', 'Альметьевский Район', '16', 'Татарстан Республика', 'района'], ['Арск', 'Арский Район', '16', 'Татарстан Республика', 'района'], ['Бавлы', 'Бавлинский Район', '16', 'Татарстан Республика', 'района'], ['Болгар', 'Спасский Район', '16', 'Татарстан Республика', 'района'], ['Бугульма', 'Бугульминский Район', '16', 'Татарстан Республика', 'района'], ['Буинск', 'Буинский Район', '16', 'Татарстан Республика', 'района'], ['Елабуга', 'Елабужский Район', '16', 'Татарстан Республика', 'района'], ['Заинск', 'Заинский Район', '16', 'Татарстан Республика', 'района'], ['Зеленодольск', 'Зеленодольский Район', '16', 'Татарстан Республика', 'района'], ['Казань', '(региональное)', '16', 'Татарстан Республика', 'региона'], ['Лаишево', 'Лаишевский Район', '16', 'Татарстан Республика', 'района'], ['Лениногорск', 'Лениногорский Район', '16', 'Татарстан Республика', 'района'], ['Мамадыш', 'Мамадышский Район', '16', 'Татарстан Республика', 'района'], ['Менделеевск', 'Менделеевский Район', '16', 'Татарстан Республика', 'района'], ['Мензелинск', 'Мензелинский Район', '16', 'Татарстан Республика', 'района'], ['Набережные Челны', '(региональное)', '16', 'Татарстан Республика', '-'], ['Нижнекамск', 'Нижнекамский Район', '16', 'Татарстан Республика', 'района'], ['Нурлат', 'Нурлатский Район', '16', 'Татарстан Республика', 'района'], ['Тетюши', 'Тетюшский Район', '16', 'Татарстан Республика', 'района'], ['Чистополь', 'Чистопольский Район', '16', 'Татарстан Республика', 'района'], ['Ак-Довурак', '(региональное)', '17', 'Тыва Республика', '-'], ['Кызыл', '(региональное)', '17', 'Тыва Республика', 'региона'], ['Туран', 'Пий-Хемский Район', '17', 'Тыва Республика', 'района'], ['Чадан', 'Дзун-Хемчикский Район', '17', 'Тыва Республика', 'района'], ['Шагонар', 'Улуг-Хемский Район', '17', 'Тыва Республика', 'района'], ['Воткинск', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Глазов', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Ижевск', '(региональное)', '18', 'Удмуртская Республика', 'региона'], ['Камбарка', 'Камбарский Район', '18', 'Удмуртская Республика', 'района'], ['Можга', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Сарапул', '(региональное)', '18', 'Удмуртская Республика', '-'], ['Абаза', '(региональное)', '19', 'Хакасия Республика', '-'], ['Абакан', '(региональное)', '19', 'Хакасия Республика', 'региона'], ['Саяногорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Сорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Черногорск', '(региональное)', '19', 'Хакасия Республика', '-'], ['Аргун', '(региональное)', '20', 'Чеченская Республика', '-'], ['Грозный', '(региональное)', '20', 'Чеченская Республика', 'региона'], ['Гудермес', 'Гудермесский Район', '20', 'Чеченская Республика', 'района'], ['Урус-Мартан', 'Урус-Мартановский Район', '20', 'Чеченская Республика', 'района'], ['Шали', 'Шалинский Район', '20', 'Чеченская Республика', 'района'], ['Алатырь', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Канаш', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Козловка', 'Козловский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Мариинский Посад', 'Мариинско-Посадский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Новочебоксарск', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Цивильск', 'Цивильский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Чебоксары', '(региональное)', '21', 'Чувашская Республика - Чувашия', 'региона'], ['Шумерля', '(региональное)', '21', 'Чувашская Республика - Чувашия', '-'], ['Ядрин', 'Ядринский Район', '21', 'Чувашская Республика - Чувашия', 'района'], ['Алейск', '(региональное)', '22', 'Алтайский Край', '-'], ['Барнаул', '(региональное)', '22', 'Алтайский Край', 'региона'], ['Белокуриха', '(региональное)', '22', 'Алтайский Край', '-'], ['Бийск', '(региональное)', '22', 'Алтайский Край', '-'], ['Горняк', 'Локтевский Район', '22', 'Алтайский Край', 'района'], ['Заринск', '(региональное)', '22', 'Алтайский Край', '-'], ['Змеиногорск', 'Змеиногорский Район', '22', 'Алтайский Край', 'района'], ['Камень-на-Оби', '(региональное)', '22', 'Алтайский Край', '-'], ['Новоалтайск', '(региональное)', '22', 'Алтайский Край', '-'], ['Рубцовск', '(региональное)', '22', 'Алтайский Край', '-'], ['Славгород', '(региональное)', '22', 'Алтайский Край', '-'], ['Яровое', '(региональное)', '22', 'Алтайский Край', '-'], ['Абинск', 'Абинский Район', '23', 'Краснодарский Край', 'района'], ['Анапа', 'Анапский Район', '23', 'Краснодарский Край', 'района'], ['Апшеронск', 'Апшеронский Район', '23', 'Краснодарский Край', 'района'], ['Армавир', '(региональное)', '23', 'Краснодарский Край', '-'], ['Белореченск', 'Белореченский Район', '23', 'Краснодарский Край', 'района'], ['Геленджик', '(региональное)', '23', 'Краснодарский Край', '-'], ['Горячий Ключ', '(региональное)', '23', 'Краснодарский Край', '-'], ['Гулькевичи', 'Гулькевичский Район', '23', 'Краснодарский Край', 'района'], ['Ейск', 'Ейский Район', '23', 'Краснодарский Край', 'района'], ['Кореновск', 'Кореновский Район', '23', 'Краснодарский Край', 'района'], ['Краснодар', '(региональное)', '23', 'Краснодарский Край', 'региона'], ['Кропоткин', 'Кавказский Район', '23', 'Краснодарский Край', '-'], ['Крымск', 'Крымский Район', '23', 'Краснодарский Край', 'района'], ['Курганинск', 'Курганинский Район', '23', 'Краснодарский Край', 'района'], ['Лабинск', 'Лабинский Район', '23', 'Краснодарский Край', 'района'], ['Новокубанск', 'Новокубанский Район', '23', 'Краснодарский Край', 'района'], ['Новороссийск', '(региональное)', '23', 'Краснодарский Край', '-'], ['Приморско-Ахтарск', 'Приморско-Ахтарский Район', '23', 'Краснодарский Край', 'района'], ['Славянск-на-Кубани', 'Славянский Район', '23', 'Краснодарский Край', 'района'], ['Сочи', '(региональное)', '23', 'Краснодарский Край', '-'], ['Темрюк', 'Темрюкский Район', '23', 'Краснодарский Край', 'района'], ['Тимашевск', 'Тимашевский Район', '23', 'Краснодарский Край', 'района'], ['Тихорецк', 'Тихорецкий Район', '23', 'Краснодарский Край', 'района'], ['Туапсе', 'Туапсинский Район', '23', 'Краснодарский Край', 'района'], ['Усть-Лабинск', 'Усть-Лабинский Район', '23', 'Краснодарский Край', 'района'], ['Хадыженск', 'Апшеронский Район', '23', 'Краснодарский Край', '-'], ['Артемовск', 'Курагинский Район', '24', 'Красноярский Край', '-'], ['Ачинск', '(региональное)', '24', 'Красноярский Край', '-'], ['Боготол', '(региональное)', '24', 'Красноярский Край', '-'], ['Бородино', '(региональное)', '24', 'Красноярский Край', '-'], ['Дивногорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Дудинка', 'Таймырский Долгано-Ненецкий Район', '24', 'Красноярский Край', 'района'], ['Енисейск', '(региональное)', '24', 'Красноярский Край', '-'], ['Железногорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Заозерный', 'Рыбинский Район', '24', 'Красноярский Край', '-'], ['Зеленогорск', '(региональное)', '24', 'Красноярский Край', '-'], ['Игарка', 'Туруханский Район', '24', 'Красноярский Край', '-'], ['Иланский', 'Иланский Район', '24', 'Красноярский Край', 'района'], ['Канск', '(региональное)', '24', 'Красноярский Край', '-'], ['Кодинск', 'Кежемский Район', '24', 'Красноярский Край', 'района'], ['Красноярск', '(региональное)', '24', 'Красноярский Край', 'региона'], ['Лесосибирск', '(региональное)', '24', 'Красноярский Край', '-'], ['Минусинск', '(региональное)', '24', 'Красноярский Край', '-'], ['Назарово', '(региональное)', '24', 'Красноярский Край', '-'], ['Норильск', '(региональное)', '24', 'Красноярский Край', '-'], ['Сосновоборск', '(региональное)', '24', 'Красноярский Край', '-'], ['Ужур', 'Ужурский Район', '24', 'Красноярский Край', 'района'], ['Уяр', 'Уярский Район', '24', 'Красноярский Край', 'района'], ['Шарыпово', '(региональное)', '24', 'Красноярский Край', '-'], ['Арсеньев', '(региональное)', '25', 'Приморский Край', '-'], ['Артем', '(региональное)', '25', 'Приморский Край', '-'], ['Большой Камень', '(региональное)', '25', 'Приморский Край', '-'], ['Владивосток', '(региональное)', '25', 'Приморский Край', 'региона'], ['Дальнегорск', '(региональное)', '25', 'Приморский Край', '-'], ['Дальнереченск', '(региональное)', '25', 'Приморский Край', '-'], ['Лесозаводск', '(региональное)', '25', 'Приморский Край', '-'], ['Находка', '(региональное)', '25', 'Приморский Край', '-'], ['Партизанск', '(региональное)', '25', 'Приморский Край', '-'], ['Спасск-Дальний', '(региональное)', '25', 'Приморский Край', '-'], ['Уссурийск', '(региональное)', '25', 'Приморский Край', '-'], ['Фокино', '(региональное)', '25', 'Приморский Край', '-'], ['Благодарный', 'Благодарненский Район', '26', 'Ставропольский Край', 'района'], ['Буденновск', 'Буденновский Район', '26', 'Ставропольский Край', 'района'], ['Георгиевск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Ессентуки', '(региональное)', '26', 'Ставропольский Край', '-'], ['Железноводск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Зеленокумск', 'Советский Район', '26', 'Ставропольский Край', 'района'], ['Изобильный', 'Изобильненский Район', '26', 'Ставропольский Край', 'района'], ['Ипатово', 'Ипатовский Район', '26', 'Ставропольский Край', 'района'], ['Кисловодск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Лермонтов', '(региональное)', '26', 'Ставропольский Край', '-'], ['Минеральные Воды', 'Минераловодский Район', '26', 'Ставропольский Край', 'района'], ['Михайловск', 'Шпаковский Район', '26', 'Ставропольский Край', 'района'], ['Невинномысск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Нефтекумск', 'Нефтекумский Район', '26', 'Ставропольский Край', 'района'], ['Новоалександровск', 'Новоалександровский Район', '26', 'Ставропольский Край', 'района'], ['Новопавловск', 'Кировский Район', '26', 'Ставропольский Край', 'района'], ['Пятигорск', '(региональное)', '26', 'Ставропольский Край', '-'], ['Светлоград', 'Петровский Район', '26', 'Ставропольский Край', 'района'], ['Ставрополь', '(региональное)', '26', 'Ставропольский Край', 'региона'], ['Амурск', '(региональное)', '27', 'Хабаровский Край', '-'], ['Бикин', '(региональное)', '27', 'Хабаровский Край', '-'], ['Вяземский', 'Вяземский Район', '27', 'Хабаровский Край', 'района'], ['Комсомольск-на-Амуре', '(региональное)', '27', 'Хабаровский Край', '-'], ['Николаевск-на-Амуре', '(региональное)', '27', 'Хабаровский Край', '-'], ['Советская Гавань', '(региональное)', '27', 'Хабаровский Край', '-'], ['Хабаровск', '(региональное)', '27', 'Хабаровский Край', 'региона'], ['Белогорск', '(региональное)', '28', 'Амурская Область', '-'], ['Благовещенск', '(региональное)', '28', 'Амурская Область', 'региона'], ['Завитинск', 'Завитинский Район', '28', 'Амурская Область', 'района'], ['Зея', '(региональное)', '28', 'Амурская Область', '-'], ['Райчихинск', '(региональное)', '28', 'Амурская Область', '-'], ['Свободный', '(региональное)', '28', 'Амурская Область', '-'], ['Сковородино', 'Сковородинский Район', '28', 'Амурская Область', 'района'], ['Тында', '(региональное)', '28', 'Амурская Область', '-'], ['Шимановск', '(региональное)', '28', 'Амурская Область', '-'], ['Архангельск', '(региональное)', '29', 'Архангельская Область', 'региона'], ['Вельск', 'Вельский Район', '29', 'Архангельская Область', 'района'], ['Каргополь', 'Каргопольский Район', '29', 'Архангельская Область', 'района'], ['Коряжма', '(региональное)', '29', 'Архангельская Область', '-'], ['Котлас', 'Котласский Район', '29', 'Архангельская Область', 'района'], ['Мезень', 'Мезенский Район', '29', 'Архангельская Область', 'района'], ['Мирный', '(региональное)', '29', 'Архангельская Область', '-'], ['Новодвинск', '(региональное)', '29', 'Архангельская Область', '-'], ['Няндома', 'Няндомский Район', '29', 'Архангельская Область', 'района'], ['Онега', 'Онежский Район', '29', 'Архангельская Область', 'района'], ['Северодвинск', '(региональное)', '29', 'Архангельская Область', '-'], ['Сольвычегодск', 'Котласский Район', '29', 'Архангельская Область', '-'], ['Шенкурск', 'Шенкурский Район', '29', 'Архангельская Область', 'района'], ['Астрахань', '(региональное)', '30', 'Астраханская Область', 'региона'], ['Ахтубинск', 'Ахтубинский Район', '30', 'Астраханская Область', 'района'], ['Ахтубинск-7', 'Ахтубинский Район', '30', 'Астраханская Область', '-'], ['Знаменск', '(региональное)', '30', 'Астраханская Область', '-'], ['Камызяк', 'Камызякский Район', '30', 'Астраханская Область', 'района'], ['Нариманов', 'Наримановский Район', '30', 'Астраханская Область', 'района'], ['Харабали', 'Харабалинский Район', '30', 'Астраханская Область', 'района'], ['Алексеевка', 'Алексеевский Район', '31', 'Белгородская Область', 'района'], ['Белгород', '(региональное)', '31', 'Белгородская Область', 'региона'], ['Бирюч', 'Красногвардейский Район', '31', 'Белгородская Область', 'района'], ['Валуйки', 'Валуйский Район', '31', 'Белгородская Область', 'района'], ['Грайворон', 'Грайворонский Район', '31', 'Белгородская Область', 'района'], ['Губкин', '(региональное)', '31', 'Белгородская Область', 'района'], ['Короча', 'Корочанский Район', '31', 'Белгородская Область', 'района'], ['Новый Оскол', 'Новооскольский Район', '31', 'Белгородская Область', 'района'], ['Старый Оскол', '(региональное)', '31', 'Белгородская Область', 'района'], ['Строитель', 'Яковлевский Район', '31', 'Белгородская Область', 'района'], ['Шебекино', '(региональное)', '31', 'Белгородская Область', 'района'], ['Брянск', '(региональное)', '32', 'Брянская Область', 'региона'], ['Дятьково', 'Дятьковский Район', '32', 'Брянская Область', 'района'], ['Жуковка', 'Жуковский Район', '32', 'Брянская Область', 'района'], ['Злынка', 'Злынковский Район', '32', 'Брянская Область', 'района'], ['Карачев', 'Карачевский Район', '32', 'Брянская Область', 'района'], ['Клинцы', '(региональное)', '32', 'Брянская Область', '-'], ['Мглин', 'Мглинский Район', '32', 'Брянская Область', 'района'], ['Новозыбков', '(региональное)', '32', 'Брянская Область', '-'], ['Почеп', 'Почепский Район', '32', 'Брянская Область', 'района'], ['Севск', 'Севский Район', '32', 'Брянская Область', 'района'], ['Сельцо', '(региональное)', '32', 'Брянская Область', '-'], ['Стародуб', 'Стародубский Район', '32', 'Брянская Область', 'района'], ['Сураж', 'Суражский Район', '32', 'Брянская Область', 'района'], ['Трубчевск', 'Трубчевский Район', '32', 'Брянская Область', 'района'], ['Унеча', 'Унечский Район', '32', 'Брянская Область', 'района'], ['Фокино', 'Дятьковский Район', '32', 'Брянская Область', '-'], ['Александров', 'Александровский Район', '33', 'Владимирская Область', 'района'], ['Владимир', '(региональное)', '33', 'Владимирская Область', 'региона'], ['Вязники', 'Вязниковский Район', '33', 'Владимирская Область', 'района'], ['Гороховец', 'Гороховецкий Район', '33', 'Владимирская Область', 'района'], ['Гусь-Хрустальный', '(региональное)', '33', 'Владимирская Область', '-'], ['Камешково', 'Камешковский Район', '33', 'Владимирская Область', 'района'], ['Карабаново', 'Александровский Район', '33', 'Владимирская Область', '-'], ['Киржач', 'Киржачский Район', '33', 'Владимирская Область', 'района'], ['Ковров', '(региональное)', '33', 'Владимирская Область', '-'], ['Кольчугино', 'Кольчугинский Район', '33', 'Владимирская Область', 'района'], ['Костерево', 'Петушинский Район', '33', 'Владимирская Область', '-'], ['Курлово', 'Гусь-Хрустальный Район', '33', 'Владимирская Область', '-'], ['Лакинск', 'Собинский Район', '33', 'Владимирская Область', '-'], ['Меленки', 'Меленковский Район', '33', 'Владимирская Область', 'района'], ['Муром', '(региональное)', '33', 'Владимирская Область', '-'], ['Петушки', 'Петушинский Район', '33', 'Владимирская Область', 'района'], ['Покров', 'Петушинский Район', '33', 'Владимирская Область', '-'], ['Радужный', '(региональное)', '33', 'Владимирская Область', '-'], ['Собинка', 'Собинский Район', '33', 'Владимирская Область', 'района'], ['Струнино', 'Александровский Район', '33', 'Владимирская Область', '-'], ['Судогда', 'Судогодский Район', '33', 'Владимирская Область', 'района'], ['Суздаль', 'Суздальский Район', '33', 'Владимирская Область', 'района'], ['Юрьев-Польский', 'Юрьев-Польский Район', '33', 'Владимирская Область', 'района'], ['Волгоград', '(региональное)', '34', 'Волгоградская Область', 'региона'], ['Волжский', '(региональное)', '34', 'Волгоградская Область', '-'], ['Дубовка', 'Дубовский Район', '34', 'Волгоградская Область', 'района'], ['Жирновск', 'Жирновский Район', '34', 'Волгоградская Область', 'района'], ['Калач-на-Дону', 'Калачевский Район', '34', 'Волгоградская Область', 'района'], ['Камышин', '(региональное)', '34', 'Волгоградская Область', '-'], ['Котельниково', 'Котельниковский Район', '34', 'Волгоградская Область', 'района'], ['Котово', 'Котовский Район', '34', 'Волгоградская Область', 'района'], ['Краснослободск', 'Среднеахтубинский Район', '34', 'Волгоградская Область', '-'], ['Ленинск', 'Ленинский Район', '34', 'Волгоградская Область', 'района'], ['Михайловка', '(региональное)', '34', 'Волгоградская Область', '-'], ['Николаевск', 'Николаевский Район', '34', 'Волгоградская Область', 'района'], ['Новоаннинский', 'Новоаннинский Район', '34', 'Волгоградская Область', 'района'], ['Палласовка', 'Палласовский Район', '34', 'Волгоградская Область', 'района'], ['Петров Вал', 'Камышинский Район', '34', 'Волгоградская Область', '-'], ['Серафимович', 'Серафимовичский Район', '34', 'Волгоградская Область', 'района'], ['Суровикино', 'Суровикинский Район', '34', 'Волгоградская Область', 'района'], ['Урюпинск', '(региональное)', '34', 'Волгоградская Область', '-'], ['Фролово', '(региональное)', '34', 'Волгоградская Область', '-'], ['Бабаево', 'Бабаевский Район', '35', 'Вологодская Область', 'района'], ['Белозерск', 'Белозерский Район', '35', 'Вологодская Область', 'района'], ['Великий Устюг', 'Великоустюгский Район', '35', 'Вологодская Область', 'района'], ['Вологда', '(региональное)', '35', 'Вологодская Область', 'региона'], ['Вытегра', 'Вытегорский Район', '35', 'Вологодская Область', 'района'], ['Грязовец', 'Грязовецкий Район', '35', 'Вологодская Область', 'района'], ['Кадников', 'Сокольский Район', '35', 'Вологодская Область', '-'], ['Кириллов', 'Кирилловский Район', '35', 'Вологодская Область', 'района'], ['Красавино', 'Великоустюгский Район', '35', 'Вологодская Область', '-'], ['Никольск', 'Никольский Район', '35', 'Вологодская Область', 'района'], ['Сокол', 'Сокольский Район', '35', 'Вологодская Область', 'района'], ['Тотьма', 'Тотемский Район', '35', 'Вологодская Область', 'района'], ['Устюжна', 'Устюженский Район', '35', 'Вологодская Область', 'района'], ['Харовск', 'Харовский Район', '35', 'Вологодская Область', 'района'], ['Череповец', '(региональное)', '35', 'Вологодская Область', '-'], ['Бобров', 'Бобровский Район', '36', 'Воронежская Область', 'района'], ['Богучар', 'Богучарский Район', '36', 'Воронежская Область', 'района'], ['Борисоглебск', 'Борисоглебский Район', '36', 'Воронежская Область', 'района'], ['Бутурлиновка', 'Бутурлиновский Район', '36', 'Воронежская Область', 'района'], ['Воронеж', '(региональное)', '36', 'Воронежская Область', 'региона'], ['Воронеж-45', '(региональное)', '36', 'Воронежская Область', '-'], ['Калач', 'Калачеевский Район', '36', 'Воронежская Область', 'района'], ['Лиски', 'Лискинский Район', '36', 'Воронежская Область', 'района'], ['Нововоронеж', '(региональное)', '36', 'Воронежская Область', '-'], ['Новохоперск', 'Новохоперский Район', '36', 'Воронежская Область', 'района'], ['Острогожск', 'Острогожский Район', '36', 'Воронежская Область', 'района'], ['Павловск', 'Павловский Район', '36', 'Воронежская Область', 'района'], ['Поворино', 'Поворинский Район', '36', 'Воронежская Область', 'района'], ['Россошь', 'Россошанский Район', '36', 'Воронежская Область', 'района'], ['Семилуки', 'Семилукский Район', '36', 'Воронежская Область', 'района'], ['Эртиль', 'Эртильский Район', '36', 'Воронежская Область', 'района'], ['Вичуга', 'Вичугский Район', '37', 'Ивановская Область', 'района'], ['Гаврилов Посад', 'Гаврилово-Посадский Район', '37', 'Ивановская Область', 'района'], ['Заволжск', 'Заволжский Район', '37', 'Ивановская Область', 'района'], ['Иваново', '(региональное)', '37', 'Ивановская Область', 'региона'], ['Кинешма', 'Кинешемский Район', '37', 'Ивановская Область', 'района'], ['Комсомольск', 'Комсомольский Район', '37', 'Ивановская Область', 'района'], ['Кохма', 'Ивановский Район', '37', 'Ивановская Область', 'района'], ['Наволоки', 'Кинешемский Район', '37', 'Ивановская Область', '-'], ['Плес', 'Приволжский Район', '37', 'Ивановская Область', '-'], ['Приволжск', 'Приволжский Район', '37', 'Ивановская Область', 'района'], ['Пучеж', 'Пучежский Район', '37', 'Ивановская Область', 'района'], ['Родники', 'Родниковский Район', '37', 'Ивановская Область', 'района'], ['Тейково', 'Тейковский Район', '37', 'Ивановская Область', 'района'], ['Фурманов', 'Фурмановский Район', '37', 'Ивановская Область', 'района'], ['Шуя', 'Шуйский Район', '37', 'Ивановская Область', 'района'], ['Южа', 'Южский Район', '37', 'Ивановская Область', 'района'], ['Юрьевец', 'Юрьевецкий Район', '37', 'Ивановская Область', 'района'], ['Алзамай', 'Нижнеудинский Район', '38', 'Иркутская Область', '-'], ['Ангарск', '(региональное)', '38', 'Иркутская Область', '-'], ['Байкальск', 'Слюдянский Район', '38', 'Иркутская Область', '-'], ['Бирюсинск', 'Тайшетский Район', '38', 'Иркутская Область', '-'], ['Бодайбо', '(региональное)', '38', 'Иркутская Область', '-'], ['Братск', '(региональное)', '38', 'Иркутская Область', '-'], ['Вихоревка', 'Братский Район', '38', 'Иркутская Область', '-'], ['Железногорск-Илимский', 'Нижнеилимский Район', '38', 'Иркутская Область', 'района'], ['Зима', '(региональное)', '38', 'Иркутская Область', '-'], ['Иркутск', '(региональное)', '38', 'Иркутская Область', 'региона'], ['Иркутск-45', '(региональное)', '38', 'Иркутская Область', '-'], ['Киренск', 'Киренский Район', '38', 'Иркутская Область', 'района'], ['Нижнеудинск', '(региональное)', '38', 'Иркутская Область', '-'], ['Саянск', '(региональное)', '38', 'Иркутская Область', '-'], ['Свирск', '(региональное)', '38', 'Иркутская Область', '-'], ['Слюдянка', 'Слюдянский Район', '38', 'Иркутская Область', 'района'], ['Тайшет', '(региональное)', '38', 'Иркутская Область', '-'], ['Тулун', '(региональное)', '38', 'Иркутская Область', '-'], ['Усолье-Сибирское', '(региональное)', '38', 'Иркутская Область', '-'], ['Усть-Илимск', '(региональное)', '38', 'Иркутская Область', '-'], ['Усть-Кут', '(региональное)', '38', 'Иркутская Область', '-'], ['Черемхово', '(региональное)', '38', 'Иркутская Область', '-'], ['Шелехов', '(региональное)', '38', 'Иркутская Область', '-'], ['Багратионовск', 'Багратионовский Район', '39', 'Калининградская Область', 'района'], ['Балтийск', 'Балтийский Район', '39', 'Калининградская Область', 'района'], ['Гвардейск', 'Гвардейский Район', '39', 'Калининградская Область', 'района'], ['Гурьевск', 'Гурьевский Район', '39', 'Калининградская Область', 'района'], ['Гусев', 'Гусевский Район', '39', 'Калининградская Область', 'района'], ['Зеленоградск', 'Зеленоградский Район', '39', 'Калининградская Область', 'района'], ['Калининград', '(региональное)', '39', 'Калининградская Область', 'региона'], ['Краснознаменск', 'Краснознаменский Район', '39', 'Калининградская Область', 'района'], ['Ладушкин', '(региональное)', '39', 'Калининградская Область', '-'], ['Мамоново', '(региональное)', '39', 'Калининградская Область', '-'], ['Неман', 'Неманский Район', '39', 'Калининградская Область', 'района'], ['Нестеров', 'Нестеровский Район', '39', 'Калининградская Область', 'района'], ['Озерск', 'Озерский Район', '39', 'Калининградская Область', 'района'], ['Пионерский', '(региональное)', '39', 'Калининградская Область', '-'], ['Полесск', 'Полесский Район', '39', 'Калининградская Область', 'района'], ['Правдинск', 'Правдинский Район', '39', 'Калининградская Область', 'района'], ['Приморск', 'Балтийский Район', '39', 'Калининградская Область', '-'], ['Светлогорск', 'Светлогорский Район', '39', 'Калининградская Область', 'района'], ['Светлый', '(региональное)', '39', 'Калининградская Область', '-'], ['Славск', 'Славский Район', '39', 'Калининградская Область', 'района'], ['Советск', '(региональное)', '39', 'Калининградская Область', '-'], ['Черняховск', 'Черняховский Район', '39', 'Калининградская Область', 'района'], ['Балабаново', 'Боровский Район', '40', 'Калужская Область', '-'], ['Белоусово', 'Жуковский Район', '40', 'Калужская Область', '-'], ['Боровск', 'Боровский Район', '40', 'Калужская Область', 'района'], ['Боровск-1', 'Боровский Район', '40', 'Калужская Область', '-'], ['Ермолино', 'Боровский Район', '40', 'Калужская Область', '-'], ['Жиздра', 'Жиздринский Район', '40', 'Калужская Область', 'района'], ['Жуков', 'Жуковский Район', '40', 'Калужская Область', 'района'], ['Калуга', '(региональное)', '40', 'Калужская Область', 'региона'], ['Киров', 'Кировский Район', '40', 'Калужская Область', 'района'], ['Козельск', 'Козельский Район', '40', 'Калужская Область', 'района'], ['Кондрово', 'Дзержинский Район', '40', 'Калужская Область', 'района'], ['Кременки', 'Жуковский Район', '40', 'Калужская Область', '-'], ['Людиново', 'Людиновский Район', '40', 'Калужская Область', 'района'], ['Малоярославец', 'Малоярославецкий Район', '40', 'Калужская Область', 'района'], ['Медынь', 'Медынский Район', '40', 'Калужская Область', 'района'], ['Мещовск', 'Мещовский Район', '40', 'Калужская Область', 'района'], ['Мосальск', 'Мосальский Район', '40', 'Калужская Область', 'района'], ['Обнинск', '(региональное)', '40', 'Калужская Область', '-'], ['Сосенский', 'Козельский Район', '40', 'Калужская Область', '-'], ['Спас-Деменск', 'Спас-Деменский Район', '40', 'Калужская Область', 'района'], ['Сухиничи', 'Сухиничский Район', '40', 'Калужская Область', 'района'], ['Таруса', 'Тарусский Район', '40', 'Калужская Область', '-'], ['Юхнов', 'Юхновский Район', '40', 'Калужская Область', 'района'], ['Юхнов-1', 'Юхновский Район', '40', 'Калужская Область', '-'], ['Юхнов-2', 'Юхновский Район', '40', 'Калужская Область', '-'], ['Вилючинск', '(региональное)', '41', 'Камчатский Край', '-'], ['Елизово', 'Елизовский Район', '41', 'Камчатский Край', 'района'], ['Петропавловск-Камчатский', '(региональное)', '41', 'Камчатский Край', 'региона'], ['Анжеро-Судженск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Белово', '(региональное)', '42', 'Кемеровская Область', '-'], ['Березовский', '(региональное)', '42', 'Кемеровская Область', '-'], ['Гурьевск', 'Гурьевский Район', '42', 'Кемеровская Область', 'района'], ['Калтан', '(региональное)', '42', 'Кемеровская Область', '-'], ['Кемерово', '(региональное)', '42', 'Кемеровская Область', 'региона'], ['Киселевск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Ленинск-Кузнецкий', '(региональное)', '42', 'Кемеровская Область', '-'], ['Мариинск', 'Мариинский Район', '42', 'Кемеровская Область', 'района'], ['Междуреченск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Мыски', '(региональное)', '42', 'Кемеровская Область', '-'], ['Новокузнецк', '(региональное)', '42', 'Кемеровская Область', '-'], ['Осинники', '(региональное)', '42', 'Кемеровская Область', '-'], ['Полысаево', '(региональное)', '42', 'Кемеровская Область', '-'], ['Прокопьевск', '(региональное)', '42', 'Кемеровская Область', '-'], ['Салаир', 'Гурьевский Район', '42', 'Кемеровская Область', '-'], ['Тайга', '(региональное)', '42', 'Кемеровская Область', '-'], ['Таштагол', 'Таштагольский Район', '42', 'Кемеровская Область', 'района'], ['Топки', 'Топкинский Район', '42', 'Кемеровская Область', 'района'], ['Юрга', '(региональное)', '42', 'Кемеровская Область', '-'], ['Белая Холуница', 'Белохолуницкий Район', '43', 'Кировская Область', 'района'], ['Вятские Поляны', 'Вятскополянский Район', '43', 'Кировская Область', 'района'], ['Зуевка', 'Зуевский Район', '43', 'Кировская Область', 'района'], ['Киров', '(региональное)', '43', 'Кировская Область', 'региона'], ['Кирово-Чепецк', 'Кирово-Чепецкий Район', '43', 'Кировская Область', 'района'], ['Кирс', 'Верхнекамский Район', '43', 'Кировская Область', 'района'], ['Котельнич', 'Котельничский Район', '43', 'Кировская Область', 'района'], ['Луза', 'Лузский Район', '43', 'Кировская Область', 'района'], ['Малмыж', 'Малмыжский Район', '43', 'Кировская Область', 'района'], ['Мураши', 'Мурашинский Район', '43', 'Кировская Область', 'района'], ['Нолинск', 'Нолинский Район', '43', 'Кировская Область', 'района'], ['Омутнинск', 'Омутнинский Район', '43', 'Кировская Область', 'района'], ['Орлов', 'Орловский Район', '43', 'Кировская Область', 'района'], ['Слободской', 'Слободской Район', '43', 'Кировская Область', 'района'], ['Советск', 'Советский Район', '43', 'Кировская Область', 'района'], ['Сосновка', 'Вятскополянский Район', '43', 'Кировская Область', '-'], ['Уржум', 'Уржумский Район', '43', 'Кировская Область', 'района'], ['Яранск', 'Яранский Район', '43', 'Кировская Область', 'района'], ['Буй', 'Буйский Район', '44', 'Костромская Область', 'района'], ['Волгореченск', '(региональное)', '44', 'Костромская Область', '-'], ['Галич', 'Галичский Район', '44', 'Костромская Область', 'района'], ['Кологрив', 'Кологривский Район', '44', 'Костромская Область', 'района'], ['Кострома', 'Костромской Район', '44', 'Костромская Область', 'района и региона'], ['Макарьев', 'Макарьевский Район', '44', 'Костромская Область', 'района'], ['Мантурово', 'Мантуровский Район', '44', 'Костромская Область', 'района'], ['Нерехта', 'Нерехтский Район', '44', 'Костромская Область', 'района'], ['Нея', 'Нейский Район', '44', 'Костромская Область', 'района'], ['Солигалич', 'Солигаличский Район', '44', 'Костромская Область', 'района'], ['Чухлома', 'Чухломский Район', '44', 'Костромская Область', 'района'], ['Шарья', 'Шарьинский Район', '44', 'Костромская Область', 'района'], ['Далматово', 'Далматовский Район', '45', 'Курганская Область', 'района'], ['Катайск', 'Катайский Район', '45', 'Курганская Область', 'района'], ['Курган', '(региональное)', '45', 'Курганская Область', 'региона'], ['Куртамыш', 'Куртамышский Район', '45', 'Курганская Область', 'района'], ['Макушино', 'Макушинский Район', '45', 'Курганская Область', 'района'], ['Петухово', 'Петуховский Район', '45', 'Курганская Область', 'района'], ['Шадринск', '(региональное)', '45', 'Курганская Область', '-'], ['Шумиха', 'Шумихинский Район', '45', 'Курганская Область', 'района'], ['Щучье', 'Щучанский Район', '45', 'Курганская Область', 'района'], ['Дмитриев', 'Дмитриевский Район', '46', 'Курская Область', '-'], ['Железногорск', '(региональное)', '46', 'Курская Область', 'района'], ['Курск', '(региональное)', '46', 'Курская Область', 'региона'], ['Курчатов', '(региональное)', '46', 'Курская Область', 'района'], ['Льгов', '(региональное)', '46', 'Курская Область', 'района'], ['Обоянь', 'Обоянский Район', '46', 'Курская Область', 'района'], ['Рыльск', 'Рыльский Район', '46', 'Курская Область', 'района'], ['Суджа', 'Суджанский Район', '46', 'Курская Область', 'района'], ['Фатеж', 'Фатежский Район', '46', 'Курская Область', 'района'], ['Щигры', '(региональное)', '46', 'Курская Область', 'района'], ['Бокситогорск', 'Бокситогорский Район', '47', 'Ленинградская Область', 'района'], ['Волосово', 'Волосовский Район', '47', 'Ленинградская Область', 'района'], ['Волхов', 'Волховский Район', '47', 'Ленинградская Область', 'района'], ['Всеволожск', 'Всеволожский Район', '47', 'Ленинградская Область', 'района'], ['Выборг', 'Выборгский Район', '47', 'Ленинградская Область', 'района'], ['Высоцк', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Гатчина', 'Гатчинский Район', '47', 'Ленинградская Область', 'района'], ['Ивангород', 'Кингисеппский Район', '47', 'Ленинградская Область', '-'], ['Каменногорск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Кингисепп', 'Кингисеппский Район', '47', 'Ленинградская Область', 'района'], ['Кириши', 'Киришский Район', '47', 'Ленинградская Область', 'района'], ['Кировск', 'Кировский Район', '47', 'Ленинградская Область', 'района'], ['Коммунар', 'Гатчинский Район', '47', 'Ленинградская Область', '-'], ['Лодейное Поле', 'Лодейнопольский Район', '47', 'Ленинградская Область', 'района'], ['Луга', 'Лужский Район', '47', 'Ленинградская Область', 'района'], ['Любань', 'Тосненский Район', '47', 'Ленинградская Область', '-'], ['Никольское', 'Тосненский Район', '47', 'Ленинградская Область', '-'], ['Новая Ладога', 'Волховский Район', '47', 'Ленинградская Область', '-'], ['Отрадное', 'Кировский Район', '47', 'Ленинградская Область', '-'], ['Пикалево', 'Бокситогорский Район', '47', 'Ленинградская Область', '-'], ['Подпорожье', 'Подпорожский Район', '47', 'Ленинградская Область', 'района'], ['Приморск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Приозерск', 'Приозерский Район', '47', 'Ленинградская Область', 'района'], ['Светогорск', 'Выборгский Район', '47', 'Ленинградская Область', '-'], ['Сертолово', 'Всеволожский Район', '47', 'Ленинградская Область', '-'], ['Сланцы', 'Сланцевский Район', '47', 'Ленинградская Область', 'района'], ['Сосновый Бор', '(региональное)', '47', 'Ленинградская Область', '-'], ['Сясьстрой', 'Волховский Район', '47', 'Ленинградская Область', '-'], ['Тихвин', 'Тихвинский Район', '47', 'Ленинградская Область', 'района'], ['Тосно', 'Тосненский Район', '47', 'Ленинградская Область', 'района'], ['Шлиссельбург', 'Кировский Район', '47', 'Ленинградская Область', '-'], ['Грязи', 'Грязинский Район', '48', 'Липецкая Область', 'района'], ['Данков', 'Данковский Район', '48', 'Липецкая Область', 'района'], ['Елец', '(региональное)', '48', 'Липецкая Область', '-'], ['Задонск', 'Задонский Район', '48', 'Липецкая Область', 'района'], ['Лебедянь', 'Лебедянский Район', '48', 'Липецкая Область', 'района'], ['Липецк', '(региональное)', '48', 'Липецкая Область', 'региона'], ['Усмань', 'Усманский Район', '48', 'Липецкая Область', 'района'], ['Чаплыгин', 'Чаплыгинский Район', '48', 'Липецкая Область', 'района'], ['Магадан', '(региональное)', '49', 'Магаданская Область', 'региона'], ['Сусуман', 'Сусуманский Район', '49', 'Магаданская Область', 'района'], ['Апрелевка', 'Наро-Фоминский Район', '50', 'Московская Область', '-'], ['Балашиха', '(региональное)', '50', 'Московская Область', '-'], ['Бронницы', '(региональное)', '50', 'Московская Область', '-'], ['Верея', 'Наро-Фоминский Район', '50', 'Московская Область', '-'], ['Видное', 'Ленинский Район', '50', 'Московская Область', 'района'], ['Волоколамск', 'Волоколамский Район', '50', 'Московская Область', 'района'], ['Воскресенск', 'Воскресенский Район', '50', 'Московская Область', 'района'], ['Высоковск', 'Клинский Район', '50', 'Московская Область', '-'], ['Голицыно', 'Одинцовский Район', '50', 'Московская Область', '-'], ['Городской округ Черноголовка', '(региональное)', '50', 'Московская Область', '-'], ['Дедовск', 'Истринский Район', '50', 'Московская Область', '-'], ['Дзержинский', '(региональное)', '50', 'Московская Область', '-'], ['Дмитров', 'Дмитровский Район', '50', 'Московская Область', 'района'], ['Долгопрудный', '(региональное)', '50', 'Московская Область', '-'], ['Домодедово', '(региональное)', '50', 'Московская Область', '-'], ['Дрезна', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Дубна', '(региональное)', '50', 'Московская Область', '-'], ['Егорьевск', 'Егорьевский Район', '50', 'Московская Область', 'района'], ['Железнодорожный', '(региональное)', '50', 'Московская Область', '-'], ['Жуковский', '(региональное)', '50', 'Московская Область', '-'], ['Зарайск', 'Зарайский Район', '50', 'Московская Область', 'района'], ['Звенигород', '(региональное)', '50', 'Московская Область', '-'], ['Ивантеевка', '(региональное)', '50', 'Московская Область', '-'], ['Истра', 'Истринский Район', '50', 'Московская Область', 'района'], ['Истра-1', 'Истринский Район', '50', 'Московская Область', '-'], ['Кашира', 'Каширский Район', '50', 'Московская Область', 'района'], ['Кашира-8', 'Каширский Район', '50', 'Московская Область', '-'], ['Климовск', '(региональное)', '50', 'Московская Область', '-'], ['Клин', 'Клинский Район', '50', 'Московская Область', 'района'], ['Коломна', '(региональное)', '50', 'Московская Область', '-'], ['Королев', '(региональное)', '50', 'Московская Область', '-'], ['Котельники', '(региональное)', '50', 'Московская Область', '-'], ['Красноармейск', '(региональное)', '50', 'Московская Область', '-'], ['Красногорск', 'Красногорский Район', '50', 'Московская Область', 'района'], ['Краснозаводск', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Краснознаменск', '(региональное)', '50', 'Московская Область', '-'], ['Кубинка', 'Одинцовский Район', '50', 'Московская Область', '-'], ['Куровское', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Ликино-Дулево', 'Орехово-Зуевский Район', '50', 'Московская Область', '-'], ['Лобня', '(региональное)', '50', 'Московская Область', '-'], ['Лосино-Петровский', '(региональное)', '50', 'Московская Область', '-'], ['Луховицы', 'Луховицкий Район', '50', 'Московская Область', 'района'], ['Лыткарино', '(региональное)', '50', 'Московская Область', '-'], ['Люберцы', 'Люберецкий Район', '50', 'Московская Область', 'района'], ['Можайск', 'Можайский Район', '50', 'Московская Область', 'района'], ['Мытищи', 'Мытищинский Район', '50', 'Московская Область', 'района'], ['Наро-Фоминск', 'Наро-Фоминский Район', '50', 'Московская Область', 'района'], ['Ногинск', 'Ногинский Район', '50', 'Московская Область', 'района'], ['Одинцово', 'Одинцовский Район', '50', 'Московская Область', 'района'], ['Ожерелье', 'Каширский Район', '50', 'Московская Область', '-'], ['Озеры', 'Озерский Район', '50', 'Московская Область', 'района'], ['Орехово-Зуево', '(региональное)', '50', 'Московская Область', '-'], ['Павловский Посад', 'Павлово-Посадский Район', '50', 'Московская Область', 'района'], ['Пересвет', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Подольск', '(региональное)', '50', 'Московская Область', '-'], ['Протвино', '(региональное)', '50', 'Московская Область', '-'], ['Пушкино', 'Пушкинский Район', '50', 'Московская Область', 'района'], ['Пущино', '(региональное)', '50', 'Московская Область', '-'], ['Раменское', 'Раменский Район', '50', 'Московская Область', 'района'], ['Реутов', '(региональное)', '50', 'Московская Область', '-'], ['Рошаль', '(региональное)', '50', 'Московская Область', '-'], ['Руза', 'Рузский Район', '50', 'Московская Область', 'района'], ['Сергиев Посад', 'Сергиево-Посадский Район', '50', 'Московская Область', 'района'], ['Сергиев Посад-7', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Серпухов', '(региональное)', '50', 'Московская Область', '-'], ['Снегири', 'Истринский Район', '50', 'Московская Область', '-'], ['Солнечногорск', 'Солнечногорский Район', '50', 'Московская Область', 'района'], ['Солнечногорск-2', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-25', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-30', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Солнечногорск-7', 'Солнечногорский Район', '50', 'Московская Область', '-'], ['Старая Купавна', 'Ногинский Район', '50', 'Московская Область', '-'], ['Ступино', 'Ступинский Район', '50', 'Московская Область', 'района'], ['Талдом', 'Талдомский Район', '50', 'Московская Область', 'района'], ['Фрязино', '(региональное)', '50', 'Московская Область', '-'], ['Химки', '(региональное)', '50', 'Московская Область', '-'], ['Хотьково', 'Сергиево-Посадский Район', '50', 'Московская Область', '-'], ['Черноголовка', 'Ногинский Район', '50', 'Московская Область', '-'], ['Чехов', 'Чеховский Район', '50', 'Московская Область', 'района'], ['Чехов-2', 'Чеховский Район', '50', 'Московская Область', '-'], ['Чехов-3', 'Чеховский Район', '50', 'Московская Область', '-'], ['Чехов-8', 'Чеховский Район', '50', 'Московская Область', '-'], ['Шатура', 'Шатурский Район', '50', 'Московская Область', 'района'], ['Щелково', 'Щелковский Район', '50', 'Московская Область', 'района'], ['Электрогорск', '(региональное)', '50', 'Московская Область', '-'], ['Электросталь', '(региональное)', '50', 'Московская Область', '-'], ['Электроугли', 'Ногинский Район', '50', 'Московская Область', '-'], ['Юбилейный', '(региональное)', '50', 'Московская Область', '-'], ['Яхрома', 'Дмитровский Район', '50', 'Московская Область', '-'], ['Апатиты', '(региональное)', '51', 'Мурманская Область', '-'], ['Гаджиево', '(региональное)', '51', 'Мурманская Область', '-'], ['Заозерск', '(региональное)', '51', 'Мурманская Область', '-'], ['Заполярный', 'Печенгский Район', '51', 'Мурманская Область', '-'], ['Кандалакша', '(региональное)', '51', 'Мурманская Область', '-'], ['Кировск', '(региональное)', '51', 'Мурманская Область', '-'], ['Ковдор', 'Ковдорский Район', '51', 'Мурманская Область', 'района'], ['Кола', 'Кольский Район', '51', 'Мурманская Область', 'района'], ['Мончегорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Мурманск', '(региональное)', '51', 'Мурманская Область', 'региона'], ['Оленегорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-1', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-2', '(региональное)', '51', 'Мурманская Область', '-'], ['Оленегорск-4', '(региональное)', '51', 'Мурманская Область', '-'], ['Островной', '(региональное)', '51', 'Мурманская Область', '-'], ['Полярные Зори', '(региональное)', '51', 'Мурманская Область', '-'], ['Полярный', '(региональное)', '51', 'Мурманская Область', '-'], ['Североморск', '(региональное)', '51', 'Мурманская Область', '-'], ['Снежногорск', '(региональное)', '51', 'Мурманская Область', '-'], ['Арзамас', '(региональное)', '52', 'Нижегородская Область', '-'], ['Балахна', 'Балахнинский Район', '52', 'Нижегородская Область', 'района'], ['Богородск', 'Богородский Район', '52', 'Нижегородская Область', 'района'], ['Бор', '(региональное)', '52', 'Нижегородская Область', '-'], ['Ветлуга', 'Ветлужский Район', '52', 'Нижегородская Область', 'района'], ['Володарск', 'Володарский Район', '52', 'Нижегородская Область', 'района'], ['Ворсма', 'Павловский Район', '52', 'Нижегородская Область', '-'], ['Выкса', '(региональное)', '52', 'Нижегородская Область', 'района'], ['Горбатов', 'Павловский Район', '52', 'Нижегородская Область', '-'], ['Городец', 'Городецкий Район', '52', 'Нижегородская Область', 'района'], ['Дзержинск', '(региональное)', '52', 'Нижегородская Область', '-'], ['Заволжье', 'Городецкий Район', '52', 'Нижегородская Область', '-'], ['Княгинино', 'Княгининский Район', '52', 'Нижегородская Область', 'района'], ['Кстово', 'Кстовский Район', '52', 'Нижегородская Область', 'района'], ['Кулебаки', 'Кулебакский Район', '52', 'Нижегородская Область', 'района'], ['Лукоянов', 'Лукояновский Район', '52', 'Нижегородская Область', 'района'], ['Лысково', 'Лысковский Район', '52', 'Нижегородская Область', 'района'], ['Навашино', 'Навашинский Район', '52', 'Нижегородская Область', 'района'], ['Нижний Новгород', '(региональное)', '52', 'Нижегородская Область', 'региона'], ['Павлово', 'Павловский Район', '52', 'Нижегородская Область', 'района'], ['Первомайск', '(региональное)', '52', 'Нижегородская Область', '-'], ['Перевоз', 'Перевозский Район', '52', 'Нижегородская Область', 'района'], ['Саров', '(региональное)', '52', 'Нижегородская Область', '-'], ['Семенов', '(региональное)', '52', 'Нижегородская Область', '-'], ['Сергач', 'Сергачский Район', '52', 'Нижегородская Область', 'района'], ['Урень', 'Уренский Район', '52', 'Нижегородская Область', 'района'], ['Чкаловск', 'Чкаловский Район', '52', 'Нижегородская Область', 'района'], ['Шахунья', '(региональное)', '52', 'Нижегородская Область', '-'], ['Боровичи', 'Боровичский Район', '53', 'Новгородская Область', 'района'], ['Валдай', 'Валдайский Район', '53', 'Новгородская Область', 'района'], ['Великий Новгород', '(региональное)', '53', 'Новгородская Область', 'региона'], ['Малая Вишера', 'Маловишерский Район', '53', 'Новгородская Область', 'района'], ['Окуловка', 'Окуловский Район', '53', 'Новгородская Область', 'района'], ['Пестово', 'Пестовский Район', '53', 'Новгородская Область', 'района'], ['Сольцы', 'Солецкий Район', '53', 'Новгородская Область', 'района'], ['Сольцы 2', 'Солецкий Район', '53', 'Новгородская Область', '-'], ['Старая Русса', 'Старорусский Район', '53', 'Новгородская Область', 'района'], ['Холм', 'Холмский Район', '53', 'Новгородская Область', 'района'], ['Чудово', 'Чудовский Район', '53', 'Новгородская Область', 'района'], ['Барабинск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Бердск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Болотное', 'Болотнинский Район', '54', 'Новосибирская Область', 'района'], ['Искитим', '(региональное)', '54', 'Новосибирская Область', '-'], ['Карасук', 'Карасукский Район', '54', 'Новосибирская Область', 'района'], ['Каргат', 'Каргатский Район', '54', 'Новосибирская Область', 'района'], ['Куйбышев', '(региональное)', '54', 'Новосибирская Область', '-'], ['Купино', 'Купинский Район', '54', 'Новосибирская Область', 'района'], ['Новосибирск', '(региональное)', '54', 'Новосибирская Область', 'региона'], ['Обь', '(региональное)', '54', 'Новосибирская Область', '-'], ['Татарск', '(региональное)', '54', 'Новосибирская Область', '-'], ['Тогучин', 'Тогучинский Район', '54', 'Новосибирская Область', 'района'], ['Черепаново', 'Черепановский Район', '54', 'Новосибирская Область', 'района'], ['Чулым', 'Чулымский Район', '54', 'Новосибирская Область', 'района'], ['Чулым-3', 'Чулымский Район', '54', 'Новосибирская Область', '-'], ['Исилькуль', 'Исилькульский Район', '55', 'Омская Область', 'района'], ['Калачинск', 'Калачинский Район', '55', 'Омская Область', 'района'], ['Называевск', 'Называевский Район', '55', 'Омская Область', 'района'], ['Омск', '(региональное)', '55', 'Омская Область', 'региона'], ['Тара', 'Тарский Район', '55', 'Омская Область', 'района'], ['Тюкалинск', 'Тюкалинский Район', '55', 'Омская Область', 'района'], ['Абдулино', 'Абдулинский Район', '56', 'Оренбургская Область', 'района'], ['Бугуруслан', '(региональное)', '56', 'Оренбургская Область', '-'], ['Бузулук', '(региональное)', '56', 'Оренбургская Область', '-'], ['Гай', '(региональное)', '56', 'Оренбургская Область', '-'], ['Кувандык', '(региональное)', '56', 'Оренбургская Область', '-'], ['Медногорск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Новотроицк', '(региональное)', '56', 'Оренбургская Область', '-'], ['Оренбург', '(региональное)', '56', 'Оренбургская Область', 'региона'], ['Орск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Соль-Илецк', 'Соль-Илецкий Район', '56', 'Оренбургская Область', 'района'], ['Сорочинск', '(региональное)', '56', 'Оренбургская Область', '-'], ['Ясный', 'Ясненский Район', '56', 'Оренбургская Область', 'района'], ['Болхов', 'Болховский Район', '57', 'Орловская Область', 'района'], ['Дмитровск', 'Дмитровский Район', '57', 'Орловская Область', 'района'], ['Ливны', '(региональное)', '57', 'Орловская Область', '-'], ['Малоархангельск', 'Малоархангельский Район', '57', 'Орловская Область', 'района'], ['Мценск', '(региональное)', '57', 'Орловская Область', '-'], ['Новосиль', 'Новосильский Район', '57', 'Орловская Область', 'района'], ['Орёл', '(региональное)', '57', 'Орловская Область', 'региона'], ['Белинский', 'Белинский Район', '58', 'Пензенская Область', 'района'], ['Городище', 'Городищенский Район', '58', 'Пензенская Область', 'района'], ['Заречный', '(региональное)', '58', 'Пензенская Область', '-'], ['Каменка', 'Каменский Район', '58', 'Пензенская Область', 'района'], ['Кузнецк', 'Кузнецкий Район', '58', 'Пензенская Область', 'района'], ['Кузнецк-12', 'Кузнецкий Район', '58', 'Пензенская Область', '-'], ['Кузнецк-8', 'Кузнецкий Район', '58', 'Пензенская Область', '-'], ['Нижний Ломов', 'Нижнеломовский Район', '58', 'Пензенская Область', 'района'], ['Никольск', 'Никольский Район', '58', 'Пензенская Область', 'района'], ['Пенза', '(региональное)', '58', 'Пензенская Область', '-'], ['Сердобск', 'Сердобский Район', '58', 'Пензенская Область', 'района'], ['Спасск', 'Спасский Район', '58', 'Пензенская Область', 'района'], ['Сурск', 'Городищенский Район', '58', 'Пензенская Область', '-'], ['Александровск', '(региональное)', '59', 'Пермский Край', '-'], ['Березники', '(региональное)', '59', 'Пермский Край', '-'], ['Верещагино', 'Верещагинский Район', '59', 'Пермский Край', 'района'], ['Горнозаводск', 'Горнозаводский Район', '59', 'Пермский Край', 'района'], ['Гремячинск', '(региональное)', '59', 'Пермский Край', '-'], ['Губаха', '(региональное)', '59', 'Пермский Край', '-'], ['Добрянка', '(региональное)', '59', 'Пермский Край', '-'], ['Кизел', '(региональное)', '59', 'Пермский Край', '-'], ['Красновишерск', 'Красновишерский Район', '59', 'Пермский Край', 'района'], ['Краснокамск', 'Краснокамский Район', '59', 'Пермский Край', 'района'], ['Кудымкар', '(региональное)', '59', 'Пермский Край', '-'], ['Кунгур', '(региональное)', '59', 'Пермский Край', '-'], ['Лысьва', '(региональное)', '59', 'Пермский Край', '-'], ['Нытва', 'Нытвенский Район', '59', 'Пермский Край', 'района'], ['Оса', 'Осинский Район', '59', 'Пермский Край', 'района'], ['Оханск', 'Оханский Район', '59', 'Пермский Край', 'района'], ['Очер', 'Очерский Район', '59', 'Пермский Край', 'района'], ['Пермь', '(региональное)', '59', 'Пермский Край', 'региона'], ['Соликамск', '(региональное)', '59', 'Пермский Край', '-'], ['Усолье', 'Усольский Район', '59', 'Пермский Край', 'района'], ['Чайковский', '(региональное)', '59', 'Пермский Край', '-'], ['Чердынь', 'Чердынский Район', '59', 'Пермский Край', 'района'], ['Чермоз', 'Ильинский Район', '59', 'Пермский Край', '-'], ['Чернушка', 'Чернушинский Район', '59', 'Пермский Край', 'района'], ['Чусовой', '(региональное)', '59', 'Пермский Край', '-'], ['Великие Луки', '(региональное)', '60', 'Псковская Область', '-'], ['Великие Луки-1', 'Великолукский Район', '60', 'Псковская Область', '-'], ['Гдов', 'Гдовский Район', '60', 'Псковская Область', 'района'], ['Дно', 'Дновский Район', '60', 'Псковская Область', 'района'], ['Невель', 'Невельский Район', '60', 'Псковская Область', 'района'], ['Новоржев', 'Новоржевский Район', '60', 'Псковская Область', 'района'], ['Новосокольники', 'Новосокольнический Район', '60', 'Псковская Область', 'района'], ['Опочка', 'Опочецкий Район', '60', 'Псковская Область', 'района'], ['Остров', 'Островский Район', '60', 'Псковская Область', 'района'], ['Печоры', 'Печорский Район', '60', 'Псковская Область', 'района'], ['Порхов', 'Порховский Район', '60', 'Псковская Область', 'района'], ['Псков', '(региональное)', '60', 'Псковская Область', 'региона'], ['Пустошка', 'Пустошкинский Район', '60', 'Псковская Область', 'района'], ['Пыталово', 'Пыталовский Район', '60', 'Псковская Область', 'района'], ['Себеж', 'Себежский Район', '60', 'Псковская Область', 'района'], ['Азов', '(региональное)', '61', 'Ростовская Область', '-'], ['Аксай', 'Аксайский Район', '61', 'Ростовская Область', 'района'], ['Батайск', '(региональное)', '61', 'Ростовская Область', '-'], ['Белая Калитва', 'Белокалитвинский Район', '61', 'Ростовская Область', 'района'], ['Волгодонск', '(региональное)', '61', 'Ростовская Область', '-'], ['Гуково', '(региональное)', '61', 'Ростовская Область', '-'], ['Донецк', '(региональное)', '61', 'Ростовская Область', '-'], ['Зверево', '(региональное)', '61', 'Ростовская Область', '-'], ['Зерноград', 'Зерноградский Район', '61', 'Ростовская Область', 'района'], ['Каменск-Шахтинский', '(региональное)', '61', 'Ростовская Область', '-'], ['Константиновск', 'Константиновский Район', '61', 'Ростовская Область', 'района'], ['Красный Сулин', 'Красносулинский Район', '61', 'Ростовская Область', 'района'], ['Миллерово', 'Миллеровский Район', '61', 'Ростовская Область', 'района'], ['Морозовск', 'Морозовский Район', '61', 'Ростовская Область', 'района'], ['Новочеркасск', '(региональное)', '61', 'Ростовская Область', '-'], ['Новошахтинск', '(региональное)', '61', 'Ростовская Область', '-'], ['Пролетарск', 'Пролетарский Район', '61', 'Ростовская Область', 'района'], ['Ростов-на-Дону', '(региональное)', '61', 'Ростовская Область', 'региона'], ['Сальск', 'Сальский Район', '61', 'Ростовская Область', 'района'], ['Семикаракорск', 'Семикаракорский Район', '61', 'Ростовская Область', 'района'], ['Таганрог', '(региональное)', '61', 'Ростовская Область', '-'], ['Цимлянск', 'Цимлянский Район', '61', 'Ростовская Область', 'района'], ['Шахты', '(региональное)', '61', 'Ростовская Область', '-'], ['Касимов', '(региональное)', '62', 'Рязанская Область', 'района'], ['Кораблино', 'Кораблинский Район', '62', 'Рязанская Область', 'района'], ['Михайлов', 'Михайловский Район', '62', 'Рязанская Область', 'района'], ['Новомичуринск', 'Пронский Район', '62', 'Рязанская Область', '-'], ['Рыбное', 'Рыбновский Район', '62', 'Рязанская Область', 'района'], ['Ряжск', 'Ряжский Район', '62', 'Рязанская Область', 'района'], ['Рязань', '(региональное)', '62', 'Рязанская Область', 'региона'], ['Сасово', '(региональное)', '62', 'Рязанская Область', '-'], ['Скопин', '(региональное)', '62', 'Рязанская Область', 'района'], ['Спас-Клепики', 'Клепиковский Район', '62', 'Рязанская Область', 'района'], ['Спасск-Рязанский', 'Спасский Район', '62', 'Рязанская Область', 'района'], ['Шацк', 'Шацкий Район', '62', 'Рязанская Область', 'района'], ['Жигулевск', '(региональное)', '63', 'Самарская Область', '-'], ['Кинель', '(региональное)', '63', 'Самарская Область', '-'], ['Нефтегорск', 'Нефтегорский Район', '63', 'Самарская Область', 'района'], ['Новокуйбышевск', '(региональное)', '63', 'Самарская Область', '-'], ['Октябрьск', '(региональное)', '63', 'Самарская Область', '-'], ['Отрадный', '(региональное)', '63', 'Самарская Область', '-'], ['Похвистнево', '(региональное)', '63', 'Самарская Область', '-'], ['Самара', '(региональное)', '63', 'Самарская Область', 'региона'], ['Сызрань', '(региональное)', '63', 'Самарская Область', '-'], ['Тольятти', '(региональное)', '63', 'Самарская Область', '-'], ['Чапаевск', '(региональное)', '63', 'Самарская Область', '-'], ['Аркадак', 'Аркадакский Район', '64', 'Саратовская Область', 'района'], ['Аткарск', '(региональное)', '64', 'Саратовская Область', '-'], ['Балаково', '(региональное)', '64', 'Саратовская Область', '-'], ['Балашов', '(региональное)', '64', 'Саратовская Область', '-'], ['Вольск', '(региональное)', '64', 'Саратовская Область', '-'], ['Вольск-18', '(региональное)', '64', 'Саратовская Область', '-'], ['Ершов', 'Ершовский Район', '64', 'Саратовская Область', 'района'], ['Калининск', 'Калининский Район', '64', 'Саратовская Область', 'района'], ['Красноармейск', '(региональное)', '64', 'Саратовская Область', '-'], ['Красный Кут', 'Краснокутский Район', '64', 'Саратовская Область', 'района'], ['Маркс', '(региональное)', '64', 'Саратовская Область', '-'], ['Новоузенск', 'Новоузенский Район', '64', 'Саратовская Область', 'района'], ['Петровск', '(региональное)', '64', 'Саратовская Область', '-'], ['Пугачев', '(региональное)', '64', 'Саратовская Область', 'района'], ['Ртищево', '(региональное)', '64', 'Саратовская Область', '-'], ['Саратов', '(региональное)', '64', 'Саратовская Область', 'региона'], ['Хвалынск', '(региональное)', '64', 'Саратовская Область', '-'], ['Шиханы', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс-19', '(региональное)', '64', 'Саратовская Область', '-'], ['Энгельс-2', '(региональное)', '64', 'Саратовская Область', '-'], ['Александровск-Сахалинский', 'Александровск-Сахалинский Район', '65', 'Сахалинская Область', 'района'], ['Анива', 'Анивский Район', '65', 'Сахалинская Область', 'района'], ['Долинск', 'Долинский Район', '65', 'Сахалинская Область', 'района'], ['Корсаков', 'Корсаковский Район', '65', 'Сахалинская Область', 'района'], ['Курильск', 'Курильский Район', '65', 'Сахалинская Область', 'района'], ['Макаров', 'Макаровский Район', '65', 'Сахалинская Область', 'района'], ['Невельск', 'Невельский Район', '65', 'Сахалинская Область', 'района'], ['Оха', 'Охинский Район', '65', 'Сахалинская Область', 'района'], ['Поронайск', 'Поронайский Район', '65', 'Сахалинская Область', 'района'], ['Северо-Курильск', 'Северо-Курильский Район', '65', 'Сахалинская Область', 'района'], ['Томари', 'Томаринский Район', '65', 'Сахалинская Область', 'района'], ['Углегорск', 'Углегорский Район', '65', 'Сахалинская Область', 'района'], ['Холмск', 'Холмский Район', '65', 'Сахалинская Область', 'района'], ['Шахтерск', 'Углегорский Район', '65', 'Сахалинская Область', '-'], ['Южно-Сахалинск', '(региональное)', '65', 'Сахалинская Область', 'региона'], ['Алапаевск', '(региональное)', '66', 'Свердловская Область', '-'], ['Арамиль', 'Сысертский Район', '66', 'Свердловская Область', '-'], ['Артемовский', 'Артемовский Район', '66', 'Свердловская Область', 'района'], ['Асбест', '(региональное)', '66', 'Свердловская Область', '-'], ['Березовский', '(региональное)', '66', 'Свердловская Область', '-'], ['Богданович', 'Богдановичский Район', '66', 'Свердловская Область', '-'], ['Верхний Тагил', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхняя Пышма', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхняя Салда', 'Верхнесалдинский Район', '66', 'Свердловская Область', '-'], ['Верхняя Тура', '(региональное)', '66', 'Свердловская Область', '-'], ['Верхотурье', 'Верхотурский Район', '66', 'Свердловская Область', 'района'], ['Волчанск', '(региональное)', '66', 'Свердловская Область', '-'], ['Дегтярск', '(региональное)', '66', 'Свердловская Область', '-'], ['Екатеринбург', '(региональное)', '66', 'Свердловская Область', 'региона'], ['Заречный', '(региональное)', '66', 'Свердловская Область', '-'], ['Ивдель', '(региональное)', '66', 'Свердловская Область', '-'], ['Ирбит', '(региональное)', '66', 'Свердловская Область', '-'], ['Каменск-Уральский', '(региональное)', '66', 'Свердловская Область', '-'], ['Камышлов', '(региональное)', '66', 'Свердловская Область', '-'], ['Карпинск', '(региональное)', '66', 'Свердловская Область', '-'], ['Качканар', '(региональное)', '66', 'Свердловская Область', '-'], ['Кировград', '(региональное)', '66', 'Свердловская Область', '-'], ['Краснотурьинск', '(региональное)', '66', 'Свердловская Область', '-'], ['Красноуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Красноуфимск', '(региональное)', '66', 'Свердловская Область', '-'], ['Кушва', '(региональное)', '66', 'Свердловская Область', '-'], ['Лесной', '(региональное)', '66', 'Свердловская Область', '-'], ['Михайловск', 'Нижнесергинский Район', '66', 'Свердловская Область', '-'], ['Невьянск', 'Невьянский Район', '66', 'Свердловская Область', '-'], ['Нижние Серги', 'Нижнесергинский Район', '66', 'Свердловская Область', 'района'], ['Нижние Серги-3', 'Нижнесергинский Район', '66', 'Свердловская Область', '-'], ['Нижний Тагил', '(региональное)', '66', 'Свердловская Область', '-'], ['Нижняя Салда', '(региональное)', '66', 'Свердловская Область', '-'], ['Нижняя Тура', '(региональное)', '66', 'Свердловская Область', '-'], ['Новая Ляля', 'Новолялинский Район', '66', 'Свердловская Область', 'района'], ['Новоуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Первоуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Полевской', '(региональное)', '66', 'Свердловская Область', '-'], ['Ревда', '(региональное)', '66', 'Свердловская Область', '-'], ['Реж', 'Режевской Район', '66', 'Свердловская Область', 'района'], ['Североуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Серов', '(региональное)', '66', 'Свердловская Область', '-'], ['Среднеуральск', '(региональное)', '66', 'Свердловская Область', '-'], ['Сухой Лог', 'Сухоложский Район', '66', 'Свердловская Область', '-'], ['Сысерть', 'Сысертский Район', '66', 'Свердловская Область', 'района'], ['Тавда', '(региональное)', '66', 'Свердловская Область', '-'], ['Талица', 'Талицкий Район', '66', 'Свердловская Область', 'района'], ['Туринск', 'Туринский Район', '66', 'Свердловская Область', 'района'], ['Велиж', 'Велижский Район', '67', 'Смоленская Область', 'района'], ['Вязьма', 'Вяземский Район', '67', 'Смоленская Область', 'района'], ['Гагарин', 'Гагаринский Район', '67', 'Смоленская Область', 'района'], ['Демидов', 'Демидовский Район', '67', 'Смоленская Область', 'района'], ['Десногорск', '(региональное)', '67', 'Смоленская Область', '-'], ['Дорогобуж', 'Дорогобужский Район', '67', 'Смоленская Область', 'района'], ['Духовщина', 'Духовщинский Район', '67', 'Смоленская Область', 'района'], ['Ельня', 'Ельнинский Район', '67', 'Смоленская Область', 'района'], ['Починок', 'Починковский Район', '67', 'Смоленская Область', 'района'], ['Рославль', 'Рославльский Район', '67', 'Смоленская Область', 'района'], ['Рудня', 'Руднянский Район', '67', 'Смоленская Область', 'района'], ['Сафоново', 'Сафоновский Район', '67', 'Смоленская Область', 'района'], ['Смоленск', '(региональное)', '67', 'Смоленская Область', 'региона'], ['Сычевка', 'Сычевский Район', '67', 'Смоленская Область', 'района'], ['Ярцево', 'Ярцевский Район', '67', 'Смоленская Область', 'района'], ['Жердевка', 'Жердевский Район', '68', 'Тамбовская Область', 'района'], ['Кирсанов', '(региональное)', '68', 'Тамбовская Область', '-'], ['Котовск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Мичуринск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Моршанск', '(региональное)', '68', 'Тамбовская Область', '-'], ['Рассказово', '(региональное)', '68', 'Тамбовская Область', '-'], ['Тамбов', '(региональное)', '68', 'Тамбовская Область', 'региона'], ['Уварово', '(региональное)', '68', 'Тамбовская Область', '-'], ['Андреаполь', 'Андреапольский Район', '69', 'Тверская Область', 'района'], ['Бежецк', 'Бежецкий Район', '69', 'Тверская Область', 'района'], ['Белый', 'Бельский Район', '69', 'Тверская Область', 'района'], ['Бологое', 'Бологовский Район', '69', 'Тверская Область', 'района'], ['Весьегонск', 'Весьегонский Район', '69', 'Тверская Область', 'района'], ['Вышний Волочек', '(региональное)', '69', 'Тверская Область', '-'], ['Западная Двина', 'Западнодвинский Район', '69', 'Тверская Область', 'района'], ['Зубцов', 'Зубцовский Район', '69', 'Тверская Область', 'района'], ['Калязин', 'Калязинский Район', '69', 'Тверская Область', 'района'], ['Кашин', 'Кашинский Район', '69', 'Тверская Область', 'района'], ['Кимры', '(региональное)', '69', 'Тверская Область', '-'], ['Конаково', 'Конаковский Район', '69', 'Тверская Область', 'района'], ['Красный Холм', 'Краснохолмский Район', '69', 'Тверская Область', 'района'], ['Кувшиново', 'Кувшиновский Район', '69', 'Тверская Область', 'района'], ['Лихославль', 'Лихославльский Район', '69', 'Тверская Область', 'района'], ['Нелидово', '(региональное)', '69', 'Тверская Область', '-'], ['Осташков', 'Осташковский Район', '69', 'Тверская Область', 'района'], ['Ржев', '(региональное)', '69', 'Тверская Область', '-'], ['Старица', 'Старицкий Район', '69', 'Тверская Область', 'района'], ['Тверь', '(региональное)', '69', 'Тверская Область', 'региона'], ['Торжок', '(региональное)', '69', 'Тверская Область', '-'], ['Торопец', 'Торопецкий Район', '69', 'Тверская Область', 'района'], ['Удомля', 'Удомельский Район', '69', 'Тверская Область', 'района'], ['Асино', 'Асиновский Район', '70', 'Томская Область', 'района'], ['Кедровый', '(региональное)', '70', 'Томская Область', '-'], ['Колпашево', 'Колпашевский Район', '70', 'Томская Область', 'района'], ['Северск', '(региональное)', '70', 'Томская Область', '-'], ['Стрежевой', '(региональное)', '70', 'Томская Область', '-'], ['Томск', '(региональное)', '70', 'Томская Область', 'района и региона'], ['Алексин', 'Алексинский Район', '71', 'Тульская Область', 'района'], ['Белев', 'Белевский Район', '71', 'Тульская Область', 'района'], ['Богородицк', 'Богородицкий Район', '71', 'Тульская Область', 'района'], ['Болохово', 'Киреевский Район', '71', 'Тульская Область', '-'], ['Венев', 'Веневский Район', '71', 'Тульская Область', 'района'], ['Донской', '(региональное)', '71', 'Тульская Область', '-'], ['Ефремов', 'Ефремовский Район', '71', 'Тульская Область', 'района'], ['Кимовск', 'Кимовский Район', '71', 'Тульская Область', 'района'], ['Киреевск', 'Киреевский Район', '71', 'Тульская Область', 'района'], ['Липки', 'Киреевский Район', '71', 'Тульская Область', '-'], ['Новомосковск', 'Новомосковский Район', '71', 'Тульская Область', 'района'], ['Плавск', 'Плавский Район', '71', 'Тульская Область', 'района'], ['Советск', 'Щекинский Район', '71', 'Тульская Область', '-'], ['Суворов', 'Суворовский Район', '71', 'Тульская Область', 'района'], ['Тула', '(региональное)', '71', 'Тульская Область', 'региона'], ['Узловая', 'Узловский Район', '71', 'Тульская Область', 'района'], ['Чекалин', 'Суворовский Район', '71', 'Тульская Область', '-'], ['Щекино', 'Щекинский Район', '71', 'Тульская Область', 'района'], ['Ясногорск', 'Ясногорский Район', '71', 'Тульская Область', 'района'], ['Заводоуковск', 'Заводоуковский Район', '72', 'Тюменская Область', 'района'], ['Ишим', 'Ишимский Район', '72', 'Тюменская Область', 'района'], ['Тобольск', '(региональное)', '72', 'Тюменская Область', '-'], ['Тюмень', '(региональное)', '72', 'Тюменская Область', '-'], ['Ялуторовск', 'Ялуторовский Район', '72', 'Тюменская Область', 'района'], ['Барыш', '(региональное)', '73', 'Ульяновская Область', '-'], ['Димитровград', '(региональное)', '73', 'Ульяновская Область', '-'], ['Инза', 'Инзенский Район', '73', 'Ульяновская Область', 'района'], ['Новоульяновск', '(региональное)', '73', 'Ульяновская Область', '-'], ['Сенгилей', 'Сенгилеевский Район', '73', 'Ульяновская Область', 'района'], ['Ульяновск', '(региональное)', '73', 'Ульяновская Область', 'региона'], ['Аша', 'Ашинский Район', '74', 'Челябинская Область', 'района'], ['Бакал', 'Саткинский Район', '74', 'Челябинская Область', '-'], ['Верхнеуральск', 'Верхнеуральский Район', '74', 'Челябинская Область', 'района'], ['Верхний Уфалей', '(региональное)', '74', 'Челябинская Область', '-'], ['Еманжелинск', 'Еманжелинский Район', '74', 'Челябинская Область', 'района'], ['Златоуст', '(региональное)', '74', 'Челябинская Область', '-'], ['Карабаш', '(региональное)', '74', 'Челябинская Область', '-'], ['Карталы', 'Карталинский Район', '74', 'Челябинская Область', 'района'], ['Касли', 'Каслинский Район', '74', 'Челябинская Область', 'района'], ['Катав-Ивановск', 'Катав-Ивановский Район', '74', 'Челябинская Область', 'района'], ['Копейск', '(региональное)', '74', 'Челябинская Область', '-'], ['Коркино', 'Коркинский Район', '74', 'Челябинская Область', 'района'], ['Куса', 'Кусинский Район', '74', 'Челябинская Область', 'района'], ['Кыштым', '(региональное)', '74', 'Челябинская Область', '-'], ['Магнитогорск', '(региональное)', '74', 'Челябинская Область', '-'], ['Миасс', '(региональное)', '74', 'Челябинская Область', '-'], ['Миньяр', 'Ашинский Район', '74', 'Челябинская Область', '-'], ['Нязепетровск', 'Нязепетровский Район', '74', 'Челябинская Область', 'района'], ['Озерск', '(региональное)', '74', 'Челябинская Область', '-'], ['Пласт', 'Пластовский Район', '74', 'Челябинская Область', 'района'], ['Сатка', 'Саткинский Район', '74', 'Челябинская Область', 'района'], ['Сим', 'Ашинский Район', '74', 'Челябинская Область', '-'], ['Снежинск', '(региональное)', '74', 'Челябинская Область', '-'], ['Трехгорный', '(региональное)', '74', 'Челябинская Область', '-'], ['Трехгорный-1', '(региональное)', '74', 'Челябинская Область', '-'], ['Троицк', '(региональное)', '74', 'Челябинская Область', '-'], ['Усть-Катав', '(региональное)', '74', 'Челябинская Область', '-'], ['Чебаркуль', '(региональное)', '74', 'Челябинская Область', '-'], ['Челябинск', '(региональное)', '74', 'Челябинская Область', 'региона'], ['Южноуральск', '(региональное)', '74', 'Челябинская Область', '-'], ['Юрюзань', 'Катав-Ивановский Район', '74', 'Челябинская Область', '-'], ['Балей', 'Балейский Район', '75', 'Забайкальский Край', 'района'], ['Борзя', 'Борзинский Район', '75', 'Забайкальский Край', 'района'], ['Краснокаменск', 'Краснокаменский Район', '75', 'Забайкальский Край', 'района'], ['Могоча', 'Могочинский Район', '75', 'Забайкальский Край', 'района'], ['Нерчинск', 'Нерчинский Район', '75', 'Забайкальский Край', 'района'], ['Петровск-Забайкальский', 'Петровск-Забайкальский Район', '75', 'Забайкальский Край', 'района'], ['Сретенск', 'Сретенский Район', '75', 'Забайкальский Край', 'района'], ['Хилок', 'Хилокский Район', '75', 'Забайкальский Край', 'района'], ['Чита', '(региональное)', '75', 'Забайкальский Край', 'региона'], ['Шилка', 'Шилкинский Район', '75', 'Забайкальский Край', 'района'], ['Гаврилов-Ям', 'Гаврилов-Ямский Район', '76', 'Ярославская Область', 'района'], ['Данилов', 'Даниловский Район', '76', 'Ярославская Область', 'района'], ['Любим', 'Любимский Район', '76', 'Ярославская Область', 'района'], ['Мышкин', 'Мышкинский Район', '76', 'Ярославская Область', 'района'], ['Переславль-Залесский', '(региональное)', '76', 'Ярославская Область', '-'], ['Пошехонье', 'Пошехонский Район', '76', 'Ярославская Область', 'района'], ['Ростов', 'Ростовский Район', '76', 'Ярославская Область', 'района'], ['Рыбинск', 'Рыбинский Район', '76', 'Ярославская Область', 'района'], ['Тутаев', 'Тутаевский Район', '76', 'Ярославская Область', 'района'], ['Углич', 'Угличский Район', '76', 'Ярославская Область', 'района'], ['Ярославль', '(региональное)', '76', 'Ярославская Область', 'региона'], ['Зеленоград', '(региональное)', '77', 'Москва Город', '-'], ['Москва', '(федеральное)', '77', 'Москва Город', '-'], ['Московский', 'Московский Поселение', '77', 'Москва Город', 'района'], ['Московский', 'Московский Поселок', '77', 'Москва Город', 'района'], ['Троицк', '(региональное)', '77', 'Москва Город', '-'], ['Щербинка', '(региональное)', '77', 'Москва Город', '-'], ['Зеленогорск', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Колпино', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Красное Село', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Кронштадт', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Ломоносов', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Павловск', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Петергоф', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Пушкин', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Санкт-Петербург', '(федеральное)', '78', 'Санкт-Петербург Город', '-'], ['Сестрорецк', '(региональное)', '78', 'Санкт-Петербург Город', '-'], ['Биробиджан', '(региональное)', '79', 'Еврейская Автономная область', 'региона'], ['Облучье', 'Облученский Район', '79', 'Еврейская Автономная область', 'района'], ['Нарьян-Мар', '(региональное)', '83', 'Ненецкий Автономный округ', 'региона'], ['Белоярский', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Когалым', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Лангепас', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Лянтор', 'Сургутский Район', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Мегион', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нефтеюганск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нижневартовск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Нягань', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Покачи', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Пыть-Ях', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Радужный', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Советский', 'Советский Район', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', 'района'], ['Сургут', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Урай', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Ханты-Мансийск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', 'региона'], ['Югорск', '(региональное)', '86', 'Ханты-Мансийский Автономный округ - Югра Автономный округ', '-'], ['Анадырь', '(региональное)', '87', 'Чукотский Автономный округ', 'региона'], ['Билибино', 'Билибинский Район', '87', 'Чукотский Автономный округ', 'района'], ['Певек', 'Чаунский Район', '87', 'Чукотский Автономный округ', 'района'], ['Губкинский', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Лабытнанги', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Муравленко', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Надым', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Новый Уренгой', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Ноябрьск', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', '-'], ['Салехард', '(региональное)', '89', 'Ямало-Ненецкий Автономный округ', 'региона'], ['Тарко-Сале', 'Пуровский Район', '89', 'Ямало-Ненецкий Автономный округ', 'района'], ['Алупка', '(региональное)', '91', 'Крым Республика', '-'], ['Алушта', '(региональное)', '91', 'Крым Республика', '-'], ['Армянск', '(региональное)', '91', 'Крым Республика', '-'], ['Армянськ', 'Красноперекопский Район', '91', 'Крым Республика', '-'], ['Бахчисарай', 'Бахчисарайский Район', '91', 'Крым Республика', '-'], ['Белогорск', 'Белогорский Район', '91', 'Крым Республика', '-'], ['Джанкой', '(региональное)', '91', 'Крым Республика', '-'], ['Джанкой', 'Джанкойский Район', '91', 'Крым Республика', '-'], ['Евпатория', '(региональное)', '91', 'Крым Республика', '-'], ['Керчь', '(региональное)', '91', 'Крым Республика', '-'], ['Красноперекопск', '(региональное)', '91', 'Крым Республика', '-'], ['Красноперекопск', 'Красноперекопский Район', '91', 'Крым Республика', '-'], ['Подгорное', '(региональное)', '91', 'Крым Республика', '-'], ['Саки', '(региональное)', '91', 'Крым Республика', '-'], ['Саки', 'Сакский Район', '91', 'Крым Республика', '-'], ['Симферополь', '(региональное)', '91', 'Крым Республика', '-'], ['Старый крым', 'Кировский Район', '91', 'Крым Республика', '-'], ['Судак', '(региональное)', '91', 'Крым Республика', '-'], ['Феодосия', '(региональное)', '91', 'Крым Республика', '-'], ['Щелкино', 'Ленинский Район', '91', 'Крым Республика', '-'], ['Ялта', '(региональное)', '91', 'Крым Республика', '-'], ['Инкерман', '(региональное)', '92', 'Севастополь Город', '-'], ['Севастополь', '(региональное)', '92', 'Севастополь Город']];
+	
+	function searchCity(search) {
+	    search = search.toLowerCase();
+	    var items = map.filter(function (item) {
+	        return item[0].toLowerCase().indexOf(search) === 0;
+	    });
+	    return items.map(function (item) {
+	        return {
+	            value: item[0],
+	            help: item[3]
+	        };
+	    });
+	}
+
+/***/ },
+/* 485 */
+/*!****************************!*\
+  !*** ./app/style/App.scss ***!
+  \****************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(/*! !./../../~/css-loader!./../../~/sass-loader!./App.scss */ 486);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(/*! ./../../~/style-loader/addStyles.js */ 337)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./App.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./App.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 486 */
+/*!***********************************************************!*\
+  !*** ./~/css-loader!./~/sass-loader!./app/style/App.scss ***!
+  \***********************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(/*! ./../../~/css-loader/lib/css-base.js */ 336)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "body {\n  margin: 0;\n  padding: 0; }\n\n* {\n  font-family: Arial, Tahoma, sans-serif; }\n\n.container {\n  max-width: 920px;\n  margin: 0 auto; }\n\nheader {\n  padding: 10px 0;\n  font-size: 22px;\n  border-bottom: 1px solid #CCCCCC; }\n\n.Form {\n  margin: 10px 0;\n  padding: 20px;\n  border-radius: 5px;\n  border: 1px solid #CCC; }\n", ""]);
+	
+	// exports
+
 
 /***/ }
 /******/ ]);

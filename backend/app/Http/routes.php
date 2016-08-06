@@ -23,9 +23,10 @@ Route::resource('/api/v1/skip', 'Api\V1\SkipController', [
     'middleware' => ['web', 'api']
 ]);
 
-Route::any('/vk-callback', 'VkCallback@index', [
-   
-]);
+
+Route::any('/vk-callback', 'VkCallback@index');
+
+Route::any('/api/v1/vk-payment', 'Api\V1\VkPayment@index');
 
 Route::get('/', function () {
     return view('welcome');

@@ -9,6 +9,10 @@ use Illuminate\Database\QueryException;
 class VkUser extends Model
 {
     protected $table = 'vk_user';
+    
+    protected $casts = [
+        'watched_ids' => 'array'
+    ];
 
     public static function findOrCreate($id)
     {
@@ -85,5 +89,17 @@ class VkUser extends Model
                'is_really_like' => 0 
             ]);
         }
+    }
+
+    public function pay()
+    {
+        $watchedIds = $this->meLike()->select('from_ids')->get()->all();
+        \Log::info("Payed user", [
+            'id'=>$this->id, 
+            'new_ids'=>$watchedIds,
+            'old_ids'=>$this->watched_ids
+        ]);
+        $this->watched_ids = $watchedIds;
+        $this->save();
     }
 }

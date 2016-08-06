@@ -47,7 +47,7 @@ class VkUser extends Model
     }
 
     public function matched() {
-        return VkUserLike::where('from_id', $this->id)->where('is_really_like', 1)->whereRaw('to_id IN (SELECT from_id FROM vk_user_like WHERE to_id = ? AND is_really_like = 1 )', [$this->id] )->take(100000);
+        return VkUserLike::where('from_id', $this->id)->where('is_really_like', 1)->whereRaw('to_id IN (SELECT from_id FROM vk_user_like WHERE to_id = ? AND from_id <> ? AND is_really_like = 1 )', [$this->id, $this->id] )->take(100000);
     }
 
     public function toArray($light = false) {
@@ -56,7 +56,7 @@ class VkUser extends Model
             $data['selected'] = $this->iLike()->count();
             $data['selectedIds'] = $this->iSelect()->select('to_id')->pluck('to_id')->all();
         }
-        $data['selectedMe'] = $this->meLike()->count();
+        $data['selectedMe'] = $this->meLike()->where('from_id', '<>', $this->id)->count();
         $data['matchedUsers'] = $this->matched()->select('to_id')->pluck('to_id')->all();
         $data['matched'] = count($data['matchedUsers']);
         return $data;

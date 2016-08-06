@@ -39609,11 +39609,11 @@
 	
 	var _GroupItem2 = _interopRequireDefault(_GroupItem);
 	
-	__webpack_require__(/*! ../style/GroupList.scss */ 589);
-	
 	var _reactRedux = __webpack_require__(/*! react-redux */ 481);
 	
 	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 584);
+	
+	__webpack_require__(/*! ../style/GroupList.scss */ 589);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41692,6 +41692,8 @@
 	
 	var _share = __webpack_require__(/*! ../tools/share */ 608);
 	
+	var _GroupListActions = __webpack_require__(/*! ../actions/GroupListActions */ 584);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41719,12 +41721,34 @@
 	    }, {
 	        key: 'goToGroup',
 	        value: function goToGroup() {
+	            var groupList = this.props.groupList;
+	
+	            if (!groupList.loaded) {
+	                return;
+	            }
+	            var groupId = this.getParameterByName('group_id');
+	            if (groupId) {
+	                for (var i = 0; i < groupList.items.length; i++) {
+	                    var group = groupList.items[i];
+	                    if (group.id == groupId) {
+	                        this.props.chooseGroup(group);
+	                        _reactRouter.browserHistory.push('/filter');
+	                        return;
+	                    }
+	                }
+	            }
 	            _reactRouter.browserHistory.push('/group-list');
 	        }
 	    }, {
-	        key: 'buildPars',
-	        value: function buildPars(photo, matchedUsers) {
-	            return [];
+	        key: 'getParameterByName',
+	        value: function getParameterByName(name, url) {
+	            if (!url) url = window.location.href;
+	            name = name.replace(/[\[\]]/g, "\\$&");
+	            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	                results = regex.exec(url);
+	            if (!results) return null;
+	            if (!results[2]) return '';
+	            return decodeURIComponent(results[2].replace(/\+/g, " "));
 	        }
 	    }, {
 	        key: 'getNumEnding',
@@ -41834,6 +41858,13 @@
 	                }
 	            }
 	
+	            var groupList = this.props.groupList;
+	
+	            var text = 'Подождите...';
+	            if (groupList.loaded) {
+	                text = 'Начать';
+	            }
+	
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'Stat' },
@@ -41866,7 +41897,7 @@
 	                        _react2.default.createElement(
 	                            'button',
 	                            { onClick: this.goToGroup.bind(this), className: 'btn' },
-	                            'Начать'
+	                            text
 	                        )
 	                    ),
 	                    _react2.default.createElement(
@@ -41899,11 +41930,12 @@
 	    return {
 	        user: state.user,
 	        stat: state.stat,
-	        userRepo: state.userRepo
+	        userRepo: state.userRepo,
+	        groupList: state.groupList
 	    };
 	}
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser })(Welcome);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser, chooseGroup: _GroupListActions.chooseGroup })(Welcome);
 
 /***/ },
 /* 613 */

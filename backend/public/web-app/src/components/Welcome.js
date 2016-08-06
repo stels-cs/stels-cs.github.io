@@ -1,24 +1,47 @@
 import React, {PropTypes, Component} from 'react'
 import {connect} from 'react-redux'
 import {browserHistory, Link} from 'react-router'
-import { startLoadUser } from '../actions/GroupViewActions'
+import {startLoadUser} from '../actions/GroupViewActions'
 var classNames = require('classnames');
-import { UserView } from './UserView'
+import {UserView} from './UserView'
 import '../style/Stat.scss'
 import {share} from '../tools/share';
+import {chooseGroup} from '../actions/GroupListActions'
 
 export class Welcome extends Component {
+
 
     wallPost() {
         share();
     }
 
     goToGroup() {
+        let {groupList} = this.props;
+        if (!groupList.loaded) {
+            return;
+        }
+        let groupId = this.getParameterByName('group_id');
+        if (groupId) {
+            for (let i = 0; i < groupList.items.length; i++) {
+                let group = groupList.items[i];
+                if (group.id == groupId) {
+                    this.props.chooseGroup(group);
+                    browserHistory.push(`/filter`);
+                    return;
+                }
+            }
+        }
         browserHistory.push('/group-list');
     }
 
-    buildPars(photo, matchedUsers) {
-        return [];
+    getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
     getNumEnding(iNumber, aEndings) {
@@ -46,16 +69,16 @@ export class Welcome extends Component {
     }
 
     getUserView(user, key) {
-        return (<UserView user={user} key={key} />);
+        return (<UserView user={user} key={key}/>);
     }
 
     getFakeView(key) {
-        return (<UserView user={false} key={key} />);
+        return (<UserView user={false} key={key}/>);
     }
 
     preloadUsers() {
-        const { stat, userRepo } = this.props;
-        const { matchedUsers } = stat;
+        const {stat, userRepo} = this.props;
+        const {matchedUsers} = stat;
         if (matchedUsers.length) {
             for (let i = 0; i < matchedUsers.length; i++) {
                 let userId = matchedUsers[i];
@@ -87,7 +110,7 @@ export class Welcome extends Component {
         let uLoaded = this.props.user.loaded;
         let sLoaded = this.props.stat.loaded;
         const {selected, matched, selectedMe, matchedUsers} = this.props.stat;
-        const { userRepo } = this.props;
+        const {userRepo} = this.props;
         const selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
         const selectedMeEnds = this.getNumEnding(selectedMe, ['человек', 'человека', 'человек']);
         let matchedShow = classNames({
@@ -106,15 +129,20 @@ export class Welcome extends Component {
         });
 
         let userList = [];
-        for(let i = 0; i < matchedUsers.length; i++) {
+        for (let i = 0; i < matchedUsers.length; i++) {
             let userId = matchedUsers[i];
             if (userRepo.users[userId]) {
-                userList.push( this.getUserView(userRepo.users[userId], i) );
+                userList.push(this.getUserView(userRepo.users[userId], i));
             } else {
-                userList.push( this.getFakeView( i ) );
+                userList.push(this.getFakeView(i));
             }
         }
 
+        let {groupList} = this.props;
+        let text = 'Подождите...';
+        if (groupList.loaded) {
+            text = 'Начать';
+        }
 
 
         return <div className="Stat">
@@ -129,7 +157,7 @@ export class Welcome extends Component {
                     считайте, что вы пара!
                 </p>
                 <div className="text-center">
-                    <button onClick={this.goToGroup.bind(this)} className="btn">Начать</button>
+                    <button onClick={this.goToGroup.bind(this)} className="btn">{text}</button>
                 </div>
                 <div style={ {marginTop: '10px'} } className={matchedShow}>
                     У вас уже есть пары!<br />
@@ -153,8 +181,9 @@ function mapStateToProps(state) {
     return {
         user: state.user,
         stat: state.stat,
-        userRepo: state.userRepo
+        userRepo: state.userRepo,
+        groupList: state.groupList
     }
 }
 
-export default connect(mapStateToProps, { startLoadUser })(Welcome)
+export default connect(mapStateToProps, {startLoadUser, chooseGroup})(Welcome)

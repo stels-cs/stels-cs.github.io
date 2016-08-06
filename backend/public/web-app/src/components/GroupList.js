@@ -1,9 +1,9 @@
 import React, {PropTypes, Component} from 'react'
 import GroupItem from './GroupItem'
 var classNames = require('classnames');
-import '../style/GroupList.scss'
 import { connect } from 'react-redux'
 import { loadGroups, chooseGroup } from '../actions/GroupListActions'
+import '../style/GroupList.scss'
 
 export class GroupList extends Component {
 

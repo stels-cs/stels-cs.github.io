@@ -4,10 +4,16 @@ import {browserHistory, Link} from 'react-router'
 var classNames = require('classnames');
 import { UserView } from './UserView'
 import { startLoadUser } from '../actions/GroupViewActions'
+import { updateUserSettings } from '../actions/AppActions'
 import '../style/Stat.scss'
 import {share} from '../tools/share';
 
 export class Stat extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {showUpdate:false, inLoad:false};
+    }
 
     wallPost() {
         share();
@@ -45,17 +51,29 @@ export class Stat extends Component {
         return sEnding;
     }
 
-    getUserView(user, key) {
-        return (<UserView user={user} key={key} />);
+    getUserView(user, key, noMe = false) {
+        return (<UserView user={user} key={key} noMe={noMe} />);
     }
 
-    getFakeView(key) {
-        return (<UserView user={false} key={key} />);
+    getFakeView(key, noMe = false) {
+        return (<UserView user={false} key={key} noMe={noMe} />);
+    }
+
+    showPayment() {
+        var params = {
+            type: 'item',
+            item: 'item1'
+        };
+        VK.callMethod('showOrderBox', params);
     }
 
     preloadUsers() {
         const { stat, userRepo } = this.props;
-        const { matchedUsers } = stat;
+        let { matchedUsers, watched_ids } = stat;
+        matchedUsers = matchedUsers.concat(watched_ids);
+        matchedUsers = matchedUsers.filter(function(item, pos) {
+            return matchedUsers.indexOf(item) == pos;
+        });
         if (matchedUsers.length) {
             for (let i = 0; i < matchedUsers.length; i++) {
                 let userId = matchedUsers[i];
@@ -80,12 +98,30 @@ export class Stat extends Component {
 
     componentDidMount() {
         this.preloadUsers();
+        VK.addCallback('onOrderSuccess', this.onOrderSuccess.bind(this));
+    }
+
+    componentWillUnmount() {
+        VK.removeCallback('onOrderSuccess', this.onOrderSuccess.bind(this));
+    }
+
+    onOrderSuccess() {
+        console.log('On oder success');
+        this.props.updateUserSettings();
+        this.setState( {showUpdate:true} );
+    }
+
+    updateWatchList() {
+        if (!this.state.inLoad) {
+            this.setState({showUpdate: true, inLoad: true});
+            this.props.updateUserSettings();
+        }
     }
 
     render() {
         let uLoaded = this.props.user.loaded;
         let sLoaded = this.props.stat.loaded;
-        const {selected, matched, selectedMe, matchedUsers} = this.props.stat;
+        const {selected, matched, selectedMe, matchedUsers, watched_ids} = this.props.stat;
         const { userRepo } = this.props;
         const selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
         const selectedMeEnds = this.getNumEnding(selectedMe, ['человеку', 'пользователям', 'пользователям']);
@@ -114,6 +150,20 @@ export class Stat extends Component {
             }
         }
 
+        let x = watched_ids.concat(matchedUsers);
+        x = x.filter( (item, pos) => { return x.indexOf(item) == pos } );
+        let showMoreWatchBox = selectedMe > x.length;
+
+        let watched = [];
+        for(let i = 0; i < x.length; i++) {
+            let uId = x[i];
+            if (userRepo.users[uId]) {
+                watched.push( this.getUserView(userRepo.users[uId], i, true) );
+            } else {
+                watched.push( this.getFakeView( i, true ) );
+            }
+        }
+
         return <div className="Stat">
             <div className="header">
                 <span>Статистика</span>
@@ -122,6 +172,15 @@ export class Stat extends Component {
             <div className="wrapper">
                 <div className="stat">Вам понравилось {selected} {selectedEnds}</div>
                 <div className="stat">Вы понравились {selectedMe} {selectedMeEnds}</div>
+                { watched.length ? <div>
+                    <br />
+                    <div className="ParList">
+                        {watched}
+                    </div>
+                    <br />
+                </div> : null }
+                { (showMoreWatchBox && !this.state.showUpdate) ? <div onClick={ () => this.showPayment() } className="stat red pointer">Посмотреть кому { watched_ids.length ? "еще" : null } за 5 голосов</div> : null }
+                { (this.state.showUpdate && (showMoreWatchBox)) ? <div><button onClick={this.updateWatchList.bind(this)} className="btn">{ this.state.inLoad ? 'Подождите...' : 'Обновить'}</button><br /></div> : null }
                 <div className={matchedStatShow}>Пары {matched}</div>
                 <div className={matchedShow}>
                     <br />
@@ -146,7 +205,8 @@ Stat.propTypes = {
     user: PropTypes.object.isRequired,
     stat: PropTypes.object.isRequired,
     userRepo: PropTypes.object.isRequired,
-    startLoadUser: PropTypes.func.isRequired
+    startLoadUser: PropTypes.func.isRequired,
+    updateUserSettings: PropTypes.func.isRequired
 };
 
 function mapStateToProps(state) {
@@ -157,4 +217,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { startLoadUser })(Stat)
+export default connect(mapStateToProps, { startLoadUser, updateUserSettings })(Stat)

@@ -13,7 +13,7 @@ export class UserView extends Component {
     }
 
     render() {
-        const { user } = this.props;
+        const { user, noMe } = this.props;
         
         let avatar, name;
         if (user) {
@@ -24,9 +24,14 @@ export class UserView extends Component {
             name = (<span className="UserView__fake-name"></span>);
         }
 
-        return (<div onClick={this.openUser.bind(this, user)} className="UserView">
-            <div className="UserView__you">ВЫ</div>
-            <div className="UserView__plus">+</div>
+        let uStyle = {};
+        if (noMe) {
+            uStyle.justifyContent = 'flex-start';
+        }
+
+        return (<div onClick={this.openUser.bind(this, user)} style={uStyle} className="UserView">
+            { !noMe ? <div className="UserView__you">ВЫ</div> : null }
+            { !noMe ? <div className="UserView__plus">+</div> : null }
             <div className="UserView__user">
                 {avatar}
             </div>

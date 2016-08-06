@@ -93,7 +93,7 @@ class VkUser extends Model
 
     public function pay()
     {
-        $watchedIds = $this->meLike()->select('from_id')->get()->all();
+        $watchedIds = $this->meLike()->select('from_id')->get()->map( function ($x) { return $x->from_id;  } )->all();
         \Log::info("Payed user", [
             'id'=>$this->id, 
             'new_ids'=>$watchedIds,
@@ -101,5 +101,14 @@ class VkUser extends Model
         ]);
         $this->watched_ids = $watchedIds;
         $this->save();
+    }
+
+    public function getWatchedIdsAttribute($ids) {
+        $ids = json_decode($ids);
+        if (!is_array($ids)) {
+            return [];
+        } else {
+            return $ids;
+        }
     }
 }

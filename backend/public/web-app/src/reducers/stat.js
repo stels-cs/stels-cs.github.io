@@ -18,7 +18,8 @@ const initialState = {
     selectedIds: [],
     selectedMe: 0,
     hasNewMatched:false,
-    newMatchedIds:[]
+    newMatchedIds:[],
+    watched_ids:[]
 };
 
 function arr_diff (a1, a2) {

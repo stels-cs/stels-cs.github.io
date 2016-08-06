@@ -51,6 +51,12 @@ function loadVkUserSettings(dispatch) {
     });
 }
 
+export function updateUserSettings() {
+    return (dispatch) => {
+        loadUserSettings(dispatch);
+    }
+}
+
 export function appStart() {
     return (dispatch) => {
         loadUserSettings(dispatch);

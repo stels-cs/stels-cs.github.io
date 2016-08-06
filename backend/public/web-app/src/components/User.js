@@ -14,7 +14,7 @@ export class User extends Component {
     }
 
     render() {
-        let { matched } = this.props.stat;
+        let { matched, watched_ids, matchedUsers, selectedMe } = this.props.stat;
         let sLoaded = this.props.stat.loaded;
         let statClass = classNames({
             'stat ss': true,
@@ -25,9 +25,20 @@ export class User extends Component {
         } else {
             matched = '';
         }
+
+        let x = watched_ids.concat(matchedUsers);
+        x = x.filter( (item, pos) => { return x.indexOf(item) == pos } );
+        let showMoreWatchBox = selectedMe > x.length;
+
+        let anonClass = classNames({
+            'stat ss': true,
+            'hidden': !showMoreWatchBox
+        });
+
         return <div className="User">
             <div onClick={this.goToStat.bind(this)} >
                 <span className={statClass}>Мои пары {matched}</span>
+                <span className={anonClass}>Мои поклонники +{selectedMe - x.length}</span>
             </div>
             <div>
                 <span onClick={ this.goToInfo.bind(this) }>Поддержка</span>

@@ -32120,7 +32120,11 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var matched = this.props.stat.matched;
+	            var _props$stat = this.props.stat;
+	            var matched = _props$stat.matched;
+	            var watched_ids = _props$stat.watched_ids;
+	            var matchedUsers = _props$stat.matchedUsers;
+	            var selectedMe = _props$stat.selectedMe;
 	
 	            var sLoaded = this.props.stat.loaded;
 	            var statClass = classNames({
@@ -32132,6 +32136,18 @@
 	            } else {
 	                matched = '';
 	            }
+	
+	            var x = watched_ids.concat(matchedUsers);
+	            x = x.filter(function (item, pos) {
+	                return x.indexOf(item) == pos;
+	            });
+	            var showMoreWatchBox = selectedMe > x.length;
+	
+	            var anonClass = classNames({
+	                'stat ss': true,
+	                'hidden': !showMoreWatchBox
+	            });
+	
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'User' },
@@ -32143,6 +32159,12 @@
 	                        { className: statClass },
 	                        'Мои пары ',
 	                        matched
+	                    ),
+	                    _react2.default.createElement(
+	                        'span',
+	                        { className: anonClass },
+	                        'Мои поклонники +',
+	                        selectedMe - x.length
 	                    )
 	                ),
 	                _react2.default.createElement(
@@ -38270,6 +38292,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	exports.updateUserSettings = updateUserSettings;
 	exports.appStart = appStart;
 	
 	var _App = __webpack_require__(/*! ../constants/App */ 560);
@@ -38314,6 +38337,12 @@
 	            }, 1000);
 	        }
 	    });
+	}
+	
+	function updateUserSettings() {
+	    return function (dispatch) {
+	        loadUserSettings(dispatch);
+	    };
 	}
 	
 	function appStart() {
@@ -38869,7 +38898,8 @@
 	    selectedIds: [],
 	    selectedMe: 0,
 	    hasNewMatched: false,
-	    newMatchedIds: []
+	    newMatchedIds: [],
+	    watched_ids: []
 	};
 	
 	function arr_diff(a1, a2) {
@@ -41046,7 +41076,9 @@
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var user = this.props.user;
+	            var _props = this.props;
+	            var user = _props.user;
+	            var noMe = _props.noMe;
 	
 	
 	            var avatar = void 0,
@@ -41059,19 +41091,24 @@
 	                name = _react2.default.createElement('span', { className: 'UserView__fake-name' });
 	            }
 	
+	            var uStyle = {};
+	            if (noMe) {
+	                uStyle.justifyContent = 'flex-start';
+	            }
+	
 	            return _react2.default.createElement(
 	                'div',
-	                { onClick: this.openUser.bind(this, user), className: 'UserView' },
-	                _react2.default.createElement(
+	                { onClick: this.openUser.bind(this, user), style: uStyle, className: 'UserView' },
+	                !noMe ? _react2.default.createElement(
 	                    'div',
 	                    { className: 'UserView__you' },
 	                    'ВЫ'
-	                ),
-	                _react2.default.createElement(
+	                ) : null,
+	                !noMe ? _react2.default.createElement(
 	                    'div',
 	                    { className: 'UserView__plus' },
 	                    '+'
-	                ),
+	                ) : null,
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'UserView__user' },
@@ -41242,6 +41279,8 @@
 	
 	var _GroupViewActions = __webpack_require__(/*! ../actions/GroupViewActions */ 592);
 	
+	var _AppActions = __webpack_require__(/*! ../actions/AppActions */ 559);
+	
 	__webpack_require__(/*! ../style/Stat.scss */ 610);
 	
 	var _share = __webpack_require__(/*! ../tools/share */ 608);
@@ -41259,10 +41298,13 @@
 	var Stat = exports.Stat = function (_Component) {
 	    _inherits(Stat, _Component);
 	
-	    function Stat() {
+	    function Stat(props) {
 	        _classCallCheck(this, Stat);
 	
-	        return _possibleConstructorReturn(this, Object.getPrototypeOf(Stat).apply(this, arguments));
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Stat).call(this, props));
+	
+	        _this.state = { showUpdate: false, inLoad: false };
+	        return _this;
 	    }
 	
 	    _createClass(Stat, [{
@@ -41307,12 +41349,25 @@
 	    }, {
 	        key: 'getUserView',
 	        value: function getUserView(user, key) {
-	            return _react2.default.createElement(_UserView.UserView, { user: user, key: key });
+	            var noMe = arguments.length <= 2 || arguments[2] === undefined ? false : arguments[2];
+	
+	            return _react2.default.createElement(_UserView.UserView, { user: user, key: key, noMe: noMe });
 	        }
 	    }, {
 	        key: 'getFakeView',
 	        value: function getFakeView(key) {
-	            return _react2.default.createElement(_UserView.UserView, { user: false, key: key });
+	            var noMe = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+	
+	            return _react2.default.createElement(_UserView.UserView, { user: false, key: key, noMe: noMe });
+	        }
+	    }, {
+	        key: 'showPayment',
+	        value: function showPayment() {
+	            var params = {
+	                type: 'item',
+	                item: 'item1'
+	            };
+	            VK.callMethod('showOrderBox', params);
 	        }
 	    }, {
 	        key: 'preloadUsers',
@@ -41321,7 +41376,12 @@
 	            var stat = _props.stat;
 	            var userRepo = _props.userRepo;
 	            var matchedUsers = stat.matchedUsers;
+	            var watched_ids = stat.watched_ids;
 	
+	            matchedUsers = matchedUsers.concat(watched_ids);
+	            matchedUsers = matchedUsers.filter(function (item, pos) {
+	                return matchedUsers.indexOf(item) == pos;
+	            });
 	            if (matchedUsers.length) {
 	                for (var i = 0; i < matchedUsers.length; i++) {
 	                    var userId = matchedUsers[i];
@@ -41347,10 +41407,33 @@
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
 	            this.preloadUsers();
+	            VK.addCallback('onOrderSuccess', this.onOrderSuccess.bind(this));
+	        }
+	    }, {
+	        key: 'componentWillUnmount',
+	        value: function componentWillUnmount() {
+	            VK.removeCallback('onOrderSuccess', this.onOrderSuccess.bind(this));
+	        }
+	    }, {
+	        key: 'onOrderSuccess',
+	        value: function onOrderSuccess() {
+	            console.log('On oder success');
+	            this.props.updateUserSettings();
+	            this.setState({ showUpdate: true });
+	        }
+	    }, {
+	        key: 'updateWatchList',
+	        value: function updateWatchList() {
+	            if (!this.state.inLoad) {
+	                this.setState({ showUpdate: true, inLoad: true });
+	                this.props.updateUserSettings();
+	            }
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
+	            var _this2 = this;
+	
 	            var uLoaded = this.props.user.loaded;
 	            var sLoaded = this.props.stat.loaded;
 	            var _props$stat = this.props.stat;
@@ -41358,6 +41441,7 @@
 	            var matched = _props$stat.matched;
 	            var selectedMe = _props$stat.selectedMe;
 	            var matchedUsers = _props$stat.matchedUsers;
+	            var watched_ids = _props$stat.watched_ids;
 	            var userRepo = this.props.userRepo;
 	
 	            var selectedEnds = this.getNumEnding(selected, ['человек', 'человека', 'человек']);
@@ -41384,6 +41468,22 @@
 	                    userList.push(this.getUserView(userRepo.users[userId], i));
 	                } else {
 	                    userList.push(this.getFakeView(i));
+	                }
+	            }
+	
+	            var x = watched_ids.concat(matchedUsers);
+	            x = x.filter(function (item, pos) {
+	                return x.indexOf(item) == pos;
+	            });
+	            var showMoreWatchBox = selectedMe > x.length;
+	
+	            var watched = [];
+	            for (var _i = 0; _i < x.length; _i++) {
+	                var uId = x[_i];
+	                if (userRepo.users[uId]) {
+	                    watched.push(this.getUserView(userRepo.users[uId], _i, true));
+	                } else {
+	                    watched.push(this.getFakeView(_i, true));
 	                }
 	            }
 	
@@ -41423,6 +41523,36 @@
 	                        ' ',
 	                        selectedMeEnds
 	                    ),
+	                    watched.length ? _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'ParList' },
+	                            watched
+	                        ),
+	                        _react2.default.createElement('br', null)
+	                    ) : null,
+	                    showMoreWatchBox && !this.state.showUpdate ? _react2.default.createElement(
+	                        'div',
+	                        { onClick: function onClick() {
+	                                return _this2.showPayment();
+	                            }, className: 'stat red pointer' },
+	                        'Посмотреть кому ',
+	                        watched_ids.length ? "еще" : null,
+	                        ' за 5 голосов'
+	                    ) : null,
+	                    this.state.showUpdate && showMoreWatchBox ? _react2.default.createElement(
+	                        'div',
+	                        null,
+	                        _react2.default.createElement(
+	                            'button',
+	                            { onClick: this.updateWatchList.bind(this), className: 'btn' },
+	                            this.state.inLoad ? 'Подождите...' : 'Обновить'
+	                        ),
+	                        _react2.default.createElement('br', null)
+	                    ) : null,
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: matchedStatShow },
@@ -41470,7 +41600,8 @@
 	    user: _react.PropTypes.object.isRequired,
 	    stat: _react.PropTypes.object.isRequired,
 	    userRepo: _react.PropTypes.object.isRequired,
-	    startLoadUser: _react.PropTypes.func.isRequired
+	    startLoadUser: _react.PropTypes.func.isRequired,
+	    updateUserSettings: _react.PropTypes.func.isRequired
 	};
 	
 	function mapStateToProps(state) {
@@ -41481,7 +41612,7 @@
 	    };
 	}
 	
-	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser })(Stat);
+	exports.default = (0, _reactRedux.connect)(mapStateToProps, { startLoadUser: _GroupViewActions.startLoadUser, updateUserSettings: _AppActions.updateUserSettings })(Stat);
 
 /***/ },
 /* 610 */
@@ -41524,7 +41655,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".Stat {\n  width: 400px;\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n  .Stat .header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n  .Stat .wrapper {\n    padding: 10px 15px; }\n  .Stat .stat {\n    margin-bottom: 5px; }\n  .Stat .hidden {\n    display: none; }\n  .Stat .help {\n    text-align: center;\n    padding: 10px; }\n  .Stat .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .Stat a {\n    color: #507299; }\n  .Stat .ParList {\n    max-height: 420px;\n    overflow: auto; }\n    .Stat .ParList .UserView {\n      margin-bottom: 5px; }\n      .Stat .ParList .UserView:last-child {\n        margin-bottom: 0; }\n  .Stat .text-center {\n    text-align: center; }\n  .Stat .heart-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 599) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -7px; }\n  .Stat .skip-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 598) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -6px; }\n  .Stat .icon {\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n", ""]);
+	exports.push([module.id, ".Stat {\n  width: 400px;\n  border-radius: 2px;\n  border-color: #f2f4f7;\n  border-style: solid;\n  border-width: 1px; }\n  .Stat .header {\n    background: #f2f4f7;\n    border-radius: 2px 2px 0 0;\n    padding: 10px 15px;\n    border-bottom: 2px solid #e7e8ec;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n  .Stat .wrapper {\n    padding: 10px 15px;\n    max-height: 500px;\n    overflow: auto; }\n  .Stat .stat {\n    margin-bottom: 5px; }\n  .Stat .hidden {\n    display: none; }\n  .Stat .help {\n    text-align: center;\n    padding: 10px; }\n  .Stat .btn {\n    padding: 7px 16px 8px;\n    margin: 0;\n    font-size: 12.5px;\n    display: inline-block;\n    zoom: 1;\n    cursor: pointer;\n    white-space: nowrap;\n    outline: none;\n    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;\n    vertical-align: top;\n    line-height: 15px;\n    text-align: center;\n    text-decoration: none;\n    background: none;\n    background-color: #5e81a8;\n    color: #fff;\n    border: 0;\n    border-radius: 2px;\n    box-sizing: border-box; }\n  .Stat a {\n    color: #507299; }\n  .Stat .ParList .UserView {\n    margin-bottom: 5px; }\n    .Stat .ParList .UserView:last-child {\n      margin-bottom: 0; }\n  .Stat .text-center {\n    text-align: center; }\n  .Stat .heart-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/like.svg */ 599) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -7px; }\n  .Stat .skip-icon {\n    background-image: url(" + __webpack_require__(/*! ./img/right-arrow.svg */ 598) + ");\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    margin: 0 3px;\n    margin-bottom: -6px; }\n  .Stat .icon {\n    background-repeat: no-repeat;\n    background-position: center center;\n    background-size: contain; }\n  .Stat .red {\n    color: red;\n    font-weight: bold; }\n  .Stat .pointer {\n    cursor: pointer; }\n    .Stat .pointer:hover {\n      text-decoration: underline; }\n", ""]);
 	
 	// exports
 

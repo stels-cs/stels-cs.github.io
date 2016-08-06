@@ -18,6 +18,8 @@
 
   .wrapper {
     padding: 10px 15px;
+    max-height: 500px;
+    overflow: auto;
   }
 
   .stat {
@@ -60,8 +62,6 @@
   }
 
   .ParList {
-    max-height: 420px;
-    overflow: auto;
     .UserView {
       margin-bottom: 5px;
       &:last-child {
@@ -96,5 +96,17 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+  }
+
+  .red {
+    color: red;
+    font-weight: bold;
+  }
+
+  .pointer {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

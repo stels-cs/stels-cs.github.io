@@ -15,11 +15,7 @@ class VkPayment extends Controller
 
         $secret_key = env('VK_APP_SECRET'); // Защищенный ключ приложения
 
-        $response['error'] = array(
-            'error_code' => 10,
-            'error_msg' => 'Несовпадение вычисленной и переданной подписи запроса.',
-            'critical' => true
-        );
+        $response = [];
         $input = $r->all();
         $sig = $input['sig'];
         unset($input['sig']);
@@ -46,7 +42,7 @@ class VkPayment extends Controller
                         $response['response'] = array(
                             'item_id' => 1,
                             'title' => 'Подсмотреть 1 раз',
-                            'photo_url' => public_path('coin.jpg'),
+                            'photo_url' => url('coin.jpg'),
                             'price' => 5
                         );
                     } else {
@@ -65,7 +61,7 @@ class VkPayment extends Controller
                         $response['response'] = array(
                             'item_id' => 11,
                             'title' => 'Подсмотреть 1 раз (тестовый режим)',
-                            'photo_url' => public_path('coin.jpg'),
+                            'photo_url' => url('coin.jpg'),
                             'price' => 5
                         );
                     } else {

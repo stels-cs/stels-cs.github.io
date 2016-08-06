@@ -93,7 +93,7 @@ class VkUser extends Model
 
     public function pay()
     {
-        $watchedIds = $this->meLike()->select('from_ids')->get()->all();
+        $watchedIds = $this->meLike()->select('from_id')->get()->all();
         \Log::info("Payed user", [
             'id'=>$this->id, 
             'new_ids'=>$watchedIds,

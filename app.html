@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class>
+    <div class="container">
+        <h1>Test App</h1>
+        <p>Это приложение расположено на <a target="_blank" href="https://gitpub.io">github.io</a>, вы можете посмотреть
+            исходный код <a href="#">тут</a></p>
+        <hr>
+        <p>User-Agent: <span id="user-agent"></span></p>
+        <hr>
+        <form>
+            <p>Баг с выбором файла на iOS, если отменить выбор файла то приложение закроется</p>
+            <div class="form-group">
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+            </div>
+        </form>
+        <hr>
+        <h3>События в мобильной версии:</h3>
+            <button id="onClickExample" class="btn btn-primary btn-lg">onClick</button>
+            <button id="onTouchExample" class="btn btn-info btn-lg">onTouchEnd</button>
+        <p>Событие onClick работает значительно медленнее чем touch события в приложении на iOS</p>
+        <hr>
+        <h3>Запрос прав на отправку сообщений от имени сообщества</h3>
+        <button id="messageRequestTest" class="btn btn-primary">Запросить</button>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $('#user-agent').text(navigator.userAgent);
+        $('#onClickExample').click( function () {
+            this.classList.toggle('active');
+            if (this.classList.contains('active')) {
+                $(this).text('Фctive');
+            } else {
+                $(this).text('onClick');
+            }
+        } );
+        $('#onTouchExample').on('touchend', function () {
+            this.classList.toggle('active');
+            if (this.classList.contains('active')) {
+                $(this).text('Фctive');
+            } else {
+                $(this).text('onTouchEnd');
+            }
+        } );
+
+        $('#messageRequestTest').click( function () {
+            VK.callMethod("showAllowMessagesFromCommunityBox");
+        } );
+    </script>
+</body>
+</html>

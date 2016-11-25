@@ -22,10 +22,15 @@
                 <label for="exampleInputFile">File input</label>
                 <input type="file" id="exampleInputFile">
             </div>
-            <p>Работа с интпутом</p>
+            <p>Баг с интпутом</p>
             <div class="form-group">
                 <label for="inputWork" id="inputWorkText">Just text</label>
                 <input type="text" class="form-control" id="inputWork">
+            </div>
+            <p>Перезагрузка</p>
+            <div class="form-group">
+                <label for="reload">window.location.reload()</label>
+                <bitton class="btn btn-default" id="reload">reload</button>
             </div>
         </form>
         <hr>
@@ -62,26 +67,8 @@
         $('#messageRequestTest').click( function () {
             VK.callMethod("showAllowMessagesFromCommunityBox");
         } );
-        
-        $("#inputWork").on("touchstart", function (event) {
-            if ($(this).is(":focus")) {
-                event.preventDefault();
-                $(this).focus();
-                $("#inputWorkText").text("TSP");
-            } else {
-                $("#inputWorkText").text("TS");
-            }
-        });
-        
-        $("#inputWork").on("click", function (event) {
-            if ($(this).is(":focus")) {
-                event.preventDefault();
-                $(this).focus();
-                $("#inputWorkText").text("CLICK P");
-            } else {
-                $("#inputWorkText").text("CLICK");
-            }
-        });
+      
+        $("#reload").click( function () { window.location.reload(); } )
     </script>
 </body>
 </html>

@@ -25,7 +25,7 @@
             <p>Работа с интпутом</p>
             <div class="form-group">
                 <label for="inputWork">Just text</label>
-                <input type="text" id="inputWork">
+                <input type="text" class="form-control" id="inputWork">
             </div>
         </form>
         <hr>
@@ -66,6 +66,7 @@
         $("#inputWork").on("touchstart", function (event) {
             if ($(this).is(":focus")) {
                 event.preventDefault();
+                $(this).focus();
             }
         })
     </script>

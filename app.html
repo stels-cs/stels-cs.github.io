@@ -22,6 +22,11 @@
                 <label for="exampleInputFile">File input</label>
                 <input type="file" id="exampleInputFile">
             </div>
+            <p>Работа с интпутом</p>
+            <div class="form-group">
+                <label for="inputWork">Just text</label>
+                <input type="text" id="inputWork">
+            </div>
         </form>
         <hr>
         <h3>События в мобильной версии:</h3>
@@ -40,7 +45,7 @@
         $('#onClickExample').click( function () {
             this.classList.toggle('active');
             if (this.classList.contains('active')) {
-                $(this).text('Фctive');
+                $(this).text('Аctive');
             } else {
                 $(this).text('onClick');
             }
@@ -48,7 +53,7 @@
         $('#onTouchExample').on('touchend', function () {
             this.classList.toggle('active');
             if (this.classList.contains('active')) {
-                $(this).text('Фctive');
+                $(this).text('Аctive');
             } else {
                 $(this).text('onTouchEnd');
             }
@@ -57,6 +62,12 @@
         $('#messageRequestTest').click( function () {
             VK.callMethod("showAllowMessagesFromCommunityBox");
         } );
+        
+        $("#inputWork").on("touchstart", function (event) {
+            if ($(this).is(":focus")) {
+                event.preventDefault();
+            }
+        })
     </script>
 </body>
 </html>

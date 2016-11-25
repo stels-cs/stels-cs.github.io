@@ -43,33 +43,5 @@
         <h3>Запрос прав на отправку сообщений от имени сообщества</h3>
         <button id="messageRequestTest" class="btn btn-primary">Запросить</button>
     </div>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-        $('#user-agent').text(navigator.userAgent);
-        $('#onClickExample').click( function () {
-            this.classList.toggle('active');
-            if (this.classList.contains('active')) {
-                $(this).text('Аctive');
-            } else {
-                $(this).text('onClick');
-            }
-        } );
-        $('#onTouchExample').on('touchend', function () {
-            this.classList.toggle('active');
-            if (this.classList.contains('active')) {
-                $(this).text('Аctive');
-            } else {
-                $(this).text('onTouchEnd');
-            }
-        } );
-
-        $('#messageRequestTest').click( function () {
-            VK.callMethod("showAllowMessagesFromCommunityBox");
-        } );
-      
-        $("#reload").click( function () { window.location.reload(); } )
-    </script>
 </body>
 </html>

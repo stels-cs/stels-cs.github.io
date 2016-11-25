@@ -71,7 +71,17 @@
             } else {
                 $("#inputWorkText").text("TS");
             }
-        })
+        });
+        
+        $("#inputWork").on("click", function (event) {
+            if ($(this).is(":focus")) {
+                event.preventDefault();
+                $(this).focus();
+                $("#inputWorkText").text("CLICK P");
+            } else {
+                $("#inputWorkText").text("CLICK");
+            }
+        });
     </script>
 </body>
 </html>

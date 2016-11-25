@@ -24,7 +24,7 @@
             </div>
             <p>Работа с интпутом</p>
             <div class="form-group">
-                <label for="inputWork">Just text</label>
+                <label for="inputWork" id="inputWorkText">Just text</label>
                 <input type="text" class="form-control" id="inputWork">
             </div>
         </form>
@@ -67,6 +67,9 @@
             if ($(this).is(":focus")) {
                 event.preventDefault();
                 $(this).focus();
+                $("#inputWorkText").text("TSP");
+            } else {
+                $("#inputWorkText").text("TS");
             }
         })
     </script>

@@ -10,6 +10,7 @@
 <body>
 <div class>
     <div class="container">
+        <button onclick="openInNewTab('https://ya.ru')">YA</button>
         <h1>Test App</h1>
         <a target="_blank" href="https://github.com/login">Открыть гитхаб</a>
         <p>Это приложение расположено на <a target="_blank" href="https://github.io">github.io</a>, вы можете посмотреть
@@ -72,6 +73,11 @@
         } );
       
         $("#reload").click( function () { window.location.reload(); } )
+        
+        function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
     </script>
 </body>
 </html>

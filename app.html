@@ -10,41 +10,36 @@
 <body>
 <div class>
     <div class="container">
-        <button onclick="openInNewTab('https://ya.ru')">YA</button>
         <h1>Test App</h1>
-        <a target="_blank" href="https://github.com/login">Открыть гитхаб</a>
-        <p>Это приложение расположено на <a target="_blank" href="https://github.io">github.io</a>, вы можете посмотреть
-            исходный код <a target="_blank" href="https://github.com/stels-cs/stels-cs.github.io/blob/master/app.html">тут</a></p>
-        <hr>
-        <p>User-Agent: <span id="user-agent"></span></p>
-        <hr>
-        <form>
-            <p>Баг с выбором файла на iOS, если отменить выбор файла то приложение закроется</p>
-            <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" id="exampleInputFile">
+        <div class="row">
+            <div class="col-sm-6">
+            
+                <h3>Нерабочий сценарий</h3>
+                
+                <p>VK.callMethod("showSettingsBox", 134217728); //Права на товары</p>
+                <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 134217728);'>Вызвать</button>
+                
+                <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
+                <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
+                
             </div>
-            <p>Баг с интпутом</p>
-            <div class="form-group">
-                <label for="inputWork" id="inputWorkText">Just text</label>
-                <input type="text" class="form-control" id="inputWork">
+            
+            <div class="col-sm-6">
+            
+                <h3>Рабочий сценарий</h3>
+                
+                <p>VK.callMethod("showSettingsBox", 1);</p>
+                <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 1);'>Вызвать</button>
+                
+                
+                <p>VK.callMethod("showSettingsBox", 134217728); //Права на товары</p>
+                <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 134217728);'>Вызвать</button>
+                
+                <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
+                <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
+                
             </div>
-            <p>Перезагрузка</p>
-            <div class="form-group">
-                <label for="reload">window.location.reload()</label>
-                <bitton class="btn btn-default" id="reload">reload</button>
-            </div>
-        </form>
-        <hr>
-        <h3>События в мобильной версии:</h3>
-            <button id="onClickExample" class="btn btn-primary btn-lg">onClick</button>
-            <button id="onTouchExample" class="btn btn-info btn-lg">onTouchEnd</button>
-        <p>Событие onClick работает значительно медленнее чем touch события в приложении на iOS</p>
-        <hr>
-        <h3>Запрос прав на отправку сообщений от имени сообщества</h3>
-        <button id="messageRequestTest" class="btn btn-primary">Запросить</button>
-        
-        <a target="_blank" href="https://stels-cs.github.io/app.html">Открыть это же приложение</a>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>

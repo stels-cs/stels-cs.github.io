@@ -18,10 +18,8 @@
                 
                 <p>VK.callMethod("showSettingsBox", 134217728); //Права на товары</p>
                 <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 134217728);'>Вызвать</button>
-                <br>
-                <br>
-               
-              
+                <hr>
+         
                 <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
                 <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
                 
@@ -31,14 +29,16 @@
             
                 <h3>Рабочий сценарий</h3>
                 
+                <p>Подождать 3 секунды</p>
+                <hr>
                 <p>VK.callMethod("showSettingsBox", 1);</p>
                 <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 1);'>Вызвать</button>
-                <br><br>
+                <hr>
                 <p>Подождать 3 секунды</p>
-                
+                <hr>
                 <p>VK.callMethod("showSettingsBox", 134217728); //Права на товары</p>
                 <button class="btn btn-default" onclick='VK.callMethod("showSettingsBox", 134217728);'>Вызвать</button>
-                
+                <hr>
                 <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
                 <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
                 

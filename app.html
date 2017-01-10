@@ -22,7 +22,7 @@
          
                 <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
                 <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
-                
+                <span id="ua"></span>
             </div>
             
             <div class="col-sm-6">
@@ -71,8 +71,8 @@
             VK.callMethod("showAllowMessagesFromCommunityBox");
         } );
       
-        $("#reload").click( function () { window.location.reload(); } )
-        
+        $("#reload").click( function () { window.location.reload(); } );
+        $("#ua").text(navigator.userAgent);
         function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();

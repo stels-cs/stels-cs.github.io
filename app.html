@@ -42,6 +42,28 @@
                 <p>VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  ) //API</p>
                 <button class="btn btn-default" onclick="VK.api( 'market.get', {owner_id:-100067944, v:'5.60'}, d => alert(JSON.stringify(d))  )">Вызвать</button>
                 
+                <p>Click the button to get your coordinates.</p>
+
+<button class="btn btn-default" onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
             </div>
         </div>
     </div>

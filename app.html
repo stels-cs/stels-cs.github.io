@@ -60,8 +60,13 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude + " " + JSON.stringify(position);
+    x.innerHTML = "accuracy = " + position.coords.accuracy + "<br>" +
+"altitude = " + position.coords.altitude + "<br>" +
+"altitudeAccuracy = " + position.coords.altitudeAccuracy + "<br>" +
+"heading = " + position.coords.heading + "<br>" +
+"latitude = " + position.coords.latitude + "<br>" +
+"longitude = " + position.coords.longitude + "<br>" +
+"speed = " + position.coords.speed + "<br>";
 }
 
 function showError(error) {

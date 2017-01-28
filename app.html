@@ -45,6 +45,8 @@
                 <p>Click the button to get your coordinates.</p>-->
 
 <button class="btn btn-default" onclick="getLocation()">Try It</button>
+                
+                <button class="btn btn-default" id="test-history">History test</button>
 
 <p id="demo"></p>
 
@@ -121,6 +123,14 @@ function showError(error) {
   var win = window.open(url, '_blank');
   win.focus();
 }
+        
+        $('#test-history').click( () => {
+            history.pushState({tag:"Page1"}, "page1", "page1.html");
+            history.pushState({tag:"Page2"}, "page2", "page2.html");
+            history.pushState({tag:"Page3"}, "page3", "page3.html");
+            $('#test-history').text("Pussed 2 pages");
+            window.onpopstate = (e) => $('#test-history').text((e.state || {tag:'OFF'}).tag);
+        } );
     </script>
 </body>
 </html>

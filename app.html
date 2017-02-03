@@ -133,6 +133,7 @@ function showError(error) {
             $('#test-history').text("Pussed 2 pages");
             window.onpopstate = (e) => $('#test-history').text((e.state || {tag:'OFF'}).tag);
         } );
+        $('#demo').text(document.referrer);
     </script>
 </body>
 </html>

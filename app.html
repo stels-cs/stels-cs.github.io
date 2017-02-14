@@ -51,6 +51,7 @@
                 <button class="btn btn-default" id="test-history">History test</button>
 
 <p id="demo"></p>
+                <p id="error"></p>
 
 <script>
 var x = document.getElementById("demo");
@@ -97,6 +98,9 @@ function showError(error) {
     <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script>
+        window.onerror = function(error, url, line) {
+            $("#error").text($("#error").text() + " " + JSON.stringify({acc:'error', data:'ERR:'+error+' URL:'+url+' L:'+line}) );
+        };
         $('#user-agent').text(navigator.userAgent);
         $('#onClickExample').click( function () {
             this.classList.toggle('active');

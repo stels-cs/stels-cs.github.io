@@ -242,6 +242,7 @@ function showError(error) {
             b.width = 1;
             b.height = 1;
             b.src = a;
+            Wlog("IMG " + a);
             return b
         },
         ua = function() {},
@@ -325,13 +326,7 @@ function showError(error) {
             return !1
         };
     var Ca = function(a) {
-            var b = [],
-                c = M.cookie.split(";");
-            a = new RegExp("^\\s*" + a + "=\\s*(.*?)\\s*$");
-            for (var d = 0; d < c.length; d++) {
-                var e = c[d].match(a);
-                e && b.push(e[1])
-            }
+            var b = [];
             return b
         },
         zc = function(a, b, c, d, e, g) {
@@ -341,19 +336,7 @@ function showError(error) {
             c = a + "=" + b + "; path=" + c + "; ";
             g && (c += "expires=" + (new Date((new Date).getTime() + g)).toGMTString() + "; ");
             d && "none" != d && (c += "domain=" + d + ";");
-            d = M.cookie;
-            M.cookie = c;
-            if (!(d = d != M.cookie)) a: {
-                a =
-                Ca(a);
-                for (d = 0; d < a.length; d++)
-                    if (b == a[d]) {
-                        d = !0;
-                        break a
-                    }
-                d = !1
-            }
-            return d
+            return '';
         },
         Cc = function(a) {
             return K(a).replace(/\(/g, "%28").replace(/\)/g, "%29")
@@ -765,23 +748,7 @@ function showError(error) {
         };
 
     function fc() {
-        var a, b, c;
-        if ((c = (c = O.navigator) ? c.plugins : null) && c.length)
-            for (var d = 0; d < c.length && !b; d++) {
-                var e = c[d]; - 1 < e.name.indexOf("Shockwave Flash") && (b = e.description)
-            }
-        if (!b) try {
-            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7"), b = a.GetVariable("$version")
-        } catch (g) { throw g }
-        if (!b) try {
-            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6"), b = "WIN 6,0,21,0", a.AllowScriptAccess = "always", b = a.GetVariable("$version")
-        } catch (g) {throw g}
-        if (!b) try {
-            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash"), b = a.GetVariable("$version")
-        } catch (g) {throw g}
-        b &&
-            (a = b.match(/[\d]+/g)) && 3 <= a.length && (b = a[0] + "." + a[1] + " r" + a[2]);
-        return b || void 0
+        return 1
     };
     var aa = function(a) {
             var b = Math.min(R(a, dc), 100);

@@ -1457,23 +1457,7 @@ function showError(error) {
         return b
     };
     Z.v = function(a) {
-        try {
-            if (a.u) a.u.call(O, N.j("t0"));
-            else {
-                var b = a.c == gb ? N : N.j(a.c);
-                if (a.A) "t0" != a.c || N.create.apply(N, a.a);
-                else if (a.ba) N.remove(a.c);
-                else if (b)
-                    if (a.i) {
-                        if (a.ha && (a.ha = y(a.c, a.a[0], a.X, a.W)), !u(a.a[0], b, a.W)) return !0
-                    } else if (a.K) {
-                    var c = a.C,
-                        d = a.a,
-                        e = b.plugins_.get(a.K);
-                    e[c].apply(e, d)
-                } else b[a.C].apply(b, a.a)
-            }
-        } catch (g) { throw g}
+        return false
     };
     var N = function(a) {
         J(1);

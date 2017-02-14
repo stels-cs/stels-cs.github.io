@@ -189,11 +189,10 @@ function showError(error) {
     </script>
     <!-- Google Analytics -->
 <script>
-    (function() {
+(function() {
     var $c = function(a) {
         this.w = a || []
     };
-        Wlog("s1");
     $c.prototype.set = function(a) {
         this.w[a] = !0
     };
@@ -203,12 +202,10 @@ function showError(error) {
         return a.join("") + "~"
     };
     var vd = new $c;
- Wlog("s2");
+
     function J(a) {
         vd.set(a)
     }
-        
-         Wlog("s3");
     var Nd = function(a, b) {
             var c = new $c(Dd(a));
             c.set(b);
@@ -225,7 +222,6 @@ function showError(error) {
             ka(a) || (a = []);
             return a
         };
-         Wlog("s4");
     var ea = function(a) {
             return "function" == typeof a
         },
@@ -379,7 +375,6 @@ function showError(error) {
         },
         wc = function(a, b, c) {
             var d = ta(a + "?" + b);
-            Wlog("WC call " + b);
             d.onload = d.onerror = function() {
                 d.onload = null;
                 d.onerror = null;
@@ -834,11 +829,9 @@ function showError(error) {
             if (isNaN(c) || Infinity == c || 0 > c) a[b] = void 0
         },
         Fd = function(a) {
-            Wlog('s7');
             return function(b) {
                 if ("pageview" == b.get(Va) && !a.I) {
                     a.I = !0;
-                    Wlog('s8');
                     var c =
                         aa(b);
                     b = 0 < E(b.get(kb), "gclid").length;
@@ -1300,7 +1293,6 @@ function showError(error) {
         timing: [Mb, Nb, Pb, Ob]
     };
     pc.prototype.send = function(a) {
-        Wlog('send');
         if (!(1 > arguments.length)) {
             var b, c;
             "string" === typeof arguments[0] ? (b = arguments[0], c = [].slice.call(arguments, 1)) : (b = arguments[0] && arguments[0][Va], c = arguments);
@@ -1469,8 +1461,25 @@ function showError(error) {
         } catch (e) { throw e; }
         return b
     };
-    Z.v = function(a) {};
-        Wlog('s4');
+    Z.v = function(a) {
+        try {
+            if (a.u) a.u.call(O, N.j("t0"));
+            else {
+                var b = a.c == gb ? N : N.j(a.c);
+                if (a.A) "t0" != a.c || N.create.apply(N, a.a);
+                else if (a.ba) N.remove(a.c);
+                else if (b)
+                    if (a.i) {
+                        if (a.ha && (a.ha = y(a.c, a.a[0], a.X, a.W)), !u(a.a[0], b, a.W)) return !0
+                    } else if (a.K) {
+                    var c = a.C,
+                        d = a.a,
+                        e = b.plugins_.get(a.K);
+                    e[c].apply(e, d)
+                } else b[a.C].apply(b, a.a)
+            }
+        } catch (g) { throw g}
+    };
     var N = function(a) {
         J(1);
         Z.D.apply(Z, [arguments])
@@ -1498,7 +1507,6 @@ function showError(error) {
                 break
             }
     };
-        Wlog('s5');
     N.j = function(a) {
         return N.h[a]
     };
@@ -1568,7 +1576,6 @@ function showError(error) {
         return b
     };
 })(window);
-    Wlog("CALL ga");
-    </script>
+</script>
 </body>
 </html>

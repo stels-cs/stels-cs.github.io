@@ -10,7 +10,7 @@
 <body>
 <div>
     <div class="container">
-        <h1>Test App DEV 4</h1>
+        <h1>Test App DEV 5</h1>
         <div class="row">
             <!--<div class="col-sm-6">
             
@@ -101,6 +101,10 @@ function showError(error) {
         window.onerror = function(error, url, line) {
             $("#error").text($("#error").text() + " " + JSON.stringify({acc:'error', data:'ERR:'+error+' URL:'+url+' L:'+line}) );
         };
+        Wlog = function (str) {
+            $("#error").text($("#error").text() + " " + str );
+        
+        }
         $('#user-agent').text(navigator.userAgent);
         $('#onClickExample').click( function () {
             this.classList.toggle('active');
@@ -370,6 +374,7 @@ function showError(error) {
         },
         wc = function(a, b, c) {
             var d = ta(a + "?" + b);
+            Wlog("WC call " + b);
             d.onload = d.onerror = function() {
                 d.onload = null;
                 d.onerror = null;
@@ -1288,6 +1293,7 @@ function showError(error) {
         timing: [Mb, Nb, Pb, Ob]
     };
     pc.prototype.send = function(a) {
+        Wlog('send');
         if (!(1 > arguments.length)) {
             var b, c;
             "string" === typeof arguments[0] ? (b = arguments[0], c = [].slice.call(arguments, 1)) : (b = arguments[0] && arguments[0][Va], c = arguments);

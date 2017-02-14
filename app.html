@@ -748,7 +748,23 @@ function showError(error) {
         };
 
     function fc() {
-        return 1
+        var a, b, c;
+        if ((c = (c = O.navigator) ? c.plugins : null) && c.length)
+            for (var d = 0; d < c.length && !b; d++) {
+                var e = c[d]; - 1 < e.name.indexOf("Shockwave Flash") && (b = e.description)
+            }
+        if (!b) try {
+            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7"), b = a.GetVariable("$version")
+        } catch (g) {}
+        if (!b) try {
+            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6"), b = "WIN 6,0,21,0", a.AllowScriptAccess = "always", b = a.GetVariable("$version")
+        } catch (g) {}
+        if (!b) try {
+            a = new ActiveXObject("ShockwaveFlash.ShockwaveFlash"), b = a.GetVariable("$version")
+        } catch (g) {}
+        b &&
+            (a = b.match(/[\d]+/g)) && 3 <= a.length && (b = a[0] + "." + a[1] + " r" + a[2]);
+        return b || void 0
     };
     var aa = function(a) {
             var b = Math.min(R(a, dc), 100);

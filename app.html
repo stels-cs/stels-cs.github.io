@@ -10,7 +10,7 @@
 <body>
 <div>
     <div class="container">
-        <h1>Test App DEV 5</h1>
+        <h1>Test App DEV 6</h1>
         <div class="row">
             <!--<div class="col-sm-6">
             
@@ -101,10 +101,11 @@ function showError(error) {
         window.onerror = function(error, url, line) {
             $("#error").text($("#error").text() + " " + JSON.stringify({acc:'error', data:'ERR:'+error+' URL:'+url+' L:'+line}) );
         };
-        Wlog = function (str) {
+        var Wlog = function (str) {
             $("#error").text($("#error").text() + " " + str );
         
         }
+        Wlog("START");
         $('#user-agent').text(navigator.userAgent);
         $('#onClickExample').click( function () {
             this.classList.toggle('active');
@@ -192,6 +193,7 @@ function showError(error) {
     var $c = function(a) {
         this.w = a || []
     };
+        Wlog("s1");
     $c.prototype.set = function(a) {
         this.w[a] = !0
     };
@@ -201,10 +203,12 @@ function showError(error) {
         return a.join("") + "~"
     };
     var vd = new $c;
-
+ Wlog("s2");
     function J(a) {
         vd.set(a)
     }
+        
+         Wlog("s3");
     var Nd = function(a, b) {
             var c = new $c(Dd(a));
             c.set(b);
@@ -221,6 +225,7 @@ function showError(error) {
             ka(a) || (a = []);
             return a
         };
+         Wlog("s4");
     var ea = function(a) {
             return "function" == typeof a
         },
@@ -1561,6 +1566,7 @@ function showError(error) {
         return b
     };
 })(window);
+    Wlog("CALL ga");
     </script>
 </body>
 </html>

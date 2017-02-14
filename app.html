@@ -834,9 +834,11 @@ function showError(error) {
             if (isNaN(c) || Infinity == c || 0 > c) a[b] = void 0
         },
         Fd = function(a) {
+            Wlog('s7');
             return function(b) {
                 if ("pageview" == b.get(Va) && !a.I) {
                     a.I = !0;
+                    Wlog('s8');
                     var c =
                         aa(b);
                     b = 0 < E(b.get(kb), "gclid").length;
@@ -1467,9 +1469,8 @@ function showError(error) {
         } catch (e) { throw e; }
         return b
     };
-    Z.v = function(a) {
-        return false
-    };
+    Z.v = function(a) {};
+        Wlog('s4');
     var N = function(a) {
         J(1);
         Z.D.apply(Z, [arguments])
@@ -1497,6 +1498,7 @@ function showError(error) {
                 break
             }
     };
+        Wlog('s5');
     N.j = function(a) {
         return N.h[a]
     };

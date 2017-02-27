@@ -33,12 +33,12 @@
 }
 
 .front {
-  background: url('revers.jpg') center center;
+  background: url('revers.png') center center;
   background-size: cover;
 }
 
 .back {
-  background: url('avers.jpg') center center;
+  background: url('avers.png') center center;
   background-size: cover;
 }
 

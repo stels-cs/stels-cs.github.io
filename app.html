@@ -1,21 +1,54 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Bootstrap 101 Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<title>Animation</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-    <div class="container">
-        <h1>Test</h1>
-        <div class="row" style="max-width: 350px; word-break: break-all;">
-		<script>document.write(window.location.search)</script>    
+<h4>Кликни на фишку чтобы увидеть анимацию</h4>
+<hr>
+<div onclick="document.getElementById('x1').classList.toggle('animOne')" class="container">
+<div class="flip-parent" id="x1">
+<div class="flip-container">
+	<div class="flipper element-animation">
+		<div class="front">
+			<!-- front content -->
+		</div>
+		<div class="back">
+			<!-- back content -->
+		</div>
 	</div>
-	    <script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
-   </div>
+</div>
+</div>
+</div>
+<br>
+<div onclick="document.getElementById('x2').classList.toggle('animTwo')" class="container">
+<div class="flip-parent" id="x2">
+<div class="flip-container">
+	<div class="flipper element-animation">
+		<div class="front">
+			<!-- front content -->
+		</div>
+		<div class="back">
+			<!-- back content -->
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<br>
+<div onclick="document.getElementById('x3').classList.toggle('animThree')" class="container">
+<div class="flip-parent" id="x3">
+<div class="flip-container">
+	<div class="flipper element-animation">
+		<div class="front">
+			<!-- front content -->
+		</div>
+		<div class="back">
+			<!-- back content -->
+		</div>
+	</div>
+</div>
+</div>
 </div>
 </body>
 </html>

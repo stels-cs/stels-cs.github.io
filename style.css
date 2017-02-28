@@ -1,3 +1,4 @@
+/* entire container, keeps perspective */
 .flip-container {
 	position: absolute;
 	-webkit-tap-highlight-color: transparent;
@@ -118,23 +119,7 @@
   animation-fill-mode:forwards;
 }
 
-.animTwo .flipper,
-.animTwo .flipper2,
-.animTwo .flipper2,
-.animTwo .flipper3,
-.animTwo .flipper4,
-.animTwo .flipper5,
-.animTwo .flipper6,
-.animTwo .flipper7,
-.animTwo .flipper8,
-.animTwo .flipper9,
-.animTwo .flipper10 {
-  animation: flipFrames2_up_1 ease-in 0.8s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards;
-}
-
+.animTwo .flipper {animation: flipFrames2_up_1 ease-in 0.8s;}
 .animTwo .flipper1 {animation: flipFrames2_down_1 ease-in 0.8s;}
 .animTwo .flipper2 {animation: flipFrames2_down_1 ease-in 0.8s;}
 .animTwo .flipper3 {animation: flipFrames2_up_3 ease-in 0.8s;}
@@ -146,12 +131,6 @@
 .animTwo .flipper9 {animation: flipFrames2_down_8 ease-in 0.8s;}
 .animTwo .flipper10 {animation: flipFrames2_down_9 ease-in 0.8s;}
 
-.animTwo .flip-container {
-  animation: animationFrames2 ease-in 0.8s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode:forwards;
-}
 
 .animTwo .flip-container1  {animation:  moveCaps_10 ease-in 0.8s;}
 .animTwo .flip-container2  {animation:  moveCaps_1  ease-in 0.8s;}
@@ -164,8 +143,29 @@
 .animTwo .flip-container9  {animation:  moveCaps_8  ease-in 0.8s;}
 .animTwo .flip-container10 {animation:  moveCaps_9  ease-in 0.8s;}
 
+.animTwo .flip-container {
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards;
+}
+
+.animTwo .flipper,
+.animTwo .flipper2,
+.animTwo .flipper2,
+.animTwo .flipper3,
+.animTwo .flipper4,
+.animTwo .flipper5,
+.animTwo .flipper6,
+.animTwo .flipper7,
+.animTwo .flipper8,
+.animTwo .flipper9,
+.animTwo .flipper10 {
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards;
+}
+
 .animThree .flipper {
-	animation: flipFrames3 ease-in 0.8s;
   animation-iteration-count: 1;
   transform-origin: 50% 50%;
   animation-fill-mode:forwards;
@@ -393,3 +393,8 @@
 	75% {transform:  scale(1.4,1.4) translate3d(2px, -48px,0px) rotate(7deg);} 
 	100% {transform:  scale(0.9,0.9) translate3d(4px, -95px,0px) rotate(15deg);}
 }
+
+
+
+
+

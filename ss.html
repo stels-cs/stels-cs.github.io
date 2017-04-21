@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
-<head></head>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>  
+</head>
 <body>
 <div class="storify"><iframe src="//storify.com/happysanta/testovaya-translyaciya/embed?border=false" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/happysanta/testovaya-translyaciya.js?border=false"></script><noscript>[<a href="//storify.com/happysanta/testovaya-translyaciya" target="_blank">View the story "Тестовая трансляция" on Storify</a>]</noscript></div>
-</body>
+  <script>
+    function cc() {
+     VK.callMethod("resizeWindow", document.body.offsetWidth + 10, document.querySelector('.storify').clientHeight);
+    }
+    cc();
+    var ttl = 1000;
+    setInterval( cc, ttl );
+  </script>
+  </body>

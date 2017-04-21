@@ -8,8 +8,9 @@
 <body>
 <div class="storify"><iframe src="//storify.com/happysanta/testovaya-translyaciya/embed?border=false" width="100%" height="750" frameborder="no" allowtransparency="true"></iframe><script src="//storify.com/happysanta/testovaya-translyaciya.js?border=false"></script><noscript>[<a href="//storify.com/happysanta/testovaya-translyaciya" target="_blank">View the story "Тестовая трансляция" on Storify</a>]</noscript></div>
   <script>
+    var w = document.body.offsetWidth + 10;
     function cc() {
-     VK.callMethod("resizeWindow", document.body.offsetWidth + 10, document.querySelector('.storify').clientHeight);
+     VK.callMethod("resizeWindow", w, document.querySelector('.storify').clientHeight);
     }
     cc();
     var ttl = 1000;

@@ -8,7 +8,21 @@
 	<body>
 		<script>
 		  	let SHOR_SCOPE = 134217728
+
+		  	function lockDialog() {
+		  		let b = document.body
+		  		b.style.overflow = 'auto'
+                b.style.WebkitOverflowScrolling = 'touch'
+		  	}
+
+		  	function unLockDialog() {
+		  		let b = document.body
+		  		b.style.overflow = 'auto'
+                b.style.WebkitOverflowScrolling = 'touch'
+		  	}
 		</script>
 		<button onclick="VK.callMethod('showSettingsBox', SHOR_SCOPE)" id="b1">VK.callMethod("showSettingsBox", SHOR_SCOPE)</button>
+		<button onclick="lockDialog()" id="b1">lock</button>
+		<button onclick="unLockDialog()" id="b1">unlock</button>
 	</body>
 </html>

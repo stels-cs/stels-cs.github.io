@@ -14,11 +14,14 @@
   </style>
 </head>
 	<body>
+		<div id="root">
+		<div>
+		<div id="c">
 		<script>
 		  	let SHOR_SCOPE = 134217728
 
 		  	function lockDialog() {
-		  		let b = document.body
+		  		let b = document.getElementById('c')
 	  			b.style.maxHeight = window.innerHeight + 'px'
             	b.style.minHeight = window.innerHeight + 'px'
 		  		b.style.overflow = 'auto'
@@ -26,13 +29,18 @@
 		  	}
 
 		  	function unLockDialog() {
-		  		let b = document.body
-		  		b.style.overflow = 'auto'
-                b.style.WebkitOverflowScrolling = 'touch'
+		  		let b = document.getElementById('c')
+		  		b.style.maxHeight = ''
+            	b.style.minHeight = ''
+		  		b.style.overflow = ''
+                b.style.WebkitOverflowScrolling = ''
 		  	}
 		</script>
 		<button onclick="VK.callMethod('showSettingsBox', SHOR_SCOPE)" id="b1">VK.callMethod("showSettingsBox", SHOR_SCOPE)</button><br>
 		<button onclick="lockDialog()" id="b1">lock</button><br>
 		<button onclick="unLockDialog()" id="b1">unlock</button>
+		</div>
+		</div>
+		</div>
 	</body>
 </html>

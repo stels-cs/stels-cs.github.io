@@ -11,6 +11,8 @@
 
 		  	function lockDialog() {
 		  		let b = document.body
+	  			b.style.maxHeight = window.innerHeight + 'px'
+            	b.style.minHeight = window.innerHeight + 'px'
 		  		b.style.overflow = 'auto'
                 b.style.WebkitOverflowScrolling = 'touch'
 		  	}

@@ -35,10 +35,17 @@
 		  		b.style.overflow = ''
                 b.style.WebkitOverflowScrolling = ''
 		  	}
+
+		  	function f(node) {
+		  		node.innerHTML = window.innerWidth + ' x ' + window.innerHeight
+		  	}
+
+		  	setTimeout( () => { f(document.getElementById('console')) }, 1000 )
 		</script>
 		<button onclick="VK.callMethod('showSettingsBox', SHOR_SCOPE)" id="b1">VK.callMethod("showSettingsBox", SHOR_SCOPE)</button><br>
 		<button onclick="lockDialog()" id="b1">lock</button><br>
 		<button onclick="unLockDialog()" id="b1">unlock</button>
+		<span id="console"></span>>
 		</div>
 		</div>
 		</div>

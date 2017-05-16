@@ -38,14 +38,16 @@
 
 		  	function f(node) {
 		  		node.innerHTML = window.innerWidth + ' x ' + window.innerHeight
+		  		document.getElementById('x').style.height = window.innerHeight + 'px'
 		  	}
 
 		  	setTimeout( () => { f(document.getElementById('console')) }, 1000 )
 		</script>
 		<button onclick="VK.callMethod('showSettingsBox', SHOR_SCOPE)" id="b1">VK.callMethod("showSettingsBox", SHOR_SCOPE)</button><br>
 		<button onclick="lockDialog()" id="b1">lock</button><br>
-		<button onclick="unLockDialog()" id="b1">unlock</button>
-		<span id="console"></span>>
+		<button onclick="unLockDialog()" id="b1">unlock</button><br>
+		<span id="console"></span>
+		<div id="x" style="position: absolute;top:0;background: #000; left: 0; width: 20px; opacity: 0.5"></div>
 		</div>
 		</div>
 		</div>

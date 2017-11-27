@@ -18,6 +18,7 @@
   }
 
   body {
+    background: #FFF;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,6 +59,8 @@
     text-align: center;
     outline: 0;
     box-sizing: border-box;
+    background: #FFF;
+
   }
 
   .then {
@@ -210,8 +213,8 @@
     } else {
       var v = formatMoney(value) + ' ' + getRubEnd(value);
       node.innerText = v;
-      if (v.length >= 24) {
-        node.style.fontSize = '25px'
+      if (v.length >= 23) {
+        node.style.fontSize = '24px'
       } else {
         node.style.fontSize = ''
       }
@@ -224,7 +227,7 @@
     <h1>Если бы в 2010 году ты вложил в биткоин</h1>
     <input type="tel" maxlength="9" value="2 000 рублей" onkeyup="onChangeInput(event)" onblur="onBlurInput(event)" onfocus="onFocusInput(event)"/>
     <div class="then">то сегодня ты бы получил</div>
-    <div class="money" id="target">348 743 рублей</div>
+    <div class="money" id="target">72 223 177 рублей</div>
     <div class="footer">
       <a href="https://mdk.is" target="_blank">mdk.is</a>
     </div>

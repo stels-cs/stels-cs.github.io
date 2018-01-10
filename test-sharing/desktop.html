@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<title>Sharing Test</title>
+	<meta property="vk:image" content="https://stels-cs.github.io/test-sharing/image.jpg" />
+	<script type="text/javascript" src="https://vk.com/js/api/share.js?93" charset="windows-1251"></script>
+</head>
+<body>
+<noscript>
+	You need to enable JavaScript to run this app.
+</noscript>
+<div style="padding: 20px; text-align: center">
+	<p>Эта кнопка сделана по инструкции <a href="https://vk.com/dev/widget_share" target="_blank">vk.com/dev/widget_share</a></p>
+	<p>
+		<code>VK.Share.button({"url":"https://vk.com/app6327531_-86641187","title":"Test share","image":"https://stels-cs.github.io/test-sharing/image.jpg","noparse":true}, {"type": "custom", "text":"Рассказать друзьям"});</code>
+	</p>
+	<button id="vk_share_button"></button>
+  	<script>
+    document.getElementById('vk_share_button').innerHTML =
+            VK.Share.button({"url":"https://vk.com/app6327531_-86641187","title":"Test share","image":"https://stels-cs.github.io/test-sharing/image.jpg","noparse":true}, {"type": "custom", "text":"Рассказать друзьям"});
+		</script>
+
+</div>
+</body>
+</html>

@@ -5,9 +5,10 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body onresize="alert('on resize body')" style="background-color: #CCC;">
+<body onresize="alert('on resize body'); x(); setTimeout( x, 500 )" style="background-color: #CCC;">
   <br><br><br><br><br>
   <a href="vk://vk.com/app5727453_-58810575">Привет приложение!!!</a>
   <br><br><br><br>
-  <script> document.write( window.innerWidth + "x" + window.innerHeight + " " + window.navigator.userAgent ) </script>
+  <p id="data"></p>
+  <script> function x() { document.getElementById('data').innerHTML = window.innerWidth + "x" + window.innerHeight + " " + window.navigator.userAgent }; x(); </script>
 </body>

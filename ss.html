@@ -5,8 +5,18 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
-<body>
+<body onresize="alert('on resize body'); x(); setTimeout( x, 500 )" style="background-color: #CCC;">
   <br><br><br><br><br>
-  <a href="https://vk.com/app5671337_-56106344" target="_blank">Переход в другое приложение</a>
-  <br><br><br><br>
+  <button onclick="confirm(navigator.userAgent)">Call confirm</button>
+  <button onclick="window.confirm(navigator.userAgent)">Call window.confirm</button>
+  <a href="vk://vk.com/id2050">Привет приложение!!!</a>
+  <a href="https://vk.me/stelscs">vk.me/stelscs</a>
+    <a href="https://vk.me/stelscs" target="_blank">vk.me/stelscs [target=_blank]</a>
+  <br><br><br><p>The SpaceX launch vehicle Falcon Heavy (pictured) makes its maiden flight, carrying Elon Musk's Tesla Roadster as a dummy payload.
+In American football, the Philadelphia Eagles defeat the New England Patriots in Super Bowl LII.
+Archaeologists announce the discovery using LiDAR of approximately 60,000 Mayan structures in the Maya Biosphere Reserve, Guatemala.
+A total lunar eclipse occurs, close to perigee and also the second full moon in a month, a coincidence of events not seen for 35 years.
+A new genus of lithostrotian sauropod, Mansourasaurus, is discovered in Egypt.</p><br>
+  <p id="data"></p>
+  <script> function x() { document.getElementById('data').innerHTML = window.innerWidth + "x" + window.innerHeight + " " + window.navigator.userAgent }; x(); </script>
 </body>

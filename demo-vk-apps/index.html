@@ -10,7 +10,7 @@
 <body>
 
 <h1>DEMO VK APPS</h1>
-
+<input type="text"/>
 <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button>
@@ -29,6 +29,9 @@
 <button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button><br/>
 <button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">VKWebAppShowWallPostBox</button><br/>
 <button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button><br/>
+<button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button><br/>
+<button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">VKWebAppAllowMessagesFromGroup</button><br/>
+<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">VKWebAppGetAuthToken</button><br/>
 <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
 <button onclick='window.location.reload()'>window.location.reload()</button><br/>
 

@@ -29,7 +29,7 @@
 <button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button><br/>
 <button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">VKWebAppShowWallPostBox</button><br/>
 <button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button><br/>
-<button onclick="consolePrint(window.location.href)">Show window location</button><br/>
+<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>Show window location</button><br/>
 
 
 <h3>Events:</h3>
@@ -52,7 +52,11 @@
 	vkConnect.subscribe(event => {
 		const {type, data} = event.detail
         if (type !== undefined || data !== undefined) {
-			consolePrint(type + ": " + JSON.stringify(data, null, 2))
+        	if (data === undefined) {
+			    consolePrint(type + ": " + JSON.stringify(event, null, 2))
+            } else {
+			    consolePrint(type + ": " + JSON.stringify(data, null, 2))
+            }
 		} else {
         	consolePrint(JSON.stringify(event,null,2))
         }

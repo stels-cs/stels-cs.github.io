@@ -42,7 +42,7 @@
 		const now = new Date()
 		const time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ":" + now.getMilliseconds() + 'ms'
 		let tn = document.createTextNode(time + ": " + text + "\n")
-		consoleNode.appendChild(tn)
+		consoleNode.prepend(tn)
 	}
 
 	vkConnect.subscribe(event => {

@@ -29,7 +29,8 @@
 <button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button><br/>
 <button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">VKWebAppShowWallPostBox</button><br/>
 <button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button><br/>
-<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>Show window location</button><br/>
+<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
+<button onclick='window.location.reload()'>window.location.reload()</button><br/>
 
 
 <h3>Events:</h3>

@@ -11,56 +11,35 @@
 
 <h1>DEMO VK APPS</h1>
 
-<div></div>
+<button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button><br/>
+<button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button><br/>
+<button onclick="vkConnect.send('VKWebAppGetEmail', {})">VKWebAppGetEmail</button><br/>
+<button onclick="vkConnect.send('VKWebAppGetGeodata', {})">VKWebAppGetGeodata</button><br/>
+<button onclick="vkConnect.send('VKWebAppAllowNotifications', {})">VKWebAppAllowNotifications</button><br/>
+<button onclick="vkConnect.send('VKWebAppDenyNotifications', {})">VKWebAppDenyNotifications</button><br/>
+<button onclick="vkConnect.send('VKWebAppJoinGroup', {group_id:58810575})">VKWebAppJoinGroup</button><br/>
+<button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button><br/>
+
+<h3>Events:</h3>
+<pre id="console"></pre>
+
 
 <button class="add-button">Add to home screen</button>
-	
-	<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>	<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-		<h3>Large text</h3>
-
 <script src="./vk-connect.js"></script>
 
 <script>
-    vkConnect.send('VKWebAppInit', {});
+	let consoleNode = document.getElementById('console')
+	function consolePrint(text) {
+		let tn = document.createTextNode(text)
+		consoleNode.appendChild(tn)
+	}
+
+	vkConnect.subscribe(event => {
+		const {type,data} = event.detail
+		consolePrint(type + ": " + JSON.stringify(data))
+	})
+
+	vkConnect.send('VKWebAppInit', {});
 </script>
 
 <script>

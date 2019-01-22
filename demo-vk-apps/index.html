@@ -10,7 +10,8 @@
 <body>
 
 <h1>DEMO VK APPS</h1>
-<input type="text"/>
+<a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
+<input type="text"/><br/>
 <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button>
@@ -34,6 +35,7 @@
 <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">VKWebAppGetAuthToken</button><br/>
 <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
 <button onclick='window.location.reload()'>window.location.reload()</button><br/>
+<button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"</button><br/>
 
 
 <h3>Events:</h3>

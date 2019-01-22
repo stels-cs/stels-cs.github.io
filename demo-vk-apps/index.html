@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#536878"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
     <title>Demo vk apps</title>
     <link rel="manifest" href="/manifest.json">
 </head>
@@ -36,6 +36,7 @@
 <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
 <button onclick='window.location.reload()'>window.location.reload()</button><br/>
 <button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"</button><br/>
+<button onclick='consolePrint(window.applicationCache ? "Has window.applicationCache, status:" + window.applicationCache.status  : "No window.applicationCache")'>Check window.applicationCache</button><br/>
 
 
 <h3>Events:</h3>

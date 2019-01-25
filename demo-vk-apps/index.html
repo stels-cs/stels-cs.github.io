@@ -33,6 +33,7 @@
 <button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button><br/>
 <button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">VKWebAppAllowMessagesFromGroup</button><br/>
 <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">VKWebAppGetAuthToken</button><br/>
+<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids": "1","v":"5.92","access_token":accessToken},"request_id":99564})</button><br/>
 <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
 <button onclick='window.location.reload()'>window.location.reload()</button><br/>
 <button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"</button><br/>
@@ -48,6 +49,7 @@
 
 <script>
 	let consoleNode = document.getElementById('console')
+    let accessToken = ""
 
 	function consolePrint(text) {
 		const now = new Date()
@@ -63,6 +65,9 @@
 			    consolePrint(type + ": " + JSON.stringify(event, null, 2))
             } else {
 			    consolePrint(type + ": " + JSON.stringify(data, null, 2))
+                if (type === 'VKWebAppAccessTokenReceived') {
+                    accessToken = data.access_token
+                }
             }
 		} else {
         	consolePrint(JSON.stringify(event,null,2))

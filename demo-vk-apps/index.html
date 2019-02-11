@@ -12,7 +12,7 @@
 <h1>DEMO VK APPS</h1>
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 <span id="wh"></span><br/>
-<input type="text"/><br/>
+<input onfocus="afterResize()" type="text"/><br/>
 <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button>
@@ -52,13 +52,16 @@
 	let consoleNode = document.getElementById('console')
     let accessToken = ""
 
-    document.getElementById('wh').innerText = window.innerHeight.toString()
-    window.addEventListener("resize", function () {
+    function afterResize() {
 		document.getElementById('wh').innerText = window.innerHeight.toString()
-        setTimeout(() => {
+		setTimeout(() => {
 			document.getElementById('wh').innerText = window.innerHeight.toString()
-        }, 500)
-    })
+		}, 500)
+	}
+
+	afterResize()
+
+    window.addEventListener("resize", afterResize)
 
 	function consolePrint(text) {
 		const now = new Date()
@@ -84,7 +87,7 @@
 	})
 
 	vkConnect.send('VKWebAppInit', {})
-</script>
+    <img src="../50.png" height="50" width="50"/></script>
 
 <script>
 	if ('serviceWorker' in navigator) {

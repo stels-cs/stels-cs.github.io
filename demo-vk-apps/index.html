@@ -11,6 +11,7 @@
 
 <h1>DEMO VK APPS</h1>
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
+<span id="wh"></span><br/>
 <input type="text"/><br/>
 <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
 <br/>
@@ -50,6 +51,14 @@
 <script>
 	let consoleNode = document.getElementById('console')
     let accessToken = ""
+
+    document.getElementById('wh').innerText = window.innerHeight
+    window.addEventListener("addEventListener", function () {
+		document.getElementById('wh').innerText = window.innerHeight
+        setTimeout(() => {
+			document.getElementById('wh').innerText = window.innerHeight
+        }, 500)
+    })
 
 	function consolePrint(text) {
 		const now = new Date()

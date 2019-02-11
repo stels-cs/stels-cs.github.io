@@ -27,6 +27,8 @@
 <br/>
 <button onclick="vkConnect.send('VKWebAppJoinGroup', {group_id:58810575})">VKWebAppJoinGroup</button>
 <br/>
+<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'pay-to-group',params:{amount:1,description:'test-pay',group_id:58810575}})">VKWebAppOpenPayForm</button>
+<br/>
 <button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button><br/>
 <button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button><br/>
 <button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">VKWebAppShowWallPostBox</button><br/>

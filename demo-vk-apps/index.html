@@ -52,11 +52,11 @@
 	let consoleNode = document.getElementById('console')
     let accessToken = ""
 
-    document.getElementById('wh').innerText = window.innerHeight
-    window.addEventListener("addEventListener", function () {
-		document.getElementById('wh').innerText = window.innerHeight
+    document.getElementById('wh').innerText = window.innerHeight.toString()
+    window.addEventListener("resize", function () {
+		document.getElementById('wh').innerText = window.innerHeight.toString()
         setTimeout(() => {
-			document.getElementById('wh').innerText = window.innerHeight
+			document.getElementById('wh').innerText = window.innerHeight.toString()
         }, 500)
     })
 

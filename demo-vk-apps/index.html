@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#536878"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
     <title>Demo vk apps</title>
     <link rel="manifest" href="/manifest.json">
 </head>
@@ -27,20 +28,51 @@
 <br/>
 <button onclick="vkConnect.send('VKWebAppJoinGroup', {group_id:58810575})">VKWebAppJoinGroup</button>
 <br/>
-<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'pay-to-group',params:{amount:1,description:'test-pay',group_id:58810575}})">VKWebAppOpenPayForm</button>
 <br/>
-<button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button><br/>
-<button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button><br/>
-<button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">VKWebAppShowWallPostBox</button><br/>
-<button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button><br/>
-<button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button><br/>
-<button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">VKWebAppAllowMessagesFromGroup</button><br/>
-<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">VKWebAppGetAuthToken</button><br/>
-<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids": "1","v":"5.92","access_token":accessToken},"request_id":99564})</button><br/>
-<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button><br/>
-<button onclick='window.location.reload()'>window.location.reload()</button><br/>
-<button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"</button><br/>
-<button onclick='consolePrint(window.applicationCache ? "Has window.applicationCache, status:" + window.applicationCache.status  : "No window.applicationCache")'>Check window.applicationCache</button><br/>
+<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'pay-to-group',params:{amount:1,description:'test-pay',group_id:58810575}})">
+    VKWebAppOpenPayForm
+</button>
+<br/>
+<button onclick="payToService()">VKWebAppOpenPayForm (service)</button>
+<br/>
+<br/>
+<button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">
+    VKWebAppShowWallPostBox
+</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">
+    VKWebAppAllowMessagesFromGroup
+</button>
+<br/>
+<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">
+    VKWebAppGetAuthToken
+</button>
+<br/>
+<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
+    connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":
+    "1","v":"5.92","access_token":accessToken},"request_id":99564})
+</button>
+<br/>
+<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button>
+<br/>
+<button onclick='window.location.reload()'>window.location.reload()</button>
+<br/>
+<button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>
+    ("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"
+</button>
+<br/>
+<button onclick='consolePrint(window.applicationCache ? "Has window.applicationCache, status:" + window.applicationCache.status  : "No window.applicationCache")'>
+    Check window.applicationCache
+</button>
+<br/>
 
 
 <h3>Events:</h3>
@@ -52,9 +84,24 @@
 
 <script>
 	let consoleNode = document.getElementById('console')
-    let accessToken = ""
+	let accessToken = ""
 
-    function afterResize() {
+	function payToService() {
+		vkConnect.send("VKWebAppOpenPayForm", {
+			"app_id": 6825462,
+			"action": "pay-to-service",
+			"params": {
+				action: "pay-to-service",
+				amount: 1,
+				data: "",
+				description: "Оплата заказа",
+				merchant_id: "9241220",
+				sign: "c05ead1445400f44e23a9310e9628250b"
+			}
+		})
+	}
+
+	function afterResize() {
 		document.getElementById('wh').innerText = window.innerHeight.toString()
 		setTimeout(() => {
 			document.getElementById('wh').innerText = window.innerHeight.toString()
@@ -63,7 +110,7 @@
 
 	afterResize()
 
-    window.addEventListener("resize", afterResize)
+	window.addEventListener("resize", afterResize)
 
 	function consolePrint(text) {
 		const now = new Date()
@@ -74,18 +121,18 @@
 
 	vkConnect.subscribe(event => {
 		const {type, data} = event.detail
-        if (type !== undefined || data !== undefined) {
-        	if (data === undefined) {
-			    consolePrint(type + ": " + JSON.stringify(event, null, 2))
-            } else {
-			    consolePrint(type + ": " + JSON.stringify(data, null, 2))
-                if (type === 'VKWebAppAccessTokenReceived') {
-                    accessToken = data.access_token
-                }
-            }
+		if (type !== undefined || data !== undefined) {
+			if (data === undefined) {
+				consolePrint(type + ": " + JSON.stringify(event, null, 2))
+			} else {
+				consolePrint(type + ": " + JSON.stringify(data, null, 2))
+				if (type === 'VKWebAppAccessTokenReceived') {
+					accessToken = data.access_token
+				}
+			}
 		} else {
-        	consolePrint(JSON.stringify(event,null,2))
-        }
+			consolePrint(JSON.stringify(event, null, 2))
+		}
 	})
 
 	vkConnect.send('VKWebAppInit', {})

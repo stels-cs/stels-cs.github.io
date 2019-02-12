@@ -35,7 +35,8 @@
 <br/>
 <button onclick="payToService()">VKWebAppOpenPayForm (service)</button>
 <br/>
-<button onclick="top()">VKWebAppSetViewSettings</button>
+<br/>
+<button onclick="VKWebAppSetViewSettings()">VKWebAppSetViewSettings</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button>
 <br/>
@@ -87,7 +88,7 @@
 	let consoleNode = document.getElementById('console')
 	let accessToken = ""
 
-    function top() {
+    function VKWebAppSetViewSettings() {
         vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"});
     }
 

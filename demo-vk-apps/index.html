@@ -14,6 +14,7 @@
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 <span id="wh"></span><br/>
 <input onfocus="afterResize()" type="text"/><br/>
+<button onclick="fullScreen()">Try fullScreen</button>
 <button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
@@ -89,6 +90,24 @@
 <script>
 	let consoleNode = document.getElementById('console')
 	let accessToken = ""
+
+    function fullScreen() {
+		var elem = document.documentElement;
+
+		/* View in fullscreen */
+		function openFullscreen() {
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.mozRequestFullScreen) { /* Firefox */
+				elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { /* IE/Edge */
+				elem.msRequestFullscreen();
+			}
+		}
+		openFullscreen()
+    }
 
     function VKWebAppSetViewSettings() {
         vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"});

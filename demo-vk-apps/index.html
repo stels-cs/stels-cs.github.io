@@ -164,6 +164,9 @@
 	window.onblur = function () {
 		consolePrint("BLUR")
     }
+	window.onfocus = function () {
+		consolePrint("onfocus")
+    }
 
 	vkConnect.subscribe(event => {
 		const {type, data} = event.detail

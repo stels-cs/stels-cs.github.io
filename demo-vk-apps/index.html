@@ -161,6 +161,10 @@
 		consoleNode.prepend(tn)
 	}
 
+	window.onblur = function () {
+		consolePrint("BLUR")
+    }
+
 	vkConnect.subscribe(event => {
 		const {type, data} = event.detail
 		if (type !== undefined || data !== undefined) {

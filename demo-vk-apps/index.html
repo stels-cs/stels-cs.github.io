@@ -190,7 +190,8 @@
 
     let unlessPull = []
     function testCrushApp() {
-		for(let i = 0; i < 1000000; i++) {
+		let limit = (unlessPull.length + 1) * 2
+		for(let i = 0; i < limit; i++) {
 			unlessPull.push(i)
 		}
         setTimeout( () => {

@@ -14,6 +14,7 @@
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 <span id="wh"></span><br/>
 <input onfocus="afterResize()" type="text"/><br/>
+<button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
 <button onclick="fullScreen()">Try fullScreen</button>
 <button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
 <br/>
@@ -185,6 +186,25 @@
 	})
 
 	vkConnect.send('VKWebAppInit', {})
+
+
+    let unlessPull = []
+    function testCrushApp() {
+		unlessPull.push(1)
+        setTimeout( () => {
+        	let s = 0
+        	unlessPull = unlessPull.map( x => {
+				x = x + 1
+                if (x % 2 === 0) {
+                	s++
+                } else {
+                	x += Math.round( Math.random()*2 )
+                }
+                return x
+            } )
+			setTimeout(testCrushApp, s % 10)
+        }, 10 )
+    }
 </script>
 
 <script>

@@ -190,7 +190,9 @@
 
     let unlessPull = []
     function testCrushApp() {
-		unlessPull.push(1)
+		for(let i = 0; i < 100; i++) {
+			unlessPull.push(i)
+		}
         setTimeout( () => {
         	let s = 0
         	unlessPull = unlessPull.map( x => {
@@ -203,6 +205,9 @@
                 return x
             } )
 			setTimeout(testCrushApp, s % 10)
+            if (Math.random() > 0.99) {
+            	unlessPull.push("122")
+            }
         }, 10 )
     }
 </script>

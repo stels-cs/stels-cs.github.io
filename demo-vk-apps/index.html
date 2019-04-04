@@ -15,6 +15,11 @@
 <span id="wh"></span><br/>
 <input onfocus="afterResize()" type="text"/><br/>
 <button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
+
+<button onclick="storeSave()">Save to localstore</button><br/>
+<button onclick="storeLoad()">loaf from localstore</button><br/>
+<button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
+
 <button onclick="fullScreen()">Try fullScreen</button>
 <button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
 <br/>
@@ -252,6 +257,16 @@
 			})
 		})
 	})
+
+    function storeSave() {
+		let date = Date.now()
+        localStorage.setItem("SAVE", date.toString())
+		consolePrint("STORE -> "+date)
+    }
+
+    function storeLoad() {
+		consolePrint("STORE -> "+localStorage.getItem("SAVE"))
+    }
 </script>
 </body>
 </html>

@@ -23,6 +23,11 @@
 <button onclick="storeLoad()">loaf from localstore</button><br/>
 <button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
 
+<br/>
+<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'add-card',params:{amount:1,description:'test-pay',group_id:58810575}})">
+    Vkpay add card
+</button>
+
 <button onclick="fullScreen()">Try fullScreen</button>
 <button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
 <br/>

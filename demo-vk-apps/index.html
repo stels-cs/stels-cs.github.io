@@ -14,14 +14,20 @@
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 <span id="wh"></span><br/>
 <input onfocus="afterResize()" type="text"/><br/>
-<button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
+<button onclick="testCrushApp()">TEST CRUSH APP</button>
+<br/>
 
-<button onclick="printHash()">printHash</button><br/>
-<button onclick="dropWindowHash()">dropWindowHash</button><br/>
+<button onclick="printHash()">printHash</button>
+<br/>
+<button onclick="dropWindowHash()">dropWindowHash</button>
+<br/>
 
-<button onclick="storeSave()">Save to localstore</button><br/>
-<button onclick="storeLoad()">loaf from localstore</button><br/>
-<button onclick="testCrushApp()">TEST CRUSH APP</button><br/>
+<button onclick="storeSave()">Save to localstore</button>
+<br/>
+<button onclick="storeLoad()">loaf from localstore</button>
+<br/>
+<button onclick="testCrushApp()">TEST CRUSH APP</button>
+<br/>
 
 <br/>
 <button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'add-card',params:{amount:1,description:'test-pay',group_id:58810575}})">
@@ -113,52 +119,53 @@
 	let consoleNode = document.getElementById('console')
 	let accessToken = ""
 
-    function video() {
-		const video = document.querySelector('video');
+	function video() {
+		const video = document.querySelector('video')
 		if (!('mediaDevices' in navigator)) {
-			throw new Error('Device does not have a media capture interface');
+			throw new Error('Device does not have a media capture interface')
 		}
 		navigator.mediaDevices.getUserMedia({video: true})
 			.then(stream => {
 				video.srcObject = stream
-				DemoUtils.reportDemoResult(true);
+				DemoUtils.reportDemoResult(true)
 			})
-			.catch(err => DemoUtils.reportDemoResult(false, {resultDetail: err.toString()}));
+			.catch(err => DemoUtils.reportDemoResult(false, {resultDetail: err.toString()}))
 	}
 
-    function fullScreen() {
-		var elem = document.documentElement;
+	function fullScreen() {
+		var elem = document.documentElement
 
 		/* View in fullscreen */
 		function openFullscreen() {
 			if (elem.requestFullscreen) {
-				elem.requestFullscreen();
+				elem.requestFullscreen()
 			} else if (elem.mozRequestFullScreen) { /* Firefox */
-				elem.mozRequestFullScreen();
+				elem.mozRequestFullScreen()
 			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-				elem.webkitRequestFullscreen();
+				elem.webkitRequestFullscreen()
 			} else if (elem.msRequestFullscreen) { /* IE/Edge */
-				elem.msRequestFullscreen();
+				elem.msRequestFullscreen()
 			}
 		}
-		openFullscreen()
-    }
 
-    function VKWebAppSetViewSettings() {
-        vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"});
-    }
+		openFullscreen()
+	}
+
+	function VKWebAppSetViewSettings() {
+		vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"})
+	}
 
 	function payToService() {
 		vkConnect.send("VKWebAppOpenPayForm", {
 			"app_id": 6825462,
 			"action": "pay-to-service",
 			"params": {
-				action: "pay-to-service",
-				amount: 1,
-				data: "",
-				description: "Оплата заказа",
-				merchant_id: "9241220",
-				sign: "c05ead1445400f44e23a9310e9628250b"
+				"action": "pay-to-service",
+				"amount": 1,
+				"data": "{\"cashback\":{\"pay_time\":1562249711,\"amount\":149},\"cashback_pay_time\":1562249711,\"cashback_amount\":149,\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjEsImNhc2hiYWNrIjp7InBheV90aW1lIjoxNTYyMjQ5NzExLCJhbW91bnQiOjE0OX0sImN1cnJlbmN5IjoiUlVCIiwib3JkZXJfaWQiOjk5LCJ0cyI6MTU2MjI0OTExMX0=\",\"merchant_sign\":\"15ac8e60b2b0efec7e7828d9a81573ac5aff7f33\",\"order_id\":99,\"ts\":1562249111,\"transaction_id\":\"EROROR\"}",
+				"description": "Test pay",
+				"merchant_id": 532298,
+				"sign": "247aa17017789d4e9509fd5fd90192ef"
 			}
 		})
 	}
@@ -183,10 +190,10 @@
 
 	window.onblur = function () {
 		consolePrint("BLUR")
-    }
+	}
 	window.onfocus = function () {
 		consolePrint("onfocus")
-    }
+	}
 
 	vkConnect.subscribe(event => {
 		const {type, data} = event.detail
@@ -207,29 +214,30 @@
 	vkConnect.send('VKWebAppInit', {})
 
 
-    let unlessPull = []
-    function testCrushApp() {
+	let unlessPull = []
+
+	function testCrushApp() {
 		let limit = (unlessPull.length + 1) * 2
-		for(let i = 0; i < limit; i++) {
+		for (let i = 0; i < limit; i++) {
 			unlessPull.push(i)
 		}
-        setTimeout( () => {
-        	let s = 0
-        	unlessPull = unlessPull.map( x => {
+		setTimeout(() => {
+			let s = 0
+			unlessPull = unlessPull.map(x => {
 				x = x + 1
-                if (x % 2 === 0) {
-                	s++
-                } else {
-                	x += Math.round( Math.random()*2 )
-                }
-                return x
-            } )
+				if (x % 2 === 0) {
+					s++
+				} else {
+					x += Math.round(Math.random() * 2)
+				}
+				return x
+			})
 			setTimeout(testCrushApp, s % 10)
-            if (Math.random() > 0.99) {
-            	unlessPull.push("122")
-            }
-        }, 10 )
-    }
+			if (Math.random() > 0.99) {
+				unlessPull.push("122")
+			}
+		}, 10)
+	}
 </script>
 
 <script>
@@ -272,27 +280,27 @@
 		})
 	})
 
-    function storeSave() {
+	function storeSave() {
 		let date = Date.now()
-        localStorage.setItem("SAVE", date.toString())
-		consolePrint("STORE <- "+date)
-    }
+		localStorage.setItem("SAVE", date.toString())
+		consolePrint("STORE <- " + date)
+	}
 
-    function storeLoad() {
-		consolePrint("STORE -> "+localStorage.getItem("SAVE"))
-    }
+	function storeLoad() {
+		consolePrint("STORE -> " + localStorage.getItem("SAVE"))
+	}
 
-    function printHash() {
-		consolePrint("window.location.hash: "+window.location.hash)
-    }
+	function printHash() {
+		consolePrint("window.location.hash: " + window.location.hash)
+	}
 
-    function dropWindowHash() {
-		window.location.hash =''
-    }
+	function dropWindowHash() {
+		window.location.hash = ''
+	}
 
-	window.onpopstate = function(event) {
-		consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state));
-	};
+	window.onpopstate = function (event) {
+		consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state))
+	}
 
 </script>
 </body>

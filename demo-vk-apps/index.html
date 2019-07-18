@@ -10,10 +10,15 @@
 </head>
 <body>
 
-<h1>VKAPPS DEMO APP 2 .01</h1>
+<h1>VKAPPS DEMO APP 2.02</h1>
+
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
+
+<div id="log"></div>
+
+<a href="https://vk.com/app6825462_-126202993" target="_blank">Открыть приложение в группе</a>
+
 <span id="wh"></span><br/>
-<input onfocus="afterResize()" type="text"/><br/>
 <button onclick="testCrushApp()">TEST CRUSH APP</button>
 <br/>
 
@@ -302,6 +307,12 @@
 		consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state))
 	}
 
+	let groupId = window.location.href.match(/vk_group_id=([0-9]+)/gmu)
+    if (groupId) {
+    	document.querySelector('#log').innerHTML = groupId.pop()
+    } else {
+		document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
+    }
 </script>
 </body>
 </html>

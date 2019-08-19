@@ -9,7 +9,7 @@
     <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-
+<div id="root">
 <h1>VKAPPS DEMO APP 2.03</h1>
 
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
@@ -236,10 +236,11 @@
 
 			if (window.location.href.indexOf('vk_platform=mobile_web') !== -1) {
 				if (type === 'VKWebAppUpdateConfig') {
-				    document.body.style.maxHeight=data.viewport_height + 'px'
-				    document.body.style.height=data.viewport_height + 'px'
-					document.body.style.overflow = 'auto'
-					document.body.style.webkitOverflowScrolling = 'touch'
+					const root = document.getElementById('root')
+				    root.style.maxHeight=data.viewport_height + 'px'
+				    root.style.height=data.viewport_height + 'px'
+					root.style.overflow = 'auto'
+					root.style.webkitOverflowScrolling = 'touch'
 				}
 			}
 
@@ -346,5 +347,6 @@
 		document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
     }
 </script>
+</div>
 </body>
 </html>

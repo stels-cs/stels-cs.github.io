@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>VKAPPS DEMO APP 2.02</h1>
+<h1>VKAPPS DEMO APP 2.03</h1>
 
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 
@@ -233,6 +233,16 @@
 					accessToken = data.access_token
 				}
 			}
+
+			if (window.location.href.indexOf('vk_platform=mobile_web') !== -1) {
+				if (type === 'VKWebAppUpdateConfig') {
+				    document.body.style.maxHeight=data.viewport_height + 'px'
+				    document.body.style.height=data.viewport_height + 'px'
+					document.body.style.overflow = 'auto'
+					document.body.style.webkitOverflowScrolling = 'touch'
+				}
+			}
+
 		} else {
 			consolePrint(JSON.stringify(event, null, 2))
 		}

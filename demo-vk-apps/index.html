@@ -14,6 +14,15 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-TZBBH4L');
 	dataLayer.push( function (track) { console.log("Track", track) } )
+        if (window.ga) {
+			window.ga( function (track) { console.log("Track ga ", track) } )
+        } else {
+            setTimeout( () => {
+				if (window.ga) {
+					window.ga( function (track) { console.log("Track ga timer", track) } )
+				}
+            }, 1000 )
+        }
     </script>
     <!-- End Google Tag Manager -->
 </head>

@@ -238,7 +238,10 @@
 
 	window.addEventListener("resize", afterResize)
 
-	function consolePrint(text) {
+	function consolePrint(text, ex) {
+    	if (ex !== undefined) {
+    		text += ' ' + JSON.stringify(ex)
+        }
 		const now = new Date()
 		const time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ":" + now.getMilliseconds() + 'ms'
 		let tn = document.createTextNode(time + ": " + text + "\n")

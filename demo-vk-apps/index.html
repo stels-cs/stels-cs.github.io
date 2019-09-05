@@ -28,7 +28,7 @@
 </head>
 <body>
 <div id="root">
-<h1>VKAPPS DEMO APP 2.06</h1>
+<h1>VKAPPS DEMO APP 2.08</h1>
 
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 
@@ -134,7 +134,9 @@
 <video autoplay width="100%"></video>
 <button onclick="video()">MakeVideo</button>
 
-<input onchange="onChangeInput(event)" capture type="file">
+    <input type="file" name="file"
+           onchange="onChangeInput(event)"
+           required id="pic-file" accept=".jpg,.jpeg,.png,capture=camera"/>
 
 <a href="https://vk.com/im?invite_chat_id=8589934592254660715&invite_hash=hDown/FZnIoB8g==" target="_blank">
     link to join chat

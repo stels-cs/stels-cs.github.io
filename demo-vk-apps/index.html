@@ -28,7 +28,7 @@
 </head>
 <body>
 <div id="root">
-<h1>VKAPPS DEMO APP 2.14</h1>
+<h1>VKAPPS DEMO APP 2.15</h1>
 
 <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 
@@ -80,7 +80,7 @@
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetEmail', {})">VKWebAppGetEmail</button>
 <br/>
-<button onclick="vkConnect.send('VKWebAppGetCommunityAuthToken', {app_id:6825462,group_id:126202993,scope:'stories,photos,app_widget,messages'})">VKWebAppGetCommunityAuthToken</button>
+<button onclick="vkConnect.send('VKWebAppGetCommunityAuthToken', {app_id:6825462,group_id:126202993,scope:'app_widget'})">VKWebAppGetCommunityAuthToken</button>
 <br/>
 <button onclick="vkConnect.send('VKWebAppGetGeodata', {})">VKWebAppGetGeodata</button>
 <br/>
@@ -118,7 +118,7 @@
     VKWebAppAllowMessagesFromGroup
 </button>
 <br/>
-<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'friends,photos,video,pages,status,notes,wall,ads,docs,groups,stats,market'})">
+<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups'})">
     VKWebAppGetAuthToken
 </button>
 <br/>

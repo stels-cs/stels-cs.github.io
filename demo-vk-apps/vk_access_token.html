@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#536878"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <title>Vk access token</title>
+</head>
+<body>
+<div id="root">
+<h1>Vk access token</h1>
+
+<br/>
+<div id="log"></div>
+<br/>
+
+
+<span id="wh"></span><br/>
+<br/>
+    <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups'})">
+    VKWebAppGetAuthToken
+</button>
+<br/>
+
+<h3>Events:</h3>
+<pre id="console"></pre>
+
+
+<button class="add-button">Add to home screen</button>
+<script src="./vk-connect.js"></script>
+
+<script>
+    setTimeout(() => {
+		consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))
+    }, 10)
+
+    function onChangeInput(event) {
+		consolePrint("onChangeInput", event)
+        const files = event.target.files
+		consolePrint("onChangeInput length", files.length)
+		const file = event.target.files[0]
+		consolePrint("onChangeInput file", file)
+    }
+
+
+	let consoleNode = document.getElementById('console')
+	let accessToken = ""
+
+	function video() {
+		const video = document.querySelector('video')
+		if (!('mediaDevices' in navigator)) {
+			throw new Error('Device does not have a media capture interface')
+		}
+		navigator.mediaDevices.getUserMedia({video: true})
+			.then(stream => {
+				video.srcObject = stream
+				DemoUtils.reportDemoResult(true)
+			})
+			.catch(err => DemoUtils.reportDemoResult(false, {resultDetail: err.toString()}))
+	}
+
+	function fullScreen() {
+		var elem = document.documentElement
+
+		/* View in fullscreen */
+		function openFullscreen() {
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen()
+			} else if (elem.mozRequestFullScreen) { /* Firefox */
+				elem.mozRequestFullScreen()
+			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+				elem.webkitRequestFullscreen()
+			} else if (elem.msRequestFullscreen) { /* IE/Edge */
+				elem.msRequestFullscreen()
+			}
+		}
+
+		openFullscreen()
+	}
+
+	function VKWebAppSetViewSettings() {
+		vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"})
+	}
+
+	function payToService() {
+		vkConnect.send("VKWebAppOpenPayForm", {
+			"app_id": 6825462,
+			"action": "pay-to-service",
+			"params": {
+				"action": "pay-to-service",
+				"amount": 1,
+				"data": "{\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjEsImN1cnJlbmN5IjoiUlVCIiwib3JkZXJfaWQiOjk5LCJ0cyI6MTU2MjI0OTI5M30=\",\"merchant_sign\":\"3ef4ab6097441898c2fd236bcd4a454bbf3c3768\",\"order_id\":99,\"ts\":1562249293,\"transaction_id\":\"EROROR\"}",
+				"description": "Test pay",
+				"merchant_id": 532298,
+				"sign": "7a0ec754b669cfc71ec4559e930e7582"
+			}
+		})
+	}
+
+	function payToServiceMusicTest() {
+		vkConnect.send("VKWebAppOpenPayForm", {
+			"app_id": 6825462,
+			"action": "pay-to-service",
+			"params": {
+				"action":"pay-to-service",
+                "amount":298,
+                "data":"{\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjI5OCwiY3VycmVuY3kiOiJSVUIiLCJvcmRlcl9pZCI6MzIwNTU5LCJ0cyI6MTU2NTg1OTkyNn0=\",\"merchant_sign\":\"371f785fb11a655e25e788f95b8ecf333e2c1307\",\"order_id\":320559,\"ts\":1565859926,\"transaction_id\":284156}",
+                "description":"Оплата подписки на VK Music",
+                "merchant_id":532298,
+                "sign":"112625e383d26feb2e226d79494fd57d"
+            },
+		})
+    }
+
+	function afterResize() {
+		document.getElementById('wh').innerText = window.innerHeight.toString()
+		setTimeout(() => {
+			document.getElementById('wh').innerText = window.innerHeight.toString()
+		}, 500)
+	}
+
+	afterResize()
+
+	window.addEventListener("resize", afterResize)
+
+	function consolePrint(text, ex) {
+    	if (ex !== undefined) {
+    		text += ' ' + JSON.stringify(ex)
+        }
+		const now = new Date()
+		const time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ":" + now.getMilliseconds() + 'ms'
+		let tn = document.createTextNode(time + ": " + text + "\n")
+		consoleNode.prepend(tn)
+	}
+
+	window.onblur = function () {
+		consolePrint("BLUR")
+	}
+	window.onfocus = function () {
+		consolePrint("onfocus")
+	}
+
+	vkConnect.subscribe(event => {
+		const {type, data} = event.detail
+		if (type !== undefined || data !== undefined) {
+			if (data === undefined) {
+				consolePrint(type + ": " + JSON.stringify(event, null, 2))
+			} else {
+				consolePrint(type + ": " + JSON.stringify(data, null, 2))
+				if (type === 'VKWebAppAccessTokenReceived') {
+					accessToken = data.access_token
+				}
+			}
+
+			if (window.location.href.indexOf('vk_platform=mobile_web') !== -1) {
+				if (type === 'VKWebAppUpdateConfig') {
+					const root = document.getElementById('root')
+				    root.style.maxHeight=data.viewport_height + 'px'
+				    root.style.height=data.viewport_height + 'px'
+					root.style.overflow = 'auto'
+					root.style.webkitOverflowScrolling = 'touch'
+				}
+			}
+
+		} else {
+			consolePrint(JSON.stringify(event, null, 2))
+		}
+	})
+
+	vkConnect.send('VKWebAppInit', {})
+
+
+	let unlessPull = []
+
+	function testCrushApp() {
+		let limit = (unlessPull.length + 1) * 2
+		for (let i = 0; i < limit; i++) {
+			unlessPull.push(i)
+		}
+		setTimeout(() => {
+			let s = 0
+			unlessPull = unlessPull.map(x => {
+				x = x + 1
+				if (x % 2 === 0) {
+					s++
+				} else {
+					x += Math.round(Math.random() * 2)
+				}
+				return x
+			})
+			setTimeout(testCrushApp, s % 10)
+			if (Math.random() > 0.99) {
+				unlessPull.push("122")
+			}
+		}, 10)
+	}
+</script>
+
+<script>
+	if ('serviceWorker' in navigator) {
+		console.log("Will service worker register?")
+		navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
+			console.log("Yes it did.")
+		}).catch(function (err) {
+			console.log("No it didn't. This happened: ", err)
+		})
+	}
+</script>
+
+<script>
+	let deferredPrompt
+	const addBtn = document.querySelector('.add-button')
+	addBtn.style.display = 'none'
+	window.addEventListener('beforeinstallprompt', (e) => {
+		// Prevent Chrome 67 and earlier from automatically showing the prompt
+		e.preventDefault()
+		// Stash the event so it can be triggered later.
+		deferredPrompt = e
+		// Update UI to notify the user they can add to home screen
+		addBtn.style.display = 'block'
+
+		addBtn.addEventListener('click', (e) => {
+			// hide our user interface that shows our A2HS button
+			addBtn.style.display = 'none'
+			// Show the prompt
+			deferredPrompt.prompt()
+			// Wait for the user to respond to the prompt
+			deferredPrompt.userChoice.then((choiceResult) => {
+				if (choiceResult.outcome === 'accepted') {
+					console.log('User accepted the A2HS prompt')
+				} else {
+					console.log('User dismissed the A2HS prompt')
+				}
+				deferredPrompt = null
+			})
+		})
+	})
+
+	function storeSave() {
+		let date = Date.now()
+		localStorage.setItem("SAVE", date.toString())
+		consolePrint("STORE <- " + date)
+	}
+
+	function storeLoad() {
+		consolePrint("STORE -> " + localStorage.getItem("SAVE"))
+	}
+
+	function printHash() {
+		consolePrint("window.location.hash: " + window.location.hash)
+	}
+
+	function dropWindowHash() {
+		window.location.hash = ''
+	}
+
+	window.onpopstate = function (event) {
+		consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state))
+	}
+
+	let groupId = window.location.href.match(/vk_group_id=([0-9]+)/gmu)
+    if (groupId) {
+    	document.querySelector('#log').innerHTML = groupId.pop()
+    } else {
+		document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
+    }
+</script>
+</div>
+</body>
+</html>

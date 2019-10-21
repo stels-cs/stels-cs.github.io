@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#536878"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    <title>Video test</title>
+</head>
+<body>
+<div id="root">
+<h1>Video test</h1>
+<video width="400" controls>
+    <source src="./mov_bbb.mp4" type="video/mp4">
+    <source src="./mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+</video>
+<script src="./vk-connect.js"></script>
+<script>
+    vkConnect.send('VKWebAppInit', {})
+</script>
+</div>
+</body>
+</html>

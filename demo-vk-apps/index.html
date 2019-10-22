@@ -122,6 +122,10 @@
     VKWebAppGetAuthToken
 </button>
 <br/>
+    <button onclick="vkConnect.send('VKWebAppGetFriends', {})">
+        VKWebAppGetFriends
+</button>
+<br/>
 <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
     connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":
     "1","v":"5.92","access_token":accessToken},"request_id":99564})

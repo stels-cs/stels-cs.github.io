@@ -131,7 +131,7 @@
     </button>
     <br/>
 <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"stories.get","params": {"owner_id": window.location.search.match(/user_id=([0-9]+)/gui)[0].replace("user_id=",""), "v":"5.92", "extended":"1", "access_token":accessToken}, "request_id":99564})'>
-    users.get
+    stories.get
 </button>
     <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
         connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":

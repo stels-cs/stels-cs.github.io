@@ -118,7 +118,7 @@
     VKWebAppAllowMessagesFromGroup
 </button>
 <br/>
-<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups'})">
+<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups,stories'})">
     VKWebAppGetAuthToken
 </button>
 <br/>
@@ -126,10 +126,17 @@
         VKWebAppGetFriends
 </button>
 <br/>
-<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
-    connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":
-    "1","v":"5.92","access_token":accessToken},"request_id":99564})
+    <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups,stories'})">
+        VKWebAppGetAuthToken
+    </button>
+    <br/>
+<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"stories.get","params": {"owner_id": window.location.search.match(/user_id=([0-9]+)/gui)[0].replace("user_id=",""), "v":"5.92", "extended":"1", "access_token":accessToken}, "request_id":99564})'>
+    users.get
 </button>
+    <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
+        connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":
+        "1","v":"5.92","access_token":accessToken},"request_id":99564})
+    </button>
 <br/>
 <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button>
 <br/>

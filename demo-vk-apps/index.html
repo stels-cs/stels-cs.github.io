@@ -42,9 +42,6 @@
 <span id="wh"></span><br/>
 <button onclick="testCrushApp()">TEST CRUSH APP</button>
 <br/>
-
-<button onclick="payToServiceMusicTest()">payToServiceMusicTest</button>
-<br/>
 <button onclick="printHash()">printHash</button>
 <br/>
 <button onclick="dropWindowHash()">dropWindowHash</button>
@@ -245,22 +242,7 @@
 		})
 	}
 
-	function payToServiceMusicTest() {
-		vkConnect.send("VKWebAppOpenPayForm", {
-			"app_id": 6825462,
-			"action": "pay-to-service",
-			"params": {
-				"action":"pay-to-service",
-                "amount":298,
-                "data":"{\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjI5OCwiY3VycmVuY3kiOiJSVUIiLCJvcmRlcl9pZCI6MzIwNTU5LCJ0cyI6MTU2NTg1OTkyNn0=\",\"merchant_sign\":\"371f785fb11a655e25e788f95b8ecf333e2c1307\",\"order_id\":320559,\"ts\":1565859926,\"transaction_id\":284156}",
-                "description":"Оплата подписки на VK Music",
-                "merchant_id":532298,
-                "sign":"112625e383d26feb2e226d79494fd57d"
-            },
-		})
-    }
-
-	function afterResize() {
+    function afterResize() {
 		document.getElementById('wh').innerText = window.innerHeight.toString()
 		setTimeout(() => {
 			document.getElementById('wh').innerText = window.innerHeight.toString()

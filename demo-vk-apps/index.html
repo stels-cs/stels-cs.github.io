@@ -8,140 +8,163 @@
     <title>Demo vk apps</title>
     <link rel="manifest" href="/manifest.json">
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-TZBBH4L');
-	dataLayer.push( function (track) { console.log("Track", track) } )
-        if (window.ga) {
-			window.ga( function (track) { console.log("Track ga ", track) } )
-        } else {
-            setTimeout( () => {
-				if (window.ga) {
-					window.ga( function (track) { console.log("Track ga timer", track) } )
-				}
-            }, 1000 )
-        }
+    <script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []
+		w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		})
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+		j.async = true
+		j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+		f.parentNode.insertBefore(j, f)
+	})(window, document, 'script', 'dataLayer', 'GTM-TZBBH4L')
+	dataLayer.push(function (track) {
+		console.log("Track", track)
+	})
+	if (window.ga) {
+		window.ga(function (track) {
+			console.log("Track ga ", track)
+		})
+	} else {
+		setTimeout(() => {
+			if (window.ga) {
+				window.ga(function (track) {
+					console.log("Track ga timer", track)
+				})
+			}
+		}, 1000)
+	}
     </script>
     <!-- End Google Tag Manager -->
 </head>
 <body>
 <div id="root">
-<h1>VKAPPS DEMO APP 2.15</h1>
+    <h1>VKAPPS DEMO APP 2.15</h1>
 
-<a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
+    <a href="https://vk.com/dev/vk_apps_docs" target="_blank">vk.com/dev/vk_apps_docs</a><br/>
 
-<br/>
-<div id="log"></div>
-<br/>
-
-<a href="https://vk.com/app6825462_-126202993" target="_blank">Открыть приложение в группе</a>
-<br/>
-
-<span id="wh"></span><br/>
-<button onclick="testCrushApp()">TEST CRUSH APP</button>
-<br/>
-<button onclick="printHash()">printHash</button>
-<br/>
-<button onclick="dropWindowHash()">dropWindowHash</button>
-<br/>
-
-<button onclick="storeSave()">Save to localstore</button>
-<br/>
-<button onclick="storeLoad()">loaf from localstore</button>
-<br/>
-<button onclick="testCrushApp()">TEST CRUSH APP</button>
-<br/>
-
-<br/>
-<button onclick="vkConnect.send('VKWebAppStorageGet', {keys:['k1','k2']})">VKWebAppStorageGet</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppStorageSet', {key:'k1', value:Date.now()+'_k1'})">VKWebAppStorageSet k1</button>
     <br/>
-<button onclick="vkConnect.send('VKWebAppStorageSet', {key:'k2', value:Date.now()+'_k2'})">VKWebAppStorageSet k2</button>
+    <div id="log"></div>
+    <br/>
 
-<br/>
-<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'add-card',params:{amount:1,description:'test-pay',group_id:58810575}})">
-    Vkpay add card
-</button>
-<br/>
-<button onclick="fullScreen()">Try fullScreen</button>
-<button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetEmail', {})">VKWebAppGetEmail</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetCommunityAuthToken', {app_id:6825462,group_id:126202993,scope:'app_widget'})">VKWebAppGetCommunityAuthToken</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetGeodata', {})">VKWebAppGetGeodata</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppAllowNotifications', {})">VKWebAppAllowNotifications</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppDenyNotifications', {})">VKWebAppDenyNotifications</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppJoinGroup', {group_id:58810575})">VKWebAppJoinGroup</button>
-<br/>
-<br/>
-<button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'pay-to-group',params:{amount:1,description:'test-pay',group_id:58810575}})">
-    VKWebAppOpenPayForm
-</button>
-<br/>
-<button onclick="payToService()">VKWebAppOpenPayForm (service)</button>
-<br/>
-<br/>
-<button onclick="VKWebAppSetViewSettings()">VKWebAppSetViewSettings</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">
-    VKWebAppShowWallPostBox
-</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppSetLocation', {location:'myhash'})">VKWebAppSetLocation</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">
-    VKWebAppAllowMessagesFromGroup
-</button>
-<br/>
-<button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups,stories'})">
-    VKWebAppGetAuthToken
-</button>
-<br/>
-    <button onclick="vkConnect.send('VKWebAppGetFriends', {})">
-        VKWebAppGetFriends
-</button>
-<br/>
+    <a href="https://vk.com/app6825462_-126202993" target="_blank">Открыть приложение в группе</a>
+    <br/>
+
+    <span id="wh"></span><br/>
+    <button style="background-color: cornflowerblue" onclick="payServiceTest()">payServiceTest</button>
+    <button style="background-color: rosybrown" onclick="payRecurrentTest()">payRecurrentTest</button>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <button onclick="testCrushApp()">TEST CRUSH APP</button>
+    <br/>
+    <button onclick="printHash()">printHash</button>
+    <br/>
+    <button onclick="dropWindowHash()">dropWindowHash</button>
+    <br/>
+
+    <button onclick="storeSave()">Save to localstore</button>
+    <br/>
+    <button onclick="storeLoad()">loaf from localstore</button>
+    <br/>
+    <br/>
+
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppStorageGet', {keys:['k1','k2']})">VKWebAppStorageGet</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppStorageSet', {key:'k1', value:Date.now()+'_k1'})">VKWebAppStorageSet k1
+    </button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppStorageSet', {key:'k2', value:Date.now()+'_k2'})">VKWebAppStorageSet k2
+    </button>
+
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'add-card',params:{amount:1,description:'test-pay',group_id:58810575}})">
+        Vkpay add card
+    </button>
+    <br/>
+    <button onclick="fullScreen()">Try fullScreen</button>
+    <button onclick="vkConnect.send('VKWebAppSetLocation', {location: 'test-hash'})">VKWebAppSetLocation</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetUserInfo', {})">VKWebAppGetUserInfo</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetPhoneNumber', {})">VKWebAppGetPhoneNumber</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetEmail', {})">VKWebAppGetEmail</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetCommunityAuthToken', {app_id:6825462,group_id:126202993,scope:'app_widget'})">
+        VKWebAppGetCommunityAuthToken
+    </button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetGeodata', {})">VKWebAppGetGeodata</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppAllowNotifications', {})">VKWebAppAllowNotifications</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppDenyNotifications', {})">VKWebAppDenyNotifications</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppJoinGroup', {group_id:58810575})">VKWebAppJoinGroup</button>
+    <br/>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppOpenPayForm', {app_id:6825462,action:'pay-to-group',params:{amount:1,description:'test-pay',group_id:58810575}})">
+        VKWebAppOpenPayForm
+    </button>
+    <br/>
+    <button onclick="payToService()">VKWebAppOpenPayForm (service)</button>
+    <br/>
+    <br/>
+    <button onclick="VKWebAppSetViewSettings()">VKWebAppSetViewSettings</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppOpenQR', {})">VKWebAppOpenQR</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetClientVersion', {})">VKWebAppGetClientVersion</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppShowWallPostBox', {message:'VKWebAppShowWallPostBox'})">
+        VKWebAppShowWallPostBox
+    </button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppOpenContacts', {})">VKWebAppOpenContacts</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppSetLocation', {location:'myhash'})">VKWebAppSetLocation</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppShare', {link:'https://vk.com/app6825462'})">VKWebAppShare</button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppAllowMessagesFromGroup', {group_id:1, key:'dBuBKe1kFcdemzB'})">
+        VKWebAppAllowMessagesFromGroup
+    </button>
+    <br/>
     <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups,stories'})">
         VKWebAppGetAuthToken
     </button>
     <br/>
-<button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"stories.get","params": {"owner_id": window.location.search.match(/user_id=([0-9]+)/gui)[0].replace("user_id=",""), "v":"5.92", "extended":"1", "access_token":accessToken}, "request_id":99564})'>
-    stories.get
-</button>
+    <button onclick="vkConnect.send('VKWebAppGetFriends', {})">
+        VKWebAppGetFriends
+    </button>
+    <br/>
+    <button onclick="vkConnect.send('VKWebAppGetAuthToken', {app_id:6825462,scope:'groups,stories'})">
+        VKWebAppGetAuthToken
+    </button>
+    <br/>
+    <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"stories.get","params": {"owner_id": window.location.search.match(/user_id=([0-9]+)/gui)[0].replace("user_id=",""), "v":"5.92", "extended":"1", "access_token":accessToken}, "request_id":99564})'>
+        stories.get
+    </button>
     <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"users.get","params": {"user_ids": "1", "v":"5.92", "access_token":accessToken}, "request_id":99564})'>
         connect.send("VKWebAppCallAPIMethod", {"method":"users.get","params":{"user_ids":
         "1","v":"5.92","access_token":accessToken},"request_id":99564})
     </button>
-<br/>
-<button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button>
-<br/>
-<button onclick='window.location.reload()'>window.location.reload()</button>
-<br/>
-<button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>
-    ("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"
-</button>
-<br/>
-
+    <br/>
+    <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button>
+    <br/>
+    <button onclick='window.location.reload()'>window.location.reload()</button>
+    <br/>
+    <button onclick='consolePrint(("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker")'>
+        ("serviceWorker" in window.navigator) ? "Has service worker" : "No service worker"
+    </button>
+    <br/>
 
 
     <br/>
@@ -151,13 +174,18 @@
            required id="pic-file" accept="image/*,.jpg,.jpeg,.png,capture=camera"/>
 
     <br/>
-    <input type="file" class="inline_upload" onchange="onChangeInput(event)" accept="image/*" data-upload-url="https://pu.vk.com/c853620/upload.php?act=album_photo&amp;aid=-3&amp;gid=0&amp;_fwadd=mail-167021499&amp;mid=256722075&amp;server=853620&amp;_origin=https%3A%2F%2Fm.vk.com&amp;_sig=4cacf9e1da5fdad07b5d5572ed1f78f1" data-done-url="/photos.php?act=done_upload" data-max-attaches="10" multiple="multiple" tabindex="0" aria-label="Фото с устройства">
+    <input type="file" class="inline_upload" onchange="onChangeInput(event)" accept="image/*"
+           data-upload-url="https://pu.vk.com/c853620/upload.php?act=album_photo&amp;aid=-3&amp;gid=0&amp;_fwadd=mail-167021499&amp;mid=256722075&amp;server=853620&amp;_origin=https%3A%2F%2Fm.vk.com&amp;_sig=4cacf9e1da5fdad07b5d5572ed1f78f1"
+           data-done-url="/photos.php?act=done_upload" data-max-attaches="10" multiple="multiple" tabindex="0"
+           aria-label="Фото с устройства">
 
     <br/>
-    <input type="file" class="inline_upload" onchange="onChangeInput(event)" accept="image/*" data-upload-url="https://pu.vk.com/c855424/upload.php?act=owner_photo&amp;oid=-186224064&amp;square=&amp;_fwadd=-186224064&amp;mid=256722075&amp;server=855424&amp;_origin=https%3A%2F%2Fm.vk.com&amp;_sig=289625de58c04f0b22bc30748dba2577" data-base-url="https://pu.vk.com/c855424/" data-static-url="https://sun9-15.userapi.com/c855424/">
-<a href="https://vk.com/im?invite_chat_id=8589934592254660715&invite_hash=hDown/FZnIoB8g==" target="_blank">
-    link to join chat
-</a>
+    <input type="file" class="inline_upload" onchange="onChangeInput(event)" accept="image/*"
+           data-upload-url="https://pu.vk.com/c855424/upload.php?act=owner_photo&amp;oid=-186224064&amp;square=&amp;_fwadd=-186224064&amp;mid=256722075&amp;server=855424&amp;_origin=https%3A%2F%2Fm.vk.com&amp;_sig=289625de58c04f0b22bc30748dba2577"
+           data-base-url="https://pu.vk.com/c855424/" data-static-url="https://sun9-15.userapi.com/c855424/">
+    <a href="https://vk.com/im?invite_chat_id=8589934592254660715&invite_hash=hDown/FZnIoB8g==" target="_blank">
+        link to join chat
+    </a>
 
 
     <br/>
@@ -170,231 +198,262 @@
     <br/>
     <br/>
 
-<h3>Events:</h3>
-<pre id="console"></pre>
+    <h3>Events:</h3>
+    <pre id="console"></pre>
 
 
-<button class="add-button">Add to home screen</button>
-<script src="./vk-connect.js"></script>
+    <button class="add-button">Add to home screen</button>
+    <script src="./vk-connect.js"></script>
 
-<script>
+    <script>
 
-    function onChangeInput(event) {
-		consolePrint("onChangeInput", event)
-        const files = event.target.files
-		consolePrint("onChangeInput length", files.length)
-		const file = event.target.files[0]
-		consolePrint("onChangeInput file", file)
-    }
-
-
-	let consoleNode = document.getElementById('console')
-	let accessToken = ""
-
-	function video() {
-		const video = document.querySelector('video')
-		if (!('mediaDevices' in navigator)) {
-			throw new Error('Device does not have a media capture interface')
+		function onChangeInput(event) {
+			consolePrint("onChangeInput", event)
+			const files = event.target.files
+			consolePrint("onChangeInput length", files.length)
+			const file = event.target.files[0]
+			consolePrint("onChangeInput file", file)
 		}
-		navigator.mediaDevices.getUserMedia({video: true})
-			.then(stream => {
-				video.srcObject = stream
-				DemoUtils.reportDemoResult(true)
-			})
-			.catch(err => DemoUtils.reportDemoResult(false, {resultDetail: err.toString()}))
-	}
 
-	function fullScreen() {
-		var elem = document.documentElement
 
-		/* View in fullscreen */
-		function openFullscreen() {
-			if (elem.requestFullscreen) {
-				elem.requestFullscreen()
-			} else if (elem.mozRequestFullScreen) { /* Firefox */
-				elem.mozRequestFullScreen()
-			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-				elem.webkitRequestFullscreen()
-			} else if (elem.msRequestFullscreen) { /* IE/Edge */
-				elem.msRequestFullscreen()
+		let consoleNode = document.getElementById('console')
+		let accessToken = ""
+
+		function video() {
+			const video = document.querySelector('video')
+			if (!('mediaDevices' in navigator)) {
+				throw new Error('Device does not have a media capture interface')
 			}
+			navigator.mediaDevices.getUserMedia({video: true})
+				.then(stream => {
+					video.srcObject = stream
+					DemoUtils.reportDemoResult(true)
+				})
+				.catch(err => DemoUtils.reportDemoResult(false, {resultDetail: err.toString()}))
 		}
 
-		openFullscreen()
-	}
+		function fullScreen() {
+			var elem = document.documentElement
 
-	function VKWebAppSetViewSettings() {
-		vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"})
-	}
+			/* View in fullscreen */
+			function openFullscreen() {
+				if (elem.requestFullscreen) {
+					elem.requestFullscreen()
+				} else if (elem.mozRequestFullScreen) { /* Firefox */
+					elem.mozRequestFullScreen()
+				} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+					elem.webkitRequestFullscreen()
+				} else if (elem.msRequestFullscreen) { /* IE/Edge */
+					elem.msRequestFullscreen()
+				}
+			}
 
-	function payToService() {
-		vkConnect.send("VKWebAppOpenPayForm", {
-			"app_id": 6825462,
-			"action": "pay-to-service",
-			"params": {
+			openFullscreen()
+		}
+
+		function VKWebAppSetViewSettings() {
+			vkConnect.send("VKWebAppSetViewSettings", {"status_bar_style": "dark", "action_bar_color": "none"})
+		}
+
+		function payToService() {
+			vkConnect.send("VKWebAppOpenPayForm", {
+				"app_id": 6825462,
 				"action": "pay-to-service",
-				"amount": 1,
-				"data": "{\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjEsImN1cnJlbmN5IjoiUlVCIiwib3JkZXJfaWQiOjk5LCJ0cyI6MTU2MjI0OTI5M30=\",\"merchant_sign\":\"3ef4ab6097441898c2fd236bcd4a454bbf3c3768\",\"order_id\":99,\"ts\":1562249293,\"transaction_id\":\"EROROR\"}",
-				"description": "Test pay",
-				"merchant_id": 532298,
-				"sign": "7a0ec754b669cfc71ec4559e930e7582"
-			}
-		})
-	}
+				"params": {
+					"action": "pay-to-service",
+					"amount": 1,
+					"data": "{\"currency\":\"RUB\",\"merchant_data\":\"eyJhbW91bnQiOjEsImN1cnJlbmN5IjoiUlVCIiwib3JkZXJfaWQiOjk5LCJ0cyI6MTU2MjI0OTI5M30=\",\"merchant_sign\":\"3ef4ab6097441898c2fd236bcd4a454bbf3c3768\",\"order_id\":99,\"ts\":1562249293,\"transaction_id\":\"EROROR\"}",
+					"description": "Test pay",
+					"merchant_id": 532298,
+					"sign": "7a0ec754b669cfc71ec4559e930e7582"
+				}
+			})
+		}
 
-    function afterResize() {
-		document.getElementById('wh').innerText = window.innerHeight.toString()
-		setTimeout(() => {
+		function afterResize() {
 			document.getElementById('wh').innerText = window.innerHeight.toString()
-		}, 500)
-	}
+			setTimeout(() => {
+				document.getElementById('wh').innerText = window.innerHeight.toString()
+			}, 500)
+		}
 
-	afterResize()
+		afterResize()
 
-	window.addEventListener("resize", afterResize)
+		window.addEventListener("resize", afterResize)
 
-	function consolePrint(text, ex) {
-    	if (ex !== undefined) {
-    		text += ' ' + JSON.stringify(ex)
-        }
-		const now = new Date()
-		const time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ":" + now.getMilliseconds() + 'ms'
-		let tn = document.createTextNode(time + ": " + text + "\n")
-		consoleNode.prepend(tn)
-	}
+		function consolePrint(text, ex) {
+			if (ex !== undefined) {
+				text += ' ' + JSON.stringify(ex)
+			}
+			const now = new Date()
+			const time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ":" + now.getMilliseconds() + 'ms'
+			let tn = document.createTextNode(time + ": " + text + "\n")
+			consoleNode.prepend(tn)
+		}
 
-	window.onblur = function () {
-		consolePrint("BLUR")
-	}
-	window.onfocus = function () {
-		consolePrint("onfocus")
-	}
+		window.onblur = function () {
+			consolePrint("BLUR")
+		}
+		window.onfocus = function () {
+			consolePrint("onfocus")
+		}
 
-	vkConnect.subscribe(event => {
-		const {type, data} = event.detail
-		if (type !== undefined || data !== undefined) {
-			if (data === undefined) {
-				consolePrint(type + ": " + JSON.stringify(event, null, 2))
+		vkConnect.subscribe(event => {
+			const {type, data} = event.detail
+			if (type !== undefined || data !== undefined) {
+				if (data === undefined) {
+					consolePrint(type + ": " + JSON.stringify(event, null, 2))
+				} else {
+					consolePrint(type + ": " + JSON.stringify(data, null, 2))
+					if (type === 'VKWebAppAccessTokenReceived') {
+						accessToken = data.access_token
+					}
+				}
+
+				if (window.location.href.indexOf('vk_platform=mobile_web') !== -1) {
+					if (type === 'VKWebAppUpdateConfig') {
+						const root = document.getElementById('root')
+						root.style.maxHeight = data.viewport_height + 'px'
+						root.style.height = data.viewport_height + 'px'
+						root.style.overflow = 'auto'
+						root.style.webkitOverflowScrolling = 'touch'
+					}
+				}
+
 			} else {
-				consolePrint(type + ": " + JSON.stringify(data, null, 2))
-				if (type === 'VKWebAppAccessTokenReceived') {
-					accessToken = data.access_token
-				}
+				consolePrint(JSON.stringify(event, null, 2))
 			}
+		})
 
-			if (window.location.href.indexOf('vk_platform=mobile_web') !== -1) {
-				if (type === 'VKWebAppUpdateConfig') {
-					const root = document.getElementById('root')
-				    root.style.maxHeight=data.viewport_height + 'px'
-				    root.style.height=data.viewport_height + 'px'
-					root.style.overflow = 'auto'
-					root.style.webkitOverflowScrolling = 'touch'
-				}
+		vkConnect.send('VKWebAppInit', {})
+
+
+		let unlessPull = []
+
+		function testCrushApp() {
+			let limit = (unlessPull.length + 1) * 2
+			for (let i = 0; i < limit; i++) {
+				unlessPull.push(i)
 			}
+			setTimeout(() => {
+				let s = 0
+				unlessPull = unlessPull.map(x => {
+					x = x + 1
+					if (x % 2 === 0) {
+						s++
+					} else {
+						x += Math.round(Math.random() * 2)
+					}
+					return x
+				})
+				setTimeout(testCrushApp, s % 10)
+				if (Math.random() > 0.99) {
+					unlessPull.push("122")
+				}
+			}, 10)
+		}
 
+		function payRecurrentTest() {
+			vkConnect.send("VKWebAppOpenPayForm", {
+				"app_id": 6825462,
+				"action": "pay-recurrent", "params": {
+					action: "pay-recurrent",
+					amount: 1
+					data: "{\"currency\":\"RUB\",\"order_id\":1573742665,\"ts\":1573742665,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0MjY2NSwidHMiOjE1NzM3NDI2NjUsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"5fe9ad5770e7170f8955cacf49458f2ab4d8f4fc\"}",
+					description: "Пожертвование фонду «TEST»",
+					merchant_id: 812924,
+					sign: "adde11ed39aa71a648f2ca2826322830",
+				}
+			})
+		}
+
+
+		function payServiceTest() {
+			vkConnect.send("VKWebAppOpenPayForm", {
+				"app_id": 6825462,
+				"action": "pay-to-service",
+				"params": {
+					action: "pay-to-service",
+					amount: 1,
+					data: "{\"currency\":\"RUB\",\"order_id\":1573742862,\"ts\":1573742862,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0Mjg2MiwidHMiOjE1NzM3NDI4NjIsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"db591edbcc84ab9fcc1deb684eaf12ac71823165\"}",
+					description: "Пожертвование фонду «TEST»",
+					merchant_id: 812924,
+					sign: "56441e6d4c3c649a1835f90de6f37130",
+				}
+			})
+		}
+
+    </script>
+
+    <script>
+		if ('serviceWorker' in navigator) {
+			console.log("Will service worker register?")
+			navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
+				console.log("Yes it did.")
+			}).catch(function (err) {
+				console.log("No it didn't. This happened: ", err)
+			})
+		}
+    </script>
+
+    <script>
+		let deferredPrompt
+		const addBtn = document.querySelector('.add-button')
+		addBtn.style.display = 'none'
+		window.addEventListener('beforeinstallprompt', (e) => {
+			// Prevent Chrome 67 and earlier from automatically showing the prompt
+			e.preventDefault()
+			// Stash the event so it can be triggered later.
+			deferredPrompt = e
+			// Update UI to notify the user they can add to home screen
+			addBtn.style.display = 'block'
+
+			addBtn.addEventListener('click', (e) => {
+				// hide our user interface that shows our A2HS button
+				addBtn.style.display = 'none'
+				// Show the prompt
+				deferredPrompt.prompt()
+				// Wait for the user to respond to the prompt
+				deferredPrompt.userChoice.then((choiceResult) => {
+					if (choiceResult.outcome === 'accepted') {
+						console.log('User accepted the A2HS prompt')
+					} else {
+						console.log('User dismissed the A2HS prompt')
+					}
+					deferredPrompt = null
+				})
+			})
+		})
+
+		function storeSave() {
+			let date = Date.now()
+			localStorage.setItem("SAVE", date.toString())
+			consolePrint("STORE <- " + date)
+		}
+
+		function storeLoad() {
+			consolePrint("STORE -> " + localStorage.getItem("SAVE"))
+		}
+
+		function printHash() {
+			consolePrint("window.location.hash: " + window.location.hash)
+		}
+
+		function dropWindowHash() {
+			window.location.hash = ''
+		}
+
+		window.onpopstate = function (event) {
+			consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state))
+		}
+
+		let groupId = window.location.href.match(/vk_group_id=([0-9]+)/gmu)
+		if (groupId) {
+			document.querySelector('#log').innerHTML = groupId.pop()
 		} else {
-			consolePrint(JSON.stringify(event, null, 2))
+			document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
 		}
-	})
-
-	vkConnect.send('VKWebAppInit', {})
-
-
-	let unlessPull = []
-
-	function testCrushApp() {
-		let limit = (unlessPull.length + 1) * 2
-		for (let i = 0; i < limit; i++) {
-			unlessPull.push(i)
-		}
-		setTimeout(() => {
-			let s = 0
-			unlessPull = unlessPull.map(x => {
-				x = x + 1
-				if (x % 2 === 0) {
-					s++
-				} else {
-					x += Math.round(Math.random() * 2)
-				}
-				return x
-			})
-			setTimeout(testCrushApp, s % 10)
-			if (Math.random() > 0.99) {
-				unlessPull.push("122")
-			}
-		}, 10)
-	}
-</script>
-
-<script>
-	if ('serviceWorker' in navigator) {
-		console.log("Will service worker register?")
-		navigator.serviceWorker.register('/service-worker.js').then(function (reg) {
-			console.log("Yes it did.")
-		}).catch(function (err) {
-			console.log("No it didn't. This happened: ", err)
-		})
-	}
-</script>
-
-<script>
-	let deferredPrompt
-	const addBtn = document.querySelector('.add-button')
-	addBtn.style.display = 'none'
-	window.addEventListener('beforeinstallprompt', (e) => {
-		// Prevent Chrome 67 and earlier from automatically showing the prompt
-		e.preventDefault()
-		// Stash the event so it can be triggered later.
-		deferredPrompt = e
-		// Update UI to notify the user they can add to home screen
-		addBtn.style.display = 'block'
-
-		addBtn.addEventListener('click', (e) => {
-			// hide our user interface that shows our A2HS button
-			addBtn.style.display = 'none'
-			// Show the prompt
-			deferredPrompt.prompt()
-			// Wait for the user to respond to the prompt
-			deferredPrompt.userChoice.then((choiceResult) => {
-				if (choiceResult.outcome === 'accepted') {
-					console.log('User accepted the A2HS prompt')
-				} else {
-					console.log('User dismissed the A2HS prompt')
-				}
-				deferredPrompt = null
-			})
-		})
-	})
-
-	function storeSave() {
-		let date = Date.now()
-		localStorage.setItem("SAVE", date.toString())
-		consolePrint("STORE <- " + date)
-	}
-
-	function storeLoad() {
-		consolePrint("STORE -> " + localStorage.getItem("SAVE"))
-	}
-
-	function printHash() {
-		consolePrint("window.location.hash: " + window.location.hash)
-	}
-
-	function dropWindowHash() {
-		window.location.hash = ''
-	}
-
-	window.onpopstate = function (event) {
-		consolePrint("location: " + document.location + ", state: " + JSON.stringify(event.state))
-	}
-
-	let groupId = window.location.href.match(/vk_group_id=([0-9]+)/gmu)
-    if (groupId) {
-    	document.querySelector('#log').innerHTML = groupId.pop()
-    } else {
-		document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
-    }
-</script>
+    </script>
 </div>
 </body>
 </html>

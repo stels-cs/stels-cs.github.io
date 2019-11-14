@@ -54,7 +54,7 @@
     <br/>
 
     <span id="wh"></span><br/>
-    <button style="background-color: cornflowerblue" onclick="payServiceTest()">payServiceTest</button>
+    <button style="background-color: lightblue" onclick="payServiceTest()">payServiceTest</button>
     <button style="background-color: rosybrown" onclick="payRecurrentTest()">payRecurrentTest</button>
 
     <br/>
@@ -207,6 +207,40 @@
 
     <script>
 
+		function payRecurrentTest() {
+			vkConnect.send("VKWebAppOpenPayForm", {
+				"app_id": 6825462,
+				"action": "pay-recurrent", "params": {
+					action: "pay-recurrent",
+					amount: 1
+					data: "{\"currency\":\"RUB\",\"order_id\":1573742665,\"ts\":1573742665,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0MjY2NSwidHMiOjE1NzM3NDI2NjUsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"5fe9ad5770e7170f8955cacf49458f2ab4d8f4fc\"}",
+					description: "Пожертвование фонду «TEST»",
+					merchant_id: 812924,
+					sign: "adde11ed39aa71a648f2ca2826322830",
+				}
+			})
+		}
+
+
+		function payServiceTest() {
+			vkConnect.send("VKWebAppOpenPayForm", {
+				"app_id": 6825462,
+				"action": "pay-to-service",
+				"params": {
+					action: "pay-to-service",
+					amount: 1,
+					data: "{\"currency\":\"RUB\",\"order_id\":1573742862,\"ts\":1573742862,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0Mjg2MiwidHMiOjE1NzM3NDI4NjIsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"db591edbcc84ab9fcc1deb684eaf12ac71823165\"}",
+					description: "Пожертвование фонду «TEST»",
+					merchant_id: 812924,
+					sign: "56441e6d4c3c649a1835f90de6f37130",
+				}
+			})
+		}
+
+    </script>
+
+    <script>
+
 		function onChangeInput(event) {
 			consolePrint("onChangeInput", event)
 			const files = event.target.files
@@ -351,36 +385,6 @@
 					unlessPull.push("122")
 				}
 			}, 10)
-		}
-
-		function payRecurrentTest() {
-			vkConnect.send("VKWebAppOpenPayForm", {
-				"app_id": 6825462,
-				"action": "pay-recurrent", "params": {
-					action: "pay-recurrent",
-					amount: 1
-					data: "{\"currency\":\"RUB\",\"order_id\":1573742665,\"ts\":1573742665,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0MjY2NSwidHMiOjE1NzM3NDI2NjUsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"5fe9ad5770e7170f8955cacf49458f2ab4d8f4fc\"}",
-					description: "Пожертвование фонду «TEST»",
-					merchant_id: 812924,
-					sign: "adde11ed39aa71a648f2ca2826322830",
-				}
-			})
-		}
-
-
-		function payServiceTest() {
-			vkConnect.send("VKWebAppOpenPayForm", {
-				"app_id": 6825462,
-				"action": "pay-to-service",
-				"params": {
-					action: "pay-to-service",
-					amount: 1,
-					data: "{\"currency\":\"RUB\",\"order_id\":1573742862,\"ts\":1573742862,\"merchant_data\":\"eyJvcmRlcl9pZCI6MTU3Mzc0Mjg2MiwidHMiOjE1NzM3NDI4NjIsImFtb3VudCI6MSwiY3VycmVuY3kiOiJSVUIifQ==\",\"merchant_id\":812924,\"merchant_title\":\"TEST\",\"merchant_image\":\"http://localhost:4000/uploads/1573729933V5282fondImage.png\",\"merchant_sign\":\"db591edbcc84ab9fcc1deb684eaf12ac71823165\"}",
-					description: "Пожертвование фонду «TEST»",
-					merchant_id: 812924,
-					sign: "56441e6d4c3c649a1835f90de6f37130",
-				}
-			})
 		}
 
     </script>

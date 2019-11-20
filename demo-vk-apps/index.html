@@ -59,9 +59,9 @@
 
     <br/>
     <br/>
+    <button onclick="installWidget()">installWidget</button>
     <br/>
     <br/>
-    <button onclick="testCrushApp()">TEST CRUSH APP</button>
     <br/>
     <button onclick="printHash()">printHash</button>
     <br/>
@@ -206,6 +206,15 @@
     <script src="./vk-connect.js"></script>
 
     <script>
+        //https://vk.com/app6825462_-126202993
+
+        function installWidget() {
+        	var code = {
+        		title: "Цитата с длинным текстом !!!!!!!!!!!!",
+                text: "test test test test test test test test test",
+            }
+			vkConnect.send("VKWebAppShowCommunityWidgetPreviewBox", {"group_id": 126202993, "type": "text", "code": "return "+JSON.stringify(code)+";"});
+        }
 
 		function payRecurrentTest() {
 			vkConnect.send("VKWebAppOpenPayForm", {

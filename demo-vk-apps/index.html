@@ -170,6 +170,10 @@
         "1","v":"5.92","access_token":accessToken},"request_id":99564})
     </button>
     <br/>
+    <button onclick='vkConnect.send("VKWebAppCallAPIMethod", {"method":"captcha.force","params": {"v":"5.92", "access_token":accessToken}, "request_id":564})'>
+        captcha.force
+    </button>
+    <br/>
     <button onclick='consolePrint(window.location.href.replace(/([&\?])/ug, "\n$1"))'>window.location.href</button>
     <br/>
     <button onclick='window.location.reload()'>window.location.reload()</button>

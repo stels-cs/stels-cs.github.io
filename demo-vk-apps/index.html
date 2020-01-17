@@ -66,7 +66,13 @@
 
     <span id="wh"></span><br/>
     <button style="background-color: lightblue" onclick="payServiceTest()">payServiceTest</button>
-    <button style="background-color: rosybrown" onclick="payRecurrentTest()">payRecurrentTest</button>
+<!--    <button style="background-color: rosybrown" onclick="payRecurrentTest()">payRecurrentTest</button>-->
+
+    <br/>
+    <button onclick='history.pushState({}, "asd", "#test")'>PUSH #test</button>
+    <button onclick='history.pushState({}, "asd", "#best")'>PUSH #best</button>
+    <button onclick='history.back()'>BACK</button>
+    <button onclick='setTimeout(() => history.back(), 10)'>BACK in timeout</button>
 
     <br/>
     <br/>

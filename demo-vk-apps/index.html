@@ -65,6 +65,9 @@
     <br/>
 
     <span id="wh"></span><br/>
+
+    <button onclick="share()">share</button>
+
     <button style="background-color: lightblue" onclick="payServiceTest()">payServiceTest</button>
 <!--    <button style="background-color: rosybrown" onclick="payRecurrentTest()">payRecurrentTest</button>-->
 
@@ -484,6 +487,38 @@
 		} else {
 			document.querySelector('#log').innerHTML = "Приложение открыто без группы!"
 		}
+
+		function share() {
+			let data = {
+				"background_type" : "none",
+				"attachment": {"url":"https://vk.com/coin","type":"url","text":"Открыть"},
+				"stickers":[
+					{"sticker_type":"renderable",
+                        "sticker":{
+						"content_type":"image",
+                            "url":"https://stels-cs.github.io/demo-vk-apps/hiclipart.com.png",
+                            "can_delete":false,
+                            "original_width":600,
+							"original_height":585,
+							"clickable_zones":[
+                                {
+                                	"action_type":"link",
+                                    "action":{
+                                        "link":"https://vk.com/coin#top",
+                                        "tooltip_text_key":"TOP",
+                                    },
+                                    "clickable_area":[
+                                    	{x:0,y:0},
+                                    	{x:600,y:0},
+                                    	{x:600,y:585},
+                                    	{x:600,y:585},
+                                    ]
+                                }
+                            ],
+					}
+					}] }
+			vkConnect.send("VKWebAppShowStoryBox", data);
+        }
     </script>
 </div>
 </body>

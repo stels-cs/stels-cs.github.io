@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo ton-connect/ui</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      .center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .center button {
+        font-size: 25px;
+      }
+    </style>
+</head>
+<body>
+<div class="center">
+    <button onclick="connectWallet()">Connect wallet</button>
+</div>
+</body>
+<script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
+<script>
+  const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+    manifestUrl: 'https://stels-cs.github.io/ton-connect-ui/tcm.json',
+    restoreConnection: false,
+  });
+
+  async function connectWallet() {
+    const connectedWallet = await tonConnectUI.connectWallet();
+    console.log('connectedWallet', connectedWallet);
+  }
+</script>
+</html>

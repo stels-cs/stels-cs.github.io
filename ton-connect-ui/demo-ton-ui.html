@@ -32,6 +32,10 @@
   const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
     manifestUrl: 'https://stels-cs.github.io/ton-connect-ui/tcm.json',
     restoreConnection: false,
+      actionsConfiguration:{
+          twaReturnUrl:'t.me/local_presale_bot/tcui'    
+      }
+      
   });
 
     tonConnectUI.onStatusChange(wallet => {

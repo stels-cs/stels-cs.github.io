@@ -30,6 +30,13 @@
 </body>
 <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
 <script>
+
+    function log(msg) {
+        console.log(msg)
+        const t = document.createTextNode(msg + "\n")
+        document.getElementById('log').appendChild(t);
+    }
+    
   const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
     manifestUrl: 'https://stels-cs.github.io/ton-connect-ui/tcm.json',
     restoreConnection: false,
@@ -42,12 +49,6 @@
     tonConnectUI.onStatusChange(wallet => {
         log("onStatusChange: "+wallet?.account.address)
     })
-
-    function log(msg) {
-        console.log(msg)
-        const t = document.createTextNode(msg + "\n")
-        document.getElementById('log').appendChild(t);
-    }
 
   async function connectWallet() {
     const connectedWallet = await tonConnectUI.connectWallet();

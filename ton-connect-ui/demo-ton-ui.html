@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="center">
-    <button onclick="connectWallet()">Connect Wallet.</button>
+    <button onclick="connectWallet()">Connect TON</button>
     <pre id="log"></pre>
 </div>
 </body>
@@ -37,22 +37,20 @@
         document.getElementById('log').appendChild(t);
     }
     
-  const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
-    manifestUrl: 'https://stels-cs.github.io/ton-connect-ui/tcm.json',
-    restoreConnection: false,
-      actionsConfiguration:{
-          twaReturnUrl:'https://t.me/local_presale_bot/tcui'    
-      }
-      
-  });
+    const tonConnectUI = new TON_CONNECT_UI.TonConnectUI({
+        manifestUrl: 'https://stels-cs.github.io/ton-connect-ui/tcm.json',
+        actionsConfiguration:{
+              twaReturnUrl:'https://t.me/local_presale_bot/tcui'    
+        }
+    });
 
     tonConnectUI.onStatusChange(wallet => {
         log("onStatusChange: "+wallet?.account.address)
     })
 
-  async function connectWallet() {
-    const connectedWallet = await tonConnectUI.connectWallet();
-      log("connected after connectWallet");
-  }
+    async function connectWallet() {
+        const connectedWallet = await tonConnectUI.connectWallet();
+        log("connected after connectWallet");
+    }
 </script>
 </html>

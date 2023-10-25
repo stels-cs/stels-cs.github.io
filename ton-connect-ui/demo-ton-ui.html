@@ -20,11 +20,19 @@
       .center button {
         font-size: 25px;
       }
+
+        pre {
+                word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100vw;
+    text-wrap: wrap;
+        }
     </style>
 </head>
 <body>
 <div class="center">
     <button onclick="connectWallet()">Connect TON</button>
+    <button onclick="disconnectWallet()">Disconnect TON</button>
     <pre id="log"></pre>
 </div>
 </body>
@@ -51,6 +59,10 @@
     async function connectWallet() {
         const connectedWallet = await tonConnectUI.connectWallet();
         log("connected after connectWallet");
+    }
+
+    function disconnectWallet() {
+        tonConnectUI.disconnect();
     }
 </script>
 </html>

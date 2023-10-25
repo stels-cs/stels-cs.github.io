@@ -23,6 +23,7 @@
 <body>
 <div class="center">
     <button onclick="connectWallet()">Connect wallet</button>
+    <pre id="log"></pre>
 </div>
 </body>
 <script src="https://unpkg.com/@tonconnect/ui@latest/dist/tonconnect-ui.min.js"></script>
@@ -32,9 +33,19 @@
     restoreConnection: false,
   });
 
+    tonConnectUI.onStatusChange(wallet => {
+        log("onStatusChange: "+wallet?.account.address)
+    })
+
+    function log(msg) {
+        console.log(msg)
+        const t = document.createTextNode(msg + "\n")
+        document.getElementById('log').appendChild(t);
+    }
+
   async function connectWallet() {
     const connectedWallet = await tonConnectUI.connectWallet();
-    console.log('connectedWallet', connectedWallet);
+      log("connected after connectWallet");
   }
 </script>
 </html>

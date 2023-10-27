@@ -1,0 +1,29 @@
+{
+  "description": "Ticket for one person",
+  "render_type": "ticket",
+  "animation_url": "https://tickets.tonconsole.com/static/gateway.mp4",
+  "name": "Ticket #133",
+  "image": "https://tickets.tonconsole.com/static/gateway-preview.png",
+  "buttons": [
+    {
+      "label": "Alert",
+      "uri": "javascript:alert(1)"
+    },
+    {
+      "label": "Prefs",
+      "uri": "prefs:root=Bluetooth"
+    },
+    {
+      "label": "Ton",
+      "uri": "ton://transfer/EQB5HQfjevz9su4ZQGcDT_4IB0IUGh5PM2vAXPU2e4O6_d2j?amount=10000000"
+    },
+    {
+      "label": "TK",
+      "uri": "https://app.tonkeeper.com/transfer/EQB5HQfjevz9su4ZQGcDT_4IB0IUGh5PM2vAXPU2e4O6_d2j?amount=10000000"
+    },
+    {
+      "label": "URL",
+      "uri": "https://stels-cs.github.io/ton-tools/#/demo"
+    }
+  ]
+}
